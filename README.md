@@ -1,7 +1,7 @@
 This project was created for <strong>Software Engineering Lanuages Tools</strong> course for fall 2016 Contributors:: 
 <ol>
 <li>Raghav</li>
-<li>Srinivasan</li>
+<li>Srinivas</li>
 <li>Suhas</li>
 <li>Mahesh</li>
 <li>Kaustubh</li>
