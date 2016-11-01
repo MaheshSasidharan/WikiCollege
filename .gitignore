@@ -1,4 +1,4 @@
-*.gem
+ear.gem
 *.rbc
 /.config
 /coverage/
