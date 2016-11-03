@@ -1,27 +1,34 @@
 <br/>
 <div class="row">
     <div class="col-md-12">
-        <a class="btn btn-primary" href="#/users/new">Create a user</a>
-        <h3 class="block">Users</h3>
+        
+        <div>
+            <input type="text" class="form-control" ng-model="searchFilter" placeholder="Seach by Name here"/>
+        </div>
+        <h3 class="block">Search for Universities</h3>
         <table class="table table-striped">
             <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Email</th>
-                <th>Phone</th>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Acceptance Rate</th>
                 <th></th>
             </tr>
-            <tr ng-hide="users.length" >
-                <td colspan="5">No users found, Please create one.</td>
+            <tr ng-hide="arrColleges.length" >
+                <td colspan="5">No colleges found, Would you like to create one?</td>
             </tr>
-            <tr ng-show="users.length" ng-repeat="user in users">
-                <td>{{user.first_name}}</td>
-                <td>{{user.last_name}}</td>
-                <td>{{user.email}}</td>
-                <td>{{user.phone}}</td>
+            <tr ng-show="arrColleges.length" ng-repeat="college in arrColleges | filter:searchFilter  track by $index">
+                <td>{{college.rank}}</td>
+                <td>{{college.name}}</td>
+                <td>{{college.city}}</td>
+                <td>{{college.state}}</td>
+                <td>{{college.acceptanceRate}}</td>
                 <td>
-                    <a href="#/users/{{user.id}}/edit">Edit</a> | <a href="" ng-click="deleteUser(user.id)">Remove</a>
+                    <a href="#/users/{{user.rank}}/edit">View</a>
+                    <!--| <a href="" ng-click="deleteUser(user.id)">Remove</a>-->
                 </td>
+                
             </tr>
         </table>
     </div>
