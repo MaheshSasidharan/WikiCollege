@@ -13,7 +13,11 @@ default: &default
 
 development:
   <<: *default
+  adapter: mysql2
+  encoding: utf8
   database: c9
+  username: raghavendranath
+  host: localhost
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".

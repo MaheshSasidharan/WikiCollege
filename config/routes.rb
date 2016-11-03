@@ -6,6 +6,12 @@ Rails.application.routes.draw do
   resources :users
 
   root 'users#index'
+  #root 'universities#index'
+  #get 'universities', to: 'universities#index'
+  resources :universities
+  
+
+  
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
