@@ -6,3 +6,6 @@ This project was created for <strong>Software Engineering Lanuages Tools</strong
 <li>Mahesh</li>
 <li>Kaustubh</li>
 </ol>
+
+
+Website of our application is <strong>https://wikicollege.herokuapp.com/<strong>
