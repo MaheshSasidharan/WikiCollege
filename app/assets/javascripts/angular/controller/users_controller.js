@@ -119,6 +119,11 @@ myApp.config([
       templateUrl: '/templates/users/details.html',
       controller: "universityDetails"
     });
+    $routeProvider.when('/', {
+      templateUrl: '/templates/users/index.html',
+      controller: "UserListCtr"
+    });
+    
   }
 ]);
 
