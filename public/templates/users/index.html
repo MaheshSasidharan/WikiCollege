@@ -19,13 +19,13 @@
                 <td colspan="5">No colleges found, Would you like to create one?</td>
             </tr>
             <tr ng-show="arrColleges.length" ng-repeat="college in arrColleges | filter:searchFilter  track by $index">
-                <td>{{college.rank}}</td>
+                <td>#{{college.rank}}</td>
                 <td>{{college.name}}</td>
                 <td>{{college.city}}</td>
                 <td>{{college.state}}</td>
                 <td>{{college.acceptanceRate}}</td>
                 <td>
-                    <a href="#/users/{{user.rank}}/edit">View</a>
+                    <a href="#/users/{{college.rank}}/details">View</a>
                     <!--| <a href="" ng-click="deleteUser(user.id)">Remove</a>-->
                 </td>
                 
