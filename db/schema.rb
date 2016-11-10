@@ -13,51 +13,5 @@
 
 ActiveRecord::Schema.define(version: 20161102050727) do
 
-  create_table "addresses", force: true do |t|
-    t.string   "street1"
-    t.string   "street2"
-    t.string   "city"
-    t.string   "state"
-    t.string   "country"
-    t.string   "zipcode"
-    t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "has_majors", force: true do |t|
-    t.integer "majors_id"
-    t.integer "universities_id"
-  end
-
-  add_index "has_majors", ["majors_id"], name: "index_has_majors_on_majors_id", using: :btree
-  add_index "has_majors", ["universities_id"], name: "index_has_majors_on_universities_id", using: :btree
-
-  create_table "majors", force: true do |t|
-    t.string   "major"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "universities", force: true do |t|
-    t.string   "name"
-    t.string   "location"
-    t.integer  "rank"
-    t.string   "overview"
-    t.integer  "year"
-    t.string   "endorsement"
-    t.string   "climate"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "users", force: true do |t|
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "email"
-    t.string   "phone"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
 end
