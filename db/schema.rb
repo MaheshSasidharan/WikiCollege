@@ -26,11 +26,12 @@ ActiveRecord::Schema.define(version: 20161102050727) do
   end
 
   create_table "has_majors", force: true do |t|
-    t.integer  "majors_id"
-    t.integer  "universities_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.integer "majors_id"
+    t.integer "universities_id"
   end
+
+  add_index "has_majors", ["majors_id"], name: "index_has_majors_on_majors_id", using: :btree
+  add_index "has_majors", ["universities_id"], name: "index_has_majors_on_universities_id", using: :btree
 
   create_table "majors", force: true do |t|
     t.string   "major"
