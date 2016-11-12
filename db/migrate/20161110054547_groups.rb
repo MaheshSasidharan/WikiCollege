@@ -1,6 +1,6 @@
 class Groups < ActiveRecord::Migration
   def change
-    create_table :courses do |t|
+    create_table :groups do |t|
       t.text :desc
       t.name :courseName
       t.timestamps
