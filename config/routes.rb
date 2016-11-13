@@ -9,9 +9,12 @@ Rails.application.routes.draw do
   #root 'universities#index'
   #get 'universities', to: 'universities#index'
   resources :universities
-  
 
-  
+
+  resources :sessions, only: [:new, :create, :destroy]
+  match '/signup', to: 'users#new', via: :get
+  match '/login',  to: 'sessions#new', via: :get
+  match '/logout', to: 'sessions#destroy', via: :delete
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
