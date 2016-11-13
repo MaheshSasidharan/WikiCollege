@@ -1,0 +1,11 @@
+<div ng-controller="LoginCtrl as lo" ng-show="lo.oLogin.bShow">
+<form class="navbar-form navbar-right" role="search">
+    <div class="form-group">
+        <input type="text" class="form-control" ng-model="lo.oLogin.sUserName" placeholder="Username">
+    </div>
+    <div class="form-group">
+        <input type="password" class="form-control" ng-model="lo.oLogin.sPassword" placeholder="Password">
+    </div>
+    <button type="submit" class="btn btn-default" ng-click="lo.TryLogin()">Sign In</button>
+</form>
+</div>

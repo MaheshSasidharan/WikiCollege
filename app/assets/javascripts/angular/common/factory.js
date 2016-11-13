@@ -13,3 +13,4 @@ myApp.factory('User', ['$resource', function($resource){
     delete: { method: 'DELETE', params: {id: '@id'} }
   });
 }]);
+

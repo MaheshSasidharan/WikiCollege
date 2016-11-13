@@ -34,4 +34,15 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+  
+  # class NoCompression
+  #   def compress(string)
+  #     # do nothing
+  #     string
+  #   end
+  # end
+  
+  # config.assets.compress = true
+  # config.assets.js_compressor = NoCompression.new
+  # config.assets.css_compressor = NoCompression.new
 end

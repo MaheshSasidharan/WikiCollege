@@ -7,29 +7,25 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-  
-
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Wiki College</a>
+<body ng-controller="HomeCtrl as ho">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Wiki College</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#/About">About</a></li>
+        <li><a href="#/Contact">Contact</a></li>
+        <!--<li><a href="#/Login">Login</a></li>-->
+        <li><a href="#" ng-click="ho.ShowHideLogin()">Login</a></li>
+      </ul>
+      <div ng-include="'templates/login/login.html'"></div>
     </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Login</a></li>
-    </ul>
-  </div>
-</nav>
-
-<div class="container" ng-view>
+  </nav>
+  
+  <div class="container" ng-view>
     <%= yield %>
   </div>
-
-
-
-
 </body>
 </html>
