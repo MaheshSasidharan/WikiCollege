@@ -16,8 +16,8 @@ development:
   adapter: mysql2
   encoding: utf8
   database: c9
-  username: raghavendranath
-  host: localhost
+  username: <%=ENV['C9_USER']%>
+  host: <%=ENV['IP']%>
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
