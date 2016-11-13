@@ -11,3 +11,92 @@ universities = [{:desc => '%3Cp%3EPrinceton, the fourth-oldest college in the Un
 universities.each do |university|
   University.create!(university)
 end
+
+departments = [{:deptName => 'Multi/Interdisciplinary Studies'},
+               {:deptName => 'Psychology'},
+               {:deptName => 'Biological and Biomedical Sciences'},
+               {:deptName => 'Public Administration and Social Service Professions'},
+               {:deptName => 'Mathematics and Statistics'},
+               {:deptName => 'Foreign Languages, Literatures, and Linguistics'},
+               {:deptName => 'Visual and Performing Arts'},
+               {:deptName => 'Liberal Arts and Sciences, General Studies and Humanities'},
+               {:deptName => 'Engineering'},
+               {:deptName => 'Computer and Information Sciences and Support Services'},
+               {:deptName => 'Philosophy and Religious Studies'},
+               {:deptName => 'Physical Sciences'},
+               {:deptName => 'English Language and Literature/Letters'},
+               {:deptName => 'Social Sciences'},
+               {:deptName => 'History'},
+               {:deptName => 'Family and Consumer Sciences/Human Sciences'},
+               {:deptName => 'Parks, Recreation, Leisure, and Fitness Studies'},
+               {:deptName => 'Theology and Religious Vocations'},
+               {:deptName => 'Engineering Technologies and Engineering-Related Fields'},
+               {:deptName => 'Education'},
+               {:deptName => 'Legal Professions and Studies'},
+               {:deptName => 'Business, Management, Marketing, and Related Support Services'},
+               {:deptName => 'Communications Technologies/Technicians and Support Services'},
+               {:deptName => 'Business, Management, Marketing, and Related Support Services'},
+               {:deptName => 'Health Professions and Related Programs'}]
+               
+               
+               
+
+
+departments.each do |department|
+  Department.create!(department)
+end               
+
+univdepts = [{:university_id => '1' ,:department_id => '1', :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => '1',:department_id => '2' , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => ,:department_id => , :desc => "Our department is having the best quality labs in U.S.A."}]
+             
+univdepts.each do |univdept|
+    Univdept.create!(univdept)
+end    
