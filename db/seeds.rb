@@ -89,4 +89,10 @@ univdepts = [{:university_id => '1' ,:department_id => '1', :desc => "Our depart
              
 univdepts.each do |univdept|
     Univdept.create!(univdept)
-end    
+end
+
+User.create!(name: 'raghav',
+             email: 'raghav@gmail.com',
+             password_digest: User.digest('raghav'))
+             
+             
