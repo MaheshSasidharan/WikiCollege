@@ -46,6 +46,12 @@ function DataService($http, Constants, CommonFactory) {
                 Helper.Miscellaneous.ReturnDataDotData,
                 Helper.Miscellaneous.FailedInService)
             },
+            SearchCity: function (sCity) {
+                return $http.get(Helper.app + Helper.University.controller + 'SearchCity?sCity=' + sCity)
+                .then(
+                Helper.Miscellaneous.ReturnDataDotData,
+                Helper.Miscellaneous.FailedInService)
+            },
         },
         Miscellaneous: {
             ReturnDataDotData: function (data) {
@@ -61,8 +67,11 @@ function DataService($http, Constants, CommonFactory) {
         // Univ
         GetAllUniversities: Helper.University.GetAllUniversities,
         GetUniversityById: Helper.University.GetUniversityById,
+        
+        // Testing part
         GetTest1: Helper.University.GetTest1,
-        TestPost: Helper.University.TestPost
+        TestPost: Helper.University.TestPost,
+        SearchCity: Helper.University.SearchCity
     }
     return oService;
 }

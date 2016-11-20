@@ -16,6 +16,8 @@ Rails.application.routes.draw do
   post 'university/GetAllUniversities' => 'universities#GetAllUniversities'
   post 'university/TestPost' => 'universities#TestPost'
   
+  get 'university/SearchCity' => 'universities#SearchCity'
+  
   
   # resources :sessions, only: [:new, :create, :destroy]
   # match '/signup', to: 'users#new', via: :get

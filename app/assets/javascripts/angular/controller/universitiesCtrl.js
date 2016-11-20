@@ -4,9 +4,10 @@ function UniversityCtrl(DataService, CommonFactory) {
   var un = this;
 
   un.oFilter = {
-    a: "aa",
-    b: "bb"
+    sCityName: null,
+    nEndowmentst: null
   }
+  
 
   un.oService = {
     GetAllUniversities: function() {
@@ -67,5 +68,12 @@ function UniversityCtrl(DataService, CommonFactory) {
     DataService.TestPost(oSaveItem).then(function(data) {
       console.log(data);
     });
+  }
+  
+  un.SearchCity = function(){
+    DataService.SearchCity(un.oFilter.sCityName).then(function(data) {
+      un.arrColleges = data.arrUniversities;
+    });
+    
   }
 }

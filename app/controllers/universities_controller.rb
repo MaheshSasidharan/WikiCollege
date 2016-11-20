@@ -45,6 +45,16 @@ class UniversitiesController < ApplicationController
     #end
   end
   
+  def SearchCity
+    puts params[:sCity]
+    if params[:sCity]
+      @arrUniversities = University.search(params[:sCity])
+      render :json => { status: true, arrUniversities: @arrUniversities }
+    else
+      render :json => { status: false, msg: "No City name provided" }
+    end
+  end
+  
   def univ_params
     params.fetch(:oSaveItem).permit(:a, :b)
   end
