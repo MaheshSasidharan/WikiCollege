@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 myApp.controller("universityDetails", ['$scope', '$resource', 'Users', '$location', '$routeParams', '$rootScope', function($scope, $resource, Users, $location, $routeParams, $rootScope) {
   $scope.id = $routeParams.id
   
@@ -13,5 +14,37 @@ myApp.controller("universityDetails", ['$scope', '$resource', 'Users', '$locatio
         $scope.selectedUniversity = $scope.arrColleges[i]
         console.log("Selected University", $scope.arrColleges[i])
       }
+=======
+myApp.controller("UniversityDetails", ['Factory_DataService', 'Factory_CommonRoutines', UniversityDetailsCtrl]);
+
+function UniversityDetailsCtrl(DataService, CommonFactory) {
+  var ud = this;
+
+  ud.oService = {
+    GetUniversityById: function(nId) {
+      return DataService.GetUniversityById(nId).then(function(data) {
+        return data;
+      });
+    }
+>>>>>>> b5ecaca303dda17d77c049aca037a48f4b54fd0f
   }
-}]);
+
+  ud.Helper = {
+    GetUniversityById: function(nId) {
+      ud.oService.GetUniversityById(nId).then(function(data) {
+        ud.oUniv = data.oUniv;
+      });
+    },
+    Init: function() {
+      var nId = null;
+      nId = CommonFactory.GetByUniversityId();
+      if (nId) {
+        this.GetUniversityById(nId);
+      }
+      else {
+        alert("Incorrect University Id");
+      }
+    }
+  };
+  ud.Helper.Init();
+}

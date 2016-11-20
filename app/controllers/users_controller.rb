@@ -25,7 +25,7 @@
   
 # end 
 class UsersController < ApplicationController
-  before_action :get_user, except: [:index, :create]
+  before_action :get_user, except: [:index, :create, :testme]
   respond_to :html, :json
 
   def index
@@ -35,6 +35,14 @@ class UsersController < ApplicationController
       format.html
     end
   end
+  
+  def testme
+    puts "Hi"
+    #respond_to do |format|
+      msg = { :status => "ok", :message => "Success!", :html => "<b>...</b>" }
+      render :json => msg  # don't do msg.to_json
+    #end
+  end
 
   def edit
     
@@ -43,12 +51,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-    #3#<<<<<<< HEAD
       render json: @user.as_json, status: :ok
-
-      flash[:notice] = "Sign up successful! Welcome to WikiCollege"
-      redirect_to login_path
-    #>>>>>>>d2d20756bace229f870c4073ee876d063387ba6d
+      #flash[:notice] = "Sign up successful! Welcome to WikiCollege"
+      #redirect_to login_path
     else
       render json: {user: @user.errors, status: :no_content}
     end

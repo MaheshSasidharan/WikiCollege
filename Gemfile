@@ -27,7 +27,7 @@ gem 'turbolinks'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
 #Use angular js
-gem 'angularjs-rails'
+gem 'angularjs-rails', '~> 1.5.8'
 gem 'angular-ui-bootstrap-rails'
 
 #Use ActiveModel has_secure_password
