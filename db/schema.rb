@@ -102,6 +102,7 @@ ActiveRecord::Schema.define(version: 20161113213717) do
   create_table "users", force: true do |t|
     t.string   "user_id"
     t.string   "email"
+    t.string   "password_digest"
     t.decimal  "reputationPoints", precision: 10, scale: 0
     t.datetime "createdTime"
     t.datetime "created_at",                                null: false

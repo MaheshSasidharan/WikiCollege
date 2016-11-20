@@ -36,15 +36,19 @@ class UsersController < ApplicationController
     end
   end
 
+  def edit
+    
+  end 
+  
   def create
     @user = User.new(user_params)
     if @user.save
-<<<<<<< HEAD
+    #3#<<<<<<< HEAD
       render json: @user.as_json, status: :ok
-=======
+
       flash[:notice] = "Sign up successful! Welcome to WikiCollege"
       redirect_to login_path
->>>>>>> d2d20756bace229f870c4073ee876d063387ba6d
+    #>>>>>>>d2d20756bace229f870c4073ee876d063387ba6d
     else
       render json: {user: @user.errors, status: :no_content}
     end
