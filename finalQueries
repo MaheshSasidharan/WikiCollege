@@ -1,0 +1,7 @@
+University.select("*").joins(:univdepts)
+
+
+University.reflect_on_all_associations (for all schema)
+
+
+ University.select("*").joins(:departments) (for details(inner join of university, univdepts and departments)
