@@ -5,7 +5,6 @@ class Users < ActiveRecord::Migration
       t.string :email
       t.string :password_digest
       t.decimal :reputationPoints
-      t.datetime :createdTime
       t.timestamps null: false
     end  
   end
