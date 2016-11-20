@@ -1,6 +1,6 @@
-myApp.controller('LoginCtrl', ['SharedProperties', LoginCtrl]);
+myApp.controller('LoginCtrl', ['SharedProperties','Auth', LoginCtrl]);
 
-function LoginCtrl(SharedProperties) {
+function LoginCtrl(SharedProperties, Auth) {
     var lo = this;
     lo.oLogin = SharedProperties.oLogin;
     
