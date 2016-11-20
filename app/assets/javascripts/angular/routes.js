@@ -11,8 +11,8 @@ myApp.config([
         controller: "UniversityDetails as ud"
       })
       .when('/signup', {
-        templateUrl: '/templates/users/index.html',
-        controller: "UniversityCtrl as un"
+        templateUrl: '/templates/login/signup.html',
+        controller: "SignupCtrl as su"
       })
       .otherwise({redirectTo:'/'});
   }
