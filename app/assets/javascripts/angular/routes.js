@@ -2,13 +2,13 @@
 myApp.config([
   '$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider
-      .when('/users/:id/details', {
+      .when('/university', {
         templateUrl: '/templates/users/details.html',
-        controller: "universityDetails"
+        controller: "UniversityDetails as ud"
       })
       .when('/', {
         templateUrl: '/templates/users/index.html',
-        controller: "UserListCtr"
+        controller: "UniversityCtrl as un"
       })
       .otherwise({redirectTo:'/'});
   }

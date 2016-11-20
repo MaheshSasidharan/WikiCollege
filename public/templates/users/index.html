@@ -1,33 +1,38 @@
-<div class="row">
-    <div class="col-md-12">
-        <div>
-            <input type="text" class="form-control" ng-model="searchFilter" placeholder="Seach by Name here"/>
+<!--<div ng-controller="UniversityCtrl as un">-->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="btn btn-success" ng-click="un.test()">test</div>
+            <div class="btn btn-warning" ng-click="un.test2()">Get with </div>
+            <div class="btn btn-primary" ng-click="un.TestPost()">Test Post</div>
+            <div>
+                <input type="text" class="form-control" ng-model="searchFilter" placeholder="Seach by Name here" />
+            </div>
+            <h3 class="block">Search for Universities</h3>
+            <table class="table table-striped">
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Acceptance Rate</th>
+                    <th></th>
+                </tr>
+                <tr ng-hide="un.arrColleges.length">
+                    <td colspan="5">No colleges found, Would you like to create one?</td>
+                </tr>
+                <tr ng-show="un.arrColleges.length" ng-repeat="college in un.arrColleges | filter:searchFilter  track by $index">
+                    <td>#{{college.rank}}</td>
+                    <td>{{college.name}}</td>
+                    <td>{{college.city}}</td>
+                    <td>{{college.state}}</td>
+                    <td>{{college.acceptanceRate}}</td>
+                    <td>
+                        <a href="#/university?nId={{college.id}}">View</a>
+                        <!--| <a href="" ng-click="deleteUser(user.id)">Remove</a>-->
+                    </td>
+
+                </tr>
+            </table>
         </div>
-        <h3 class="block">Search for Universities</h3>
-        <table class="table table-striped">
-            <tr>
-                <th>Rank</th>
-                <th>Name</th>
-                <th>City</th>
-                <th>State</th>
-                <th>Acceptance Rate</th>
-                <th></th>
-            </tr>
-            <tr ng-hide="arrColleges.length" >
-                <td colspan="5">No colleges found, Would you like to create one?</td>
-            </tr>
-            <tr ng-show="arrColleges.length" ng-repeat="college in arrColleges | filter:searchFilter  track by $index">
-                <td>#{{college.rank}}</td>
-                <td>{{college.name}}</td>
-                <td>{{college.city}}</td>
-                <td>{{college.state}}</td>
-                <td>{{college.acceptanceRate}}</td>
-                <td>
-                    <a href="#/users/{{college.id}}/details">View</a>
-                    <!--| <a href="" ng-click="deleteUser(user.id)">Remove</a>-->
-                </td>
-                
-            </tr>
-        </table>
     </div>
-</div>
+<!--</div>-->

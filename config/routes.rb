@@ -6,11 +6,17 @@ Rails.application.routes.draw do
   resources :users
 
   root 'users#index'
-  #root 'universities#index'
-  #get 'universities', to: 'universities#index'
+  #abcd 'users#testme'
+  get 'testme' => 'users#testme'
+
+  #UNIVERSITY
   resources :universities
-
-
+  get 'university/testme2' => 'universities#testme2'
+  get 'university/GetUniversityById' => 'universities#GetUniversityById'
+  post 'university/GetAllUniversities' => 'universities#GetAllUniversities'
+  post 'university/TestPost' => 'universities#TestPost'
+  
+  
   # resources :sessions, only: [:new, :create, :destroy]
   # match '/signup', to: 'users#new', via: :get
   # match '/login',  to: 'sessions#new', via: :get
