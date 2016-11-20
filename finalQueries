@@ -1,3 +1,6 @@
+http://api.rubyonrails.org/classes/ActiveRecord/FinderMethods.html
+
+
 University.select("*").joins(:univdepts)
 
 
@@ -5,3 +8,19 @@ University.reflect_on_all_associations (for all schema)
 
 
  University.select("*").joins(:departments) (for details(inner join of university, univdepts and departments)
+ 
+ 
+ Example for finding group related to university:
+ 2.3.0 :007 > Group.find_by(university_id: '2')
+  Group Load (0.4ms)  SELECT  `groups`.* FROM `groups`  WHERE `groups`.`university_id` = 2 LIMIT 1
+ => #<Group id: 4, university_id: 2, desc: "This group is for discussions about Transportation", groupName: "Transportation", created_at: "2016-11-20 23:24:31", updated_at: "2016-11-20 23:24:31"> 
+2.3.0 :008 > 
+
+
+
+Example for a posts in a group with university id 2
+
+2.3.0 :001 > Post.joins(:group).where(groups: {university_id: '2'})
+  Post Load (0.5ms)  SELECT `posts`.* FROM `posts` INNER JOIN `groups` ON `groups`.`id` = `posts`.`group_id` WHERE `groups`.`university_id` = 2
+ => #<ActiveRecord::Relation [#<Post id: 3, group_id: 4, postData: "Site for checking out transportation services arro...", like: 0, dislike: 0, created_at: "2016-11-20 23:24:31", updated_at: "2016-11-20 23:24:31">, #<Post id: 4, group_id: 6, postData: "What is the average cost of living arround this un...", like: 0, dislike: 0, created_at: "2016-11-20 23:24:31", updated_at: "2016-11-20 23:24:31">]> 
+2.3.0 :002 > 

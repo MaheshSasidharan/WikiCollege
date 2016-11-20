@@ -15,18 +15,14 @@ ActiveRecord::Schema.define(version: 20161120210617) do
 
   create_table "comments", force: true do |t|
     t.integer  "post_id"
-    t.integer  "user_id"
     t.text     "commentData"
     t.decimal  "like",        precision: 10, scale: 0
     t.decimal  "dislike",     precision: 10, scale: 0
-    t.boolean  "isActive",                             default: false
-    t.datetime "createdTime"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   add_index "comments", ["post_id"], name: "index_comments_on_post_id", using: :btree
-  add_index "comments", ["user_id"], name: "index_comments_on_user_id", using: :btree
 
   create_table "departments", force: true do |t|
     t.string   "deptName"
@@ -36,32 +32,24 @@ ActiveRecord::Schema.define(version: 20161120210617) do
 
   create_table "groups", force: true do |t|
     t.integer  "university_id"
-    t.integer  "user_id"
     t.text     "desc"
     t.string   "groupName"
-    t.datetime "createdTime"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   add_index "groups", ["university_id"], name: "index_groups_on_university_id", using: :btree
-  add_index "groups", ["user_id"], name: "index_groups_on_user_id", using: :btree
 
   create_table "posts", force: true do |t|
     t.integer  "group_id"
-    t.integer  "user_id"
     t.text     "postData"
-    t.decimal  "like",        precision: 10, scale: 0
-    t.decimal  "dislike",     precision: 10, scale: 0
-    t.boolean  "isClosed",                             default: false
-    t.boolean  "isActive",                             default: false
-    t.datetime "createdTime"
+    t.decimal  "like",       precision: 10, scale: 0, default: 0
+    t.decimal  "dislike",    precision: 10, scale: 0, default: 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   add_index "posts", ["group_id"], name: "index_posts_on_group_id", using: :btree
-  add_index "posts", ["user_id"], name: "index_posts_on_user_id", using: :btree
 
   create_table "submajors", force: true do |t|
     t.integer  "univdept_id"

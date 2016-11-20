@@ -14,6 +14,7 @@ myApp.config([
         templateUrl: '/templates/login/signup.html',
         controller: "SignupCtrl as su"
       })
+      
       .otherwise({redirectTo:'/'});
   }
 ]);
