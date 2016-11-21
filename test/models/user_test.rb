@@ -65,5 +65,5 @@ class UserTest < ActiveSupport::TestCase
   
 
 
-s
+
 end
