@@ -1,12 +1,10 @@
 class User < ActiveRecord::Base
-<<<<<<< HEAD
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   # devise :database_authenticatable, :registerable,
   #       :recoverable, :rememberable, :trackable, :validatable
-         
-end
-=======
+
   has_secure_password
   before_save {|user| user.email=user.email.downcase}
   before_save :create_session_token
@@ -22,4 +20,4 @@ private
     self.session_token = SecureRandom.urlsafe_base64
   end
 end
->>>>>>> Raghav
+
