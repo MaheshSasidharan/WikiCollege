@@ -48,7 +48,7 @@
                 <tbody>
                     <tr ng-repeat="group in ud.arrGroups | orderBy:'-NumOfPosts'" ng-click="ud.Helper.GetPostsByGroupId(group)">
                         <td>{{group.Title}}</td>
-                        <td>{{group.NumOfPosts}}</td>
+                        <td ng-if="false">{{group.NumOfPosts}}</td>
                     </tr>
                 </tbody>
             </table>
@@ -62,8 +62,11 @@
                         </td>
                         <td class="col-md-8">{{post.Title}}</td>
                         <td class="col-md-3">
-                            {{post.CreatedBy}} - {{post.CreatedWhen}}
+                            {{post.CreatedBy}} - {{post.CreatedWhen | date: 'medium'}} 
                         </td>
+                    </tr>
+                    <tr ng-show="ud.arrPosts == null">
+                        <td>"No posts found"</td>
                     </tr>
                 </tbody>
             </table>
