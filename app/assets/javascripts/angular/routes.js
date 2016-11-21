@@ -3,11 +3,11 @@ myApp.config([
   '$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: '/templates/users/index.html',
+        templateUrl: '/templates/university/index.html',
         controller: "UniversityCtrl as un"
       })
       .when('/university', {
-        templateUrl: '/templates/users/details.html',
+        templateUrl: '/templates/university/details.html',
         controller: "UniversityDetails as ud"
       })
       .when('/signup', {
