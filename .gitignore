@@ -54,4 +54,3 @@ build-iPhoneSimulator/
 # remove logged files
 .log
 log/
-config/
