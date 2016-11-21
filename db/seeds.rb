@@ -503,7 +503,7 @@ end
 
 
 
-groups = [{:university_id => '1', :desc => 'This group is for discussions about departments' , :groupName => "AllDepts"},
+groups = [{:university_id => '1', :desc => 'This group is for discussions about departments' , :groupName => "All Depts"},
 {:university_id => '1', :desc => 'This group is for discussions about Funding' , :groupName => "Funding"},
 {:university_id => '1', :desc => 'This group is for discussions about Housing' , :groupName => "Housing"},
 {:university_id => '2', :desc => 'This group is for discussions about Transportation' , :groupName => "Transportation"},
