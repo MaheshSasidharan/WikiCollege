@@ -20,6 +20,24 @@ class UniversitiesController < ApplicationController
     end
   end
   
+  def GetGroupsByUniversityId
+    @arrGroups = Group.where(university_id: params[:nId])
+    if (!@arrGroups.nil?) 
+       render :json => { status: true, arrGroups: @arrGroups }
+    else
+      render :json => { status: false, msg: "Failed to find groups by UniversityId" }
+    end
+  end
+  
+  def GetPostsByGroupId
+    @arrPosts = Post.where(group_id: params[:nId])
+    if (!@arrPosts.nil?) 
+       render :json => { status: true, arrPosts: @arrPosts }
+    else
+      render :json => { status: false, msg: "Failed to find groups by UniversityId" }
+    end
+  end
+  
   def show
     #respond_with(@university.as_json)
     #redirect_to university_path
