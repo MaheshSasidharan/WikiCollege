@@ -418,31 +418,21 @@ univdepts = [{:university_id => '1' ,:department_id => '1', :desc => "Our depart
              {:university_id => '22',:department_id => '12', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '22',:department_id => '13', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '22',:department_id => '14', :desc => "Our department is having the best quality labs in U.S.A."}, 
-             {:university_id => '22',:department_id => '14', :desc => "Our department is having the best quality labs in U.S.A."},
+             {:university_id => '22',:department_id => '14', :desc => "Our department is having the best quality labs in U.S.A."}]
              
              
-            
-univdepts.each do |univdept|
-#=======
 
-#>>>>>>> 36b8af6e06929477f720a2194ab34bb36ff72d4b
-             
-             
 univdepts.each do |univdept|
     Univdept.create!(univdept)
-#<<<<<<< HEAD
-#<<<<<<< HEAD
 end
 
-User.create!(name: 'raghav',
-             email: 'raghav@gmail.com',
-             password_digest: User.digest('raghav'))
+# User.create!(name: 'raghav',
+#              email: 'raghav@gmail.com',
+#              password_digest: User.digest('raghav'))
              
-#<<<<<<<<< saved version
+# 
              
-             
-#=======
-end    
+
 
 
 # users = [{:email => 'mahesh@gmail.com', :password_digest => 'mahesh', :reputationPoints => '0' }]
@@ -455,10 +445,7 @@ end
             
 #>>>>>>>>> local version
 #=======
-end
-<<<<<<< HEAD
-#>>>>>>> 36b8af6e06929477f720a2194ab34bb36ff72d4b
-=======
+#end
 
 
 
@@ -489,4 +476,3 @@ posts.each do |post|
     Post.create!(post)
 end         
      
->>>>>>> d54c3949b578e151c5803dc4ec03b0bcd9cc365f
