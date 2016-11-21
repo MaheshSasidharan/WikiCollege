@@ -1944,3 +1944,128 @@ Processing by UniversitiesController#GetGroupsByUniversityId as HTML
   [1m[36mGroup Load (0.3ms)[0m  [1mSELECT `groups`.* FROM `groups`  WHERE `groups`.`university_id` = 1[0m
 Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.3ms)
 >>>>>>> suhas
+
+
+Started GET "/" for 173.28.201.159 at 2016-11-21 05:27:52 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 131ms (Views: 120.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 173.28.201.159 at 2016-11-21 05:27:52 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 173.28.201.159 at 2016-11-21 05:27:52 +0000
+
+
+Started GET "/assets/university.css?body=1" for 173.28.201.159 at 2016-11-21 05:27:52 +0000
+
+
+Started GET "/assets/application.css?body=1" for 173.28.201.159 at 2016-11-21 05:27:52 +0000
+
+
+Started GET "/assets/angular.js?body=1" for 173.28.201.159 at 2016-11-21 05:27:52 +0000
+
+
+Started GET "/assets/angular/angular.js?body=1" for 173.28.201.159 at 2016-11-21 05:27:52 +0000
+
+
+Started GET "/assets/angular-route.js?body=1" for 173.28.201.159 at 2016-11-21 05:27:52 +0000
+
+
+Started GET "/assets/angular-resource.js?body=1" for 173.28.201.159 at 2016-11-21 05:27:52 +0000
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 173.28.201.159 at 2016-11-21 05:27:52 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 173.28.201.159 at 2016-11-21 05:27:52 +0000
+
+
+Started GET "/assets/angular/app.js?body=1" for 173.28.201.159 at 2016-11-21 05:27:52 +0000
+
+
+Started GET "/assets/angular/app/home.js?body=1" for 173.28.201.159 at 2016-11-21 05:27:53 +0000
+
+
+Started GET "/assets/angular/app/login.js?body=1" for 173.28.201.159 at 2016-11-21 05:27:53 +0000
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1" for 173.28.201.159 at 2016-11-21 05:27:53 +0000
+
+
+Started GET "/assets/angular/common/constants.js?body=1" for 173.28.201.159 at 2016-11-21 05:27:53 +0000
+
+
+Started GET "/assets/angular/common/dataService.js?body=1" for 173.28.201.159 at 2016-11-21 05:27:53 +0000
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1" for 173.28.201.159 at 2016-11-21 05:27:53 +0000
+
+
+Started GET "/assets/angular/controller/signupCtrl.js?body=1" for 173.28.201.159 at 2016-11-21 05:27:53 +0000
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1" for 173.28.201.159 at 2016-11-21 05:27:53 +0000
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1" for 173.28.201.159 at 2016-11-21 05:27:53 +0000
+
+
+Started GET "/assets/angular/routes.js?body=1" for 173.28.201.159 at 2016-11-21 05:27:53 +0000
+
+
+Started GET "/assets/application.js?body=1" for 173.28.201.159 at 2016-11-21 05:27:53 +0000
+
+
+Started POST "/university/GetAllUniversities" for 173.28.201.159 at 2016-11-21 05:27:54 +0000
+Processing by UniversitiesController#GetAllUniversities as HTML
+  Parameters: {"oFilter"=>{"sCityName"=>nil, "nEndowmentst"=>nil}, "university"=>{}}
+Unpermitted parameters: sCityName, nEndowmentst
+  [1m[35mUniversity Load (0.5ms)[0m  SELECT `universities`.* FROM `universities`
+Completed 200 OK in 78ms (Views: 76.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/university/GetUniversityById?nId=1" for 173.28.201.159 at 2016-11-21 05:27:56 +0000
+Processing by UniversitiesController#GetUniversityById as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT  `universities`.* FROM `universities`  WHERE `universities`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/university/GetGroupsByUniversityId?nId=1" for 173.28.201.159 at 2016-11-21 05:27:56 +0000
+Processing by UniversitiesController#GetGroupsByUniversityId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mGroup Load (0.2ms)[0m  SELECT `groups`.* FROM `groups`  WHERE `groups`.`university_id` = 1
+Completed 200 OK in 24ms (Views: 10.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/university/GetPostsByGroupId?nId=19" for 173.28.201.159 at 2016-11-21 05:27:59 +0000
+Processing by UniversitiesController#GetPostsByGroupId as HTML
+  Parameters: {"nId"=>"19"}
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT `posts`.* FROM `posts`  WHERE `posts`.`group_id` = 19[0m
+Completed 200 OK in 8ms (Views: 1.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/university/GetPostsByGroupId?nId=26" for 173.28.201.159 at 2016-11-21 05:28:00 +0000
+Processing by UniversitiesController#GetPostsByGroupId as HTML
+  Parameters: {"nId"=>"26"}
+  [1m[35mPost Load (0.6ms)[0m  SELECT `posts`.* FROM `posts`  WHERE `posts`.`group_id` = 26
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/university/GetAllUniversities" for 173.28.201.159 at 2016-11-21 05:28:07 +0000
+Processing by UniversitiesController#GetAllUniversities as HTML
+  Parameters: {"oFilter"=>{"sCityName"=>nil, "nEndowmentst"=>nil}, "university"=>{}}
+Unpermitted parameters: sCityName, nEndowmentst
+  [1m[36mUniversity Load (0.4ms)[0m  [1mSELECT `universities`.* FROM `universities`[0m
+Completed 200 OK in 49ms (Views: 47.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/university/GetAllUniversities" for 173.28.201.159 at 2016-11-21 05:28:08 +0000
+Processing by UniversitiesController#GetAllUniversities as HTML
+  Parameters: {"oFilter"=>{"sCityName"=>nil, "nEndowmentst"=>nil}, "university"=>{}}
+Unpermitted parameters: sCityName, nEndowmentst
+  [1m[35mUniversity Load (0.4ms)[0m  SELECT `universities`.* FROM `universities`
+Completed 200 OK in 59ms (Views: 57.2ms | ActiveRecord: 0.4ms)

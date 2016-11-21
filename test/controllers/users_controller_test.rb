@@ -2,8 +2,8 @@ require 'test_helper'
 
 
 class UsersControllerTest < ActionController::TestCase
-  test "should get home" do
-   # get pages_home_url 
+  test "should get list of users" do
+   # get users list_url 
    # assert_response :success 
   end
 end
