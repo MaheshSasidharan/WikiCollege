@@ -4,7 +4,7 @@ function UniversityDetailsCtrl(DataService, CommonFactory, SharedProperties) {
   var ud = this;
   ud.oUniv = null;
   ud.arrGroups = [];
-  ud.arrPosts = null;
+  ud.arrPosts = [];
   ud.oAddEditPost = null;
 
   ud.oService = {
@@ -17,7 +17,12 @@ function UniversityDetailsCtrl(DataService, CommonFactory, SharedProperties) {
       return DataService.GetGroupsByUniversityId(nId).then(function(data) {
         return data;
       });
-    }
+    },
+    GetPostsByGroupId: function(nId) {
+      return DataService.GetPostsByGroupId(nId).then(function(data) {
+        return data;
+      });
+    },
   }
 
   ud.Helper = {
@@ -27,19 +32,32 @@ function UniversityDetailsCtrl(DataService, CommonFactory, SharedProperties) {
       });
     },
     GetGroupsByUniversityId: function(nId) {
-      arrGroups.forEach(function(oItem) {
-        ud.arrGroups.push(new SharedProperties.Constructor.Group(oItem));
-      });
-      // return;
-      // ud.oService.GetGroupsByUniversityId(nId).then(function(data) {
-      //   ud.arrPosts = data.arrPosts;
+      // arrGroups.forEach(function(oItem) {
+      //   ud.arrGroups.push(new SharedProperties.Constructor.Group(oItem));
       // });
+      // return;
+      ud.oService.GetGroupsByUniversityId(nId).then(function(data) {
+        data.arrGroups.forEach(function(oItem) {
+          ud.arrGroups.push(new SharedProperties.Constructor.Group(oItem));
+        });
+      });
     },
     GetPostsByGroupId: function(oGroup) {
-      ud.arrPosts = oGroup.GetPostsByGroupId();
-      return;
-      ud.oService.GetPostsByGroupId(nId).then(function(data) {
-        ud.arrPosts = data.arrPosts;
+      // oGroup.GetPostsByGroupId().then(function(arrPosts){
+      //   ud.arrPosts = arrPosts;
+      // });
+      //return;
+      //
+      ud.arrPosts = [];
+      ud.oService.GetPostsByGroupId(oGroup.GroupId).then(function(data) {
+        //ud.arrPosts = data.arrPosts;
+        if (data.arrPosts.length) {
+          data.arrPosts.forEach(function(oItem) {
+            ud.arrPosts.push(new SharedProperties.Constructor.Post(oItem));
+          });
+        }else{
+          ud.arrPosts = null;
+        }
       });
     },
     UpdateUniv: function() {

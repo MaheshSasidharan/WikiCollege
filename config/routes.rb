@@ -14,6 +14,9 @@ Rails.application.routes.draw do
   resources :universities
   get 'university/testme2' => 'universities#testme2'
   get 'university/GetUniversityById' => 'universities#GetUniversityById'
+  get 'university/GetGroupsByUniversityId' => 'universities#GetGroupsByUniversityId'
+  get 'university/GetPostsByGroupId' => 'universities#GetPostsByGroupId'
+
   post 'university/GetAllUniversities' => 'universities#GetAllUniversities'
   post 'university/TestPost' => 'universities#TestPost'
   
