@@ -3347,3 +3347,91 @@ Started GET "/" for 173.28.201.159 at 2016-11-21 02:10:28 +0000
 Processing by UsersController#index as HTML
   Rendered users/index.html.erb within layouts/application (0.1ms)
 Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 173.28.201.159 at 2016-11-21 02:41:43 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 106ms (Views: 96.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 173.28.201.159 at 2016-11-21 02:41:44 +0000
+
+
+Started GET "/assets/application.css?body=1" for 173.28.201.159 at 2016-11-21 02:41:44 +0000
+
+
+Started GET "/assets/university.css?body=1" for 173.28.201.159 at 2016-11-21 02:41:44 +0000
+
+
+Started GET "/assets/angular/angular.js?body=1" for 173.28.201.159 at 2016-11-21 02:41:44 +0000
+
+
+Started GET "/assets/angular.js?body=1" for 173.28.201.159 at 2016-11-21 02:41:44 +0000
+
+
+Started GET "/assets/angular-route.js?body=1" for 173.28.201.159 at 2016-11-21 02:41:44 +0000
+
+
+Started GET "/assets/angular-resource.js?body=1" for 173.28.201.159 at 2016-11-21 02:41:44 +0000
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 173.28.201.159 at 2016-11-21 02:41:44 +0000
+
+
+Started GET "/assets/angular/app.js?body=1" for 173.28.201.159 at 2016-11-21 02:41:44 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 173.28.201.159 at 2016-11-21 02:41:44 +0000
+
+
+Started GET "/assets/angular/app/home.js?body=1" for 173.28.201.159 at 2016-11-21 02:41:44 +0000
+
+
+Started GET "/assets/angular/app/login.js?body=1" for 173.28.201.159 at 2016-11-21 02:41:44 +0000
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1" for 173.28.201.159 at 2016-11-21 02:41:44 +0000
+
+
+Started GET "/assets/angular/common/constants.js?body=1" for 173.28.201.159 at 2016-11-21 02:41:44 +0000
+
+
+Started GET "/assets/angular/common/dataService.js?body=1" for 173.28.201.159 at 2016-11-21 02:41:44 +0000
+
+
+Started GET "/assets/angular/controller/signupCtrl.js?body=1" for 173.28.201.159 at 2016-11-21 02:41:44 +0000
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1" for 173.28.201.159 at 2016-11-21 02:41:44 +0000
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1" for 173.28.201.159 at 2016-11-21 02:41:44 +0000
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1" for 173.28.201.159 at 2016-11-21 02:41:44 +0000
+
+
+Started GET "/assets/angular/routes.js?body=1" for 173.28.201.159 at 2016-11-21 02:41:44 +0000
+
+
+Started GET "/assets/application.js?body=1" for 173.28.201.159 at 2016-11-21 02:41:44 +0000
+
+
+Started POST "/university/GetAllUniversities" for 173.28.201.159 at 2016-11-21 02:41:46 +0000
+Processing by UniversitiesController#GetAllUniversities as HTML
+  Parameters: {"oFilter"=>{"sCityName"=>nil, "nEndowmentst"=>nil}, "university"=>{}}
+Unpermitted parameters: sCityName, nEndowmentst
+  [1m[35mUniversity Load (0.3ms)[0m  SELECT `universities`.* FROM `universities`
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/university/GetUniversityById?nId=4" for 173.28.201.159 at 2016-11-21 02:41:49 +0000
+Processing by UniversitiesController#GetUniversityById as HTML
+  Parameters: {"nId"=>"4"}
+  [1m[36mUniversity Load (0.6ms)[0m  [1mSELECT  `universities`.* FROM `universities`  WHERE `universities`.`id` = 4 LIMIT 1[0m
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for 173.28.201.159 at 2016-11-21 02:41:52 +0000
