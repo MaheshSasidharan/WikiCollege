@@ -36,6 +36,14 @@ gem 'bcrypt', '~> 3.1.7'
 #adding devise
 gem 'devise'
 
+#adding bower
+gem 'bower'
+
+#for angular-devise
+source "https://rails-assets.org" do
+  gem "rails-assets-angular-devise"
+end
+
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
