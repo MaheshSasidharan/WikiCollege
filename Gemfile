@@ -34,7 +34,7 @@ gem 'angular-ui-bootstrap-rails'
 gem 'bcrypt', '~> 3.1.7'
 
 #adding devise
-gem 'devise'
+#gem 'devise'
 
 #adding bower
 gem 'bower'
