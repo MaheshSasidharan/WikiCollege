@@ -1,0 +1,29 @@
+/* override bootstrap*/
+.table-hover>tbody>tr:hover>td,
+.table-hover>tbody>tr:hover>th {
+    background-color: rgba(230, 16, 16, 0.66);
+}
+/*end*/
+
+.WC_IndiGroup {
+    border: 1px solid red;
+    margin-bottom: 2px;
+    border-radius: 3px;
+    font-size: 25px;
+    font-style: italic;
+    background-color: rgba(123, 112, 112, 0.1);
+    color: rgb(110, 119, 152);
+    cursor: pointer;
+}
+
+.WC_Post {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.9);
+    background: #a8b0b3;
+    border: 1px solid black;
+}
+
+.WC_Post.row {
+    margin-left: 0;
+    margin-right: 0;
+}

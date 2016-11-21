@@ -456,4 +456,37 @@ end
 #>>>>>>>>> local version
 #=======
 end
+<<<<<<< HEAD
 #>>>>>>> 36b8af6e06929477f720a2194ab34bb36ff72d4b
+=======
+
+
+
+groups = [{:university_id => '1', :desc => 'This group is for discussions about departments' , :groupName => "AllDepts"},
+{:university_id => '1', :desc => 'This group is for discussions about Funding' , :groupName => "Funding"},
+{:university_id => '1', :desc => 'This group is for discussions about Housing' , :groupName => "Housing"},
+{:university_id => '2', :desc => 'This group is for discussions about Transportation' , :groupName => "Transportation"},
+{:university_id => '3', :desc => 'This group is for discussions about Admissions' , :groupName => "Admissions"},
+{:university_id => '2', :desc => 'This group is for discussions about Housing' , :groupName => "Housing"},
+{:university_id => '5', :desc => 'This group is for discussions about Transport' , :groupName => "Transport"},
+{:university_id => '4', :desc => 'This group is for discussions about Funding' , :groupName => "Funding"}]
+
+
+groups.each do |group|
+    Group.create!(group)
+end
+
+
+
+posts = [{:group_id => '1', :postData => "How is the CS department in this university"},
+         {:group_id => '3', :postData => "What is the average cost of living arround this university"},
+         {:group_id => '4', :postData => "Site for checking out transportation services arround this university"},
+         {:group_id => '6', :postData => "What is the average cost of living arround this university"},
+         {:group_id => '5', :postData => "Site for checking out transportation services arround this university"},
+         {:group_id => '7', :postData => "What is the average cost of living arround this university"}]
+         
+posts.each do |post|
+    Post.create!(post)
+end         
+     
+>>>>>>> d54c3949b578e151c5803dc4ec03b0bcd9cc365f

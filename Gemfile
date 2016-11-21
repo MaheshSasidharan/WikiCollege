@@ -34,7 +34,7 @@ gem 'angular-ui-bootstrap-rails'
 gem 'bcrypt', '~> 3.1.7'
 
 #adding devise
-gem 'devise'
+#gem 'devise'
 
 #adding bower
 gem 'bower'
@@ -58,6 +58,7 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
 group :production do
   gem "pg"
   gem 'rails_12factor'
