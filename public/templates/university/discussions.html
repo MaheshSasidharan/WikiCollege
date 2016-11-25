@@ -1,0 +1,46 @@
+<div class="WC_UnivDiscussions">
+<div class="row">
+        <div class="col-md-3">
+            <table class="table table-bordered table-hover WC_IndiGroup">
+                <tbody>
+                    <tr ng-repeat="group in ud.arrGroups | orderBy:'-NumOfPosts'" ng-click="ud.Helper.GetPostsByGroupId(group)">
+                        <td>{{group.Title}}</td>
+                        <td ng-if="false">{{group.NumOfPosts}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-offset-1 col-md-8">
+            <table class="table table-hover WC_Post">
+                <tbody>
+                    <tr ng-repeat="post in ud.arrPosts | orderBy:'-Upvotes'" ng-click="showComments = !showComments;  ud.Helper.GetCommentsByPostId(post)">
+                        <td class="col-md-1">
+                            <span class="glyphicon glyphicon-thumbs-up" ng-click="post.IncrementUpvotes(post)"></span> {{post.UpVotes}}
+                        </td>
+                        <td class="col-md-8">{{post.Title}}</td>
+                        <td class="col-md-3">
+                            {{post.CreatedBy}} - {{post.CreatedWhen | date: 'medium'}} 
+                        </td>
+                    </tr>
+                    <tr ng-show="ud.arrPosts == null">
+                        <td>"No posts found"</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<form ng-show="false" ng-submit="addPost()" style="margin-top:30px;">
+    <h3>Add a new post</h3>
+
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Title" ng-model="title"></input>
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Link" ng-model="link"></input>
+    </div>
+    <button type="submit" class="btn btn-primary">Post</button>
+</form>

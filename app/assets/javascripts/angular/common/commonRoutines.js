@@ -118,6 +118,9 @@ function CommonRoutines($timeout, $location, Constants) {
             if ($location.$$url.indexOf("/") >= 0) {
                 var sTab = $location.$$url.split("/")[1];
                 if (sTab) {
+                    if(sTab.indexOf('?') >= 0){
+                        sTab = sTab.split('?')[0];
+                    }
                     sTab = sTab.toLowerCase();
                 }
                 else {

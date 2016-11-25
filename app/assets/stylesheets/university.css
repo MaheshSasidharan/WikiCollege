@@ -1,8 +1,11 @@
 /* override bootstrap*/
+
 .table-hover>tbody>tr:hover>td,
 .table-hover>tbody>tr:hover>th {
     background-color: rgba(230, 16, 16, 0.66);
 }
+
+
 /*end*/
 
 .WC_IndiGroup {
@@ -26,4 +29,28 @@
 .WC_Post.row {
     margin-left: 0;
     margin-right: 0;
+}
+
+.WC_CommentsWrapper {
+    border: 2px solid gray;
+    margin-top: 5px;
+    border-radius: 3px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.WC_CommentsAdd {
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    margin-top: 5px;
+    border-radius: 3px;
+    padding: 10px;
+    background: rgba(50, 0, 0, 0.15);
+}
+
+.WC_Comments_CreatedBy{
+    font-weight: bold;
+}
+
+.Popup_Comments {
+    width: 90%;
 }

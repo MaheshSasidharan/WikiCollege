@@ -1,4 +1,49 @@
 /*Common*/
-.cursorPointer{
+
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.cursorPointer {
     cursor: pointer;
+}
+
+.outer {
+    display: table;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 3;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.middle .inner {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.PopupTitle {
+    font-size: 27px;
+    font-style: italic;
+}
+
+.ClosePopup {
+    background-color: rgba(150, 0, 0, 0.8);
+    color: white;
+}
+
+.ClosePopup:hover {
+    background-color: rgba(128, 0, 0, 0.9) !important;
+    color: white !important;
 }

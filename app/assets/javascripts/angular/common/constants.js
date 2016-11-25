@@ -20,7 +20,13 @@ function Constants() {
             }
         },
         University: {
-            
+            Tabs: [
+                  { link: '#/university', label: 'About' },
+                  { link: '#/discussions', label: 'Discussions' }
+            ],
+            Popup: {
+                CommentTitle: "Comments sections"
+            }
         }
     }
     return oConstants;

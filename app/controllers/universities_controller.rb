@@ -50,7 +50,7 @@ class UniversitiesController < ApplicationController
   def testme2
     puts params[:nUnivId]
     #respond_to do |format|
-      msg = { :status => "ok", :message => params[:nUnivId], :html => "<b>...</b>" }
+      msg = { :status => "ok", :message => params[:nUnivId], :html22 => "<b>...</b>" }
       render :json => msg  # don't do msg.to_json
     #end
   end

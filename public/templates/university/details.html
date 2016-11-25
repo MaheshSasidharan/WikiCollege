@@ -1,87 +1,66 @@
-<div class="WC_UnivDetail">
-    <div class="row">
-        <div class="col-md-12">
-            <form class="tab-pane active form-horizontal" id="first" name="userForm" novalidate ng-submit="ud.Update()">
-                <h3 class="block">University Details</h3>
-                <div class="form-group" ng-class="{'has-error' : submitted && userForm.last_name.$invalid}">
-                    <label class="control-label col-md-3">Name::</label>
-                    <div class="control-label col-md-3">{{ud.oUniv.name}}</div>
-                </div>
-                <div class="form-group" ng-class="{'has-error' : submitted && userForm.last_name.$invalid}">
-                    <label class="control-label col-md-3">Rank::</label>
-                    <div class="control-label col-md-3">#{{ud.oUniv.rank}}</div>
-                </div>
-                <div class="form-group" ng-class="{'has-error' : submitted && userForm.last_name.$invalid}">
-                    <label class="control-label col-md-3">Description::</label>
-                    <div class="control-label col-md-10">{{ud.oUniv.desc}}</div>
-                </div>
-                <div class="form-group" ng-class="{'has-error' : submitted && userForm.last_name.$invalid}">
-                    <label class="control-label col-md-3">Tution Fees::</label>
-                    <div class="control-label col-md-3"> ${{ud.oUniv.arrTuition}}</div>
-                </div>
-                <div class="form-group" ng-class="{'has-error' : submitted && userForm.last_name.$invalid}">
-                    <label class="control-label col-md-3">Enrollment::</label>
-                    <div class="control-label col-md-3"> {{ud.oUniv.enrollment}}</div>
-                </div>
-                <div class="form-group" ng-class="{'has-error' : submitted && userForm.last_name.$invalid}">
-                    <label class="control-label col-md-3">Acceptance Rate::</label>
-                    <div class="control-label col-md-3"> {{ud.oUniv.acceptanceRate}}%</div>
-                </div>
-                <div class="form-group" ng-class="{'has-error' : submitted && userForm.last_name.$invalid}">
-                    <label class="control-label col-md-3">Address::</label>
-                    <div class="control-label col-md-3"> {{ud.oUniv.city}}, {{ud.oUniv.state}}, {{ud.oUniv.zip}}</div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label col-md-3">Major::</label>
-                    <table class="table table-striped">
-                        <tr ng-repeat="major in ud.oUniv.arrMajors">
-                            <td>{{major[0]}}</td>
-                        </tr>
-                    </table>
-                </div>
-            </form>
-        </div>
+<div class="TabSection">
+    <ul class="nav nav-tabs">
+        <li ng-class="ud.Helper.TabClass(ud.selectedTab, tab)" ng-repeat="tab in ud.tabs">
+            <a ng-click="ud.Helper.SetSelectedTab(tab)">{{tab.label}}</a>
+        </li>
+    </ul>
+    <div ng-if="ud.selectedTab.label === 'About'">
+        <div ng-include="'templates/university/about.html'"></div>
     </div>
-    <div class="row">
-        <div class="col-md-3">
-            <table class="table table-bordered table-hover WC_IndiGroup">
-                <tbody>
-                    <tr ng-repeat="group in ud.arrGroups | orderBy:'-NumOfPosts'" ng-click="ud.Helper.GetPostsByGroupId(group)">
-                        <td>{{group.Title}}</td>
-                        <td ng-if="false">{{group.NumOfPosts}}</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="col-md-offset-1 col-md-8">
-            <table class="table table-hover WC_Post">
-                <tbody>
-                    <tr ng-repeat="post in ud.arrPosts | orderBy:'-Upvotes'">
-                        <td class="col-md-1">
-                            <span class="glyphicon glyphicon-thumbs-up" ng-click="post.IncrementUpvotes(post)"></span> {{post.Upvotes}}
-                        </td>
-                        <td class="col-md-8">{{post.Title}}</td>
-                        <td class="col-md-3">
-                            {{post.CreatedBy}} - {{post.CreatedWhen | date: 'medium'}} 
-                        </td>
-                    </tr>
-                    <tr ng-show="ud.arrPosts == null">
-                        <td>"No posts found"</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+    <div ng-if="ud.selectedTab.label === 'Discussions'">
+        <div ng-include="'templates/university/discussions.html'"></div>
     </div>
 </div>
 
-<form ng-show="false" ng-submit="addPost()" style="margin-top:30px;">
-    <h3>Add a new post</h3>
-
-    <div class="form-group">
-        <input type="text" class="form-control" placeholder="Title" ng-model="title"></input>
+<div class="outer" ng-cloak ng-show="ud.Popup.bShow">
+    <div class="middle">
+        <div class="inner Popup_Comments" ng-show="ud.Popup.sType === 'comments'">
+            <div class="button-group pull-right">
+                <button type="button" class="btn btn-default as-btn-text as-refresh-btn ClosePopup" ng-click="ud.Popup.ShowPopup(false)">X</button>
+            </div>
+            <div class="PopupTitle">{{ud.Popup.sTitle}}</div>
+            <div class="WC_Comments">
+                <div class="row WC_CommentsWrapper" ng-repeat="comments in ud.oPost.arrComments">
+                    <div class="col-md-1">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <span class="glyphicon glyphicon-thumbs-up" ng-click="post.IncrementUpvotes(post)"></span> {{comments.UpVotes}}
+                            </div>
+                            <div class="col-md-6">
+                                <span class="glyphicon glyphicon-thumbs-down" ng-click="post.IncrementUpvotes(post)"></span> {{comments.DownVotes}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        {{comments.Comment}}
+                    </div>
+                    <div class="col-md-2">
+                        <span class="WC_Comments_CreatedBy">{{comments.CreatedBy}}</span>
+                        </br>
+                        <i>{{comments.CreatedWhen | date: 'MMM d, y h:mm a'}}</i>
+                    </div>
+                    <div class="col-md-1">
+                        <div class="row pull-right">
+                            <button type="button" class="btn btn-xs btn-default" ng-click="">
+                                <span class="glyphicon glyphicon-floppy-disk" ng-click="post.IncrementUpvotes(post)"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row WC_CommentsAdd">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <input type="textarea" class="form-control" ng-model="ud.sComment" placeholder="type your comments..." />
+                </div>
+                <div class="col-md-1">
+                    <div class="row pull-right">
+                        <button type="button" class="btn btn-xs btn-default" ng-click="ud.Helper.AddComment()">
+                                <span class="glyphicon glyphicon-send"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="form-group">
-        <input type="text" class="form-control" placeholder="Link" ng-model="link"></input>
-    </div>
-    <button type="submit" class="btn btn-primary">Post</button>
-</form>
+</div>

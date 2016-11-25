@@ -58,6 +58,12 @@ function DataService($http, Constants, CommonFactory) {
                 Helper.Miscellaneous.ReturnDataDotData,
                 Helper.Miscellaneous.FailedInService)
             },
+            GetCommentsByPostId: function (nId) {
+                return $http.get(Helper.app + Helper.University.controller + 'GetCommentsByPostId?nId=' + nId)
+                .then(
+                Helper.Miscellaneous.ReturnDataDotData,
+                Helper.Miscellaneous.FailedInService)
+            },
             SearchCity: function (sCity) {
                 return $http.get(Helper.app + Helper.University.controller + 'SearchCity?sCity=' + sCity)
                 .then(
@@ -81,6 +87,7 @@ function DataService($http, Constants, CommonFactory) {
         GetUniversityById: Helper.University.GetUniversityById,
         GetGroupsByUniversityId: Helper.University.GetGroupsByUniversityId,
         GetPostsByGroupId: Helper.University.GetPostsByGroupId,
+        GetCommentsByPostId: Helper.University.GetCommentsByPostId,
         
         // Testing part
         GetTest1: Helper.University.GetTest1,
