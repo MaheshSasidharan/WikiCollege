@@ -23,15 +23,22 @@ function SharedProp() {
                 this.Title = oItem.postData;
                 this.CreatedBy = "UserName" ;//oItem.CreatedBy;
                 this.CreatedWhen = oItem.updated_at;
-                this.Upvotes = oItem.like;
+                this.UpVotes = oItem.like;
                 this.GroupId = oItem.group_id;
+                this.arrComments = null;
+                return this;
+            },
+            Comments: function(oItem){
+                this.Id = oItem.id;
+                this.Comment = oItem.commentData;
+                this.CreatedBy = oItem.user;
+                this.CreatedWhen = oItem.timestamps;
+                this.UpVotes = oItem.like;
+                this.DownVotes = oItem.dislike;
                 return this;
             }
         }
     }
-
-    //window.arrPosts = ;
-
 
     return oSharedObj;
 }
