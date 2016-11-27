@@ -1,18 +1,14 @@
 class UsersController < ApplicationController
-<<<<<<< HEAD
-=======
-
->>>>>>> Raghav
   #before_filter :set_current_user, :only=> ['show', 'edit', 'update', 'delete']
   def user_params
     params.require(:user).permit(:userName, :email, :password)
   end
   
-<<<<<<< HEAD
+
   def show
     @user = User.find(params[:id])
   end
-=======
+
 #   def show
 #     @user = User.find(params[:id])
 # #   @user = @current_user
@@ -30,12 +26,12 @@ class UsersController < ApplicationController
 #       render 'new'
 #     end  
 #   end  
->>>>>>> Raghav
+
 
   def new
         @user = User.new
   end
-<<<<<<< HEAD
+
 
   def create
     @user = User.new(user_params)
@@ -44,8 +40,7 @@ class UsersController < ApplicationController
       render 'new'
     end  
   end
-=======
-  
+
   def CheckUserValid
     user = User.find_by(email: params[:email])
     if user && user.authenticate(params[:password])
@@ -77,5 +72,5 @@ class UsersController < ApplicationController
      render :json => { status: true, msg: "Logged out successfully"}
   end
 
->>>>>>> Raghav
+
 end  
