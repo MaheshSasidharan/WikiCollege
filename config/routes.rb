@@ -9,6 +9,13 @@ Rails.application.routes.draw do
   root 'users#index'
   #abcd 'users#testme'
   get 'testme' => 'users#testme'
+  
+  #route for likes for the post
+  resources :post do
+    member do
+      post 'like'
+    end
+  end
 
   #UNIVERSITY
   resources :universities
