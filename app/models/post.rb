@@ -4,7 +4,7 @@ class Post < ActiveRecord::Base
     has_many :comments
     #has_many :likes
     
-    validates :user_id, presence: true 
+    #validates :id, presence: true 
     validates :postData, presence: true, length: {minimum: 5, maximum: 100}
     
   #implementing thumbs up feature

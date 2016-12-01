@@ -13,12 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20161129133744) do
 
-  create_table "ar_internal_metadata", primary_key: "key", force: true do |t|
-    t.string   "value"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "comments", force: true do |t|
     t.integer  "post_id"
     t.text     "commentData"
