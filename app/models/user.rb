@@ -1,10 +1,14 @@
 class User < ActiveRecord::Base
-
+ 
+  has_many :likes  
+  has_many :posts
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   # devise :database_authenticatable, :registerable,
   #       :recoverable, :rememberable, :trackable, :validatable
-
+  
+  
+  
   has_secure_password
   before_save {|user| user.email=user.email.downcase}
   before_save :create_session_token
@@ -13,11 +17,13 @@ class User < ActiveRecord::Base
   validates :email, presence: true,
                     format: {with: VALID_EMAIL_REGEX},
                     uniqueness: {case_sensitive: false}
-  validates :password, presence: true, length: {minimum: 6}
-  validates :password_confirmation, presence: true
+  #validates :password, presence: true, length: {minimum: 6}
+  #validates :password_confirmation, presence: true
 private
   def create_session_token
-    self.session_token = SecureRandom.urlsafe_base64
+    #self.session_token = SecureRandom.urlsafe_base64
   end
+
+  
 end
 

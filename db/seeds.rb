@@ -530,3 +530,7 @@ posts.each do |post|
     Post.create!(post)
 end         
      
+
+User.create!(:name => "wikiadmin",
+             :email => "wikiadmin@wikicollege.com",
+             :password_digest => "wikiadmin123")

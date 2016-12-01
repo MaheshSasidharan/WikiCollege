@@ -11,13 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161121002716) do
-
-  create_table "ar_internal_metadata", primary_key: "key", force: true do |t|
-    t.string   "value"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+ActiveRecord::Schema.define(version: 20161129133744) do
 
   create_table "comments", force: true do |t|
     t.integer  "post_id"
@@ -45,6 +39,14 @@ ActiveRecord::Schema.define(version: 20161121002716) do
   end
 
   add_index "groups", ["university_id"], name: "index_groups_on_university_id", using: :btree
+
+  create_table "likes", force: true do |t|
+    t.boolean  "like"
+    t.integer  "user_id"
+    t.integer  "post_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "posts", force: true do |t|
     t.integer  "group_id"
