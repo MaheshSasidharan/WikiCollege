@@ -79,6 +79,12 @@ function DataService($http, Constants, CommonFactory) {
                 Helper.Miscellaneous.ReturnDataDotData,
                 Helper.Miscellaneous.FailedInService)
             },
+            LoginUser: function (oLoginItem) {
+                return $http.post(Helper.app + Helper.User.controller + 'LoginUser', { oLoginItem: oLoginItem })
+                  .then(
+                Helper.Miscellaneous.ReturnDataDotData,
+                Helper.Miscellaneous.FailedInService)
+            },
         },
         Miscellaneous: {
             ReturnDataDotData: function (data) {
@@ -100,6 +106,7 @@ function DataService($http, Constants, CommonFactory) {
         
         // User
         AddUser: Helper.User.AddUser,
+        LoginUser: Helper.User.LoginUser,
         
         // Testing part
         GetTest1: Helper.University.GetTest1,

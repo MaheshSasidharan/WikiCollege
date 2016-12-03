@@ -6,7 +6,7 @@ function SignupCtrl(DataService, CommonFactory) {
     su.oUser = {
         name: null,
         email: null,
-        password_digest: null
+        password: null
     }
 
     su.oService = {

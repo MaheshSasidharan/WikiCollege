@@ -14,4 +14,11 @@ class ApplicationController < ActionController::Base
       !!current_user 
       # if current user is logged in or not
   end
+  
+  def require_user
+    if !logged_in?
+      #add actions that are needed
+      render :json => { status: false, msg: "Should stay in same page and display error msg" }
+    end
+  end  
 end
