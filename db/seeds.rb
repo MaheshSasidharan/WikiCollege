@@ -37,10 +37,6 @@ departments = [{:deptName => 'Multi/Interdisciplinary Studies'},
                {:deptName => 'Communications Technologies/Technicians and Support Services'},
                {:deptName => 'Business, Management, Marketing, and Related Support Services'},
                {:deptName => 'Health Professions and Related Programs'}]
-               
-               
-               
-
 
 departments.each do |department|
   Department.create!(department)
@@ -59,8 +55,7 @@ univdepts = [{:university_id => '1' ,:department_id => '1', :desc => "Our depart
              {:university_id => '1',:department_id => '13', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '1',:department_id => '14', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '1',:department_id => '15', :desc => "Our department is having the best quality labs in U.S.A."},
-        
-        
+             
              {:university_id => '2',:department_id => '2', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '2',:department_id => '5', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '2',:department_id => '6', :desc => "Our department is having the best quality labs in U.S.A."},
@@ -73,8 +68,7 @@ univdepts = [{:university_id => '1' ,:department_id => '1', :desc => "Our depart
              {:university_id => '2',:department_id => '13', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '2',:department_id => '14', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '2',:department_id => '15', :desc => "Our department is having the best quality labs in U.S.A."},
-        
-        
+             
              {:university_id => '3',:department_id => '1', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '3',:department_id => '2', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '3',:department_id => '3', :desc => "Our department is having the best quality labs in U.S.A."},
@@ -91,7 +85,6 @@ univdepts = [{:university_id => '1' ,:department_id => '1', :desc => "Our depart
              {:university_id => '3',:department_id => '15', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '3',:department_id => '18', :desc => "Our department is having the best quality labs in U.S.A."},
 
-
              {:university_id => '4',:department_id => '1', :desc => "Our department is having the best quality labs in U.S.A."},             
              {:university_id => '4',:department_id => '2', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '4',:department_id => '3', :desc => "Our department is having the best quality labs in U.S.A."},
@@ -105,7 +98,6 @@ univdepts = [{:university_id => '1' ,:department_id => '1', :desc => "Our depart
              {:university_id => '4',:department_id => '12', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '4',:department_id => '13', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '4',:department_id => '14', :desc => "Our department is having the best quality labs in U.S.A."},
-            
             
              {:university_id => '5',:department_id => '1', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '5',:department_id => '2', :desc => "Our department is having the best quality labs in U.S.A."},
@@ -121,7 +113,6 @@ univdepts = [{:university_id => '1' ,:department_id => '1', :desc => "Our depart
              {:university_id => '5',:department_id => '14', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '5',:department_id => '15', :desc => "Our department is having the best quality labs in U.S.A."},
              
-            
              {:university_id => '6',:department_id => '9', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '6',:department_id => '1', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '6',:department_id => '2', :desc => "Our department is having the best quality labs in U.S.A."},
@@ -136,7 +127,6 @@ univdepts = [{:university_id => '1' ,:department_id => '1', :desc => "Our depart
              {:university_id => '6',:department_id => '13', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '6',:department_id => '14', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '6',:department_id => '15', :desc => "Our department is having the best quality labs in U.S.A."},
-            
             
              {:university_id => '7',:department_id => '1', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '7',:department_id => '3', :desc => "Our department is having the best quality labs in U.S.A."},
@@ -153,7 +143,6 @@ univdepts = [{:university_id => '1' ,:department_id => '1', :desc => "Our depart
              {:university_id => '7',:department_id => '14', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '7',:department_id => '15', :desc => "Our department is having the best quality labs in U.S.A."},  
              
-             
              {:university_id => '8',:department_id => '1', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '8',:department_id => '2', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '8',:department_id => '3', :desc => "Our department is having the best quality labs in U.S.A."},
@@ -168,7 +157,6 @@ univdepts = [{:university_id => '1' ,:department_id => '1', :desc => "Our depart
              {:university_id => '8',:department_id => '20', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '8',:department_id => '14', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '8',:department_id => '15', :desc => "Our department is having the best quality labs in U.S.A."},
-             
              
              {:university_id => '9',:department_id => '1', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '9',:department_id => '21', :desc => "Our department is having the best quality labs in U.S.A."},
@@ -189,7 +177,6 @@ univdepts = [{:university_id => '1' ,:department_id => '1', :desc => "Our depart
              {:university_id => '9',:department_id => '14', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '9',:department_id => '15', :desc => "Our department is having the best quality labs in U.S.A."},
              
-             
              {:university_id => '10',:department_id => '1', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '10',:department_id => '24', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '10',:department_id => '2', :desc => "Our department is having the best quality labs in U.S.A."},
@@ -208,7 +195,6 @@ univdepts = [{:university_id => '1' ,:department_id => '1', :desc => "Our depart
              {:university_id => '10',:department_id => '20', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '10',:department_id => '14', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '10',:department_id => '15', :desc => "Our department is having the best quality labs in U.S.A."},
-             
              
              {:university_id => '11',:department_id => '1', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '11',:department_id => '2', :desc => "Our department is having the best quality labs in U.S.A."},
@@ -464,7 +450,6 @@ univdepts = [{:university_id => '1' ,:department_id => '1', :desc => "Our depart
              {:university_id => '24',:department_id => '13', :desc => "Our department is having the best quality labs in U.S.A."},
              {:university_id => '24',:department_id => '14', :desc => "Our department is having the best quality labs in U.S.A."}, 
              {:university_id => '24',:department_id => '15', :desc => "Our department is having the best quality labs in U.S.A."},
-             
             ]              
 
 
@@ -498,19 +483,33 @@ end
 #   User.create!(user)
 # end      
 
+users = [{
+             :name => "abcd",
+             :email => "abcd@wikicollege.com",
+             :password_digest => "wikiadmin123"},
+             {:name => "efgh",
+             :email => "efgh@wikicollege.com",
+             :password_digest => "wikiadmin123"},
+             {:name => "ijkl",
+             :email => "ijkl@wikicollege.com",
+             :password_digest => "wikiadmin123"}]
+
+
+users.each do |user|
+    User.create!(user)
+end 
 
 
 
 
-
-groups = [{:university_id => '1', :desc => 'This group is for discussions about departments' , :groupName => "All Depts"},
-{:university_id => '1', :desc => 'This group is for discussions about Funding' , :groupName => "Funding"},
-{:university_id => '1', :desc => 'This group is for discussions about Housing' , :groupName => "Housing"},
-{:university_id => '2', :desc => 'This group is for discussions about Transportation' , :groupName => "Transportation"},
-{:university_id => '3', :desc => 'This group is for discussions about Admissions' , :groupName => "Admissions"},
-{:university_id => '2', :desc => 'This group is for discussions about Housing' , :groupName => "Housing"},
-{:university_id => '5', :desc => 'This group is for discussions about Transport' , :groupName => "Transport"},
-{:university_id => '4', :desc => 'This group is for discussions about Funding' , :groupName => "Funding"}]
+groups = [{:university_id => '1', :user_id => '1', :desc => 'This group is for discussions about departments' , :groupName => "All Depts"},
+{:university_id => '1', :user_id => '1', :desc => 'This group is for discussions about Funding' , :groupName => "Funding"},
+{:university_id => '1', :user_id => '1', :desc => 'This group is for discussions about Housing' , :groupName => "Housing"},
+{:university_id => '2', :user_id => '2', :desc => 'This group is for discussions about Transportation' , :groupName => "Transportation"},
+{:university_id => '3', :user_id => '2', :desc => 'This group is for discussions about Admissions' , :groupName => "Admissions"},
+{:university_id => '2', :user_id => '2', :desc => 'This group is for discussions about Housing' , :groupName => "Housing"},
+{:university_id => '5', :user_id => '3', :desc => 'This group is for discussions about Transport' , :groupName => "Transport"},
+{:university_id => '4', :user_id => '3', :desc => 'This group is for discussions about Funding' , :groupName => "Funding"}]
 
 
 groups.each do |group|
@@ -530,7 +529,3 @@ posts.each do |post|
     Post.create!(post)
 end         
      
-
-User.create!(:name => "wikiadmin",
-             :email => "wikiadmin@wikicollege.com",
-             :password_digest => "wikiadmin123")

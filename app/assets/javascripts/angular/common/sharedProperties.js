@@ -4,7 +4,6 @@ function SharedProp() {
     var oSharedObj = {
         oLogin: {
             sUserName: "",
-            sPassword: "",
             bShow: false
         },
         Constructor: {

@@ -71,6 +71,15 @@ function DataService($http, Constants, CommonFactory) {
                 Helper.Miscellaneous.FailedInService)
             },
         },
+        User:{
+            controller: "users/",
+            AddUser: function (oSaveItem) {
+                return $http.post(Helper.app + Helper.User.controller + 'AddUser', { oSaveItem: oSaveItem })
+                  .then(
+                Helper.Miscellaneous.ReturnDataDotData,
+                Helper.Miscellaneous.FailedInService)
+            },
+        },
         Miscellaneous: {
             ReturnDataDotData: function (data) {
                 return data.data;
@@ -88,6 +97,9 @@ function DataService($http, Constants, CommonFactory) {
         GetGroupsByUniversityId: Helper.University.GetGroupsByUniversityId,
         GetPostsByGroupId: Helper.University.GetPostsByGroupId,
         GetCommentsByPostId: Helper.University.GetCommentsByPostId,
+        
+        // User
+        AddUser: Helper.User.AddUser,
         
         // Testing part
         GetTest1: Helper.University.GetTest1,

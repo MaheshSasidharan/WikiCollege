@@ -1,19 +1,19 @@
 <div class="signup-container">
-    <form name="signupForm" class="form-signin" role="form" id="new_user">
+    <form name="signupForm" class="form-signin" role="form">
         <p>
             <label for="user_Name">User Name</label><br>
-            <input placeholder="user_name" class="form-control" type="text" name="user[first_name]" id="user_first_name">
+            <input placeholder="Enter your name" class="form-control" type="text" ng-model="su.oUser.name">
         </p>
         <p>
             <label for="user_Email">Email</label><br>
-            <input placeholder="email" type="email" class="form-control" name="user[email]" id="user_email">
+            <input placeholder="Enter your email" type="email" class="form-control" ng-model="su.oUser.email">
         </p>
         <p>
             <label for="user_Password">Password</label><br>
-            <input placeholder="password" class="form-control" type="password" name="user[password]" id="user_password">
+            <input placeholder="password" class="form-control" type="password" ng-model="su.oUser.password_digest">
         </p>
         <p>
-            <input type="submit" name="commit" value="Sign Up" class="btn btn-lg btn-primary btn-block">
+            <input type="submit" name="commit" value="Sign Up" ng-click="su.Helper.AddUser()" class="btn btn-lg btn-primary btn-block">
         </p>
     </form>
 </div>

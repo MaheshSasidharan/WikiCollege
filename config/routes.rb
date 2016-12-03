@@ -27,6 +27,8 @@ Rails.application.routes.draw do
   post 'university/GetAllUniversities' => 'universities#GetAllUniversities'
   post 'university/TestPost' => 'universities#TestPost'
   
+  post 'users/AddUser' => 'users#AddUser'
+  
   get 'university/SearchCity' => 'universities#SearchCity'
   
   

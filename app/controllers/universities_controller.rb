@@ -3,6 +3,7 @@ class UniversitiesController < ApplicationController
   
   before_filter :univ_params, only: [:TestPost]
   before_filter :Params_GetAllUniversities, only: [:GetAllUniversities]
+  before_filter :comment_params, only: [:AddCommentToPost]
   
   respond_to :json
   
@@ -25,7 +26,7 @@ class UniversitiesController < ApplicationController
     if (!@arrGroups.nil?) 
        render :json => { status: true, arrGroups: @arrGroups }
     else
-      render :json => { status: false, msg: "Failed to find groups by UniversityId" }
+      render :json => { status: false, msg: "Failed to find groups in this University" }
     end
   end
   
@@ -34,8 +35,32 @@ class UniversitiesController < ApplicationController
     if (!@arrPosts.nil?) 
        render :json => { status: true, arrPosts: @arrPosts }
     else
-      render :json => { status: false, msg: "Failed to find groups by UniversityId" }
+      render :json => { status: false, msg: "Failed to find posts under this group" }
     end
+  end
+  
+  def GetCommentsByPostId
+    @arrComments = Comments.where(post_id: params[:nId])
+    if (!@arrPosts.nil?) 
+       render :json => { status: true, arrComments: @arrComments }
+    else
+      render :json => { status: false, msg: "Failed to find comments under this Post" }
+    end
+  end
+  
+  def AddCommentToPost
+    user = Comment.find_by(email: params[:email])
+    if user
+      render :json => { status: false, msg: "Username is already in user"}
+    else
+      @user = User.new(user_params)
+      if @user.save 
+          render :json => { status: true, msg: "Your account is successfully created", userId: @user.id }
+          #session[:user_id] = @user.id #once they sign up, they are automatically logged in
+      else
+          render :json => { status: false, msg: "Sorry, we were unable to create your account. Please try again later."}
+      end
+    end 
   end
   
   def show
@@ -79,5 +104,9 @@ class UniversitiesController < ApplicationController
   
   def Params_GetAllUniversities
     params.fetch(:oFilter).permit(:a, :b)
+  end
+  
+  def comment_params
+    params.fetch(:oSaveItem).permit(:text)
   end
 end    

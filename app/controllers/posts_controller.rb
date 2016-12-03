@@ -147,7 +147,7 @@ class PostsController < ApplicationController
   
   
     def GetCommentsByPostId
-      @arrComments = Comment. where(post_id: params[:nId])
+      @arrComments = Comment.where(post_id: params[:nId])
       if(!arrComments.nil?)
           render :json => { status: true, arrComments: @arrComments}
       else
