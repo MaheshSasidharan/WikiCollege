@@ -518,14 +518,26 @@ end
 
 
 
-posts = [{:group_id => '1', :postData => "How is the CS department in this university"},
-         {:group_id => '3', :postData => "What is the average cost of living arround this university"},
-         {:group_id => '4', :postData => "Site for checking out transportation services arround this university"},
-         {:group_id => '6', :postData => "What is the average cost of living arround this university"},
-         {:group_id => '5', :postData => "Site for checking out transportation services arround this university"},
-         {:group_id => '7', :postData => "What is the average cost of living arround this university"}]
+posts = [{:group_id => '1', :user_id => '1', :postData => "How is the CS department in this university"},
+         {:group_id => '3', :user_id => '1', :postData => "What is the average cost of living arround this university"},
+         {:group_id => '4', :user_id => '2', :postData => "Site for checking out transportation services arround this university"},
+         {:group_id => '6', :user_id => '2', :postData => "What is the average cost of living arround this university"},
+         {:group_id => '5', :user_id => '3', :postData => "Site for checking out transportation services arround this university"},
+         {:group_id => '7', :user_id => '3', :postData => "What is the average cost of living arround this university"}]
          
 posts.each do |post|
     Post.create!(post)
-end         
+end    
+
+comments = [
+         {:post_id => '1', :user_id => '1',  :postData => "How is the CS department in this university"},
+         {:post_id => '3', :user_id => '1', :postData => "What is the average cost of living arround this university"},
+         {:post_id => '4', :user_id => '2', :postData => "Site for checking out transportation services arround this university"},
+         {:post_id => '6', :user_id => '2', :postData => "What is the average cost of living arround this university"},
+         {:post_id => '5', :user_id => '3', :postData => "Site for checking out transportation services arround this university"},
+         {:post_id => '1', :user_id => '4', :postData => "What is the average cost of living arround this university"}]
+         
+comments.each do |comment|
+    Comment.create!(comment)
+end    
      

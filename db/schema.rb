@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161129133744) do
+ActiveRecord::Schema.define(version: 20161202025923) do
 
   create_table "comments", force: true do |t|
     t.integer  "post_id"
@@ -46,6 +46,14 @@ ActiveRecord::Schema.define(version: 20161129133744) do
   add_index "groups", ["user_id"], name: "index_groups_on_user_id", using: :btree
 
   create_table "likes", force: true do |t|
+    t.boolean  "like"
+    t.integer  "user_id"
+    t.integer  "comment_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "likes_Post", force: true do |t|
     t.boolean  "like"
     t.integer  "user_id"
     t.integer  "post_id"

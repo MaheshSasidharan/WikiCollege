@@ -1,6 +1,6 @@
 class LikeComment < ActiveRecord::Migration
   def change
-     create_table :likes do |t|
+     create_table :likes_comment do |t|
       t.boolean :like
       t.integer :user_id
       t.integer :comment_id
