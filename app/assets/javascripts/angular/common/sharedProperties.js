@@ -10,22 +10,21 @@ function SharedProp() {
         },
         Constructor: {
             Group: function(oItem) {
-                this.GroupId = oItem.id;
+                this.Id = oItem.id;
                 this.UnivId = oItem.university_id;
                 this.Title = oItem.groupName;
                 this.Description = oItem.desc;
                 this.CreatedBy = "UserName";
-                oItem.CreatedBy;
                 this.CreatedWhen = oItem.created_at;
-                this.NumOfPosts = oItem.NumOfPosts;
                 this.arrPosts = [];
             },
             Post: function(oItem) {
                 this.Id = oItem.id;
                 this.Title = oItem.postData;
-                this.CreatedBy = "UserName"; //oItem.CreatedBy;
+                this.CreatedBy = "UserName";
                 this.CreatedWhen = oItem.updated_at;
                 this.UpVotes = oItem.like;
+                this.DownVotes = oItem.dislike;
                 this.GroupId = oItem.group_id;
                 this.arrComments = null;
                 return this;

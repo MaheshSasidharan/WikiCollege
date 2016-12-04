@@ -1,3 +1,4 @@
+/*
 //Factory
 myApp.factory('Users', ['$resource',function($resource){
   return $resource('/users.json', {},{
@@ -13,7 +14,7 @@ myApp.factory('User', ['$resource', function($resource){
     delete: { method: 'DELETE', params: {id: '@id'} }
   });
 }]);
-
+*/
 myApp
 .factory('Factory_DataService', ['$http', 'Factory_Constants', 'Factory_CommonRoutines', DataService])
 
@@ -61,6 +62,18 @@ function DataService($http, Constants, CommonFactory) {
             GetCommentsByPostId: function (nId) {
                 return $http.get(Helper.app + Helper.University.controller + 'GetCommentsByPostId?nId=' + nId)
                 .then(
+                Helper.Miscellaneous.ReturnDataDotData,
+                Helper.Miscellaneous.FailedInService)
+            },
+            AddEditGroup: function (oSaveGroup) {
+                return $http.post(Helper.app + Helper.University.controller + 'AddEditGroup', { oSaveGroup: oSaveGroup })
+                  .then(
+                Helper.Miscellaneous.ReturnDataDotData,
+                Helper.Miscellaneous.FailedInService)
+            },
+            AddEditPost: function (oSavePost) {
+                return $http.post(Helper.app + Helper.University.controller + 'AddEditPost', { oSavePost: oSavePost })
+                  .then(
                 Helper.Miscellaneous.ReturnDataDotData,
                 Helper.Miscellaneous.FailedInService)
             },
@@ -122,6 +135,8 @@ function DataService($http, Constants, CommonFactory) {
         GetGroupsByUniversityId: Helper.University.GetGroupsByUniversityId,
         GetPostsByGroupId: Helper.University.GetPostsByGroupId,
         GetCommentsByPostId: Helper.University.GetCommentsByPostId,
+        AddEditGroup: Helper.University.AddEditGroup,
+        AddEditPost: Helper.University.AddEditPost,
         AddEditCommentToPost: Helper.University.AddEditCommentToPost,
         
         // User

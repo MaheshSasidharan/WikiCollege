@@ -1,11 +1,18 @@
 /* override bootstrap*/
 
+*:focus {
+    border: none;
+    outline: 5px auto indianred !important;
+}
+
 .table-hover>tbody>tr:hover>td,
 .table-hover>tbody>tr:hover>th {
     background-color: rgba(230, 16, 16, 0.66);
 }
 
-
+.TabSection .nav > li {
+    cursor: pointer !Important;
+}
 /*end*/
 
 .WC_IndiGroup {
@@ -51,6 +58,25 @@
     font-weight: bold;
 }
 
+.WC_Gradient{
+    background: indianred; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgb(150,0,0), indianred); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(150,0,0), indianred); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(150,0,0), indianred); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(150,0,0), indianred); /* Standard syntax */
+}
+
+.WC_AddOne{
+    text-align: center;
+    color: white;
+    height: 34px;
+    cursor:pointer;
+}
+
+.WC_AddOne > span{
+    margin-top:10px;
+}
+
 .Popup_Comments {
     width: 90%;
 }
@@ -62,6 +88,15 @@
     background-color: #ddd;
     margin-right: 25px;
     border-radius: 10px
+}
+
+.WC_ObjectTitle {
+    font-style: normal;
+}
+
+.WC_ObjectDescription {
+    font-size: 12px;
+    color: #1d7990;
 }
 
 /*Overriding bootstrap CSS*/
