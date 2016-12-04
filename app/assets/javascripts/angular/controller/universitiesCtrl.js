@@ -76,4 +76,8 @@ function UniversityCtrl(DataService, CommonFactory) {
     });
     
   }
+  
+  un.ApplyFilters = function(){
+    console.log("I am in the click event")
+  }
 }
