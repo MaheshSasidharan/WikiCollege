@@ -4,7 +4,7 @@ function UniversityCtrl(DataService, CommonFactory) {
   var un = this;
 
 
-  un.filter = {
+  un.filterObject = {
      rank: {
        low: null,
        high: null
