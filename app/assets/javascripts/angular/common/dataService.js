@@ -87,6 +87,13 @@ function DataService($http, Constants, CommonFactory) {
             FailedInService: function () {
                 CommonFactory.Notification.ShowNotification(true, Constants.Miscellaneous.SomethingWentWrong, Constants.Miscellaneous.Notification.Type.Danger);
             }
+        },
+        Filter: function(filterData){
+            console.log("In get call")
+            return $http.get("Intergrate with ruby controller here")
+                .then(
+                Helper.Miscellaneous.ReturnDataDotData,
+                Helper.Miscellaneous.FailedInService)
         }
     }
 
@@ -104,7 +111,10 @@ function DataService($http, Constants, CommonFactory) {
         // Testing part
         GetTest1: Helper.University.GetTest1,
         TestPost: Helper.University.TestPost,
-        SearchCity: Helper.University.SearchCity
+        SearchCity: Helper.University.SearchCity,
+        
+        //Filter
+        filter: Helper.Filter
     }
     return oService;
 }
