@@ -89,7 +89,9 @@
 }
 
 .filter-inputs {
-    width: 90px
+    width: 85px;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 .rank-filter-container, .fees-filter-container {
