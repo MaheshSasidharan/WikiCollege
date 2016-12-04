@@ -10,11 +10,32 @@
                 <div class="btn btn-primary" ng-click="un.SearchCity()">Search By CITY</div>
             </div>
         </div>
-        <div>
-            <input type="text" class="form-control" ng-model="searchFilter" placeholder="Seach by Name here" />
+        <div class ="filter-container">
+            <div class = "fitler-by-rank">
+                <div class = "rank-filter-container">
+                    <label class = "float-container filter-label">Rank</label>
+                    <input class = "float-container fee-low-input filter-inputs form-control" type="text" name="low-range"/>
+                    <label class = "float-container">  to  </label>
+                    <input class = "float-container fee-high-input filter-inputs form-control" type="text" name="high-range"/>
+                </div>
+            </div>
+            <div class = "filter-by-fees">
+                <div class = "fees-filter-container">
+                    <label class = "float-container filter-label">Fees</label>
+                    <input class = "float-container fee-low-input filter-inputs form-control" type="text" name="low-range"/>
+                    <label class = "float-container">  to  </label>
+                    <input class = "float-container fee-high-input filter-inputs form-control" type="text" name="high-range"/>
+                </div>
+            </div>
+            <div class = "filter-container-foooter">
+                <button style = "margin-top: 20px" type="button" class="btn btn-primary">Apply filter</button>
+            </div>
         </div>
-        <h3 class="block">Search for Universities</h3>
-        <table class="table table-striped">
+        <div>
+            <input type="text" class="search-input form-control" ng-model="searchFilter" placeholder="Seach by Name here" />
+        </div>
+        <h3 class="search-label block">Search for Universities</h3>
+        <table class="university-list table table-striped">
             <tr>
                 <th>Rank</th>
                 <th>Name</th>

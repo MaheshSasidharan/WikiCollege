@@ -54,3 +54,63 @@
 .Popup_Comments {
     width: 90%;
 }
+
+.filter-container {
+    width: 210px;
+    height: 400px;
+    float: left;
+    background-color: #ddd;
+    margin-right: 25px
+}
+
+/*Overriding bootstrap CSS*/
+.col-md-12 {
+    float: left;
+}
+
+.search-input {
+    float: left;
+    width: 80%
+}
+
+.search-label {
+    float: left;
+    width: 80%
+}
+
+.university-list {
+    float: left;
+    width: 80%;
+}
+
+.container {
+    margin-right: 0;
+    width: 1270px
+}
+
+.filter-inputs {
+    width: 90px
+}
+
+.rank-filter-container, .fees-filter-container {
+    float: left;
+    margin-top: 10px
+}
+
+.float-container {
+    float: left;
+}
+
+.filter-label{
+    width: 200px
+}
+
+.filter-by-fees, .fitler-by-rank {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.filter-container-foooter {
+    margin-left: 60px;
+    margin-top: 25px
+}

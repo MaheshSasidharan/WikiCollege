@@ -70,7 +70,7 @@ function UniversityCtrl(DataService, CommonFactory) {
     });
   }
   
-  un.SearchCity = function(){
+  un.Search = function(){
     DataService.SearchCity(un.oFilter.sCityName).then(function(data) {
       un.arrColleges = data.arrUniversities;
     });
