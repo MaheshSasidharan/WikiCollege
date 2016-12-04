@@ -3,6 +3,18 @@ myApp.controller("UniversityCtrl", ['Factory_DataService', 'Factory_CommonRoutin
 function UniversityCtrl(DataService, CommonFactory) {
   var un = this;
 
+
+  un.filter = {
+     rank: {
+       low: null,
+       high: null
+     },
+     fees: {
+       low: null,
+       high: null
+     }
+  }
+  
   un.oFilter = {
     sCityName: null,
     nEndowmentst: null
@@ -80,4 +92,5 @@ function UniversityCtrl(DataService, CommonFactory) {
   un.ApplyFilters = function(){
     console.log("I am in the click event")
   }
+  
 }
