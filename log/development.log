@@ -24645,3 +24645,243 @@ Processing by UniversitiesController#GetAllUniversities as HTML
 Unpermitted parameters: sCityName, nEndowmentst
   [1m[35mUniversity Load (0.2ms)[0m  SELECT `universities`.* FROM `universities`
 Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 173.28.201.159 at 2016-12-04 01:34:16 +0000
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 49ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 173.28.201.159 at 2016-12-04 01:34:16 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 173.28.201.159 at 2016-12-04 01:34:17 +0000
+
+
+Started GET "/assets/angular-route.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:17 +0000
+
+
+Started GET "/assets/university.css?body=1" for 173.28.201.159 at 2016-12-04 01:34:17 +0000
+
+
+Started GET "/assets/angular/angular.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:17 +0000
+
+
+Started GET "/assets/application.css?body=1" for 173.28.201.159 at 2016-12-04 01:34:17 +0000
+
+
+Started GET "/assets/angular.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:17 +0000
+
+
+Started GET "/assets/angular-resource.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:17 +0000
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:17 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:17 +0000
+
+
+Started GET "/assets/angular/app.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:17 +0000
+
+
+Started GET "/assets/angular/app/home.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:17 +0000
+
+
+Started GET "/assets/angular/app/login.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:17 +0000
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:17 +0000
+
+
+Started GET "/assets/angular/common/constants.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:17 +0000
+
+
+Started GET "/assets/angular/common/dataService.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:17 +0000
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:17 +0000
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:17 +0000
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:17 +0000
+
+
+Started GET "/assets/angular/controller/signupCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:17 +0000
+
+
+Started GET "/assets/application.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:17 +0000
+
+
+Started GET "/assets/angular/routes.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:17 +0000
+
+
+Started POST "/university/GetAllUniversities" for 173.28.201.159 at 2016-12-04 01:34:18 +0000
+Processing by UniversitiesController#GetAllUniversities as HTML
+  Parameters: {"oFilter"=>{"sCityName"=>nil, "nEndowmentst"=>nil}, "university"=>{}}
+Unpermitted parameters: sCityName, nEndowmentst
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT `universities`.* FROM `universities`[0m
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 173.28.201.159 at 2016-12-04 01:35:49 +0000
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 173.28.201.159 at 2016-12-04 01:35:50 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 173.28.201.159 at 2016-12-04 01:35:50 +0000
+
+
+Started GET "/assets/university.css?body=1" for 173.28.201.159 at 2016-12-04 01:35:50 +0000
+
+
+Started GET "/assets/application.css?body=1" for 173.28.201.159 at 2016-12-04 01:35:50 +0000
+
+
+Started GET "/assets/angular/angular.js?body=1" for 173.28.201.159 at 2016-12-04 01:35:50 +0000
+
+
+Started GET "/assets/angular.js?body=1" for 173.28.201.159 at 2016-12-04 01:35:50 +0000
+
+
+Started GET "/assets/angular-route.js?body=1" for 173.28.201.159 at 2016-12-04 01:35:50 +0000
+
+
+Started GET "/assets/angular-resource.js?body=1" for 173.28.201.159 at 2016-12-04 01:35:50 +0000
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 173.28.201.159 at 2016-12-04 01:35:50 +0000
+
+
+Started GET "/assets/angular/app.js?body=1" for 173.28.201.159 at 2016-12-04 01:35:50 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 173.28.201.159 at 2016-12-04 01:35:50 +0000
+
+
+Started GET "/assets/angular/app/home.js?body=1" for 173.28.201.159 at 2016-12-04 01:35:50 +0000
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1" for 173.28.201.159 at 2016-12-04 01:35:50 +0000
+
+
+Started GET "/assets/angular/app/login.js?body=1" for 173.28.201.159 at 2016-12-04 01:35:50 +0000
+
+
+Started GET "/assets/angular/common/constants.js?body=1" for 173.28.201.159 at 2016-12-04 01:35:50 +0000
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1" for 173.28.201.159 at 2016-12-04 01:35:50 +0000
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:35:50 +0000
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:35:50 +0000
+
+
+Started GET "/assets/angular/controller/signupCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:35:50 +0000
+
+
+Started GET "/assets/angular/common/dataService.js?body=1" for 173.28.201.159 at 2016-12-04 01:35:50 +0000
+
+
+Started GET "/assets/angular/routes.js?body=1" for 173.28.201.159 at 2016-12-04 01:35:50 +0000
+
+
+Started GET "/assets/application.js?body=1" for 173.28.201.159 at 2016-12-04 01:35:51 +0000
+
+
+Started POST "/university/GetAllUniversities" for 173.28.201.159 at 2016-12-04 01:35:52 +0000
+Processing by UniversitiesController#GetAllUniversities as HTML
+  Parameters: {"oFilter"=>{"sCityName"=>nil, "nEndowmentst"=>nil}, "university"=>{}}
+Unpermitted parameters: sCityName, nEndowmentst
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT `universities`.* FROM `universities`
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 173.28.201.159 at 2016-12-04 01:37:10 +0000
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 46ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 173.28.201.159 at 2016-12-04 01:37:11 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 173.28.201.159 at 2016-12-04 01:37:11 +0000
+
+
+Started GET "/assets/university.css?body=1" for 173.28.201.159 at 2016-12-04 01:37:11 +0000
+
+
+Started GET "/assets/application.css?body=1" for 173.28.201.159 at 2016-12-04 01:37:11 +0000
+
+
+Started GET "/assets/angular.js?body=1" for 173.28.201.159 at 2016-12-04 01:37:11 +0000
+
+
+Started GET "/assets/angular/angular.js?body=1" for 173.28.201.159 at 2016-12-04 01:37:11 +0000
+
+
+Started GET "/assets/angular-route.js?body=1" for 173.28.201.159 at 2016-12-04 01:37:11 +0000
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 173.28.201.159 at 2016-12-04 01:37:11 +0000
+
+
+Started GET "/assets/angular/app/login.js?body=1" for 173.28.201.159 at 2016-12-04 01:37:11 +0000
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1" for 173.28.201.159 at 2016-12-04 01:37:11 +0000
+
+
+Started GET "/assets/angular/common/constants.js?body=1" for 173.28.201.159 at 2016-12-04 01:37:11 +0000
+
+
+Started GET "/assets/angular/common/dataService.js?body=1" for 173.28.201.159 at 2016-12-04 01:37:11 +0000
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1" for 173.28.201.159 at 2016-12-04 01:37:11 +0000
+
+
+Started GET "/assets/angular/controller/signupCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:37:11 +0000
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:37:11 +0000
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:37:11 +0000
+
+
+Started GET "/assets/angular/app/home.js?body=1" for 173.28.201.159 at 2016-12-04 01:37:11 +0000
+
+
+Started GET "/assets/angular/app.js?body=1" for 173.28.201.159 at 2016-12-04 01:37:11 +0000
+
+
+Started GET "/assets/angular-resource.js?body=1" for 173.28.201.159 at 2016-12-04 01:37:11 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 173.28.201.159 at 2016-12-04 01:37:11 +0000
+
+
+Started GET "/assets/angular/routes.js?body=1" for 173.28.201.159 at 2016-12-04 01:37:11 +0000
+
+
+Started GET "/assets/application.js?body=1" for 173.28.201.159 at 2016-12-04 01:37:11 +0000
+
+
+Started POST "/university/GetAllUniversities" for 173.28.201.159 at 2016-12-04 01:37:12 +0000
+Processing by UniversitiesController#GetAllUniversities as HTML
+  Parameters: {"oFilter"=>{"sCityName"=>nil, "nEndowmentst"=>nil}, "university"=>{}}
+Unpermitted parameters: sCityName, nEndowmentst
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT `universities`.* FROM `universities`[0m
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.2ms)
