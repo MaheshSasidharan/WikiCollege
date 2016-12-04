@@ -3,7 +3,7 @@ class UniversitiesController < ApplicationController
   
   before_filter :univ_params, only: [:TestPost]
   before_filter :Params_GetAllUniversities, only: [:GetAllUniversities]
-  before_filter :comment_params, only: [:AddCommentToPost]
+  before_filter :comment_params, only: [:AddEditCommentToPost]
   
   respond_to :json
   
@@ -22,6 +22,7 @@ class UniversitiesController < ApplicationController
   end
   
   def GetGroupsByUniversityId
+    puts session[:user_id]
     @arrGroups = Group.where(university_id: params[:nId])
     if (!@arrGroups.nil?) 
        render :json => { status: true, arrGroups: @arrGroups }
@@ -40,27 +41,41 @@ class UniversitiesController < ApplicationController
   end
   
   def GetCommentsByPostId
-    @arrComments = Comments.where(post_id: params[:nId])
-    if (!@arrPosts.nil?) 
+    @arrComments = Comment.where(post_id: params[:nId])
+    if (!@arrComments.nil?) 
        render :json => { status: true, arrComments: @arrComments }
     else
       render :json => { status: false, msg: "Failed to find comments under this Post" }
     end
   end
   
-  def AddCommentToPost
-    user = Comment.find_by(email: params[:email])
-    if user
-      render :json => { status: false, msg: "Username is already in user"}
-    else
-      @user = User.new(user_params)
-      if @user.save 
-          render :json => { status: true, msg: "Your account is successfully created", userId: @user.id }
-          #session[:user_id] = @user.id #once they sign up, they are automatically logged in
+  def AddEditCommentToPost
+    if(comment_params[:id].nil? || comment_params[:id] == -1)
+      # Add new comment
+      newComment_params = Hash.new
+      newComment_params['user_id'] = session[:user_id]
+      newComment_params['post_id'] = comment_params[:postId]
+      newComment_params['commentData'] = comment_params[:commentData]
+      newComment_params['like'] = comment_params[:like]
+      newComment_params['dislike'] = comment_params[:dislike]
+      
+      @comment = Comment.new(newComment_params)
+      if @comment.save
+        render :json => { status: true, commentId: @comment.id, sType: 'CommentAdded' }
       else
-          render :json => { status: false, msg: "Sorry, we were unable to create your account. Please try again later."}
+        render :json => { status: false, sType: 'CommentAddFailed'}
       end
-    end 
+    else
+      # Edit comment
+      @commentsUpdated = Comment.where(:id => comment_params[:id]).update_all(commentData: comment_params[:commentData], like: comment_params[:like], dislike: comment_params[:dislike])
+      print @commentsUpdated
+      if @commentsUpdated > 0
+        puts @comment
+        render :json => { status: true, sType: 'CommentUpdated' }
+      else
+        render :json => { status: false, sType: 'CommentUpdateFailed'}
+      end
+    end
   end
   
   def show
@@ -107,6 +122,6 @@ class UniversitiesController < ApplicationController
   end
   
   def comment_params
-    params.fetch(:oSaveItem).permit(:text)
+    params.fetch(:oSaveComment).permit(:commentData, :postId, :id, :like, :dislike)
   end
 end    

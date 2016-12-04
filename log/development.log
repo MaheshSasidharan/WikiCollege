@@ -19745,3 +19745,3297 @@ Processing by UniversitiesController#GetAllUniversities as HTML
 Unpermitted parameters: sCityName, nEndowmentst
   [1m[35mUniversity Load (0.4ms)[0m  SELECT `universities`.* FROM `universities`
 Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 173.28.201.159 at 2016-12-03 21:59:02 +0000
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 62ms (Views: 60.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 173.28.201.159 at 2016-12-03 21:59:02 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 173.28.201.159 at 2016-12-03 21:59:03 +0000
+
+
+Started GET "/assets/university.css?body=1" for 173.28.201.159 at 2016-12-03 21:59:03 +0000
+
+
+Started GET "/assets/application.css?body=1" for 173.28.201.159 at 2016-12-03 21:59:03 +0000
+
+
+Started GET "/assets/angular-route.js?body=1" for 173.28.201.159 at 2016-12-03 21:59:03 +0000
+
+
+Started GET "/assets/angular/angular.js?body=1" for 173.28.201.159 at 2016-12-03 21:59:03 +0000
+
+
+Started GET "/assets/angular.js?body=1" for 173.28.201.159 at 2016-12-03 21:59:03 +0000
+
+
+Started GET "/assets/angular-resource.js?body=1" for 173.28.201.159 at 2016-12-03 21:59:03 +0000
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 173.28.201.159 at 2016-12-03 21:59:03 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 173.28.201.159 at 2016-12-03 21:59:03 +0000
+
+
+Started GET "/assets/angular/app.js?body=1" for 173.28.201.159 at 2016-12-03 21:59:03 +0000
+
+
+Started GET "/assets/angular/app/home.js?body=1" for 173.28.201.159 at 2016-12-03 21:59:03 +0000
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1" for 173.28.201.159 at 2016-12-03 21:59:03 +0000
+
+
+Started GET "/assets/angular/app/login.js?body=1" for 173.28.201.159 at 2016-12-03 21:59:03 +0000
+
+
+Started GET "/assets/angular/common/constants.js?body=1" for 173.28.201.159 at 2016-12-03 21:59:03 +0000
+
+
+Started GET "/assets/angular/common/dataService.js?body=1" for 173.28.201.159 at 2016-12-03 21:59:03 +0000
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1" for 173.28.201.159 at 2016-12-03 21:59:03 +0000
+
+
+Started GET "/assets/angular/controller/signupCtrl.js?body=1" for 173.28.201.159 at 2016-12-03 21:59:03 +0000
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1" for 173.28.201.159 at 2016-12-03 21:59:03 +0000
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1" for 173.28.201.159 at 2016-12-03 21:59:03 +0000
+
+
+Started GET "/assets/angular/routes.js?body=1" for 173.28.201.159 at 2016-12-03 21:59:03 +0000
+
+
+Started GET "/assets/application.js?body=1" for 173.28.201.159 at 2016-12-03 21:59:03 +0000
+
+
+Started GET "/" for 173.28.201.159 at 2016-12-03 22:00:05 +0000
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 173.28.201.159 at 2016-12-03 22:00:05 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 173.28.201.159 at 2016-12-03 22:00:05 +0000
+
+
+Started GET "/assets/university.css?body=1" for 173.28.201.159 at 2016-12-03 22:00:05 +0000
+
+
+Started GET "/assets/application.css?body=1" for 173.28.201.159 at 2016-12-03 22:00:05 +0000
+
+
+Started GET "/assets/angular/angular.js?body=1" for 173.28.201.159 at 2016-12-03 22:00:05 +0000
+
+
+Started GET "/assets/angular.js?body=1" for 173.28.201.159 at 2016-12-03 22:00:05 +0000
+
+
+Started GET "/assets/angular-route.js?body=1" for 173.28.201.159 at 2016-12-03 22:00:05 +0000
+
+
+Started GET "/assets/angular-resource.js?body=1" for 173.28.201.159 at 2016-12-03 22:00:05 +0000
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 173.28.201.159 at 2016-12-03 22:00:05 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 173.28.201.159 at 2016-12-03 22:00:05 +0000
+
+
+Started GET "/assets/angular/app.js?body=1" for 173.28.201.159 at 2016-12-03 22:00:05 +0000
+
+
+Started GET "/assets/angular/app/home.js?body=1" for 173.28.201.159 at 2016-12-03 22:00:05 +0000
+
+
+Started GET "/assets/angular/app/login.js?body=1" for 173.28.201.159 at 2016-12-03 22:00:05 +0000
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1" for 173.28.201.159 at 2016-12-03 22:00:05 +0000
+
+
+Started GET "/assets/angular/common/constants.js?body=1" for 173.28.201.159 at 2016-12-03 22:00:05 +0000
+
+
+Started GET "/assets/angular/common/dataService.js?body=1" for 173.28.201.159 at 2016-12-03 22:00:05 +0000
+
+
+Started GET "/assets/angular/controller/signupCtrl.js?body=1" for 173.28.201.159 at 2016-12-03 22:00:05 +0000
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1" for 173.28.201.159 at 2016-12-03 22:00:05 +0000
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1" for 173.28.201.159 at 2016-12-03 22:00:06 +0000
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1" for 173.28.201.159 at 2016-12-03 22:00:06 +0000
+
+
+Started GET "/assets/angular/routes.js?body=1" for 173.28.201.159 at 2016-12-03 22:00:06 +0000
+
+
+Started GET "/assets/application.js?body=1" for 173.28.201.159 at 2016-12-03 22:00:06 +0000
+
+
+Started POST "/university/GetAllUniversities" for 173.28.201.159 at 2016-12-03 22:00:07 +0000
+Processing by UniversitiesController#GetAllUniversities as HTML
+  Parameters: {"oFilter"=>{"sCityName"=>nil, "nEndowmentst"=>nil}, "university"=>{}}
+Unpermitted parameters: sCityName, nEndowmentst
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT `universities`.* FROM `universities`[0m
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/users/LoginUser" for 173.28.201.159 at 2016-12-03 22:00:45 +0000
+Processing by UsersController#LoginUser as HTML
+  Parameters: {"oLoginItem"=>{"email"=>"kaustubh.mungale@gmail.com", "password"=>"[FILTERED]", "bShow"=>true, "bLoggedIn"=>false}, "user"=>{}}
+Unpermitted parameters: bShow, bLoggedIn
+Unpermitted parameters: bShow, bLoggedIn
+Unpermitted parameters: bShow, bLoggedIn
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'kaustubh.mungale@gmail.com' LIMIT 1
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 1.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+
+
+Started POST "/users/AddUser" for 173.28.201.159 at 2016-12-03 22:02:25 +0000
+Processing by UsersController#AddUser as HTML
+  Parameters: {"oSaveItem"=>{"name"=>"Kaustab", "email"=>"kaustubh.mungale@gmail.com", "password"=>"[FILTERED]"}, "user"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'kaustubh.mungale@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `users`  WHERE `users`.`email` = 'kaustubh.mungale@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `users` (`created_at`, `email`, `name`, `password_digest`, `updated_at`) VALUES ('2016-12-03 22:02:25', 'kaustubh.mungale@gmail.com', 'Kaustab', '$2a$10$7/bl2W5bW4kBN9PTB3sRtenApx0naxwxp6u7BnrmsXEXt.1Pwcaxe', '2016-12-03 22:02:25')
+  [1m[36m (4.3ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 93ms
+
+NoMethodError (undefined method `id' for nil:NilClass):
+  app/controllers/users_controller.rb:61:in `AddUser'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.7ms)
+
+
+Started POST "/users/AddUser" for 173.28.201.159 at 2016-12-03 22:04:19 +0000
+Processing by UsersController#AddUser as HTML
+  Parameters: {"oSaveItem"=>{"name"=>"Kaustab", "email"=>"kaustubh.mungale@gmail.com", "password"=>"[FILTERED]"}, "user"=>{}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'kaustubh.mungale@gmail.com' LIMIT 1
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+
+
+Started GET "/" for 173.28.201.159 at 2016-12-03 22:05:37 +0000
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 53ms (Views: 52.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 173.28.201.159 at 2016-12-03 22:05:37 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 173.28.201.159 at 2016-12-03 22:05:37 +0000
+
+
+Started GET "/assets/application.css?body=1" for 173.28.201.159 at 2016-12-03 22:05:37 +0000
+
+
+Started GET "/assets/university.css?body=1" for 173.28.201.159 at 2016-12-03 22:05:37 +0000
+
+
+Started GET "/assets/angular/angular.js?body=1" for 173.28.201.159 at 2016-12-03 22:05:37 +0000
+
+
+Started GET "/assets/angular-route.js?body=1" for 173.28.201.159 at 2016-12-03 22:05:37 +0000
+
+
+Started GET "/assets/angular.js?body=1" for 173.28.201.159 at 2016-12-03 22:05:37 +0000
+
+
+Started GET "/assets/angular-resource.js?body=1" for 173.28.201.159 at 2016-12-03 22:05:37 +0000
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 173.28.201.159 at 2016-12-03 22:05:37 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 173.28.201.159 at 2016-12-03 22:05:37 +0000
+
+
+Started GET "/assets/angular/app.js?body=1" for 173.28.201.159 at 2016-12-03 22:05:37 +0000
+
+
+Started GET "/assets/angular/app/home.js?body=1" for 173.28.201.159 at 2016-12-03 22:05:37 +0000
+
+
+Started GET "/assets/angular/app/login.js?body=1" for 173.28.201.159 at 2016-12-03 22:05:38 +0000
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1" for 173.28.201.159 at 2016-12-03 22:05:38 +0000
+
+
+Started GET "/assets/angular/common/constants.js?body=1" for 173.28.201.159 at 2016-12-03 22:05:38 +0000
+
+
+Started GET "/assets/angular/common/dataService.js?body=1" for 173.28.201.159 at 2016-12-03 22:05:38 +0000
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1" for 173.28.201.159 at 2016-12-03 22:05:38 +0000
+
+
+Started GET "/assets/angular/controller/signupCtrl.js?body=1" for 173.28.201.159 at 2016-12-03 22:05:38 +0000
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1" for 173.28.201.159 at 2016-12-03 22:05:38 +0000
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1" for 173.28.201.159 at 2016-12-03 22:05:38 +0000
+
+
+Started GET "/assets/angular/routes.js?body=1" for 173.28.201.159 at 2016-12-03 22:05:38 +0000
+
+
+Started GET "/assets/application.js?body=1" for 173.28.201.159 at 2016-12-03 22:05:38 +0000
+
+
+Started POST "/university/GetAllUniversities" for 173.28.201.159 at 2016-12-03 22:05:39 +0000
+Processing by UniversitiesController#GetAllUniversities as HTML
+  Parameters: {"oFilter"=>{"sCityName"=>nil, "nEndowmentst"=>nil}, "university"=>{}}
+Unpermitted parameters: sCityName, nEndowmentst
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT `universities`.* FROM `universities`[0m
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/users/LoginUser" for 173.28.201.159 at 2016-12-03 22:05:47 +0000
+Processing by UsersController#LoginUser as HTML
+  Parameters: {"oLoginItem"=>{"email"=>"kaustubh.mungale@gmail.com", "password"=>"[FILTERED]", "bShow"=>true, "bLoggedIn"=>false}, "user"=>{}}
+Unpermitted parameters: bShow, bLoggedIn
+Unpermitted parameters: bShow, bLoggedIn
+Unpermitted parameters: bShow, bLoggedIn
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'kaustubh.mungale@gmail.com' LIMIT 1
+Unpermitted parameters: bShow, bLoggedIn
+Completed 200 OK in 165ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/LoginUser" for 173.28.201.159 at 2016-12-03 22:07:01 +0000
+Processing by UsersController#LoginUser as HTML
+  Parameters: {"oLoginItem"=>{"email"=>"kaustubh.mungale@gmail.com", "password"=>"[FILTERED]", "bShow"=>true, "bLoggedIn"=>false}, "user"=>{}}
+Unpermitted parameters: bShow, bLoggedIn
+Unpermitted parameters: bShow, bLoggedIn
+Unpermitted parameters: bShow, bLoggedIn
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'kaustubh.mungale@gmail.com' LIMIT 1[0m
+Unpermitted parameters: bShow, bLoggedIn
+Completed 200 OK in 70ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/LoginUser" for 173.28.201.159 at 2016-12-03 22:07:12 +0000
+Processing by UsersController#LoginUser as HTML
+  Parameters: {"oLoginItem"=>{"email"=>"kaustubh.mungale@gmail.com", "password"=>"[FILTERED]", "bShow"=>true, "bLoggedIn"=>false}, "user"=>{}}
+Unpermitted parameters: bShow, bLoggedIn
+Unpermitted parameters: bShow, bLoggedIn
+Unpermitted parameters: bShow, bLoggedIn
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'kaustubh.mungale@gmail.com' LIMIT 1
+Unpermitted parameters: bShow, bLoggedIn
+Completed 200 OK in 160ms (Views: 0.3ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/users/LoginUser" for 173.28.201.159 at 2016-12-03 22:07:53 +0000
+Processing by UsersController#LoginUser as HTML
+  Parameters: {"oLoginItem"=>{"email"=>"kaustubh.mungale@gmail.com", "password"=>"[FILTERED]", "bShow"=>true, "bLoggedIn"=>false}, "user"=>{}}
+Unpermitted parameters: bShow, bLoggedIn
+Unpermitted parameters: bShow, bLoggedIn
+Unpermitted parameters: bShow, bLoggedIn
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'kaustubh.mungale@gmail.com' LIMIT 1[0m
+Unpermitted parameters: bShow, bLoggedIn
+Completed 200 OK in 78ms (Views: 0.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/Logout" for 173.28.201.159 at 2016-12-03 22:11:05 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"Logout"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 0 LIMIT 1
+Completed 404 Not Found in 7ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=Logout):
+  app/controllers/users_controller.rb:7:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.8ms)
+
+
+Started GET "/" for 173.28.201.159 at 2016-12-03 22:16:18 +0000
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 173.28.201.159 at 2016-12-03 22:16:18 +0000
+
+
+Started GET "/assets/university.css?body=1" for 173.28.201.159 at 2016-12-03 22:16:19 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 173.28.201.159 at 2016-12-03 22:16:19 +0000
+
+
+Started GET "/assets/application.css?body=1" for 173.28.201.159 at 2016-12-03 22:16:19 +0000
+
+
+Started GET "/assets/angular/angular.js?body=1" for 173.28.201.159 at 2016-12-03 22:16:19 +0000
+
+
+Started GET "/assets/angular.js?body=1" for 173.28.201.159 at 2016-12-03 22:16:19 +0000
+
+
+Started GET "/assets/angular-route.js?body=1" for 173.28.201.159 at 2016-12-03 22:16:19 +0000
+
+
+Started GET "/assets/angular-resource.js?body=1" for 173.28.201.159 at 2016-12-03 22:16:19 +0000
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 173.28.201.159 at 2016-12-03 22:16:19 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 173.28.201.159 at 2016-12-03 22:16:19 +0000
+
+
+Started GET "/assets/angular/app.js?body=1" for 173.28.201.159 at 2016-12-03 22:16:19 +0000
+
+
+Started GET "/assets/angular/app/home.js?body=1" for 173.28.201.159 at 2016-12-03 22:16:19 +0000
+
+
+Started GET "/assets/angular/app/login.js?body=1" for 173.28.201.159 at 2016-12-03 22:16:19 +0000
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1" for 173.28.201.159 at 2016-12-03 22:16:19 +0000
+
+
+Started GET "/assets/angular/common/constants.js?body=1" for 173.28.201.159 at 2016-12-03 22:16:19 +0000
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1" for 173.28.201.159 at 2016-12-03 22:16:19 +0000
+
+
+Started GET "/assets/angular/common/dataService.js?body=1" for 173.28.201.159 at 2016-12-03 22:16:19 +0000
+
+
+Started GET "/assets/angular/controller/signupCtrl.js?body=1" for 173.28.201.159 at 2016-12-03 22:16:19 +0000
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1" for 173.28.201.159 at 2016-12-03 22:16:19 +0000
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1" for 173.28.201.159 at 2016-12-03 22:16:19 +0000
+
+
+Started GET "/assets/angular/routes.js?body=1" for 173.28.201.159 at 2016-12-03 22:16:19 +0000
+
+
+Started GET "/assets/application.js?body=1" for 173.28.201.159 at 2016-12-03 22:16:19 +0000
+
+
+Started POST "/university/GetAllUniversities" for 173.28.201.159 at 2016-12-03 22:16:21 +0000
+Processing by UniversitiesController#GetAllUniversities as HTML
+  Parameters: {"oFilter"=>{"sCityName"=>nil, "nEndowmentst"=>nil}, "university"=>{}}
+Unpermitted parameters: sCityName, nEndowmentst
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT `universities`.* FROM `universities`[0m
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/users/LoginUser" for 173.28.201.159 at 2016-12-03 22:16:41 +0000
+Processing by UsersController#LoginUser as HTML
+  Parameters: {"oLoginItem"=>{"email"=>"kaustubh.mungale@gmail.com", "password"=>"[FILTERED]", "bShow"=>true, "bLoggedIn"=>false}, "user"=>{}}
+Unpermitted parameters: bShow, bLoggedIn
+Unpermitted parameters: bShow, bLoggedIn
+Unpermitted parameters: bShow, bLoggedIn
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'kaustubh.mungale@gmail.com' LIMIT 1
+Unpermitted parameters: bShow, bLoggedIn
+Completed 200 OK in 75ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 173.28.201.159 at 2016-12-03 22:17:16 +0000
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 54ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 173.28.201.159 at 2016-12-03 22:17:16 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 173.28.201.159 at 2016-12-03 22:17:16 +0000
+
+
+Started GET "/assets/university.css?body=1" for 173.28.201.159 at 2016-12-03 22:17:16 +0000
+
+
+Started GET "/assets/angular/angular.js?body=1" for 173.28.201.159 at 2016-12-03 22:17:16 +0000
+
+
+Started GET "/assets/application.css?body=1" for 173.28.201.159 at 2016-12-03 22:17:16 +0000
+
+
+Started GET "/assets/angular.js?body=1" for 173.28.201.159 at 2016-12-03 22:17:16 +0000
+
+
+Started GET "/assets/angular-route.js?body=1" for 173.28.201.159 at 2016-12-03 22:17:16 +0000
+
+
+Started GET "/assets/angular-resource.js?body=1" for 173.28.201.159 at 2016-12-03 22:17:16 +0000
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 173.28.201.159 at 2016-12-03 22:17:16 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 173.28.201.159 at 2016-12-03 22:17:16 +0000
+
+
+Started GET "/assets/angular/app.js?body=1" for 173.28.201.159 at 2016-12-03 22:17:16 +0000
+
+
+Started GET "/assets/angular/app/home.js?body=1" for 173.28.201.159 at 2016-12-03 22:17:16 +0000
+
+
+Started GET "/assets/angular/app/login.js?body=1" for 173.28.201.159 at 2016-12-03 22:17:16 +0000
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1" for 173.28.201.159 at 2016-12-03 22:17:16 +0000
+
+
+Started GET "/assets/angular/common/constants.js?body=1" for 173.28.201.159 at 2016-12-03 22:17:16 +0000
+
+
+Started GET "/assets/angular/common/dataService.js?body=1" for 173.28.201.159 at 2016-12-03 22:17:16 +0000
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1" for 173.28.201.159 at 2016-12-03 22:17:16 +0000
+
+
+Started GET "/assets/angular/controller/signupCtrl.js?body=1" for 173.28.201.159 at 2016-12-03 22:17:16 +0000
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1" for 173.28.201.159 at 2016-12-03 22:17:16 +0000
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1" for 173.28.201.159 at 2016-12-03 22:17:16 +0000
+
+
+Started GET "/assets/angular/routes.js?body=1" for 173.28.201.159 at 2016-12-03 22:17:16 +0000
+
+
+Started GET "/assets/application.js?body=1" for 173.28.201.159 at 2016-12-03 22:17:16 +0000
+
+
+Started POST "/university/GetAllUniversities" for 173.28.201.159 at 2016-12-03 22:17:18 +0000
+Processing by UniversitiesController#GetAllUniversities as HTML
+  Parameters: {"oFilter"=>{"sCityName"=>nil, "nEndowmentst"=>nil}, "university"=>{}}
+Unpermitted parameters: sCityName, nEndowmentst
+  [1m[36mUniversity Load (46.8ms)[0m  [1mSELECT `universities`.* FROM `universities`[0m
+Completed 200 OK in 54ms (Views: 6.0ms | ActiveRecord: 46.8ms)
+
+
+Started POST "/users/LoginUser" for 173.28.201.159 at 2016-12-03 22:17:22 +0000
+Processing by UsersController#LoginUser as HTML
+  Parameters: {"oLoginItem"=>{"email"=>"kaustubh.mungale@gmail.com", "password"=>"[FILTERED]", "bShow"=>true, "bLoggedIn"=>false}, "user"=>{}}
+Unpermitted parameters: bShow, bLoggedIn
+Unpermitted parameters: bShow, bLoggedIn
+Unpermitted parameters: bShow, bLoggedIn
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'kaustubh.mungale@gmail.com' LIMIT 1
+Unpermitted parameters: bShow, bLoggedIn
+Completed 200 OK in 242ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/LoginUser" for 173.28.201.159 at 2016-12-03 22:17:35 +0000
+Processing by UsersController#LoginUser as HTML
+  Parameters: {"oLoginItem"=>{"email"=>"kaustubh.mungale@gmail.com", "password"=>"[FILTERED]", "bShow"=>true, "bLoggedIn"=>false}, "user"=>{}}
+Unpermitted parameters: bShow, bLoggedIn
+Unpermitted parameters: bShow, bLoggedIn
+Unpermitted parameters: bShow, bLoggedIn
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'kaustubh.mungale@gmail.com' LIMIT 1[0m
+Unpermitted parameters: bShow, bLoggedIn
+Completed 200 OK in 203ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/Logout" for 173.28.201.159 at 2016-12-03 22:17:47 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"Logout"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 0 LIMIT 1
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=Logout):
+  app/controllers/users_controller.rb:7:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (163.0ms)
+
+
+Started GET "/" for 173.28.201.159 at 2016-12-03 22:23:06 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 119ms (Views: 110.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 173.28.201.159 at 2016-12-03 22:23:07 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 173.28.201.159 at 2016-12-03 22:23:07 +0000
+
+
+Started GET "/assets/university.css?body=1" for 173.28.201.159 at 2016-12-03 22:23:07 +0000
+
+
+Started GET "/assets/application.css?body=1" for 173.28.201.159 at 2016-12-03 22:23:07 +0000
+
+
+Started GET "/assets/angular/angular.js?body=1" for 173.28.201.159 at 2016-12-03 22:23:07 +0000
+
+
+Started GET "/assets/angular.js?body=1" for 173.28.201.159 at 2016-12-03 22:23:07 +0000
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 173.28.201.159 at 2016-12-03 22:23:07 +0000
+
+
+Started GET "/assets/angular-route.js?body=1" for 173.28.201.159 at 2016-12-03 22:23:07 +0000
+
+
+Started GET "/assets/angular-resource.js?body=1" for 173.28.201.159 at 2016-12-03 22:23:07 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 173.28.201.159 at 2016-12-03 22:23:07 +0000
+
+
+Started GET "/assets/angular/app.js?body=1" for 173.28.201.159 at 2016-12-03 22:23:07 +0000
+
+
+Started GET "/assets/angular/app/home.js?body=1" for 173.28.201.159 at 2016-12-03 22:23:07 +0000
+
+
+Started GET "/assets/angular/app/login.js?body=1" for 173.28.201.159 at 2016-12-03 22:23:07 +0000
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1" for 173.28.201.159 at 2016-12-03 22:23:07 +0000
+
+
+Started GET "/assets/angular/common/constants.js?body=1" for 173.28.201.159 at 2016-12-03 22:23:07 +0000
+
+
+Started GET "/assets/angular/common/dataService.js?body=1" for 173.28.201.159 at 2016-12-03 22:23:07 +0000
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1" for 173.28.201.159 at 2016-12-03 22:23:07 +0000
+
+
+Started GET "/assets/angular/controller/signupCtrl.js?body=1" for 173.28.201.159 at 2016-12-03 22:23:07 +0000
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1" for 173.28.201.159 at 2016-12-03 22:23:07 +0000
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1" for 173.28.201.159 at 2016-12-03 22:23:07 +0000
+
+
+Started GET "/assets/application.js?body=1" for 173.28.201.159 at 2016-12-03 22:23:07 +0000
+
+
+Started GET "/assets/angular/routes.js?body=1" for 173.28.201.159 at 2016-12-03 22:23:07 +0000
+
+
+Started POST "/university/GetAllUniversities" for 173.28.201.159 at 2016-12-03 22:23:09 +0000
+Processing by UniversitiesController#GetAllUniversities as HTML
+  Parameters: {"oFilter"=>{"sCityName"=>nil, "nEndowmentst"=>nil}, "university"=>{}}
+Unpermitted parameters: sCityName, nEndowmentst
+  [1m[35mUniversity Load (0.3ms)[0m  SELECT `universities`.* FROM `universities`
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/users/LoginUser" for 173.28.201.159 at 2016-12-03 22:23:11 +0000
+Processing by UsersController#LoginUser as HTML
+  Parameters: {"oLoginItem"=>{"email"=>"kaustubh.mungale@gmail.com", "password"=>"[FILTERED]", "bShow"=>true, "bLoggedIn"=>false}, "user"=>{}}
+Unpermitted parameters: bShow, bLoggedIn
+Unpermitted parameters: bShow, bLoggedIn
+Unpermitted parameters: bShow, bLoggedIn
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'kaustubh.mungale@gmail.com' LIMIT 1[0m
+Unpermitted parameters: bShow, bLoggedIn
+Completed 200 OK in 208ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/Logout" for 173.28.201.159 at 2016-12-03 22:23:18 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"Logout"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 0 LIMIT 1
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=Logout):
+  app/controllers/users_controller.rb:7:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.5ms)
+
+
+Started GET "/" for 173.28.201.159 at 2016-12-03 22:26:52 +0000
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 56ms (Views: 55.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 173.28.201.159 at 2016-12-03 22:26:52 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 173.28.201.159 at 2016-12-03 22:26:52 +0000
+
+
+Started GET "/assets/university.css?body=1" for 173.28.201.159 at 2016-12-03 22:26:52 +0000
+
+
+Started GET "/assets/angular-route.js?body=1" for 173.28.201.159 at 2016-12-03 22:26:52 +0000
+
+
+Started GET "/assets/angular/angular.js?body=1" for 173.28.201.159 at 2016-12-03 22:26:52 +0000
+
+
+Started GET "/assets/application.css?body=1" for 173.28.201.159 at 2016-12-03 22:26:52 +0000
+
+
+Started GET "/assets/angular.js?body=1" for 173.28.201.159 at 2016-12-03 22:26:52 +0000
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 173.28.201.159 at 2016-12-03 22:26:52 +0000
+
+
+Started GET "/assets/angular-resource.js?body=1" for 173.28.201.159 at 2016-12-03 22:26:52 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 173.28.201.159 at 2016-12-03 22:26:52 +0000
+
+
+Started GET "/assets/angular/app.js?body=1" for 173.28.201.159 at 2016-12-03 22:26:52 +0000
+
+
+Started GET "/assets/angular/app/home.js?body=1" for 173.28.201.159 at 2016-12-03 22:26:52 +0000
+
+
+Started GET "/assets/angular/app/login.js?body=1" for 173.28.201.159 at 2016-12-03 22:26:52 +0000
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1" for 173.28.201.159 at 2016-12-03 22:26:52 +0000
+
+
+Started GET "/assets/angular/common/constants.js?body=1" for 173.28.201.159 at 2016-12-03 22:26:52 +0000
+
+
+Started GET "/assets/angular/common/dataService.js?body=1" for 173.28.201.159 at 2016-12-03 22:26:52 +0000
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1" for 173.28.201.159 at 2016-12-03 22:26:52 +0000
+
+
+Started GET "/assets/angular/controller/signupCtrl.js?body=1" for 173.28.201.159 at 2016-12-03 22:26:52 +0000
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1" for 173.28.201.159 at 2016-12-03 22:26:53 +0000
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1" for 173.28.201.159 at 2016-12-03 22:26:53 +0000
+
+
+Started GET "/assets/application.js?body=1" for 173.28.201.159 at 2016-12-03 22:26:53 +0000
+
+
+Started GET "/assets/angular/routes.js?body=1" for 173.28.201.159 at 2016-12-03 22:26:53 +0000
+
+
+Started POST "/university/GetAllUniversities" for 173.28.201.159 at 2016-12-03 22:26:54 +0000
+Processing by UniversitiesController#GetAllUniversities as HTML
+  Parameters: {"oFilter"=>{"sCityName"=>nil, "nEndowmentst"=>nil}, "university"=>{}}
+Unpermitted parameters: sCityName, nEndowmentst
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT `universities`.* FROM `universities`[0m
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/users/LoginUser" for 173.28.201.159 at 2016-12-03 22:26:55 +0000
+Processing by UsersController#LoginUser as HTML
+  Parameters: {"oLoginItem"=>{"email"=>"kaustubh.mungale@gmail.com", "password"=>"[FILTERED]", "bShow"=>true, "bLoggedIn"=>false}, "user"=>{}}
+Unpermitted parameters: bShow, bLoggedIn
+Unpermitted parameters: bShow, bLoggedIn
+Unpermitted parameters: bShow, bLoggedIn
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'kaustubh.mungale@gmail.com' LIMIT 1
+Unpermitted parameters: bShow, bLoggedIn
+Completed 200 OK in 134ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/Logout2" for 173.28.201.159 at 2016-12-03 22:26:57 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"Logout2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 0 LIMIT 1[0m
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=Logout2):
+  app/controllers/users_controller.rb:7:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.6ms)
+
+
+Started GET "/users/Logout2" for 173.28.201.159 at 2016-12-03 22:28:01 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"Logout2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 0 LIMIT 1
+Completed 404 Not Found in 7ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=Logout2):
+  app/controllers/users_controller.rb:7:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.5ms)
+
+
+Started GET "/" for 173.28.201.159 at 2016-12-03 22:28:09 +0000
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 48ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 173.28.201.159 at 2016-12-03 22:28:09 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 173.28.201.159 at 2016-12-03 22:28:09 +0000
+
+
+Started GET "/assets/angular/angular.js?body=1" for 173.28.201.159 at 2016-12-03 22:28:09 +0000
+
+
+Started GET "/assets/application.css?body=1" for 173.28.201.159 at 2016-12-03 22:28:09 +0000
+
+
+Started GET "/assets/university.css?body=1" for 173.28.201.159 at 2016-12-03 22:28:09 +0000
+
+
+Started GET "/assets/angular-route.js?body=1" for 173.28.201.159 at 2016-12-03 22:28:09 +0000
+
+
+Started GET "/assets/angular.js?body=1" for 173.28.201.159 at 2016-12-03 22:28:09 +0000
+
+
+Started GET "/assets/angular-resource.js?body=1" for 173.28.201.159 at 2016-12-03 22:28:09 +0000
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 173.28.201.159 at 2016-12-03 22:28:09 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 173.28.201.159 at 2016-12-03 22:28:09 +0000
+
+
+Started GET "/assets/angular/app.js?body=1" for 173.28.201.159 at 2016-12-03 22:28:09 +0000
+
+
+Started GET "/assets/angular/app/home.js?body=1" for 173.28.201.159 at 2016-12-03 22:28:09 +0000
+
+
+Started GET "/assets/angular/app/login.js?body=1" for 173.28.201.159 at 2016-12-03 22:28:09 +0000
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1" for 173.28.201.159 at 2016-12-03 22:28:09 +0000
+
+
+Started GET "/assets/angular/common/constants.js?body=1" for 173.28.201.159 at 2016-12-03 22:28:09 +0000
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1" for 173.28.201.159 at 2016-12-03 22:28:10 +0000
+
+
+Started GET "/assets/angular/common/dataService.js?body=1" for 173.28.201.159 at 2016-12-03 22:28:10 +0000
+
+
+Started GET "/assets/angular/controller/signupCtrl.js?body=1" for 173.28.201.159 at 2016-12-03 22:28:10 +0000
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1" for 173.28.201.159 at 2016-12-03 22:28:10 +0000
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1" for 173.28.201.159 at 2016-12-03 22:28:10 +0000
+
+
+Started GET "/assets/angular/routes.js?body=1" for 173.28.201.159 at 2016-12-03 22:28:10 +0000
+
+
+Started GET "/assets/application.js?body=1" for 173.28.201.159 at 2016-12-03 22:28:10 +0000
+
+
+Started POST "/university/GetAllUniversities" for 173.28.201.159 at 2016-12-03 22:28:11 +0000
+Processing by UniversitiesController#GetAllUniversities as HTML
+  Parameters: {"oFilter"=>{"sCityName"=>nil, "nEndowmentst"=>nil}, "university"=>{}}
+Unpermitted parameters: sCityName, nEndowmentst
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT `universities`.* FROM `universities`[0m
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/users/LoginUser" for 173.28.201.159 at 2016-12-03 22:28:13 +0000
+Processing by UsersController#LoginUser as HTML
+  Parameters: {"oLoginItem"=>{"email"=>"kaustubh.mungale@gmail.com", "password"=>"[FILTERED]", "bShow"=>true, "bLoggedIn"=>false}, "user"=>{}}
+Unpermitted parameters: bShow, bLoggedIn
+Unpermitted parameters: bShow, bLoggedIn
+Unpermitted parameters: bShow, bLoggedIn
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'kaustubh.mungale@gmail.com' LIMIT 1
+Unpermitted parameters: bShow, bLoggedIn
+Completed 200 OK in 106ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/Logout" for 173.28.201.159 at 2016-12-03 22:28:13 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"Logout"}
+  [1m[36mUser Load (4.3ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 0 LIMIT 1[0m
+Completed 404 Not Found in 6ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=Logout):
+  app/controllers/users_controller.rb:7:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.2ms)
+
+
+Started GET "/users/Logout" for 173.28.201.159 at 2016-12-03 22:29:12 +0000
+
+AbstractController::ActionNotFound (The action 'show' could not be found for UsersController):
+  actionpack (4.1.0) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.0) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.5ms)
+
+
+Started POST "/university/GetAllUniversities" for 173.28.201.159 at 2016-12-03 22:31:36 +0000
+Processing by UniversitiesController#GetAllUniversities as HTML
+  Parameters: {"oFilter"=>{"sCityName"=>nil, "nEndowmentst"=>nil}, "university"=>{}}
+Unpermitted parameters: sCityName, nEndowmentst
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT `universities`.* FROM `universities`
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 4.9ms)
+
+
+Started POST "/university/GetAllUniversities" for 173.28.201.159 at 2016-12-03 22:34:25 +0000
+Processing by UniversitiesController#GetAllUniversities as HTML
+  Parameters: {"oFilter"=>{"sCityName"=>nil, "nEndowmentst"=>nil}, "university"=>{}}
+Unpermitted parameters: sCityName, nEndowmentst
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT `universities`.* FROM `universities`[0m
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/university/GetAllUniversities" for 173.28.201.159 at 2016-12-03 22:34:59 +0000
+Processing by UniversitiesController#GetAllUniversities as HTML
+  Parameters: {"oFilter"=>{"sCityName"=>nil, "nEndowmentst"=>nil}, "university"=>{}}
+Unpermitted parameters: sCityName, nEndowmentst
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT `universities`.* FROM `universities`
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/university/GetAllUniversities" for 173.28.201.159 at 2016-12-03 22:35:08 +0000
+Processing by UniversitiesController#GetAllUniversities as HTML
+  Parameters: {"oFilter"=>{"sCityName"=>nil, "nEndowmentst"=>nil}, "university"=>{}}
+Unpermitted parameters: sCityName, nEndowmentst
+  [1m[36mUniversity Load (0.3ms)[0m  [1mSELECT `universities`.* FROM `universities`[0m
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/university/GetAllUniversities" for 173.28.201.159 at 2016-12-03 22:35:14 +0000
+Processing by UniversitiesController#GetAllUniversities as HTML
+  Parameters: {"oFilter"=>{"sCityName"=>nil, "nEndowmentst"=>nil}, "university"=>{}}
+Unpermitted parameters: sCityName, nEndowmentst
+  [1m[35mUniversity Load (0.3ms)[0m  SELECT `universities`.* FROM `universities`
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/university/GetAllUniversities" for 173.28.201.159 at 2016-12-03 22:35:18 +0000
+Processing by UniversitiesController#GetAllUniversities as HTML
+  Parameters: {"oFilter"=>{"sCityName"=>nil, "nEndowmentst"=>nil}, "university"=>{}}
+Unpermitted parameters: sCityName, nEndowmentst
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT `universities`.* FROM `universities`[0m
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/university/GetAllUniversities" for 173.28.201.159 at 2016-12-03 22:35:18 +0000
+Processing by UniversitiesController#GetAllUniversities as HTML
+  Parameters: {"oFilter"=>{"sCityName"=>nil, "nEndowmentst"=>nil}, "university"=>{}}
+Unpermitted parameters: sCityName, nEndowmentst
+  [1m[35mUniversity Load (0.3ms)[0m  SELECT `universities`.* FROM `universities`
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/university/GetAllUniversities" for 173.28.201.159 at 2016-12-03 22:35:29 +0000
+Processing by UniversitiesController#GetAllUniversities as HTML
+  Parameters: {"oFilter"=>{"sCityName"=>nil, "nEndowmentst"=>nil}, "university"=>{}}
+Unpermitted parameters: sCityName, nEndowmentst
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT `universities`.* FROM `universities`[0m
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/Logout" for 173.28.201.159 at 2016-12-03 22:35:31 +0000
+
+AbstractController::ActionNotFound (The action 'show' could not be found for UsersController):
+  actionpack (4.1.0) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.0) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 173.28.201.159 at 2016-12-03 22:35:39 +0000
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 36ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 173.28.201.159 at 2016-12-03 22:35:39 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 173.28.201.159 at 2016-12-03 22:35:39 +0000
+
+
+Started GET "/assets/angular/angular.js?body=1" for 173.28.201.159 at 2016-12-03 22:35:39 +0000
+
+
+Started GET "/assets/application.css?body=1" for 173.28.201.159 at 2016-12-03 22:35:39 +0000
+
+
+Started GET "/assets/angular.js?body=1" for 173.28.201.159 at 2016-12-03 22:35:39 +0000
+
+
+Started GET "/assets/angular-route.js?body=1" for 173.28.201.159 at 2016-12-03 22:35:39 +0000
+
+
+Started GET "/assets/university.css?body=1" for 173.28.201.159 at 2016-12-03 22:35:39 +0000
+
+
+Started GET "/assets/angular-resource.js?body=1" for 173.28.201.159 at 2016-12-03 22:35:39 +0000
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 173.28.201.159 at 2016-12-03 22:35:39 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 173.28.201.159 at 2016-12-03 22:35:39 +0000
+
+
+Started GET "/assets/angular/app.js?body=1" for 173.28.201.159 at 2016-12-03 22:35:39 +0000
+
+
+Started GET "/assets/angular/app/home.js?body=1" for 173.28.201.159 at 2016-12-03 22:35:39 +0000
+
+
+Started GET "/assets/angular/app/login.js?body=1" for 173.28.201.159 at 2016-12-03 22:35:39 +0000
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1" for 173.28.201.159 at 2016-12-03 22:35:39 +0000
+
+
+Started GET "/assets/angular/common/constants.js?body=1" for 173.28.201.159 at 2016-12-03 22:35:39 +0000
+
+
+Started GET "/assets/angular/common/dataService.js?body=1" for 173.28.201.159 at 2016-12-03 22:35:39 +0000
+
+
+Started GET "/assets/angular/controller/signupCtrl.js?body=1" for 173.28.201.159 at 2016-12-03 22:35:39 +0000
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1" for 173.28.201.159 at 2016-12-03 22:35:39 +0000
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1" for 173.28.201.159 at 2016-12-03 22:35:39 +0000
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1" for 173.28.201.159 at 2016-12-03 22:35:39 +0000
+
+
+Started GET "/assets/angular/routes.js?body=1" for 173.28.201.159 at 2016-12-03 22:35:39 +0000
+
+
+Started GET "/assets/application.js?body=1" for 173.28.201.159 at 2016-12-03 22:35:39 +0000
+
+
+Started POST "/university/GetAllUniversities" for 173.28.201.159 at 2016-12-03 22:35:40 +0000
+Processing by UniversitiesController#GetAllUniversities as HTML
+  Parameters: {"oFilter"=>{"sCityName"=>nil, "nEndowmentst"=>nil}, "university"=>{}}
+Unpermitted parameters: sCityName, nEndowmentst
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT `universities`.* FROM `universities`
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/LoginUser" for 173.28.201.159 at 2016-12-03 22:35:44 +0000
+Processing by UsersController#LoginUser as HTML
+  Parameters: {"oLoginItem"=>{"email"=>"kaustubh.mungale@gmail.com", "password"=>"[FILTERED]", "bShow"=>true, "bLoggedIn"=>false}, "user"=>{}}
+Unpermitted parameters: bShow, bLoggedIn
+Unpermitted parameters: bShow, bLoggedIn
+Unpermitted parameters: bShow, bLoggedIn
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'kaustubh.mungale@gmail.com' LIMIT 1[0m
+Unpermitted parameters: bShow, bLoggedIn
+Completed 200 OK in 248ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/university/GetAllUniversities" for 173.28.201.159 at 2016-12-03 22:35:47 +0000
+Processing by UniversitiesController#GetAllUniversities as HTML
+  Parameters: {"oFilter"=>{"sCityName"=>nil, "nEndowmentst"=>nil}, "university"=>{}}
+Unpermitted parameters: sCityName, nEndowmentst
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT `universities`.* FROM `universities`
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/university/GetGroupsByUniversityId?nId=1" for 173.28.201.159 at 2016-12-03 22:36:55 +0000
+Processing by UniversitiesController#GetGroupsByUniversityId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mGroup Load (0.3ms)[0m  [1mSELECT `groups`.* FROM `groups`  WHERE `groups`.`university_id` = 1[0m
+Completed 200 OK in 12ms (Views: 5.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/university/GetUniversityById?nId=1" for 173.28.201.159 at 2016-12-03 22:36:55 +0000
+Processing by UniversitiesController#GetUniversityById as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT  `universities`.* FROM `universities`  WHERE `universities`.`id` = 1 LIMIT 1
+Completed 200 OK in 12ms (Views: 5.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/university/GetPostsByGroupId?nId=1" for 173.28.201.159 at 2016-12-03 22:40:03 +0000
+Processing by UniversitiesController#GetPostsByGroupId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT `posts`.* FROM `posts`  WHERE `posts`.`group_id` = 1[0m
+Completed 200 OK in 10ms (Views: 5.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for 173.28.201.159 at 2016-12-03 22:40:03 +0000
+
+
+Started GET "/" for 66.102.6.76 at 2016-12-03 23:58:47 +0000
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/university/GetPostsByGroupId?nId=1" for 173.28.201.159 at 2016-12-04 00:19:15 +0000
+Processing by UniversitiesController#GetPostsByGroupId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT `posts`.* FROM `posts`  WHERE `posts`.`group_id` = 1
+Completed 200 OK in 9ms (Views: 4.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/university/GetPostsByGroupId?nId=2" for 173.28.201.159 at 2016-12-04 00:19:15 +0000
+Processing by UniversitiesController#GetPostsByGroupId as HTML
+  Parameters: {"nId"=>"2"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts`  WHERE `posts`.`group_id` = 2[0m
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/university/GetPostsByGroupId?nId=3" for 173.28.201.159 at 2016-12-04 00:19:16 +0000
+Processing by UniversitiesController#GetPostsByGroupId as HTML
+  Parameters: {"nId"=>"3"}
+  [1m[35mPost Load (0.5ms)[0m  SELECT `posts`.* FROM `posts`  WHERE `posts`.`group_id` = 3
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 173.28.201.159 at 2016-12-04 00:40:47 +0000
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 56ms (Views: 55.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 173.28.201.159 at 2016-12-04 00:40:47 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 173.28.201.159 at 2016-12-04 00:40:47 +0000
+
+
+Started GET "/assets/university.css?body=1" for 173.28.201.159 at 2016-12-04 00:40:47 +0000
+
+
+Started GET "/assets/application.css?body=1" for 173.28.201.159 at 2016-12-04 00:40:47 +0000
+
+
+Started GET "/assets/angular.js?body=1" for 173.28.201.159 at 2016-12-04 00:40:47 +0000
+
+
+Started GET "/assets/angular-route.js?body=1" for 173.28.201.159 at 2016-12-04 00:40:47 +0000
+
+
+Started GET "/assets/angular/angular.js?body=1" for 173.28.201.159 at 2016-12-04 00:40:47 +0000
+
+
+Started GET "/assets/angular-resource.js?body=1" for 173.28.201.159 at 2016-12-04 00:40:47 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 173.28.201.159 at 2016-12-04 00:40:47 +0000
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 173.28.201.159 at 2016-12-04 00:40:47 +0000
+
+
+Started GET "/assets/angular/app.js?body=1" for 173.28.201.159 at 2016-12-04 00:40:48 +0000
+
+
+Started GET "/assets/angular/app/home.js?body=1" for 173.28.201.159 at 2016-12-04 00:40:48 +0000
+
+
+Started GET "/assets/angular/app/login.js?body=1" for 173.28.201.159 at 2016-12-04 00:40:48 +0000
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1" for 173.28.201.159 at 2016-12-04 00:40:48 +0000
+
+
+Started GET "/assets/angular/common/constants.js?body=1" for 173.28.201.159 at 2016-12-04 00:40:48 +0000
+
+
+Started GET "/assets/angular/common/dataService.js?body=1" for 173.28.201.159 at 2016-12-04 00:40:48 +0000
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1" for 173.28.201.159 at 2016-12-04 00:40:48 +0000
+
+
+Started GET "/assets/angular/controller/signupCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 00:40:48 +0000
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 00:40:48 +0000
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 00:40:48 +0000
+
+
+Started GET "/assets/angular/routes.js?body=1" for 173.28.201.159 at 2016-12-04 00:40:48 +0000
+
+
+Started GET "/assets/application.js?body=1" for 173.28.201.159 at 2016-12-04 00:40:48 +0000
+
+
+Started GET "/university/GetUniversityById?nId=1" for 173.28.201.159 at 2016-12-04 00:40:49 +0000
+
+SyntaxError (/home/ubuntu/workspace/app/controllers/universities_controller.rb:70: syntax error, unexpected ':', expecting ')'
+..._params[:id]).update_all(text : comment_params[:text])
+...                               ^
+/home/ubuntu/workspace/app/controllers/universities_controller.rb:70: syntax error, unexpected ')', expecting keyword_end):
+  activesupport (4.1.0) lib/active_support/dependencies.rb:443:in `load'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:443:in `block in load_file'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:633:in `new_constants_in'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:442:in `load_file'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:342:in `require_or_load'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:480:in `load_missing_constant'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:180:in `const_missing'
+  activesupport (4.1.0) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.0) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.0) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.0) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.0) lib/active_support/inflector/methods.rb:236:in `constantize'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:552:in `get'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:583:in `constantize'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.0) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.2ms)
+
+
+Started GET "/university/GetGroupsByUniversityId?nId=1" for 173.28.201.159 at 2016-12-04 00:40:49 +0000
+
+SyntaxError (/home/ubuntu/workspace/app/controllers/universities_controller.rb:70: syntax error, unexpected ':', expecting ')'
+..._params[:id]).update_all(text : comment_params[:text])
+...                               ^
+/home/ubuntu/workspace/app/controllers/universities_controller.rb:70: syntax error, unexpected ')', expecting keyword_end):
+  activesupport (4.1.0) lib/active_support/dependencies.rb:443:in `load'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:443:in `block in load_file'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:633:in `new_constants_in'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:442:in `load_file'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:342:in `require_or_load'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:480:in `load_missing_constant'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:180:in `const_missing'
+  activesupport (4.1.0) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.0) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.0) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.0) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.0) lib/active_support/inflector/methods.rb:236:in `constantize'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:552:in `get'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:583:in `constantize'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.0) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.3ms)
+
+
+Started GET "/" for 173.28.201.159 at 2016-12-04 00:42:02 +0000
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 173.28.201.159 at 2016-12-04 00:42:02 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 173.28.201.159 at 2016-12-04 00:42:02 +0000
+
+
+Started GET "/assets/application.css?body=1" for 173.28.201.159 at 2016-12-04 00:42:02 +0000
+
+
+Started GET "/assets/university.css?body=1" for 173.28.201.159 at 2016-12-04 00:42:02 +0000
+
+
+Started GET "/assets/angular-route.js?body=1" for 173.28.201.159 at 2016-12-04 00:42:02 +0000
+
+
+Started GET "/assets/angular/angular.js?body=1" for 173.28.201.159 at 2016-12-04 00:42:02 +0000
+
+
+Started GET "/assets/angular.js?body=1" for 173.28.201.159 at 2016-12-04 00:42:02 +0000
+
+
+Started GET "/assets/angular-resource.js?body=1" for 173.28.201.159 at 2016-12-04 00:42:02 +0000
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 173.28.201.159 at 2016-12-04 00:42:02 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 173.28.201.159 at 2016-12-04 00:42:02 +0000
+
+
+Started GET "/assets/angular/app.js?body=1" for 173.28.201.159 at 2016-12-04 00:42:02 +0000
+
+
+Started GET "/assets/angular/app/home.js?body=1" for 173.28.201.159 at 2016-12-04 00:42:02 +0000
+
+
+Started GET "/assets/angular/app/login.js?body=1" for 173.28.201.159 at 2016-12-04 00:42:02 +0000
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1" for 173.28.201.159 at 2016-12-04 00:42:02 +0000
+
+
+Started GET "/assets/angular/common/constants.js?body=1" for 173.28.201.159 at 2016-12-04 00:42:03 +0000
+
+
+Started GET "/assets/angular/common/dataService.js?body=1" for 173.28.201.159 at 2016-12-04 00:42:03 +0000
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1" for 173.28.201.159 at 2016-12-04 00:42:03 +0000
+
+
+Started GET "/assets/angular/controller/signupCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 00:42:03 +0000
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 00:42:03 +0000
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 00:42:03 +0000
+
+
+Started GET "/assets/application.js?body=1" for 173.28.201.159 at 2016-12-04 00:42:03 +0000
+
+
+Started GET "/assets/angular/routes.js?body=1" for 173.28.201.159 at 2016-12-04 00:42:03 +0000
+
+
+Started GET "/university/GetUniversityById?nId=1" for 173.28.201.159 at 2016-12-04 00:42:04 +0000
+
+SyntaxError (/home/ubuntu/workspace/app/controllers/universities_controller.rb:70: syntax error, unexpected ':', expecting ')'
+...params[:id]).update_all(:text : comment_params[:text])
+...                               ^
+/home/ubuntu/workspace/app/controllers/universities_controller.rb:70: syntax error, unexpected ')', expecting keyword_end):
+  activesupport (4.1.0) lib/active_support/dependencies.rb:443:in `load'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:443:in `block in load_file'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:633:in `new_constants_in'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:442:in `load_file'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:342:in `require_or_load'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:480:in `load_missing_constant'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:180:in `const_missing'
+  activesupport (4.1.0) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.0) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.0) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.0) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.0) lib/active_support/inflector/methods.rb:236:in `constantize'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:552:in `get'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:583:in `constantize'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.0) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.2ms)
+
+
+Started GET "/university/GetGroupsByUniversityId?nId=1" for 173.28.201.159 at 2016-12-04 00:42:04 +0000
+
+SyntaxError (/home/ubuntu/workspace/app/controllers/universities_controller.rb:70: syntax error, unexpected ':', expecting ')'
+...params[:id]).update_all(:text : comment_params[:text])
+...                               ^
+/home/ubuntu/workspace/app/controllers/universities_controller.rb:70: syntax error, unexpected ')', expecting keyword_end):
+  activesupport (4.1.0) lib/active_support/dependencies.rb:443:in `load'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:443:in `block in load_file'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:633:in `new_constants_in'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:442:in `load_file'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:342:in `require_or_load'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:480:in `load_missing_constant'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:180:in `const_missing'
+  activesupport (4.1.0) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.0) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.0) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.0) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.0) lib/active_support/inflector/methods.rb:236:in `constantize'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:552:in `get'
+  activesupport (4.1.0) lib/active_support/dependencies.rb:583:in `constantize'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.0) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.0) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.0) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.9ms)
+
+
+Started GET "/" for 173.28.201.159 at 2016-12-04 00:46:31 +0000
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 173.28.201.159 at 2016-12-04 00:46:31 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 173.28.201.159 at 2016-12-04 00:46:31 +0000
+
+
+Started GET "/assets/university.css?body=1" for 173.28.201.159 at 2016-12-04 00:46:31 +0000
+
+
+Started GET "/assets/application.css?body=1" for 173.28.201.159 at 2016-12-04 00:46:31 +0000
+
+
+Started GET "/assets/angular-route.js?body=1" for 173.28.201.159 at 2016-12-04 00:46:31 +0000
+
+
+Started GET "/assets/angular/angular.js?body=1" for 173.28.201.159 at 2016-12-04 00:46:31 +0000
+
+
+Started GET "/assets/angular.js?body=1" for 173.28.201.159 at 2016-12-04 00:46:31 +0000
+
+
+Started GET "/assets/angular-resource.js?body=1" for 173.28.201.159 at 2016-12-04 00:46:31 +0000
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 173.28.201.159 at 2016-12-04 00:46:31 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 173.28.201.159 at 2016-12-04 00:46:32 +0000
+
+
+Started GET "/assets/angular/app.js?body=1" for 173.28.201.159 at 2016-12-04 00:46:32 +0000
+
+
+Started GET "/assets/angular/app/home.js?body=1" for 173.28.201.159 at 2016-12-04 00:46:32 +0000
+
+
+Started GET "/assets/angular/app/login.js?body=1" for 173.28.201.159 at 2016-12-04 00:46:32 +0000
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1" for 173.28.201.159 at 2016-12-04 00:46:32 +0000
+
+
+Started GET "/assets/angular/common/constants.js?body=1" for 173.28.201.159 at 2016-12-04 00:46:32 +0000
+
+
+Started GET "/assets/angular/common/dataService.js?body=1" for 173.28.201.159 at 2016-12-04 00:46:32 +0000
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1" for 173.28.201.159 at 2016-12-04 00:46:32 +0000
+
+
+Started GET "/assets/angular/controller/signupCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 00:46:32 +0000
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 00:46:32 +0000
+
+
+Started GET "/assets/angular/routes.js?body=1" for 173.28.201.159 at 2016-12-04 00:46:32 +0000
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 00:46:32 +0000
+
+
+Started GET "/assets/application.js?body=1" for 173.28.201.159 at 2016-12-04 00:46:32 +0000
+
+
+Started GET "/university/GetUniversityById?nId=1" for 173.28.201.159 at 2016-12-04 00:46:33 +0000
+Processing by UniversitiesController#GetUniversityById as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mUniversity Load (0.1ms)[0m  [1mSELECT  `universities`.* FROM `universities`  WHERE `universities`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 83ms (Views: 4.7ms | ActiveRecord: 73.3ms)
+
+
+Started GET "/university/GetGroupsByUniversityId?nId=1" for 173.28.201.159 at 2016-12-04 00:46:33 +0000
+Processing by UniversitiesController#GetGroupsByUniversityId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mGroup Load (0.2ms)[0m  SELECT `groups`.* FROM `groups`  WHERE `groups`.`university_id` = 1
+Completed 200 OK in 9ms (Views: 4.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/university/GetPostsByGroupId?nId=1" for 173.28.201.159 at 2016-12-04 00:46:51 +0000
+Processing by UniversitiesController#GetPostsByGroupId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT `posts`.* FROM `posts`  WHERE `posts`.`group_id` = 1[0m
+Completed 200 OK in 10ms (Views: 4.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for 173.28.201.159 at 2016-12-04 00:46:51 +0000
+
+
+Started POST "/university/AddEditCommentToPost" for 173.28.201.159 at 2016-12-04 00:48:09 +0000
+Processing by UniversitiesController#AddEditCommentToPost as HTML
+  Parameters: {"oSaveComment"=>{"id"=>-1, "commentData"=>"My test 1", "postId"=>1, "like"=>0, "dislike"=>0}, "university"=>{}}
+Completed 500 Internal Server Error in 16ms
+
+NameError (undefined local variable or method `newComment_params' for #<UniversitiesController:0x000000035310f8>
+Did you mean?  comment_params):
+  app/controllers/universities_controller.rb:57:in `AddEditCommentToPost'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.6ms)
+
+
+Started GET "/" for 173.28.201.159 at 2016-12-04 00:54:26 +0000
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 56ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/university/AddEditCommentToPost" for 173.28.201.159 at 2016-12-04 00:54:26 +0000
+Processing by UniversitiesController#AddEditCommentToPost as HTML
+  Parameters: {"oSaveComment"=>{"id"=>-1, "commentData"=>"My test 1", "like"=>0, "dislike"=>0}, "university"=>{}}
+Completed 500 Internal Server Error in 3ms
+
+NameError (uninitialized constant UniversitiesController::Comments):
+  app/controllers/universities_controller.rb:62:in `AddEditCommentToPost'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.9ms)
+
+
+Started GET "/assets/app.css?body=1" for 173.28.201.159 at 2016-12-04 00:54:26 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 173.28.201.159 at 2016-12-04 00:54:26 +0000
+
+
+Started GET "/assets/university.css?body=1" for 173.28.201.159 at 2016-12-04 00:54:26 +0000
+
+
+Started GET "/assets/application.css?body=1" for 173.28.201.159 at 2016-12-04 00:54:26 +0000
+
+
+Started GET "/assets/angular/angular.js?body=1" for 173.28.201.159 at 2016-12-04 00:54:26 +0000
+
+
+Started GET "/assets/angular.js?body=1" for 173.28.201.159 at 2016-12-04 00:54:26 +0000
+
+
+Started GET "/assets/angular-route.js?body=1" for 173.28.201.159 at 2016-12-04 00:54:26 +0000
+
+
+Started GET "/assets/angular-resource.js?body=1" for 173.28.201.159 at 2016-12-04 00:54:26 +0000
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 173.28.201.159 at 2016-12-04 00:54:26 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 173.28.201.159 at 2016-12-04 00:54:26 +0000
+
+
+Started GET "/assets/angular/app.js?body=1" for 173.28.201.159 at 2016-12-04 00:54:26 +0000
+
+
+Started GET "/assets/angular/app/home.js?body=1" for 173.28.201.159 at 2016-12-04 00:54:26 +0000
+
+
+Started GET "/assets/angular/app/login.js?body=1" for 173.28.201.159 at 2016-12-04 00:54:26 +0000
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1" for 173.28.201.159 at 2016-12-04 00:54:27 +0000
+
+
+Started GET "/assets/angular/common/dataService.js?body=1" for 173.28.201.159 at 2016-12-04 00:54:27 +0000
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1" for 173.28.201.159 at 2016-12-04 00:54:27 +0000
+
+
+Started GET "/assets/angular/common/constants.js?body=1" for 173.28.201.159 at 2016-12-04 00:54:27 +0000
+
+
+Started GET "/assets/angular/controller/signupCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 00:54:27 +0000
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 00:54:27 +0000
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 00:54:27 +0000
+
+
+Started GET "/assets/angular/routes.js?body=1" for 173.28.201.159 at 2016-12-04 00:54:27 +0000
+
+
+Started GET "/assets/application.js?body=1" for 173.28.201.159 at 2016-12-04 00:54:27 +0000
+
+
+Started GET "/university/GetGroupsByUniversityId?nId=1" for 173.28.201.159 at 2016-12-04 00:54:28 +0000
+Processing by UniversitiesController#GetGroupsByUniversityId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mGroup Load (0.2ms)[0m  SELECT `groups`.* FROM `groups`  WHERE `groups`.`university_id` = 1
+Completed 200 OK in 9ms (Views: 4.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/university/GetUniversityById?nId=1" for 173.28.201.159 at 2016-12-04 00:54:28 +0000
+Processing by UniversitiesController#GetUniversityById as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT  `universities`.* FROM `universities`  WHERE `universities`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/university/GetPostsByGroupId?nId=1" for 173.28.201.159 at 2016-12-04 00:54:30 +0000
+Processing by UniversitiesController#GetPostsByGroupId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT `posts`.* FROM `posts`  WHERE `posts`.`group_id` = 1
+Completed 200 OK in 10ms (Views: 4.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for 173.28.201.159 at 2016-12-04 00:54:30 +0000
+
+
+Started POST "/university/AddEditCommentToPost" for 173.28.201.159 at 2016-12-04 00:54:41 +0000
+Processing by UniversitiesController#AddEditCommentToPost as HTML
+  Parameters: {"oSaveComment"=>{"id"=>-1, "commentData"=>"test comment 1", "postId"=>1, "like"=>0, "dislike"=>0}, "university"=>{}}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant UniversitiesController::Comments):
+  app/controllers/universities_controller.rb:62:in `AddEditCommentToPost'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.9ms)
+
+
+Started POST "/university/AddEditCommentToPost" for 173.28.201.159 at 2016-12-04 00:57:59 +0000
+Processing by UniversitiesController#AddEditCommentToPost as HTML
+  Parameters: {"oSaveComment"=>{"id"=>-1, "commentData"=>"test comment 1", "postId"=>1, "like"=>0, "dislike"=>0}, "university"=>{}}
+Completed 500 Internal Server Error in 3ms
+
+NameError (uninitialized constant UniversitiesController::Comments):
+  app/controllers/universities_controller.rb:62:in `AddEditCommentToPost'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.5ms)
+
+
+Started POST "/university/AddEditCommentToPost" for 173.28.201.159 at 2016-12-04 00:58:40 +0000
+Processing by UniversitiesController#AddEditCommentToPost as HTML
+  Parameters: {"oSaveComment"=>{"id"=>-1, "commentData"=>"test comment 1", "postId"=>1, "like"=>0, "dislike"=>0}, "university"=>{}}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `comments` (`commentData`, `created_at`, `post_id`, `updated_at`, `user_id`) VALUES ('test comment 1', '2016-12-04 00:58:41', 1, '2016-12-04 00:58:41', 6)
+  [1m[36m (3.8ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 29ms (Views: 0.3ms | ActiveRecord: 6.6ms)
+  [1m[35mComment Load (0.4ms)[0m  SELECT `comments`.* FROM `comments`
+
+
+Started GET "/" for 173.28.201.159 at 2016-12-04 01:04:48 +0000
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 59ms (Views: 58.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 173.28.201.159 at 2016-12-04 01:04:48 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 173.28.201.159 at 2016-12-04 01:04:48 +0000
+
+
+Started GET "/assets/university.css?body=1" for 173.28.201.159 at 2016-12-04 01:04:48 +0000
+
+
+Started GET "/assets/application.css?body=1" for 173.28.201.159 at 2016-12-04 01:04:48 +0000
+
+
+Started GET "/assets/angular/angular.js?body=1" for 173.28.201.159 at 2016-12-04 01:04:48 +0000
+
+
+Started GET "/assets/angular-route.js?body=1" for 173.28.201.159 at 2016-12-04 01:04:48 +0000
+
+
+Started GET "/assets/angular.js?body=1" for 173.28.201.159 at 2016-12-04 01:04:48 +0000
+
+
+Started GET "/assets/angular-resource.js?body=1" for 173.28.201.159 at 2016-12-04 01:04:49 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 173.28.201.159 at 2016-12-04 01:04:49 +0000
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 173.28.201.159 at 2016-12-04 01:04:49 +0000
+
+
+Started GET "/assets/angular/app.js?body=1" for 173.28.201.159 at 2016-12-04 01:04:49 +0000
+
+
+Started GET "/assets/angular/app/home.js?body=1" for 173.28.201.159 at 2016-12-04 01:04:49 +0000
+
+
+Started GET "/assets/angular/app/login.js?body=1" for 173.28.201.159 at 2016-12-04 01:04:49 +0000
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1" for 173.28.201.159 at 2016-12-04 01:04:49 +0000
+
+
+Started GET "/assets/angular/common/constants.js?body=1" for 173.28.201.159 at 2016-12-04 01:04:49 +0000
+
+
+Started GET "/assets/angular/common/dataService.js?body=1" for 173.28.201.159 at 2016-12-04 01:04:49 +0000
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1" for 173.28.201.159 at 2016-12-04 01:04:49 +0000
+
+
+Started GET "/assets/angular/controller/signupCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:04:49 +0000
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:04:49 +0000
+
+
+Started GET "/assets/angular/routes.js?body=1" for 173.28.201.159 at 2016-12-04 01:04:49 +0000
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:04:49 +0000
+
+
+Started GET "/assets/application.js?body=1" for 173.28.201.159 at 2016-12-04 01:04:49 +0000
+
+
+Started GET "/university/GetGroupsByUniversityId?nId=1" for 173.28.201.159 at 2016-12-04 01:04:50 +0000
+Processing by UniversitiesController#GetGroupsByUniversityId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mGroup Load (0.2ms)[0m  SELECT `groups`.* FROM `groups`  WHERE `groups`.`university_id` = 1
+Completed 200 OK in 9ms (Views: 4.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/university/GetUniversityById?nId=1" for 173.28.201.159 at 2016-12-04 01:04:50 +0000
+Processing by UniversitiesController#GetUniversityById as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT  `universities`.* FROM `universities`  WHERE `universities`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 11ms (Views: 4.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/university/GetPostsByGroupId?nId=1" for 173.28.201.159 at 2016-12-04 01:04:53 +0000
+Processing by UniversitiesController#GetPostsByGroupId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT `posts`.* FROM `posts`  WHERE `posts`.`group_id` = 1
+Completed 200 OK in 11ms (Views: 5.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for 173.28.201.159 at 2016-12-04 01:04:53 +0000
+
+
+Started GET "/" for 173.28.201.159 at 2016-12-04 01:06:32 +0000
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 173.28.201.159 at 2016-12-04 01:06:33 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 173.28.201.159 at 2016-12-04 01:06:33 +0000
+
+
+Started GET "/assets/university.css?body=1" for 173.28.201.159 at 2016-12-04 01:06:33 +0000
+
+
+Started GET "/assets/application.css?body=1" for 173.28.201.159 at 2016-12-04 01:06:33 +0000
+
+
+Started GET "/assets/angular/angular.js?body=1" for 173.28.201.159 at 2016-12-04 01:06:33 +0000
+
+
+Started GET "/assets/angular.js?body=1" for 173.28.201.159 at 2016-12-04 01:06:33 +0000
+
+
+Started GET "/assets/angular-route.js?body=1" for 173.28.201.159 at 2016-12-04 01:06:33 +0000
+
+
+Started GET "/assets/angular-resource.js?body=1" for 173.28.201.159 at 2016-12-04 01:06:33 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 173.28.201.159 at 2016-12-04 01:06:33 +0000
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 173.28.201.159 at 2016-12-04 01:06:33 +0000
+
+
+Started GET "/assets/angular/app.js?body=1" for 173.28.201.159 at 2016-12-04 01:06:33 +0000
+
+
+Started GET "/assets/angular/app/home.js?body=1" for 173.28.201.159 at 2016-12-04 01:06:33 +0000
+
+
+Started GET "/assets/angular/app/login.js?body=1" for 173.28.201.159 at 2016-12-04 01:06:33 +0000
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1" for 173.28.201.159 at 2016-12-04 01:06:33 +0000
+
+
+Started GET "/assets/angular/common/constants.js?body=1" for 173.28.201.159 at 2016-12-04 01:06:33 +0000
+
+
+Started GET "/assets/angular/common/dataService.js?body=1" for 173.28.201.159 at 2016-12-04 01:06:33 +0000
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1" for 173.28.201.159 at 2016-12-04 01:06:33 +0000
+
+
+Started GET "/assets/angular/controller/signupCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:06:33 +0000
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:06:33 +0000
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:06:33 +0000
+
+
+Started GET "/assets/angular/routes.js?body=1" for 173.28.201.159 at 2016-12-04 01:06:33 +0000
+
+
+Started GET "/assets/application.js?body=1" for 173.28.201.159 at 2016-12-04 01:06:33 +0000
+
+
+Started GET "/university/GetUniversityById?nId=1" for 173.28.201.159 at 2016-12-04 01:06:34 +0000
+Processing by UniversitiesController#GetUniversityById as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT  `universities`.* FROM `universities`  WHERE `universities`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/university/GetGroupsByUniversityId?nId=1" for 173.28.201.159 at 2016-12-04 01:06:34 +0000
+Processing by UniversitiesController#GetGroupsByUniversityId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT `groups`.* FROM `groups`  WHERE `groups`.`university_id` = 1
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/university/GetPostsByGroupId?nId=1" for 173.28.201.159 at 2016-12-04 01:06:36 +0000
+Processing by UniversitiesController#GetPostsByGroupId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT `posts`.* FROM `posts`  WHERE `posts`.`group_id` = 1[0m
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for 173.28.201.159 at 2016-12-04 01:06:36 +0000
+
+
+Started GET "/university/GetCommentsByPostId?nId=1" for 173.28.201.159 at 2016-12-04 01:06:36 +0000
+
+ActionController::RoutingError (No route matches [GET] "/university/GetCommentsByPostId"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (44.2ms)
+
+
+Started GET "/" for 173.28.201.159 at 2016-12-04 01:08:59 +0000
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 47ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 173.28.201.159 at 2016-12-04 01:09:00 +0000
+
+
+Started GET "/assets/application.css?body=1" for 173.28.201.159 at 2016-12-04 01:09:00 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 173.28.201.159 at 2016-12-04 01:09:00 +0000
+
+
+Started GET "/assets/university.css?body=1" for 173.28.201.159 at 2016-12-04 01:09:00 +0000
+
+
+Started GET "/assets/angular/angular.js?body=1" for 173.28.201.159 at 2016-12-04 01:09:00 +0000
+
+
+Started GET "/assets/angular.js?body=1" for 173.28.201.159 at 2016-12-04 01:09:00 +0000
+
+
+Started GET "/assets/angular-route.js?body=1" for 173.28.201.159 at 2016-12-04 01:09:00 +0000
+
+
+Started GET "/assets/angular-resource.js?body=1" for 173.28.201.159 at 2016-12-04 01:09:00 +0000
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 173.28.201.159 at 2016-12-04 01:09:00 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 173.28.201.159 at 2016-12-04 01:09:00 +0000
+
+
+Started GET "/assets/angular/app.js?body=1" for 173.28.201.159 at 2016-12-04 01:09:00 +0000
+
+
+Started GET "/assets/angular/app/home.js?body=1" for 173.28.201.159 at 2016-12-04 01:09:00 +0000
+
+
+Started GET "/assets/angular/app/login.js?body=1" for 173.28.201.159 at 2016-12-04 01:09:00 +0000
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1" for 173.28.201.159 at 2016-12-04 01:09:00 +0000
+
+
+Started GET "/assets/angular/common/constants.js?body=1" for 173.28.201.159 at 2016-12-04 01:09:00 +0000
+
+
+Started GET "/assets/angular/common/dataService.js?body=1" for 173.28.201.159 at 2016-12-04 01:09:00 +0000
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1" for 173.28.201.159 at 2016-12-04 01:09:00 +0000
+
+
+Started GET "/assets/angular/controller/signupCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:09:00 +0000
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:09:00 +0000
+
+
+Started GET "/assets/angular/routes.js?body=1" for 173.28.201.159 at 2016-12-04 01:09:00 +0000
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:09:00 +0000
+
+
+Started GET "/assets/application.js?body=1" for 173.28.201.159 at 2016-12-04 01:09:00 +0000
+
+
+Started GET "/university/GetUniversityById?nId=1" for 173.28.201.159 at 2016-12-04 01:09:02 +0000
+Processing by UniversitiesController#GetUniversityById as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT  `universities`.* FROM `universities`  WHERE `universities`.`id` = 1 LIMIT 1
+Completed 200 OK in 22ms (Views: 9.2ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/university/GetGroupsByUniversityId?nId=1" for 173.28.201.159 at 2016-12-04 01:09:02 +0000
+Processing by UniversitiesController#GetGroupsByUniversityId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT `groups`.* FROM `groups`  WHERE `groups`.`university_id` = 1[0m
+Completed 200 OK in 11ms (Views: 6.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/university/GetPostsByGroupId?nId=1" for 173.28.201.159 at 2016-12-04 01:09:04 +0000
+Processing by UniversitiesController#GetPostsByGroupId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT `posts`.* FROM `posts`  WHERE `posts`.`group_id` = 1
+Completed 200 OK in 12ms (Views: 6.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for 173.28.201.159 at 2016-12-04 01:09:04 +0000
+
+
+Started GET "/university/GetCommentsByPostId?nId=1" for 173.28.201.159 at 2016-12-04 01:09:20 +0000
+Processing by UniversitiesController#GetCommentsByPostId as HTML
+  Parameters: {"nId"=>"1"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant UniversitiesController::Comments):
+  app/controllers/universities_controller.rb:44:in `GetCommentsByPostId'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (103.1ms)
+
+
+Started GET "/university/GetCommentsByPostId?nId=1" for 173.28.201.159 at 2016-12-04 01:10:00 +0000
+Processing by UniversitiesController#GetCommentsByPostId as HTML
+  Parameters: {"nId"=>"1"}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[36mComment Load (0.6ms)[0m  [1mSELECT `comments`.* FROM `comments`  WHERE `comments`.`post_id` = 1[0m
+
+
+Started GET "/university/GetCommentsByPostId?nId=1" for 173.28.201.159 at 2016-12-04 01:10:58 +0000
+Processing by UniversitiesController#GetCommentsByPostId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT `comments`.* FROM `comments`  WHERE `comments`.`post_id` = 1[0m
+Completed 200 OK in 9ms (Views: 4.8ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/university/AddEditCommentToPost" for 173.28.201.159 at 2016-12-04 01:11:55 +0000
+Processing by UniversitiesController#AddEditCommentToPost as HTML
+  Parameters: {"oSaveComment"=>{"id"=>-1, "commentData"=>"Test 2", "postId"=>1, "like"=>0, "dislike"=>0}, "university"=>{}}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `comments` (`commentData`, `created_at`, `post_id`, `updated_at`, `user_id`) VALUES ('Test 2', '2016-12-04 01:11:55', 1, '2016-12-04 01:11:55', 6)[0m
+  [1m[35m (3.8ms)[0m  COMMIT
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/" for 173.28.201.159 at 2016-12-04 01:11:58 +0000
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 173.28.201.159 at 2016-12-04 01:11:59 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 173.28.201.159 at 2016-12-04 01:11:59 +0000
+
+
+Started GET "/assets/university.css?body=1" for 173.28.201.159 at 2016-12-04 01:11:59 +0000
+
+
+Started GET "/assets/application.css?body=1" for 173.28.201.159 at 2016-12-04 01:11:59 +0000
+
+
+Started GET "/assets/angular-route.js?body=1" for 173.28.201.159 at 2016-12-04 01:11:59 +0000
+
+
+Started GET "/assets/angular.js?body=1" for 173.28.201.159 at 2016-12-04 01:11:59 +0000
+
+
+Started GET "/assets/angular/angular.js?body=1" for 173.28.201.159 at 2016-12-04 01:11:59 +0000
+
+
+Started GET "/assets/angular-resource.js?body=1" for 173.28.201.159 at 2016-12-04 01:11:59 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 173.28.201.159 at 2016-12-04 01:11:59 +0000
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 173.28.201.159 at 2016-12-04 01:11:59 +0000
+
+
+Started GET "/assets/angular/app.js?body=1" for 173.28.201.159 at 2016-12-04 01:11:59 +0000
+
+
+Started GET "/assets/angular/app/home.js?body=1" for 173.28.201.159 at 2016-12-04 01:11:59 +0000
+
+
+Started GET "/assets/angular/app/login.js?body=1" for 173.28.201.159 at 2016-12-04 01:11:59 +0000
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1" for 173.28.201.159 at 2016-12-04 01:11:59 +0000
+
+
+Started GET "/assets/angular/common/constants.js?body=1" for 173.28.201.159 at 2016-12-04 01:11:59 +0000
+
+
+Started GET "/assets/angular/common/dataService.js?body=1" for 173.28.201.159 at 2016-12-04 01:11:59 +0000
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1" for 173.28.201.159 at 2016-12-04 01:11:59 +0000
+
+
+Started GET "/assets/angular/controller/signupCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:11:59 +0000
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:11:59 +0000
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:11:59 +0000
+
+
+Started GET "/assets/angular/routes.js?body=1" for 173.28.201.159 at 2016-12-04 01:11:59 +0000
+
+
+Started GET "/assets/application.js?body=1" for 173.28.201.159 at 2016-12-04 01:11:59 +0000
+
+
+Started GET "/university/GetUniversityById?nId=1" for 173.28.201.159 at 2016-12-04 01:12:00 +0000
+Processing by UniversitiesController#GetUniversityById as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT  `universities`.* FROM `universities`  WHERE `universities`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/university/GetGroupsByUniversityId?nId=1" for 173.28.201.159 at 2016-12-04 01:12:00 +0000
+Processing by UniversitiesController#GetGroupsByUniversityId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mGroup Load (0.2ms)[0m  SELECT `groups`.* FROM `groups`  WHERE `groups`.`university_id` = 1
+Completed 200 OK in 14ms (Views: 8.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/university/GetPostsByGroupId?nId=1" for 173.28.201.159 at 2016-12-04 01:12:02 +0000
+Processing by UniversitiesController#GetPostsByGroupId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT `posts`.* FROM `posts`  WHERE `posts`.`group_id` = 1[0m
+Completed 200 OK in 9ms (Views: 4.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for 173.28.201.159 at 2016-12-04 01:12:02 +0000
+
+
+Started GET "/university/GetCommentsByPostId?nId=1" for 173.28.201.159 at 2016-12-04 01:12:03 +0000
+Processing by UniversitiesController#GetCommentsByPostId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mComment Load (0.4ms)[0m  SELECT `comments`.* FROM `comments`  WHERE `comments`.`post_id` = 1
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 173.28.201.159 at 2016-12-04 01:13:04 +0000
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 173.28.201.159 at 2016-12-04 01:13:04 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 173.28.201.159 at 2016-12-04 01:13:05 +0000
+
+
+Started GET "/assets/university.css?body=1" for 173.28.201.159 at 2016-12-04 01:13:05 +0000
+
+
+Started GET "/assets/application.css?body=1" for 173.28.201.159 at 2016-12-04 01:13:05 +0000
+
+
+Started GET "/assets/angular/angular.js?body=1" for 173.28.201.159 at 2016-12-04 01:13:05 +0000
+
+
+Started GET "/assets/angular.js?body=1" for 173.28.201.159 at 2016-12-04 01:13:05 +0000
+
+
+Started GET "/assets/angular-route.js?body=1" for 173.28.201.159 at 2016-12-04 01:13:05 +0000
+
+
+Started GET "/assets/angular-resource.js?body=1" for 173.28.201.159 at 2016-12-04 01:13:05 +0000
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 173.28.201.159 at 2016-12-04 01:13:05 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 173.28.201.159 at 2016-12-04 01:13:05 +0000
+
+
+Started GET "/assets/angular/app.js?body=1" for 173.28.201.159 at 2016-12-04 01:13:05 +0000
+
+
+Started GET "/assets/angular/app/home.js?body=1" for 173.28.201.159 at 2016-12-04 01:13:05 +0000
+
+
+Started GET "/assets/angular/app/login.js?body=1" for 173.28.201.159 at 2016-12-04 01:13:05 +0000
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1" for 173.28.201.159 at 2016-12-04 01:13:05 +0000
+
+
+Started GET "/assets/angular/common/constants.js?body=1" for 173.28.201.159 at 2016-12-04 01:13:05 +0000
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1" for 173.28.201.159 at 2016-12-04 01:13:05 +0000
+
+
+Started GET "/assets/angular/common/dataService.js?body=1" for 173.28.201.159 at 2016-12-04 01:13:05 +0000
+
+
+Started GET "/assets/angular/controller/signupCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:13:05 +0000
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:13:05 +0000
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:13:05 +0000
+
+
+Started GET "/assets/angular/routes.js?body=1" for 173.28.201.159 at 2016-12-04 01:13:05 +0000
+
+
+Started GET "/assets/application.js?body=1" for 173.28.201.159 at 2016-12-04 01:13:05 +0000
+
+
+Started GET "/university/GetUniversityById?nId=1" for 173.28.201.159 at 2016-12-04 01:13:06 +0000
+Processing by UniversitiesController#GetUniversityById as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mUniversity Load (57.9ms)[0m  [1mSELECT  `universities`.* FROM `universities`  WHERE `universities`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 63ms (Views: 0.6ms | ActiveRecord: 57.9ms)
+
+
+Started GET "/university/GetGroupsByUniversityId?nId=1" for 173.28.201.159 at 2016-12-04 01:13:06 +0000
+Processing by UniversitiesController#GetGroupsByUniversityId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mGroup Load (0.3ms)[0m  SELECT `groups`.* FROM `groups`  WHERE `groups`.`university_id` = 1
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/university/GetPostsByGroupId?nId=1" for 173.28.201.159 at 2016-12-04 01:13:08 +0000
+Processing by UniversitiesController#GetPostsByGroupId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT `posts`.* FROM `posts`  WHERE `posts`.`group_id` = 1[0m
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for 173.28.201.159 at 2016-12-04 01:13:08 +0000
+
+
+Started GET "/university/GetCommentsByPostId?nId=1" for 173.28.201.159 at 2016-12-04 01:13:09 +0000
+Processing by UniversitiesController#GetCommentsByPostId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mComment Load (0.2ms)[0m  SELECT `comments`.* FROM `comments`  WHERE `comments`.`post_id` = 1
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 173.28.201.159 at 2016-12-04 01:24:02 +0000
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 47ms (Views: 46.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 173.28.201.159 at 2016-12-04 01:24:02 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 173.28.201.159 at 2016-12-04 01:24:03 +0000
+
+
+Started GET "/assets/university.css?body=1" for 173.28.201.159 at 2016-12-04 01:24:03 +0000
+
+
+Started GET "/assets/angular-route.js?body=1" for 173.28.201.159 at 2016-12-04 01:24:03 +0000
+
+
+Started GET "/assets/angular/angular.js?body=1" for 173.28.201.159 at 2016-12-04 01:24:03 +0000
+
+
+Started GET "/assets/application.css?body=1" for 173.28.201.159 at 2016-12-04 01:24:03 +0000
+
+
+Started GET "/assets/angular.js?body=1" for 173.28.201.159 at 2016-12-04 01:24:03 +0000
+
+
+Started GET "/assets/angular-resource.js?body=1" for 173.28.201.159 at 2016-12-04 01:24:03 +0000
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 173.28.201.159 at 2016-12-04 01:24:03 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 173.28.201.159 at 2016-12-04 01:24:03 +0000
+
+
+Started GET "/assets/angular/app.js?body=1" for 173.28.201.159 at 2016-12-04 01:24:03 +0000
+
+
+Started GET "/assets/angular/app/home.js?body=1" for 173.28.201.159 at 2016-12-04 01:24:03 +0000
+
+
+Started GET "/assets/angular/app/login.js?body=1" for 173.28.201.159 at 2016-12-04 01:24:03 +0000
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1" for 173.28.201.159 at 2016-12-04 01:24:03 +0000
+
+
+Started GET "/assets/angular/common/constants.js?body=1" for 173.28.201.159 at 2016-12-04 01:24:03 +0000
+
+
+Started GET "/assets/angular/common/dataService.js?body=1" for 173.28.201.159 at 2016-12-04 01:24:03 +0000
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1" for 173.28.201.159 at 2016-12-04 01:24:03 +0000
+
+
+Started GET "/assets/angular/controller/signupCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:24:03 +0000
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:24:03 +0000
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:24:03 +0000
+
+
+Started GET "/assets/angular/routes.js?body=1" for 173.28.201.159 at 2016-12-04 01:24:03 +0000
+
+
+Started GET "/assets/application.js?body=1" for 173.28.201.159 at 2016-12-04 01:24:03 +0000
+
+
+Started GET "/university/GetUniversityById?nId=1" for 173.28.201.159 at 2016-12-04 01:24:04 +0000
+Processing by UniversitiesController#GetUniversityById as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mUniversity Load (1.2ms)[0m  [1mSELECT  `universities`.* FROM `universities`  WHERE `universities`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/university/GetGroupsByUniversityId?nId=1" for 173.28.201.159 at 2016-12-04 01:24:04 +0000
+Processing by UniversitiesController#GetGroupsByUniversityId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT `groups`.* FROM `groups`  WHERE `groups`.`university_id` = 1
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/university/GetPostsByGroupId?nId=1" for 173.28.201.159 at 2016-12-04 01:24:07 +0000
+Processing by UniversitiesController#GetPostsByGroupId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT `posts`.* FROM `posts`  WHERE `posts`.`group_id` = 1[0m
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for 173.28.201.159 at 2016-12-04 01:24:07 +0000
+
+
+Started GET "/university/GetCommentsByPostId?nId=1" for 173.28.201.159 at 2016-12-04 01:24:08 +0000
+Processing by UniversitiesController#GetCommentsByPostId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mComment Load (0.2ms)[0m  SELECT `comments`.* FROM `comments`  WHERE `comments`.`post_id` = 1
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/university/AddEditCommentToPost" for 173.28.201.159 at 2016-12-04 01:24:53 +0000
+Processing by UniversitiesController#AddEditCommentToPost as HTML
+  Parameters: {"oSaveComment"=>nil, "university"=>{}}
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `permit' for nil:NilClass
+Did you mean?  print):
+  app/controllers/universities_controller.rb:125:in `comment_params'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.9ms)
+
+
+Started POST "/university/AddEditCommentToPost" for 173.28.201.159 at 2016-12-04 01:26:39 +0000
+Processing by UniversitiesController#AddEditCommentToPost as HTML
+  Parameters: {"oSaveComment"=>nil, "university"=>{}}
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `permit' for nil:NilClass
+Did you mean?  print):
+  app/controllers/universities_controller.rb:125:in `comment_params'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (97.4ms)
+
+
+Started POST "/university/AddEditCommentToPost" for 173.28.201.159 at 2016-12-04 01:27:08 +0000
+Processing by UniversitiesController#AddEditCommentToPost as HTML
+  Parameters: {"oSaveComment"=>nil, "university"=>{}}
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `permit' for nil:NilClass
+Did you mean?  print):
+  app/controllers/universities_controller.rb:125:in `comment_params'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (141.5ms)
+
+
+Started POST "/university/AddEditCommentToPost" for 173.28.201.159 at 2016-12-04 01:28:42 +0000
+Processing by UniversitiesController#AddEditCommentToPost as HTML
+  Parameters: {"oSaveComment"=>nil, "university"=>{}}
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `permit' for nil:NilClass
+Did you mean?  print):
+  app/controllers/universities_controller.rb:125:in `comment_params'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (76.8ms)
+
+
+Started POST "/university/AddEditCommentToPost" for 173.28.201.159 at 2016-12-04 01:34:08 +0000
+Processing by UniversitiesController#AddEditCommentToPost as HTML
+  Parameters: {"oSaveComment"=>nil, "university"=>{}}
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `permit' for nil:NilClass
+Did you mean?  print):
+  app/controllers/universities_controller.rb:128:in `comment_params'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (125.8ms)
+
+
+Started GET "/" for 173.28.201.159 at 2016-12-04 01:34:57 +0000
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 50ms (Views: 48.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 173.28.201.159 at 2016-12-04 01:34:57 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 173.28.201.159 at 2016-12-04 01:34:57 +0000
+
+
+Started GET "/assets/university.css?body=1" for 173.28.201.159 at 2016-12-04 01:34:57 +0000
+
+
+Started GET "/assets/application.css?body=1" for 173.28.201.159 at 2016-12-04 01:34:57 +0000
+
+
+Started GET "/assets/angular.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:57 +0000
+
+
+Started GET "/assets/angular-route.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:57 +0000
+
+
+Started GET "/assets/angular/angular.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:57 +0000
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:57 +0000
+
+
+Started GET "/assets/angular-resource.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:57 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:57 +0000
+
+
+Started GET "/assets/angular/app.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:57 +0000
+
+
+Started GET "/assets/angular/app/home.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:57 +0000
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:57 +0000
+
+
+Started GET "/assets/angular/app/login.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:57 +0000
+
+
+Started GET "/assets/angular/common/constants.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:57 +0000
+
+
+Started GET "/assets/angular/common/dataService.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:57 +0000
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:57 +0000
+
+
+Started GET "/assets/angular/controller/signupCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:57 +0000
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:58 +0000
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:58 +0000
+
+
+Started GET "/assets/angular/routes.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:58 +0000
+
+
+Started GET "/assets/application.js?body=1" for 173.28.201.159 at 2016-12-04 01:34:58 +0000
+
+
+Started GET "/university/GetUniversityById?nId=1" for 173.28.201.159 at 2016-12-04 01:34:59 +0000
+Processing by UniversitiesController#GetUniversityById as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT  `universities`.* FROM `universities`  WHERE `universities`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/university/GetGroupsByUniversityId?nId=1" for 173.28.201.159 at 2016-12-04 01:34:59 +0000
+Processing by UniversitiesController#GetGroupsByUniversityId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT `groups`.* FROM `groups`  WHERE `groups`.`university_id` = 1
+Completed 200 OK in 11ms (Views: 4.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/university/GetPostsByGroupId?nId=1" for 173.28.201.159 at 2016-12-04 01:35:01 +0000
+Processing by UniversitiesController#GetPostsByGroupId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT `posts`.* FROM `posts`  WHERE `posts`.`group_id` = 1[0m
+Completed 200 OK in 12ms (Views: 6.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for 173.28.201.159 at 2016-12-04 01:35:01 +0000
+
+
+Started GET "/university/GetCommentsByPostId?nId=1" for 173.28.201.159 at 2016-12-04 01:35:02 +0000
+Processing by UniversitiesController#GetCommentsByPostId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mComment Load (0.2ms)[0m  SELECT `comments`.* FROM `comments`  WHERE `comments`.`post_id` = 1
+Completed 200 OK in 9ms (Views: 5.2ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/university/AddEditCommentToPost" for 173.28.201.159 at 2016-12-04 01:35:15 +0000
+Processing by UniversitiesController#AddEditCommentToPost as HTML
+  Parameters: {"oSaveComment"=>{"id"=>8, "commentData"=>"Test 3", "postId"=>1, "like"=>0, "dislike"=>0}, "university"=>{}}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant UniversitiesController::Comments):
+  app/controllers/universities_controller.rb:74:in `AddEditCommentToPost'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.1ms)
+
+
+Started POST "/university/AddEditCommentToPost" for 173.28.201.159 at 2016-12-04 01:35:56 +0000
+Processing by UniversitiesController#AddEditCommentToPost as HTML
+  Parameters: {"oSaveComment"=>{"id"=>8, "commentData"=>"Test 3", "postId"=>1, "like"=>0, "dislike"=>0}, "university"=>{}}
+  [1m[36mSQL (4.1ms)[0m  [1mUPDATE `comments` SET `comments`.`text` = NULL, `comments`.`like` = 0, `comments`.`dislike` = 0 WHERE `comments`.`id` = 8[0m
+Mysql2::Error: Unknown column 'comments.text' in 'field list': UPDATE `comments` SET `comments`.`text` = NULL, `comments`.`like` = 0, `comments`.`dislike` = 0 WHERE `comments`.`id` = 8
+Completed 500 Internal Server Error in 10ms
+
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'comments.text' in 'field list': UPDATE `comments` SET `comments`.`text` = NULL, `comments`.`like` = 0, `comments`.`dislike` = 0 WHERE `comments`.`id` = 8):
+  app/controllers/universities_controller.rb:74:in `AddEditCommentToPost'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.8ms)
+
+
+Started POST "/university/AddEditCommentToPost" for 173.28.201.159 at 2016-12-04 01:36:56 +0000
+Processing by UniversitiesController#AddEditCommentToPost as HTML
+  Parameters: {"oSaveComment"=>{"id"=>8, "commentData"=>"Test 3", "postId"=>1, "like"=>0, "dislike"=>0}, "university"=>{}}
+  [1m[35mSQL (5.2ms)[0m  UPDATE `comments` SET `comments`.`commentData` = 'Test 3', `comments`.`like` = 0, `comments`.`dislike` = 0 WHERE `comments`.`id` = 8
+Completed 500 Internal Server Error in 42ms
+
+NoMethodError (undefined method `save' for 1:Fixnum):
+  app/controllers/universities_controller.rb:75:in `AddEditCommentToPost'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.9ms)
+
+
+Started POST "/university/AddEditCommentToPost" for 173.28.201.159 at 2016-12-04 01:40:48 +0000
+Processing by UniversitiesController#AddEditCommentToPost as HTML
+  Parameters: {"oSaveComment"=>{"id"=>8, "commentData"=>"Test 3", "postId"=>1, "like"=>0, "dislike"=>0}, "university"=>{}}
+  [1m[36mSQL (5.4ms)[0m  [1mUPDATE `comments` SET `comments`.`commentData` = 'Test 3', `comments`.`like` = 0, `comments`.`dislike` = 0 WHERE `comments`.`id` = 8[0m
+Completed 500 Internal Server Error in 13ms
+
+NoMethodError (undefined method `save' for 1:Fixnum):
+  app/controllers/universities_controller.rb:75:in `AddEditCommentToPost'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.5ms)
+
+
+Started POST "/university/AddEditCommentToPost" for 173.28.201.159 at 2016-12-04 01:41:38 +0000
+Processing by UniversitiesController#AddEditCommentToPost as HTML
+  Parameters: {"oSaveComment"=>{"id"=>8, "commentData"=>"Test 3", "postId"=>1, "like"=>0, "dislike"=>0}, "university"=>{}}
+  [1m[35mSQL (5.2ms)[0m  UPDATE `comments` SET `comments`.`commentData` = 'Test 3', `comments`.`like` = 0, `comments`.`dislike` = 0 WHERE `comments`.`id` = 8
+Completed 500 Internal Server Error in 18ms
+
+NoMethodError (undefined method `update' for 1:Fixnum):
+  app/controllers/universities_controller.rb:75:in `AddEditCommentToPost'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.6ms)
+
+
+Started POST "/university/AddEditCommentToPost" for 173.28.201.159 at 2016-12-04 01:45:13 +0000
+Processing by UniversitiesController#AddEditCommentToPost as HTML
+  Parameters: {"oSaveComment"=>{"id"=>8, "commentData"=>"Test 3", "postId"=>1, "like"=>0, "dislike"=>0}, "university"=>{}}
+  [1m[36mSQL (4.0ms)[0m  [1mUPDATE `comments` SET `comments`.`commentData` = 'Test 3', `comments`.`like` = 0, `comments`.`dislike` = 0 WHERE `comments`.`id` = 8[0m
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/" for 173.28.201.159 at 2016-12-04 01:47:26 +0000
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 46ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 173.28.201.159 at 2016-12-04 01:47:26 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 173.28.201.159 at 2016-12-04 01:47:26 +0000
+
+
+Started GET "/assets/application.css?body=1" for 173.28.201.159 at 2016-12-04 01:47:26 +0000
+
+
+Started GET "/assets/university.css?body=1" for 173.28.201.159 at 2016-12-04 01:47:26 +0000
+
+
+Started GET "/assets/angular/angular.js?body=1" for 173.28.201.159 at 2016-12-04 01:47:26 +0000
+
+
+Started GET "/assets/angular-route.js?body=1" for 173.28.201.159 at 2016-12-04 01:47:26 +0000
+
+
+Started GET "/assets/angular.js?body=1" for 173.28.201.159 at 2016-12-04 01:47:26 +0000
+
+
+Started GET "/assets/angular-resource.js?body=1" for 173.28.201.159 at 2016-12-04 01:47:26 +0000
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 173.28.201.159 at 2016-12-04 01:47:26 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 173.28.201.159 at 2016-12-04 01:47:26 +0000
+
+
+Started GET "/assets/angular/app.js?body=1" for 173.28.201.159 at 2016-12-04 01:47:26 +0000
+
+
+Started GET "/assets/angular/app/home.js?body=1" for 173.28.201.159 at 2016-12-04 01:47:26 +0000
+
+
+Started GET "/assets/angular/app/login.js?body=1" for 173.28.201.159 at 2016-12-04 01:47:26 +0000
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1" for 173.28.201.159 at 2016-12-04 01:47:26 +0000
+
+
+Started GET "/assets/angular/common/constants.js?body=1" for 173.28.201.159 at 2016-12-04 01:47:26 +0000
+
+
+Started GET "/assets/angular/common/dataService.js?body=1" for 173.28.201.159 at 2016-12-04 01:47:26 +0000
+
+
+Started GET "/assets/angular/controller/signupCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:47:26 +0000
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1" for 173.28.201.159 at 2016-12-04 01:47:26 +0000
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:47:26 +0000
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:47:26 +0000
+
+
+Started GET "/assets/angular/routes.js?body=1" for 173.28.201.159 at 2016-12-04 01:47:26 +0000
+
+
+Started GET "/assets/application.js?body=1" for 173.28.201.159 at 2016-12-04 01:47:26 +0000
+
+
+Started GET "/university/GetUniversityById?nId=1" for 173.28.201.159 at 2016-12-04 01:47:28 +0000
+Processing by UniversitiesController#GetUniversityById as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mUniversity Load (0.1ms)[0m  SELECT  `universities`.* FROM `universities`  WHERE `universities`.`id` = 1 LIMIT 1
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/university/GetGroupsByUniversityId?nId=1" for 173.28.201.159 at 2016-12-04 01:47:28 +0000
+Processing by UniversitiesController#GetGroupsByUniversityId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT `groups`.* FROM `groups`  WHERE `groups`.`university_id` = 1[0m
+Completed 200 OK in 10ms (Views: 4.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/university/GetPostsByGroupId?nId=1" for 173.28.201.159 at 2016-12-04 01:47:30 +0000
+Processing by UniversitiesController#GetPostsByGroupId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT `posts`.* FROM `posts`  WHERE `posts`.`group_id` = 1
+Completed 200 OK in 9ms (Views: 4.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for 173.28.201.159 at 2016-12-04 01:47:30 +0000
+
+
+Started GET "/university/GetCommentsByPostId?nId=1" for 173.28.201.159 at 2016-12-04 01:47:31 +0000
+Processing by UniversitiesController#GetCommentsByPostId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT `comments`.* FROM `comments`  WHERE `comments`.`post_id` = 1[0m
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/university/AddEditCommentToPost" for 173.28.201.159 at 2016-12-04 01:47:40 +0000
+Processing by UniversitiesController#AddEditCommentToPost as HTML
+  Parameters: {"oSaveComment"=>{"id"=>8, "commentData"=>"Test 4", "postId"=>1, "like"=>0, "dislike"=>0}, "university"=>{}}
+  [1m[35mSQL (5.5ms)[0m  UPDATE `comments` SET `comments`.`commentData` = 'Test 4', `comments`.`like` = 0, `comments`.`dislike` = 0 WHERE `comments`.`id` = 8
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/university/GetGroupsByUniversityId?nId=1" for 173.28.201.159 at 2016-12-04 01:47:44 +0000
+Processing by UniversitiesController#GetGroupsByUniversityId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mGroup Load (1.1ms)[0m  [1mSELECT `groups`.* FROM `groups`  WHERE `groups`.`university_id` = 1[0m
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/university/GetUniversityById?nId=1" for 173.28.201.159 at 2016-12-04 01:47:45 +0000
+Processing by UniversitiesController#GetUniversityById as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT  `universities`.* FROM `universities`  WHERE `universities`.`id` = 1 LIMIT 1
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/university/GetPostsByGroupId?nId=1" for 173.28.201.159 at 2016-12-04 01:47:47 +0000
+Processing by UniversitiesController#GetPostsByGroupId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT `posts`.* FROM `posts`  WHERE `posts`.`group_id` = 1[0m
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/university/GetCommentsByPostId?nId=1" for 173.28.201.159 at 2016-12-04 01:47:47 +0000
+Processing by UniversitiesController#GetCommentsByPostId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mComment Load (0.4ms)[0m  SELECT `comments`.* FROM `comments`  WHERE `comments`.`post_id` = 1
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 173.28.201.159 at 2016-12-04 01:47:53 +0000
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/angular/angular.js?body=1" for 173.28.201.159 at 2016-12-04 01:47:54 +0000
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:47:54 +0000
+
+
+Started GET "/university/GetUniversityById?nId=1" for 173.28.201.159 at 2016-12-04 01:47:54 +0000
+Processing by UniversitiesController#GetUniversityById as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mUniversity Load (1.2ms)[0m  [1mSELECT  `universities`.* FROM `universities`  WHERE `universities`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/university/GetGroupsByUniversityId?nId=1" for 173.28.201.159 at 2016-12-04 01:47:54 +0000
+Processing by UniversitiesController#GetGroupsByUniversityId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mGroup Load (1.5ms)[0m  SELECT `groups`.* FROM `groups`  WHERE `groups`.`university_id` = 1
+Completed 200 OK in 5ms (Views: 2.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/university/GetPostsByGroupId?nId=1" for 173.28.201.159 at 2016-12-04 01:47:56 +0000
+Processing by UniversitiesController#GetPostsByGroupId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT `posts`.* FROM `posts`  WHERE `posts`.`group_id` = 1[0m
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/university/GetCommentsByPostId?nId=1" for 173.28.201.159 at 2016-12-04 01:47:56 +0000
+Processing by UniversitiesController#GetCommentsByPostId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mComment Load (0.2ms)[0m  SELECT `comments`.* FROM `comments`  WHERE `comments`.`post_id` = 1
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/university/AddEditCommentToPost" for 173.28.201.159 at 2016-12-04 01:48:04 +0000
+Processing by UniversitiesController#AddEditCommentToPost as HTML
+  Parameters: {"oSaveComment"=>{"id"=>8, "commentData"=>"Test 45", "postId"=>1, "like"=>0, "dislike"=>0}, "university"=>{}}
+  [1m[36mSQL (5.4ms)[0m  [1mUPDATE `comments` SET `comments`.`commentData` = 'Test 45', `comments`.`like` = 0, `comments`.`dislike` = 0 WHERE `comments`.`id` = 8[0m
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/" for 173.28.201.159 at 2016-12-04 01:48:17 +0000
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 16ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 173.28.201.159 at 2016-12-04 01:48:17 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 173.28.201.159 at 2016-12-04 01:48:17 +0000
+
+
+Started GET "/assets/angular/angular.js?body=1" for 173.28.201.159 at 2016-12-04 01:48:17 +0000
+
+
+Started GET "/assets/angular-route.js?body=1" for 173.28.201.159 at 2016-12-04 01:48:17 +0000
+
+
+Started GET "/assets/angular.js?body=1" for 173.28.201.159 at 2016-12-04 01:48:17 +0000
+
+
+Started GET "/assets/application.css?body=1" for 173.28.201.159 at 2016-12-04 01:48:17 +0000
+
+
+Started GET "/assets/university.css?body=1" for 173.28.201.159 at 2016-12-04 01:48:17 +0000
+
+
+Started GET "/assets/angular-resource.js?body=1" for 173.28.201.159 at 2016-12-04 01:48:17 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 173.28.201.159 at 2016-12-04 01:48:17 +0000
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 173.28.201.159 at 2016-12-04 01:48:17 +0000
+
+
+Started GET "/assets/angular/app.js?body=1" for 173.28.201.159 at 2016-12-04 01:48:17 +0000
+
+
+Started GET "/assets/angular/app/home.js?body=1" for 173.28.201.159 at 2016-12-04 01:48:17 +0000
+
+
+Started GET "/assets/angular/app/login.js?body=1" for 173.28.201.159 at 2016-12-04 01:48:17 +0000
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1" for 173.28.201.159 at 2016-12-04 01:48:17 +0000
+
+
+Started GET "/assets/angular/common/constants.js?body=1" for 173.28.201.159 at 2016-12-04 01:48:17 +0000
+
+
+Started GET "/assets/angular/common/dataService.js?body=1" for 173.28.201.159 at 2016-12-04 01:48:17 +0000
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1" for 173.28.201.159 at 2016-12-04 01:48:17 +0000
+
+
+Started GET "/assets/angular/controller/signupCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:48:17 +0000
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:48:17 +0000
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:48:17 +0000
+
+
+Started GET "/assets/angular/routes.js?body=1" for 173.28.201.159 at 2016-12-04 01:48:17 +0000
+
+
+Started GET "/assets/application.js?body=1" for 173.28.201.159 at 2016-12-04 01:48:17 +0000
+
+
+Started GET "/university/GetUniversityById?nId=1" for 173.28.201.159 at 2016-12-04 01:48:19 +0000
+Processing by UniversitiesController#GetUniversityById as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT  `universities`.* FROM `universities`  WHERE `universities`.`id` = 1 LIMIT 1
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/university/GetGroupsByUniversityId?nId=1" for 173.28.201.159 at 2016-12-04 01:48:19 +0000
+Processing by UniversitiesController#GetGroupsByUniversityId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mGroup Load (0.2ms)[0m  [1mSELECT `groups`.* FROM `groups`  WHERE `groups`.`university_id` = 1[0m
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/university/GetPostsByGroupId?nId=1" for 173.28.201.159 at 2016-12-04 01:48:20 +0000
+Processing by UniversitiesController#GetPostsByGroupId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT `posts`.* FROM `posts`  WHERE `posts`.`group_id` = 1
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for 173.28.201.159 at 2016-12-04 01:48:20 +0000
+
+
+Started GET "/university/GetCommentsByPostId?nId=1" for 173.28.201.159 at 2016-12-04 01:48:21 +0000
+Processing by UniversitiesController#GetCommentsByPostId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mComment Load (0.5ms)[0m  [1mSELECT `comments`.* FROM `comments`  WHERE `comments`.`post_id` = 1[0m
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/university/GetPostsByGroupId?nId=2" for 173.28.201.159 at 2016-12-04 01:48:40 +0000
+Processing by UniversitiesController#GetPostsByGroupId as HTML
+  Parameters: {"nId"=>"2"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT `posts`.* FROM `posts`  WHERE `posts`.`group_id` = 2
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/university/GetPostsByGroupId?nId=3" for 173.28.201.159 at 2016-12-04 01:48:49 +0000
+Processing by UniversitiesController#GetPostsByGroupId as HTML
+  Parameters: {"nId"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT `posts`.* FROM `posts`  WHERE `posts`.`group_id` = 3[0m
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/university/GetCommentsByPostId?nId=2" for 173.28.201.159 at 2016-12-04 01:48:50 +0000
+Processing by UniversitiesController#GetCommentsByPostId as HTML
+  Parameters: {"nId"=>"2"}
+  [1m[35mComment Load (0.5ms)[0m  SELECT `comments`.* FROM `comments`  WHERE `comments`.`post_id` = 2
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/university/GetCommentsByPostId?nId=2" for 173.28.201.159 at 2016-12-04 01:49:00 +0000
+Processing by UniversitiesController#GetCommentsByPostId as HTML
+  Parameters: {"nId"=>"2"}
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT `comments`.* FROM `comments`  WHERE `comments`.`post_id` = 2[0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/university/GetCommentsByPostId?nId=2" for 173.28.201.159 at 2016-12-04 01:49:09 +0000
+Processing by UniversitiesController#GetCommentsByPostId as HTML
+  Parameters: {"nId"=>"2"}
+  [1m[35mComment Load (0.1ms)[0m  SELECT `comments`.* FROM `comments`  WHERE `comments`.`post_id` = 2
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/university/AddEditCommentToPost" for 173.28.201.159 at 2016-12-04 01:49:22 +0000
+Processing by UniversitiesController#AddEditCommentToPost as HTML
+  Parameters: {"oSaveComment"=>{"id"=>-1, "commentData"=>"housing com 1", "postId"=>2, "like"=>0, "dislike"=>0}, "university"=>{}}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `comments` (`commentData`, `created_at`, `post_id`, `updated_at`, `user_id`) VALUES ('housing com 1', '2016-12-04 01:49:22', 2, '2016-12-04 01:49:22', 6)
+  [1m[36m (6.5ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/" for 173.28.201.159 at 2016-12-04 01:50:48 +0000
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 87ms (Views: 86.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.css?body=1" for 173.28.201.159 at 2016-12-04 01:50:49 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 173.28.201.159 at 2016-12-04 01:50:49 +0000
+
+
+Started GET "/assets/angular/angular.js?body=1" for 173.28.201.159 at 2016-12-04 01:50:49 +0000
+
+
+Started GET "/assets/university.css?body=1" for 173.28.201.159 at 2016-12-04 01:50:49 +0000
+
+
+Started GET "/assets/angular-route.js?body=1" for 173.28.201.159 at 2016-12-04 01:50:49 +0000
+
+
+Started GET "/assets/angular.js?body=1" for 173.28.201.159 at 2016-12-04 01:50:49 +0000
+
+
+Started GET "/assets/application.css?body=1" for 173.28.201.159 at 2016-12-04 01:50:49 +0000
+
+
+Started GET "/assets/angular-resource.js?body=1" for 173.28.201.159 at 2016-12-04 01:50:49 +0000
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 173.28.201.159 at 2016-12-04 01:50:49 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 173.28.201.159 at 2016-12-04 01:50:49 +0000
+
+
+Started GET "/assets/angular/app.js?body=1" for 173.28.201.159 at 2016-12-04 01:50:49 +0000
+
+
+Started GET "/assets/angular/app/home.js?body=1" for 173.28.201.159 at 2016-12-04 01:50:49 +0000
+
+
+Started GET "/assets/angular/app/login.js?body=1" for 173.28.201.159 at 2016-12-04 01:50:49 +0000
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1" for 173.28.201.159 at 2016-12-04 01:50:49 +0000
+
+
+Started GET "/assets/angular/common/constants.js?body=1" for 173.28.201.159 at 2016-12-04 01:50:49 +0000
+
+
+Started GET "/assets/angular/controller/signupCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:50:49 +0000
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1" for 173.28.201.159 at 2016-12-04 01:50:49 +0000
+
+
+Started GET "/assets/angular/common/dataService.js?body=1" for 173.28.201.159 at 2016-12-04 01:50:49 +0000
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:50:49 +0000
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1" for 173.28.201.159 at 2016-12-04 01:50:49 +0000
+
+
+Started GET "/assets/angular/routes.js?body=1" for 173.28.201.159 at 2016-12-04 01:50:49 +0000
+
+
+Started GET "/assets/application.js?body=1" for 173.28.201.159 at 2016-12-04 01:50:49 +0000
+
+
+Started GET "/university/GetUniversityById?nId=1" for 173.28.201.159 at 2016-12-04 01:50:50 +0000
+Processing by UniversitiesController#GetUniversityById as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT  `universities`.* FROM `universities`  WHERE `universities`.`id` = 1 LIMIT 1
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/university/GetGroupsByUniversityId?nId=1" for 173.28.201.159 at 2016-12-04 01:50:50 +0000
+Processing by UniversitiesController#GetGroupsByUniversityId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mGroup Load (0.2ms)[0m  [1mSELECT `groups`.* FROM `groups`  WHERE `groups`.`university_id` = 1[0m
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/university/GetPostsByGroupId?nId=3" for 173.28.201.159 at 2016-12-04 01:50:54 +0000
+Processing by UniversitiesController#GetPostsByGroupId as HTML
+  Parameters: {"nId"=>"3"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT `posts`.* FROM `posts`  WHERE `posts`.`group_id` = 3
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for 173.28.201.159 at 2016-12-04 01:50:54 +0000
+
+
+Started GET "/university/GetCommentsByPostId?nId=2" for 173.28.201.159 at 2016-12-04 01:50:55 +0000
+Processing by UniversitiesController#GetCommentsByPostId as HTML
+  Parameters: {"nId"=>"2"}
+  [1m[36mComment Load (0.6ms)[0m  [1mSELECT `comments`.* FROM `comments`  WHERE `comments`.`post_id` = 2[0m
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/university/AddEditCommentToPost" for 173.28.201.159 at 2016-12-04 01:51:03 +0000
+Processing by UniversitiesController#AddEditCommentToPost as HTML
+  Parameters: {"oSaveComment"=>{"id"=>-1, "commentData"=>"housing com 2", "postId"=>2, "like"=>0, "dislike"=>0}, "university"=>{}}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `comments` (`commentData`, `created_at`, `post_id`, `updated_at`, `user_id`) VALUES ('housing com 2', '2016-12-04 01:51:03', 2, '2016-12-04 01:51:03', 6)[0m
+  [1m[35m (3.9ms)[0m  COMMIT
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 4.3ms)

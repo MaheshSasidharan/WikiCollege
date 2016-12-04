@@ -16,12 +16,13 @@ function LoginCtrl(DataService, SharedProperties) {
         LoginUser: function() {
             // Validations for lo.oLoginItem
             lo.oService.LoginUser(lo.oLoginItem).then(function(data) {
-                console.log(data);
                 if (data.status) {
-                    alert(data.msg);
+                    lo.oLoginItem.bLoggedIn = true;
+                    lo.oLoginItem.bShow = false;
+                }else{
+                    // Show login failed message
                 }
             });
         }
     }
-    
 }

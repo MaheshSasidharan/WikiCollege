@@ -23,7 +23,7 @@ function SignupCtrl(DataService, CommonFactory) {
             su.oService.AddUser(su.oUser).then(function(data) {
                 console.log(data);
                 if (data.status) {
-                    alert(data.msg);
+                    lo.oLoginItem.bLoggedIn = true;
                 }
             });
         }

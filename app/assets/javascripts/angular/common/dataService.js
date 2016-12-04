@@ -64,6 +64,12 @@ function DataService($http, Constants, CommonFactory) {
                 Helper.Miscellaneous.ReturnDataDotData,
                 Helper.Miscellaneous.FailedInService)
             },
+            AddEditCommentToPost: function (oSaveComment) {
+                return $http.post(Helper.app + Helper.University.controller + 'AddEditCommentToPost', { oSaveComment: oSaveComment })
+                  .then(
+                Helper.Miscellaneous.ReturnDataDotData,
+                Helper.Miscellaneous.FailedInService)
+            },
             SearchCity: function (sCity) {
                 return $http.get(Helper.app + Helper.University.controller + 'SearchCity?sCity=' + sCity)
                 .then(
@@ -76,6 +82,12 @@ function DataService($http, Constants, CommonFactory) {
             AddUser: function (oSaveItem) {
                 return $http.post(Helper.app + Helper.User.controller + 'AddUser', { oSaveItem: oSaveItem })
                   .then(
+                Helper.Miscellaneous.ReturnDataDotData,
+                Helper.Miscellaneous.FailedInService)
+            },
+            Logout: function () {
+                return $http.get(Helper.app + Helper.User.controller + 'Logout')
+                .then(
                 Helper.Miscellaneous.ReturnDataDotData,
                 Helper.Miscellaneous.FailedInService)
             },
@@ -103,9 +115,11 @@ function DataService($http, Constants, CommonFactory) {
         GetGroupsByUniversityId: Helper.University.GetGroupsByUniversityId,
         GetPostsByGroupId: Helper.University.GetPostsByGroupId,
         GetCommentsByPostId: Helper.University.GetCommentsByPostId,
+        AddEditCommentToPost: Helper.University.AddEditCommentToPost,
         
         // User
         AddUser: Helper.User.AddUser,
+        Logout: Helper.User.Logout,
         LoginUser: Helper.User.LoginUser,
         
         // Testing part

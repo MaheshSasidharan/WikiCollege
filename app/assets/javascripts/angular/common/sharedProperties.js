@@ -5,7 +5,8 @@ function SharedProp() {
         oLoginItem: {
             email: null,
             password: null,
-            bShow: false
+            bShow: false,
+            bLoggedIn: false
         },
         Constructor: {
             Group: function(oItem) {

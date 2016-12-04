@@ -3,9 +3,9 @@ class UsersController < ApplicationController
   before_filter :user_params, only: [:AddUser]
   before_filter :userlogin_params, only: [:LoginUser]
 
-  def show
-    @user = User.find(params[:id])
-  end
+  # def show
+  #   @user = User.find(params[:id])
+  # end
 
 #   def show
 #     @user = User.find(params[:id])
@@ -40,8 +40,6 @@ class UsersController < ApplicationController
   end
 
   def LoginUser
-    #puts params
-    #puts userlogin_params
     puts userlogin_params[:email]
     user = User.find_by(email: userlogin_params[:email])
     if user && user.authenticate(userlogin_params[:password])
@@ -60,18 +58,19 @@ class UsersController < ApplicationController
     else
       @user = User.new(user_params)
       if @user.save 
-          render :json => { status: true, msg: "Your account is successfully created", userId: @user.id }
-          #session[:user_id] = @user.id #once they sign up, they are automatically logged in
+        session[:user_id] = @user.id
+        render :json => { status: true, msg: "Your account is successfully created", userId: @user.id }
+        #session[:user_id] = @user.id #once they sign up, they are automatically logged in
       else
-          render :json => { status: false, msg: "Sorry, we were unable to create your account. Please try again later."}
+        render :json => { status: false, msg: "Sorry, we were unable to create your account. Please try again later."}
       end
     end 
   end
   
-  def destroy 
-     session[:user_id] = nil
-     @user = nil
-     render :json => { status: true, msg: "Logged out successfully"}
+  def Logout 
+    puts session[:user_id]
+    session[:user_id] = nil
+    render :json => { status: true, msg: "Logged out successfully"}
   end
 
   def user_params
