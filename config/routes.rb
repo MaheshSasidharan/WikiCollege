@@ -28,13 +28,15 @@ Rails.application.routes.draw do
   post 'university/GetAllUniversities' => 'universities#GetAllUniversities'
   post 'university/TestPost' => 'universities#TestPost'
   
+  post 'university/AddEditGroup' => 'universities#AddEditGroup'
+  post 'university/AddEditPost' => 'universities#AddEditPost'
   post 'university/AddEditCommentToPost' => 'universities#AddEditCommentToPost'
   
   get 'users/Logout' => 'users#Logout'
   post 'users/AddUser' => 'users#AddUser'
   post 'users/LoginUser' => 'users#LoginUser'
   
-  get 'university/Search' => 'universities#Search'
+  get 'university/SearchCity' => 'universities#SearchCity'
   
   
   # --- resources :sessions, only: [:new, :create, :destroy]

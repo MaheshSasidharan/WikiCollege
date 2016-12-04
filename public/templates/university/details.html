@@ -33,7 +33,7 @@
                     </div>
                     <div class="col-md-8">
                         <span ng-show="!edit">{{comments.Comment}}</span>
-                        <input ng-show="edit" class="form-control" ng-model="comments.Comment" ng-blur="edit = false; ud.Helper.AddEditCommentToPost('edit', comments)"/>
+                        <input ng-show="edit" class="form-control" ng-model="comments.Comment"/>
                     </div>
                     <div class="col-md-2">
                         <span class="WC_Comments_CreatedBy">{{comments.CreatedBy}}</span>
@@ -41,15 +41,16 @@
                         <i>{{comments.CreatedWhen | date: 'MMM d, y h:mm a'}}</i>
                     </div>
                     <div class="col-md-1">
-                        <div class="row pull-right">
-                            <button type="button" class="btn btn-xs btn-default" ng-click="">
-                                <span class="glyphicon glyphicon-edit" ng-click="edit = true"></span>
+                        <div class="row pull-right" ng-show="ud.oLoginItem.bLoggedIn">
+                            <button type="button" class="btn btn-xs btn-default">
+                                <span ng-show="!edit" class="glyphicon glyphicon-edit" ng-click="edit = true; $event.stopPropagation()"></span>
+                                <span ng-show="edit"  class="glyphicon glyphicon-save" ng-click="edit = false; ud.Helper.AddEditCommentToPost('edit', comments)"></span>
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row WC_CommentsAdd">
+            <div class="row WC_CommentsAdd" ng-show="ud.oLoginItem.bLoggedIn">
                 <div class="col-md-1"></div>
                 <div class="col-md-10">
                     <input type="textarea" class="form-control" ng-model="ud.sComment" placeholder="type your comments..." />

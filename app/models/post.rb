@@ -5,7 +5,7 @@ class Post < ActiveRecord::Base
     #has_many :likes
     
     #validates :id, presence: true 
-    validates :postData, presence: true, length: {minimum: 5, maximum: 100}
+    #validates :postData, presence: true, length: {minimum: 5, maximum: 100}
     
   #implementing thumbs up feature
   def thumbs_up_total

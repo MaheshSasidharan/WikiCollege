@@ -3,7 +3,29 @@ class UniversitiesController < ApplicationController
   
   before_filter :univ_params, only: [:TestPost]
   before_filter :Params_GetAllUniversities, only: [:GetAllUniversities]
+  before_filter :group_params, only: [:AddEditGroup]
+  before_filter :post_params, only: [:AddEditPost]
   before_filter :comment_params, only: [:AddEditCommentToPost]
+    
+  def univ_params
+    params.fetch(:oSaveItem).permit(:a, :b)
+  end
+  
+  def Params_GetAllUniversities
+    params.fetch(:oFilter).permit(:a, :b)
+  end
+  
+  def group_params
+    params.fetch(:oSaveGroup).permit(:id, :universityId, :groupName, :desc)
+  end
+  
+  def post_params
+    params.fetch(:oSavePost).permit(:id, :groupId, :postData, :like, :dislike)
+  end
+  
+  def comment_params
+    params.fetch(:oSaveComment).permit(:id, :postId, :commentData, :like, :dislike)
+  end
   
   respond_to :json
   
@@ -48,6 +70,61 @@ class UniversitiesController < ApplicationController
       render :json => { status: false, msg: "Failed to find comments under this Post" }
     end
   end
+
+  def AddEditGroup
+    if(group_params[:id].nil? || group_params[:id] == -1)
+      # Add new group
+      newGroup_params = Hash.new
+      newGroup_params['user_id'] = session[:user_id]
+      newGroup_params['groupName'] = group_params[:groupName]
+      newGroup_params['desc'] = group_params[:desc]
+      newGroup_params['university_id'] = group_params[:universityId]
+      
+      @group = Group.new(newGroup_params)
+      if @group.save
+        render :json => { status: true, groupId: @group.id, sType: 'GroupAdded' }
+      else
+        render :json => { status: false, sType: 'GroupAddFailed'}
+      end
+    else
+      # Edit Group
+      @groupUpdated = Group.where(:id => group_params[:id]).update_all(groupName: group_params[:groupName], desc: group_params[:desc], university_id: group_params[:universityId], user_id: session[:user_id])
+      print @groupUpdated
+      if @groupUpdated > 0
+        render :json => { status: true, sType: 'GroupUpdated' }
+      else
+        render :json => { status: false, sType: 'GroupUpdateFailed'}
+      end
+    end
+  end
+  
+  def AddEditPost
+    if(post_params[:id].nil? || post_params[:id] == -1)
+      # Add new post
+      newPost_params = Hash.new
+      newPost_params['user_id'] = session[:user_id]
+      newPost_params['group_id'] = post_params[:groupId]
+      newPost_params['postData'] = post_params[:postData]
+      newPost_params['like'] = post_params[:like]
+      newPost_params['dislike'] = post_params[:dislike]
+      puts newPost_params
+      @post = Post.new(newPost_params)
+      if @post.save
+        render :json => { status: true, postId: @post.id, sType: 'PostAdded' }
+      else
+        render :json => { status: false, sType: 'PostAddFailed'}
+      end
+    else
+      # Edit Post
+      @postUpdated = Post.where(:id => post_params[:id]).update_all(group_id: post_params[:groupId], postData: post_params[:postData], like: post_params[:like], dislike: post_params[:dislike], user_id: session[:user_id])
+      print @postUpdated
+      if @postUpdated > 0
+        render :json => { status: true, sType: 'PostUpdated' }
+      else
+        render :json => { status: false, sType: 'PostUpdateFailed'}
+      end
+    end
+  end
   
   def AddEditCommentToPost
     if(comment_params[:id].nil? || comment_params[:id] == -1)
@@ -70,7 +147,6 @@ class UniversitiesController < ApplicationController
       @commentsUpdated = Comment.where(:id => comment_params[:id]).update_all(commentData: comment_params[:commentData], like: comment_params[:like], dislike: comment_params[:dislike])
       print @commentsUpdated
       if @commentsUpdated > 0
-        puts @comment
         render :json => { status: true, sType: 'CommentUpdated' }
       else
         render :json => { status: false, sType: 'CommentUpdateFailed'}
@@ -111,17 +187,5 @@ class UniversitiesController < ApplicationController
     else
       render :json => { status: false, msg: "No City name provided" }
     end
-  end
-  
-  def univ_params
-    params.fetch(:oSaveItem).permit(:a, :b)
-  end
-  
-  def Params_GetAllUniversities
-    params.fetch(:oFilter).permit(:a, :b)
-  end
-  
-  def comment_params
-    params.fetch(:oSaveComment).permit(:commentData, :postId, :id, :like, :dislike)
   end
 end    
