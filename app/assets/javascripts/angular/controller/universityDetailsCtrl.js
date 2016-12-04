@@ -40,6 +40,16 @@ function UniversityDetailsCtrl(DataService, CommonFactory, Constants, SharedProp
         return data;
       });
     },
+    GetCommentsByPostId: function(nId) {
+      return DataService.GetCommentsByPostId(nId).then(function(data) {
+        return data;
+      });
+    },
+    AddEditCommentToPost: function(oSaveComment) {
+      return DataService.AddEditCommentToPost(oSaveComment).then(function(data) {
+        return data;
+      });
+    },
   }
 
   ud.Helper = {
@@ -85,35 +95,63 @@ function UniversityDetailsCtrl(DataService, CommonFactory, Constants, SharedProp
     },
     GetCommentsByPostId: function(oPost) {
       if (oPost.arrComments === null) {
-        oPost.arrComments = [];
+        //oPost.arrComments = [];
+        ud.oPost = oPost;
+        /*
         arrComments.forEach(function(oItem) {
           oPost.arrComments.push(new SharedProperties.Constructor.Comments(oItem));
         });
+        */
         //oPost.arrComments = arrComments;
-        ud.oPost = oPost;
-        ud.Popup.ShowPopup(true, "comments", Constants.University.Popup.CommentTitle);
-        return;
         ud.oService.GetCommentsByPostId(oPost.Id).then(function(data) {
-          //ud.arrPosts = data.arrPosts;
-          if (data.arrComments.length) {
-            data.arrComments.forEach(function(oItem) {
-              oPost.arrComments.push(new SharedProperties.Constructor.Comments(oItem));
-            });
+          if (data.status) {
+            ud.Popup.ShowPopup(true, "comments", Constants.University.Popup.CommentTitle);
+            //ud.arrPosts = data.arrPosts;
+            if (data.arrComments.length) {
+              ud.oPost.arrComments = [];
+              data.arrComments.forEach(function(oItem) {
+                ud.oPost.arrComments.push(new SharedProperties.Constructor.Comments(oItem));
+              });
+            }
           }
         });
       }
     },
-    AddComment: function() {
-      var oItem = {
-        id: 4,
-        commentData: ud.sComment,
-        user: "NEW USER",
-        timestamps: new Date(),
-        like: 0,
-        dislike: 0
+    AddEditCommentToPost: function(sType, oSaveItem) {
+      var oItem = null;
+      if (sType === 'add') {
+        oItem = {
+          id: -1,
+          commentData: ud.sComment,
+          postId: ud.oPost.Id,
+          like: 0,
+          dislike: 0
+        }
       }
-      ud.oPost.arrComments.push(new SharedProperties.Constructor.Comments(oItem));
-      ud.sComment = null;
+      else { // edit
+        oItem = {
+          id: oSaveItem.Id,
+          commentData: oSaveItem.Comment,
+          postId: ud.oPost.Id,
+          like: oSaveItem.UpVotes,
+          dislike: oSaveItem.DownVotes
+        };
+      }
+
+      ud.oService.AddEditCommentToPost(oItem).then(function(data) {
+        if (data.status) {
+          if (sType === 'add') {
+            if (!ud.oPost.arrComments) {
+              ud.oPost.arrComments = [];
+            }
+            ud.oPost.arrComments.push(new SharedProperties.Constructor.Comments(oItem));
+            ud.sComment = null;
+          }
+        }
+        else {
+          alert(data.sType)
+        }
+      });
     },
     UpdateUniv: function() {
       console.log(ud.oUniv);

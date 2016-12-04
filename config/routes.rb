@@ -23,19 +23,24 @@ Rails.application.routes.draw do
   get 'university/GetUniversityById' => 'universities#GetUniversityById'
   get 'university/GetGroupsByUniversityId' => 'universities#GetGroupsByUniversityId'
   get 'university/GetPostsByGroupId' => 'universities#GetPostsByGroupId'
+  get 'university/GetCommentsByPostId' => 'universities#GetCommentsByPostId'
 
   post 'university/GetAllUniversities' => 'universities#GetAllUniversities'
   post 'university/TestPost' => 'universities#TestPost'
   
+  post 'university/AddEditCommentToPost' => 'universities#AddEditCommentToPost'
+  
+  get 'users/Logout' => 'users#Logout'
   post 'users/AddUser' => 'users#AddUser'
+  post 'users/LoginUser' => 'users#LoginUser'
   
   get 'university/Search' => 'universities#Search'
   
   
-  # resources :sessions, only: [:new, :create, :destroy]
-  # match '/signup', to: 'users#new', via: :get
-  # match '/login',  to: 'sessions#new', via: :get
-  # match '/logout', to: 'sessions#destroy', via: :delete
+  # --- resources :sessions, only: [:new, :create, :destroy]
+  # ---match '/signup', to: 'users#new', via: :get
+  # --- match '/login',  to: 'sessions#new', via: :get
+  # --- match '/logout', to: 'sessions#destroy', via: :delete
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

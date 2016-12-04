@@ -32,7 +32,8 @@
                         </div>
                     </div>
                     <div class="col-md-8">
-                        {{comments.Comment}}
+                        <span ng-show="!edit">{{comments.Comment}}</span>
+                        <input ng-show="edit" class="form-control" ng-model="comments.Comment" ng-blur="edit = false; ud.Helper.AddEditCommentToPost('edit', comments)"/>
                     </div>
                     <div class="col-md-2">
                         <span class="WC_Comments_CreatedBy">{{comments.CreatedBy}}</span>
@@ -42,7 +43,7 @@
                     <div class="col-md-1">
                         <div class="row pull-right">
                             <button type="button" class="btn btn-xs btn-default" ng-click="">
-                                <span class="glyphicon glyphicon-floppy-disk" ng-click="post.IncrementUpvotes(post)"></span>
+                                <span class="glyphicon glyphicon-edit" ng-click="edit = true"></span>
                             </button>
                         </div>
                     </div>
@@ -55,7 +56,7 @@
                 </div>
                 <div class="col-md-1">
                     <div class="row pull-right">
-                        <button type="button" class="btn btn-xs btn-default" ng-click="ud.Helper.AddComment()">
+                        <button type="button" class="btn btn-xs btn-default" ng-click="ud.Helper.AddEditCommentToPost('add')">
                                 <span class="glyphicon glyphicon-send"></span>
                         </button>
                     </div>
