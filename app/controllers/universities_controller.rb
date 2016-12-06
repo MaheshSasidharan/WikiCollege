@@ -188,7 +188,6 @@ class UniversitiesController < ApplicationController
       render :json => { status: false, msg: "No City name provided" }
     end
   end
-<<<<<<< HEAD
   
   def univ_params
     params.fetch(:oSaveItem).permit(:a, :b)
@@ -225,6 +224,4 @@ class UniversitiesController < ApplicationController
     @arrUniversities = University.where(rank: rank_range,arrTuition: fees_range)
     render :json => { status: true, arrUniversities: @arrUniversities }
   end
-=======
->>>>>>> 9947130a5ae452e22300b2386ab22f26c7d6899a
 end    
