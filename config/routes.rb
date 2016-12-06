@@ -28,14 +28,21 @@ Rails.application.routes.draw do
   post 'university/GetAllUniversities' => 'universities#GetAllUniversities'
   post 'university/TestPost' => 'universities#TestPost'
   
+  post 'university/AddEditGroup' => 'universities#AddEditGroup'
+  post 'university/AddEditPost' => 'universities#AddEditPost'
   post 'university/AddEditCommentToPost' => 'universities#AddEditCommentToPost'
   
   get 'users/Logout' => 'users#Logout'
   post 'users/AddUser' => 'users#AddUser'
   post 'users/LoginUser' => 'users#LoginUser'
   
+<<<<<<< HEAD
   get 'university/Search' => 'universities#Search'
   post 'university/Filter' => 'universities#Filter'
+=======
+  get 'university/SearchCity' => 'universities#SearchCity'
+  
+>>>>>>> 9947130a5ae452e22300b2386ab22f26c7d6899a
   
   # --- resources :sessions, only: [:new, :create, :destroy]
   # ---match '/signup', to: 'users#new', via: :get

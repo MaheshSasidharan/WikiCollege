@@ -1,14 +1,40 @@
 <div class="WC_UnivDiscussions">
-<div class="row">
+    <div class="row">
         <div class="col-md-3">
-            <table class="table table-bordered table-hover WC_IndiGroup">
+            <table class="table table-hover WC_IndiGroup">
                 <tbody>
                     <tr ng-repeat="group in ud.arrGroups | orderBy:'-NumOfPosts'" ng-click="ud.Helper.GetPostsByGroupId(group)">
-                        <td>{{group.Title}}</td>
-                        <td ng-if="false">{{group.NumOfPosts}}</td>
+                        <td>
+                            <div ng-show="!edit"class="WC_ObjectTitle">{{group.Title}}</div>
+                            <div ng-show="!edit" class="WC_ObjectDescription">{{group.Description}}</div>
+                            <input ng-show="edit" class="form-control" ng-model="group.Title" ng-click="$event.stopPropagation()" required/>
+                            <input ng-show="edit" class="form-control" ng-model="group.Description" ng-click="$event.stopPropagation()" required/>
+                        </td>
+                        <td>
+                            <div class="row pull-right" ng-show="ud.oLoginItem.bLoggedIn">
+                                <button type="button" class="btn btn-xs btn-default">
+                                    <span ng-show="!edit" class="glyphicon glyphicon-edit" ng-click="edit = true; $event.stopPropagation()"></span>
+                                    <span ng-show="edit"  class="glyphicon glyphicon-save" ng-click="edit = false; ud.Helper.AddEditGroup($event, 'edit', group)"></span>
+                                </button>
+                            </div>
+                        </td>
                     </tr>
                 </tbody>
             </table>
+            <div class="WC_AddOne WC_Gradient" ng-show="!addGroup && ud.oLoginItem.bLoggedIn" ng-click="addGroup = true">
+                <span class="glyphicon glyphicon-plus-sign"></span>
+                <span>Add new post</span>
+            </div>
+            <form ng-show="addGroup" name="FormAddGroup" novalidate  ng-submit="addGroup = false; ud.Helper.AddEditGroup($event, 'add')">
+                <div>
+                    <input class="form-control" ng-model="ud.oEditGroup.groupName" placeholder="Group name" required/>
+                    <input class="form-control" ng-model="ud.oEditGroup.Description" placeholder="Group description" required/>
+                </div>
+                <div class="btn-group pull-right">
+                    <button class="btn btn-danger" ng-click="addGroup = false; ud.oEditGroup = null; $event.stopPropagation()" type="button">Cancel</button>
+                    <button class="btn btn-primary" ng-disabled="!FormAddGroup.$valid" type="submit">Add</button>
+                </div>
+            </form>
         </div>
         <div class="col-md-offset-1 col-md-8">
             <table class="table table-hover WC_Post">
@@ -17,9 +43,20 @@
                         <td class="col-md-1">
                             <span class="glyphicon glyphicon-thumbs-up" ng-click="post.IncrementUpvotes(post)"></span> {{post.UpVotes}}
                         </td>
-                        <td class="col-md-8">{{post.Title}}</td>
+                        <td class="col-md-7">
+                            <span ng-show="!edit">{{post.Title}}</span>
+                            <input ng-show="edit" class="form-control" ng-model="post.Title" ng-click="$event.stopPropagation()" />
+                        </td>
                         <td class="col-md-3">
-                            {{post.CreatedBy}} - {{post.CreatedWhen | date: 'medium'}} 
+                            {{post.CreatedBy}} - {{post.CreatedWhen | date: 'medium'}}
+                        </td>
+                        <td class="col-md-1">
+                            <div class="row pull-right" ng-show="ud.oLoginItem.bLoggedIn">
+                                <button type="button" class="btn btn-xs btn-default">
+                                    <span ng-show="!edit" class="glyphicon glyphicon-edit" ng-click="edit = true; $event.stopPropagation()"></span>
+                                    <span ng-show="edit"  class="glyphicon glyphicon-save" ng-click="edit = false; ud.Helper.AddEditPost($event, 'edit', post)"></span>
+                                </button>
+                            </div>
                         </td>
                     </tr>
                     <tr ng-show="ud.arrPosts == null">
@@ -27,20 +64,19 @@
                     </tr>
                 </tbody>
             </table>
+            <div class="WC_AddOne WC_Gradient" ng-show="!addPost && ud.oLoginItem.bLoggedIn" ng-click="addPost = true">
+                <span class="glyphicon glyphicon-plus-sign"></span>
+                <span>Add new post</span>
+            </div>
+            <form ng-show="addPost" name="FormAddPost" novalidate  ng-submit="addPost = false; ud.Helper.AddEditPost($event, 'add')">
+                <div>
+                    <input class="form-control" ng-model="ud.oEditPost.Title" placeholder="Enter your post" required/>
+                </div>
+                <div class="btn-group pull-right">
+                    <button class="btn btn-danger" ng-click="addPost = false; ud.oEditPost = null" type="button">Cancel</button>
+                    <button class="btn btn-primary" ng-disabled="!FormAddPost.$valid" type="submit">Add</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-</div>
-
-
-<form ng-show="false" ng-submit="addPost()" style="margin-top:30px;">
-    <h3>Add a new post</h3>
-
-    <div class="form-group">
-        <input type="text" class="form-control" placeholder="Title" ng-model="title"></input>
-    </div>
-    <div class="form-group">
-        <input type="text" class="form-control" placeholder="Link" ng-model="link"></input>
-    </div>
-    <button type="submit" class="btn btn-primary">Post</button>
-</form>

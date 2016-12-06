@@ -1,7 +1,9 @@
-myApp.controller("SignupCtrl", ['Factory_DataService', 'Factory_CommonRoutines', SignupCtrl]);
+myApp.controller("SignupCtrl", ['Factory_DataService', 'Factory_CommonRoutines', 'SharedProperties', SignupCtrl]);
 
-function SignupCtrl(DataService, CommonFactory) {
+function SignupCtrl(DataService, CommonFactory, SharedProperties) {
     var su = this;
+
+    su.oLoginItem = SharedProperties.oLoginItem;
 
     su.oUser = {
         name: null,
@@ -23,7 +25,7 @@ function SignupCtrl(DataService, CommonFactory) {
             su.oService.AddUser(su.oUser).then(function(data) {
                 console.log(data);
                 if (data.status) {
-                    lo.oLoginItem.bLoggedIn = true;
+                    su.oLoginItem.bLoggedIn = true;
                 }
             });
         }
