@@ -124,4 +124,12 @@ class UniversitiesController < ApplicationController
   def comment_params
     params.fetch(:oSaveComment).permit(:commentData, :postId, :id, :like, :dislike)
   end
+  
+  def Filter
+    print "Print params.....................",  params
+    rank_range = params[:filter][:rank][:low]..params[:filter][:rank][:high]
+    fees_range = params[:filter][:fees][:low]..params[:filter][:fees][:high]
+    @arrUniversities = University.where(rank: rank_range,arrTuition: fees_range )
+    render :json => { status: true, arrUniversities: @arrUniversities }
+  end
 end    
