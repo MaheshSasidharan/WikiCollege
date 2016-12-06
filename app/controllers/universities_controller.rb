@@ -127,9 +127,25 @@ class UniversitiesController < ApplicationController
   
   def Filter
     print "Print params.....................",  params
+    #defaulting rank low to 1 and high to unrealistic value 10000
+    if params[:filter][:rank][:low] == nil || params[:filter][:rank][:low] == ""
+      params[:filter][:rank][:low] = "1"
+    end
+    if params[:filter][:rank][:high] == nil || params[:filter][:rank][:high] == ""
+      params[:filter][:rank][:high] = "10000"
+    end  
+    
+    #Defaulting low fee to 0 and high fee to unrealistic value
+    if params[:filter][:fees][:low] == nil || params[:filter][:fees][:low] == ""
+      params[:filter][:fees][:low] = "0"
+    end  
+    if params[:filter][:fees][:high] == nil || params[:filter][:fees][:low] == ""
+      params[:filter][:fees][:high] = "9999999"
+    end  
+    
     rank_range = params[:filter][:rank][:low]..params[:filter][:rank][:high]
     fees_range = params[:filter][:fees][:low]..params[:filter][:fees][:high]
-    @arrUniversities = University.where(rank: rank_range,arrTuition: fees_range )
+    @arrUniversities = University.where(rank: rank_range,arrTuition: fees_range)
     render :json => { status: true, arrUniversities: @arrUniversities }
   end
 end    
