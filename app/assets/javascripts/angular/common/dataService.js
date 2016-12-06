@@ -107,8 +107,8 @@ function DataService($http, Constants, CommonFactory) {
             }
         },
         Filter: function(filterData){
-            console.log("In get call")
-            return $http.get("Intergrate with ruby controller here")
+            console.log()
+            return $http.post(Helper.app + Helper.University.controller + 'Filter', {filter: filterData})
                 .then(
                 Helper.Miscellaneous.ReturnDataDotData,
                 Helper.Miscellaneous.FailedInService)
