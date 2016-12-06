@@ -35,7 +35,7 @@ Rails.application.routes.draw do
   post 'users/LoginUser' => 'users#LoginUser'
   
   get 'university/Search' => 'universities#Search'
-  
+  post 'university/Filter' => 'universities#Filter'
   
   # --- resources :sessions, only: [:new, :create, :destroy]
   # ---match '/signup', to: 'users#new', via: :get
