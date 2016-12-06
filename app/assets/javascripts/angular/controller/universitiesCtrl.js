@@ -92,7 +92,7 @@ function UniversityCtrl(DataService, CommonFactory) {
   un.ApplyFilters = function(){
     console.log(un.filterObject)
     DataService.filter(un.filterObject).then(function(data){
-      //This will reload the table and set the filters
+      un.arrColleges = data.arrUniversities
     })
   }
   
