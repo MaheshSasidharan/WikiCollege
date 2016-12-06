@@ -60,7 +60,8 @@
     height: 400px;
     float: left;
     background-color: #ddd;
-    margin-right: 25px
+    margin-right: 25px;
+    border-radius: 10px
 }
 
 /*Overriding bootstrap CSS*/
