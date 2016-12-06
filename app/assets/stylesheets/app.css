@@ -1,3 +1,74 @@
+/* Common */
+*:not(.ng-hide){
+    transition: all 200ms linear;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.ng-hide.ng-hide-animate{
+     display: none !important;
+}
+
+.ng-enter {
+    -webkit-transition: 0.5s cubic-bezier(.1,.9,0,1);
+    transition: 0.5s cubic-bezier(.1,.9,0,1);
+}
+
+.ng-enter {
+    opacity: 0;
+    margin-left: 30% !important;
+}
+
+.ng-enter-active {
+    margin-left: 0 !important;
+    opacity: 1;
+}
+
+.ng-leave{
+    transition: none !important;
+    -webkit-transition: none !important;
+}
+
+input.ng-invalid-pattern, input.ng-invalid-minlength, input.ng-invalid-required, select.ng-invalid-required, input.ng-invalid-date {
+    background-color: rgba(100,0,0,.2);
+}
+
+textarea.ng-invalid-required {
+    background-color: rgba(100,0,0,.2);
+}
+
+.marginZero{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.TabSection li {
+    font-size: 20px;
+}
+
+.TabSection li.active {
+    box-shadow: 2px 0px 33px grey;
+}
+
+.TabSection li.active a {
+    border: none !important;
+}
+
+.navbar-header a {
+    font-style: italic;
+    font-size: 39px !important;
+}
+
+nav.navbar {
+    box-shadow: 0px -5px 15px indianred;
+}
+
+nav li:hover {
+    background: rgba(0, 128, 0, 0.05);
+}
+
 /*Common*/
 .cursorPointer{
     cursor: pointer;

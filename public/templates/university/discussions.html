@@ -1,26 +1,26 @@
 <div class="WC_UnivDiscussions">
     <div class="row">
         <div class="col-md-3">
-            <table class="table table-hover WC_IndiGroup">
-                <tbody>
-                    <tr ng-repeat="group in ud.arrGroups | orderBy:'-NumOfPosts'" ng-click="ud.Helper.GetPostsByGroupId(group)">
-                        <td>
-                            <div ng-show="!edit"class="WC_ObjectTitle">{{group.Title}}</div>
-                            <div ng-show="!edit" class="WC_ObjectDescription">{{group.Description}}</div>
-                            <input ng-show="edit" class="form-control" ng-model="group.Title" ng-click="$event.stopPropagation()" required/>
-                            <input ng-show="edit" class="form-control" ng-model="group.Description" ng-click="$event.stopPropagation()" required/>
-                        </td>
-                        <td>
+            <div class="table table-hover WC_IndiGroup">
+                <div>
+                    <div class="WC_IndiGroupRow row" ng-repeat="group in ud.arrGroups | orderBy:'-NumOfPosts'" ng-click="ud.Helper.GetPostsByGroupId(group)">
+                        <div class="col-md-10">
+                            <div ng-cloak ng-show="!edit"class="WC_ObjectTitle">{{group.Title}}</div>
+                            <div ng-cloak ng-show="!edit" class="WC_ObjectDescription">{{group.Description}}</div>
+                            <input ng-cloak ng-show="edit" class="form-control" ng-model="group.Title" ng-click="$event.stopPropagation()" required/>
+                            <input ng-cloak ng-show="edit" class="form-control" ng-model="group.Description" ng-click="$event.stopPropagation()" required/>
+                        </div>
+                        <div class="col-md-2">
                             <div class="row pull-right" ng-show="ud.oLoginItem.bLoggedIn">
                                 <button type="button" class="btn btn-xs btn-default">
-                                    <span ng-show="!edit" class="glyphicon glyphicon-edit" ng-click="edit = true; $event.stopPropagation()"></span>
-                                    <span ng-show="edit"  class="glyphicon glyphicon-save" ng-click="edit = false; ud.Helper.AddEditGroup($event, 'edit', group)"></span>
+                                    <span ng-cloak ng-show="!edit" class="glyphicon glyphicon-edit" ng-click="edit = true; $event.stopPropagation()"></span>
+                                    <span ng-cloak ng-show="edit"  class="glyphicon glyphicon-save" ng-click="edit = false; ud.Helper.AddEditGroup($event, 'edit', group)"></span>
                                 </button>
                             </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="WC_AddOne WC_Gradient" ng-show="!addGroup && ud.oLoginItem.bLoggedIn" ng-click="addGroup = true">
                 <span class="glyphicon glyphicon-plus-sign"></span>
                 <span>Add new post</span>
@@ -39,12 +39,12 @@
         <div class="col-md-offset-1 col-md-8">
             <table class="table table-hover WC_Post">
                 <tbody>
-                    <tr ng-repeat="post in ud.arrPosts | orderBy:'-Upvotes'" ng-click="showComments = !showComments;  ud.Helper.GetCommentsByPostId(post)">
+                    <tr class="WC_IndiGroupRow" ng-repeat="post in ud.arrPosts | orderBy:'-Upvotes'" ng-click="showComments = !showComments;  ud.Helper.GetCommentsByPostId(post)">
                         <td class="col-md-1">
                             <span class="glyphicon glyphicon-thumbs-up" ng-click="post.IncrementUpvotes(post)"></span> {{post.UpVotes}}
                         </td>
                         <td class="col-md-7">
-                            <span ng-show="!edit">{{post.Title}}</span>
+                            <span class="WC_ObjectDescription" ng-show="!edit">{{post.Title}}</span>
                             <input ng-show="edit" class="form-control" ng-model="post.Title" ng-click="$event.stopPropagation()" />
                         </td>
                         <td class="col-md-3">
