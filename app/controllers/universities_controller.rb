@@ -215,7 +215,7 @@ class UniversitiesController < ApplicationController
     if params[:filter][:fees][:low] == nil || params[:filter][:fees][:low] == ""
       params[:filter][:fees][:low] = "0"
     end  
-    if params[:filter][:fees][:high] == nil || params[:filter][:fees][:low] == ""
+    if params[:filter][:fees][:high] == nil || params[:filter][:fees][:high] == ""
       params[:filter][:fees][:high] = "9999999"
     end  
     
