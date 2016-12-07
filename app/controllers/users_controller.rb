@@ -44,7 +44,7 @@ class UsersController < ApplicationController
     user = User.find_by(email: userlogin_params[:email])
     if user && user.authenticate(userlogin_params[:password])
       session[:user_id] = user.id
-      render :json => { status: true, msg: "Successfully logged in" }
+      render :json => { status: true,msg: "Successfully logged in" }
     else
       render :json => { status: false, msg: "Invalid user" }
     end
@@ -67,6 +67,11 @@ class UsersController < ApplicationController
     end 
   end
   
+  def GetUserInfo
+    @user = current_user
+    render :json => { status: true, currentUser: {name: @user.name, email: @user.email} }
+  end   
+  
   def Logout 
     puts session[:user_id]
     session[:user_id] = nil
@@ -80,4 +85,5 @@ class UsersController < ApplicationController
   def userlogin_params
     params.fetch(:oLoginItem).permit(:email, :password)
   end
+  
 end  

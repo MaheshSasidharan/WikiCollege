@@ -17,4 +17,15 @@ function HomeCtrl(CommonFactory, DataService, SharedProperties) {
             ho.oLoginItem.bShow = !ho.oLoginItem.bShow;
         }
     }
+    
+     ho.oService = {
+        GetUserInfo: function() {
+            return DataService.GetUserInfo().then(function(data) {
+                console.log(data);
+                return data;
+            });
+        }
+    }
+    
+    ho.oService.GetUserInfo();
 }

@@ -7,6 +7,7 @@ class ApplicationController < ActionController::Base
      @current_user ||= User.find(session[:user_id]) if session[:user_id] 
      #memoisation => "||="   ........ 
      #if new user, it will go to database ... else if you are in same page, it will take from current user
+     
   end
   
   
