@@ -3,10 +3,24 @@ myApp.service('SharedProperties', [SharedProp]);
 function SharedProp() {
     var oSharedObj = {
         oLoginItem: {
+            name: null,
             email: null,
             password: null,
             bShow: false,
-            bLoggedIn: false
+            bLoggedIn: false,
+            Logout: function(){
+                this.bLoggedIn = false;
+                this.email = null;
+                this.name = null,
+                this.password = null;
+                this.bShow = false;
+            },
+            Login: function(oItem){
+                this.bLoggedIn = true;
+                this.email = oItem.email;
+                this.name = oItem.name;
+                this.bShow = false;
+            }
         },
         Constructor: {
             Group: function(oItem) {

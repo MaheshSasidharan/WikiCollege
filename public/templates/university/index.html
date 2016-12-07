@@ -34,42 +34,62 @@
         <div>
             <input type="text" class="search-input form-control" ng-model="searchFilter" placeholder="Seach by Name here" />
         </div>
-        <h3 class="search-label block">Search for Universities</h3>
-        <div class="university-list table table-striped">
-            <!--
-            <div>
-                <th>Rank</th>
-                <th>Name</th>
-                <th>City</th>
-                <th>State</th>
-                <th>Acceptance Rate</th>
-                <th></th>
-            </tr>
-            -->
-            <div ng-hide="un.arrColleges.length">
-                <div colspan="5">No colleges found</div>
+        <div class="rows">
+            <div class="col-md-4">
+                <h3 class="search-label block">Search for Universities</h3>
             </div>
-            <div class="WC_UnivContainer" ng-show="un.arrColleges.length" ng-repeat="college in un.arrColleges | filter:searchFilter  track by $index">
-                <div class="col-md-12 WC_UnivContent">
-                    <a href="#/university?nId={{college.id}}">
-                        <div class="row">
-                            <div class="WC_U_Name">{{college.name}}</div>
-                        </div>
-                        <div class="row pull-right">
-                            <div class="WC_U_City">{{college.city}}</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 marginZero">
-                                <div class="WC_U_RankState WC_U_Rank">#{{college.rank}}</div>
-                            </div>
-                            <div class="col-md-6 marginZero">
-                                <div class="WC_U_RankState WC_U_State">{{college.state}}</div>
-                            </div>
-                        </div>
-                        <div class="WC_U_AcceptR">Acceptance Rate: {{college.acceptanceRate}}%</div>
-                    </a>
+            <div class="col-md-2 pull-right WC_List">
+                <div class="btn-group">
+                    <button  ng-class="{'active1': bShowListMode}" class="btn btn-default" ng-click="bShowListMode = true">
+                        <span class="glyphicon glyphicon-th-list"></span>
+                    </button>
+                    <button  ng-class="{'active1': !bShowListMode}" class="btn btn-default" ng-click="bShowListMode = false">
+                        <span class="glyphicon glyphicon-th"></span>
+                    </button>
                 </div>
             </div>
+        </div>
+        <div ng-hide="un.arrColleges.length">
+            <div colspan="5">No colleges found</div>
+        </div>
+        <div ng-if="!bShowListMode">
+            <div class="university-list table table-striped">
+                <div class="WC_UnivContainer" ng-show="un.arrColleges.length" ng-repeat="college in un.arrColleges | filter:searchFilter  track by $index">
+                    <div class="col-md-12 WC_UnivContent">
+                        <a href="#/university?nId={{college.id}}">
+                            <div class="row">
+                                <div class="WC_U_Name">{{college.name}}</div>
+                            </div>
+                            <div class="row pull-right">
+                                <div class="WC_U_City">{{college.city}}</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 marginZero">
+                                    <div class="WC_U_RankState WC_U_Rank">#{{college.rank}}</div>
+                                </div>
+                                <div class="col-md-6 marginZero">
+                                    <div class="WC_U_RankState WC_U_State">{{college.state}}</div>
+                                </div>
+                            </div>
+                            <div class="WC_U_AcceptR">Acceptance Rate: {{college.acceptanceRate}}%</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div ng-if="bShowListMode">
+            <table class="university-list table table-striped">
+                <tr ng-show="un.arrColleges.length" ng-repeat="college in un.arrColleges | filter:searchFilter  track by $index">
+                    <td>#{{college.rank}}</td>
+                    <td>{{college.name}}</td>
+                    <td>{{college.city}}</td>
+                    <td>{{college.state}}</td>
+                    <td>{{college.acceptanceRate}}</td>
+                    <td>
+                        <a href="#/university?nId={{college.id}}">View</a>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 </div>

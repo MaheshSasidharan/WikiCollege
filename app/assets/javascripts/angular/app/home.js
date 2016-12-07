@@ -1,6 +1,6 @@
-myApp.controller('HomeCtrl', ['Factory_DataService', 'SharedProperties', HomeCtrl]);
+myApp.controller('HomeCtrl', [ 'Factory_CommonRoutines', 'Factory_DataService', 'SharedProperties', HomeCtrl]);
 
-function HomeCtrl(DataService, SharedProperties) {
+function HomeCtrl(CommonFactory, DataService, SharedProperties) {
     var ho = this;
     ho.oLoginItem = SharedProperties.oLoginItem;
 
@@ -8,7 +8,8 @@ function HomeCtrl(DataService, SharedProperties) {
         if (ho.oLoginItem.bLoggedIn) {
             DataService.Logout().then(function(data) {
                 if (data.status) {
-                    ho.oLoginItem.bLoggedIn = false;
+                    ho.oLoginItem.Logout();
+                    CommonFactory.oWindow.location.href = "/#/";
                 }
             });
         }

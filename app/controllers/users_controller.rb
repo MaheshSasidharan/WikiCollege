@@ -3,9 +3,9 @@ class UsersController < ApplicationController
   before_filter :user_params, only: [:AddUser]
   before_filter :userlogin_params, only: [:LoginUser]
 
-  # def show
-  #   @user = User.find(params[:id])
-  # end
+  def show
+    @user = User.find(params[:id])
+  end
 
 #   def show
 #     @user = User.find(params[:id])
