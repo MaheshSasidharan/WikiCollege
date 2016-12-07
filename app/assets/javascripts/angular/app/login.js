@@ -17,8 +17,12 @@ function LoginCtrl(DataService, SharedProperties) {
             // Validations for lo.oLoginItem
             lo.oService.LoginUser(lo.oLoginItem).then(function(data) {
                 if (data.status) {
-                    lo.oLoginItem.bLoggedIn = true;
-                    lo.oLoginItem.bShow = false;
+                    if(data.currentUser && data.currentUser.email){
+                        lo.oLoginItem.Login(data.currentUser);
+                    }else{
+                        alert("Login was successful. But could not retrieve user info.");
+                    }
+                    
                 }else{
                     // Show login failed message
                 }

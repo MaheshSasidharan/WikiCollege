@@ -278,3 +278,13 @@
 .WC_U_Rank {
     color: goldenrod;
 }
+
+.WC_UserNameContainer {
+    margin-top: 7px;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.WC_UserName{
+    color: indianred;
+}

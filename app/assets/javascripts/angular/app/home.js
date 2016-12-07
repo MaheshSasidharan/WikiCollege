@@ -9,7 +9,7 @@ function HomeCtrl(CommonFactory, DataService, SharedProperties) {
             DataService.Logout().then(function(data) {
                 if (data.status) {
                     ho.oLoginItem.Logout();
-                    CommonFactory.oWindow.location.href = "/#/";
+                    //CommonFactory.oWindow.location.href = "/#/";
                 }
             });
         }
@@ -22,7 +22,9 @@ function HomeCtrl(CommonFactory, DataService, SharedProperties) {
         GetUserInfo: function() {
             return DataService.GetUserInfo().then(function(data) {
                 console.log(data);
-                return data;
+                if(data.currentUser && data.currentUser.email){
+                    ho.oLoginItem.Login(data.currentUser);
+                }
             });
         }
     }

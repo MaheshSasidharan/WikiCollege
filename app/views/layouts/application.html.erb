@@ -19,6 +19,11 @@
         <!--<li><a href="#/Login">Login</a></li>-->
         <li><a class="cursorPointer" ng-click="ho.ShowHideLogin()">{{ho.oLoginItem.bLoggedIn ? 'Logout' : 'Login'}}</a></li>
       </ul>
+      <div ng-show="ho.oLoginItem.bLoggedIn" class="nav navbar-nav pull-right">
+        <div class="WC_UserNameContainer">
+          Welcome <span class="WC_UserName">{{ho.oLoginItem.name ? ho.oLoginItem.name : ho.oLoginItem.email}}</span>
+        </div>
+      </div>
       <div ng-include="'templates/login/login.html'"></div>
     </div>
   </nav>
