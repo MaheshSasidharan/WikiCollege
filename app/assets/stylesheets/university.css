@@ -288,3 +288,8 @@
 .WC_UserName{
     color: indianred;
 }
+
+.filter-by-states {
+    margin-left: 15px;
+    margin-top: 20px;
+}

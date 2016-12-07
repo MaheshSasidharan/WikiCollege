@@ -27,6 +27,10 @@
                     <input ng-model="un.filterObject.fees.high" class="float-container fee-high-input filter-inputs form-control" type="text" name="high-range" />
                 </div>
             </div>
+            <div class="filter-by-states">
+                <label style = "margin-top: 10px" class="float-container filter-label">States</label>
+                <div ng-dropdown-multiselect="" options="un.universitiesByStateData" selected-model="un.universitiesByStateModel" extra-settings="un.multiselectSettings" checkboxes="true"></div>
+            </div>
             <div class="filter-container-foooter">
                 <button ng-click=un.ApplyFilters() style="margin-top: 20px" type="button" class="btn btn-primary">Apply filter</button>
             </div>
