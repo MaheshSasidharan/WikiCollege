@@ -1,5 +1,8 @@
 http://api.rubyonrails.org/classes/ActiveRecord/FinderMethods.html
-
+Check these:
+============
+Comment.joins("INNER  JOIN users ON users.id = comments.user_id AND comments.user_id = '4'")
+Gets the correct details
 
 University.select("*").joins(:univdepts)
 
@@ -24,3 +27,25 @@ Example for a posts in a group with university id 2
   Post Load (0.5ms)  SELECT `posts`.* FROM `posts` INNER JOIN `groups` ON `groups`.`id` = `posts`.`group_id` WHERE `groups`.`university_id` = 2
  => #<ActiveRecord::Relation [#<Post id: 3, group_id: 4, postData: "Site for checking out transportation services arro...", like: 0, dislike: 0, created_at: "2016-11-20 23:24:31", updated_at: "2016-11-20 23:24:31">, #<Post id: 4, group_id: 6, postData: "What is the average cost of living arround this un...", like: 0, dislike: 0, created_at: "2016-11-20 23:24:31", updated_at: "2016-11-20 23:24:31">]> 
 2.3.0 :002 > 
+
+ User.select("name").joins(:comments).where(comments: {id: '3'})
+ 
+ 
+ Comment.select("comments.id, comments.commentData, users.name").joins("LEFT OUTER JOIN users ON users.id = comments.user_id")
+ 
+ 
+
+User.select("users.name,comments.id").joins(:comments).where(comments: {id: '6'})
+
+For comments related to only
+Comment.select("comments.id, comments.commentData, users.name").joins("JOIN users ON users.id = comments.user_id AND comments.id = '6'")
+
+
+-----------------
+
+Author.left_outer_joins(:posts).distinct.select('authors.*, COUNT(posts.*) AS posts_count').group('authors.id')
+
+SELECT DISTINCT authors.*, COUNT(posts.*) AS posts_count FROM "authors"
+LEFT OUTER JOIN posts ON posts.author_id = authors.id GROUP BY authors.id
+
+Select user_id,comment_id from users", left outer join comment on comment.user_id = user_id
