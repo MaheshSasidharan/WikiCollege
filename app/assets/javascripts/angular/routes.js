@@ -14,9 +14,13 @@ myApp.config([
         templateUrl: '/templates/login/signup.html',
         controller: "SignupCtrl as su"
       })
-      .when('/about1', {
+      .when('/About', {
         templateUrl: '/templates/app/about.html',
-        controller: "AboutCtrl as ac"
+        // controller: "AboutCtrl as ac"
+      })
+      .when('/Contact', {
+        templateUrl: '/templates/app/contact.html',
+        // controller: "AboutCtrl as ac"
       })
       .otherwise({redirectTo:'/'});
   }
