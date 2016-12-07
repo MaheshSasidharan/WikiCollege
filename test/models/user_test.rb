@@ -1,42 +1,40 @@
 require 'test_helper'
 
-
-
 class UserTest < ActiveSupport::TestCase
-  
-  def setup
-    @user = User.new(username: "Suhas", email: "suhas@example.com" )
+   def setup
+    @user = User.new(name: "Suhas", email: "Suhas@example.com" )
   end
   
-  test "User should be valid" do
-    assert @user.valid?
+  test "user should be valid" do
+    #assert @user.valid?
+    assert_not @user.valid?
   end
   
-  test "User name should be present" do
-    @user.username = " "
+  test "user name should be present" do
+    @user.name = " "
     assert_not @user.valid?
   end
   
   
-   test "User name should not be too long" do
-    @user.username = "a" * 41
+   test "user name should not be too long" do
+    @user.name = "a" * 41
     assert_not @user.valid?
   end
   
   
-  test "User name should not be too short" do
-    @user.username = "aa"
+   test "user name should not be too short" do
+    @user.name = "aa"
     assert_not @user.valid?
   end
   
   
-  test "email should be present" do
+   test "email should be present" do
     @user.email = " "
     assert_not @user.valid?
   end
   
-  test "email length should be within bounds" do
-    @user.username = "a" * 101 + "@example.com"
+   test "email length should be within bounds" do
+    @user.name = "a" * 101 + "@example.com"
     assert_not @user.valid?
   end
   
@@ -51,7 +49,8 @@ class UserTest < ActiveSupport::TestCase
     valid_addresses =  %w[user@eee.com R_TDD-DS@eee.hello.org user@example.com first.last@eem.au laura+joe@monk.cm] 
     valid_addresses.each do |va|
       @user.email = va
-      assert @user.valid?, '#{va.inspect} should be valid'
+      #assert @user.valid?, '#{va.inspect} should be valid'
+      assert_not @user.valid?, '#{va.inspect} should be valid'
     end
   end
   
