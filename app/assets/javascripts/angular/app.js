@@ -1,1 +1,1 @@
-var myApp = angular.module('myapplication', ['ngRoute', 'ngResource', 'ngAnimate']); 
+var myApp = angular.module('myapplication', ['ngRoute', 'ngResource', 'ngAnimate', 'ngLodash', 'angularjs-dropdown-multiselect']); 

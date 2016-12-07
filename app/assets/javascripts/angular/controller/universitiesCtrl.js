@@ -12,7 +12,8 @@ function UniversityCtrl(DataService, CommonFactory) {
      fees: {
        low: null,
        high: null
-     }
+     },
+     states:[]
   }
   
   un.oFilter = {
@@ -89,11 +90,33 @@ function UniversityCtrl(DataService, CommonFactory) {
     
   }
   
+  un.multiselectSettings = {
+    scrollableHeight: '200px',
+    scrollable: true
+  }
+  
+  un.universitiesByStateList = ["NJ", "MA", "IL", "CT", "NY", "CA", "NC", "PA", "MD", "NH", "RI", "TX", "IN", "TN", "MO", "GA", " :dC"]
+  un.universitiesByStateModel = []
+  un.universitiesByStateData = [ 
+    {id: 1, label: "NJ"}, {id: 2, label: "MA"}, {id: 3, label: "IL"}, 
+    {id: 4, label: "CT"}, {id: 5, label: "NY"}, {id: 6, label: "CA"},
+    {id: 7, label: "NC"}, {id: 8, label: "PA"}, {id: 9, label: "MD"},
+    {id: 10, label: "NH"}, {id: 11, label: "RI"}, {id: 12, label: "TX"},
+    {id: 13, label: "IN"}, {id: 14, label: "TN"}, {id: 15, label: "MO"},
+    {id: 16, label: "GA"}, {id: 17, label: "dC"}];
+    
   un.ApplyFilters = function(){
     console.log(un.filterObject)
+    for (var i = 0; i < un.universitiesByStateModel.length; i++) {
+       un.filterObject.states.push(un.universitiesByStateList[un.universitiesByStateModel[i]['id'] - 1]);
+    }
     DataService.filter(un.filterObject).then(function(data){
       un.arrColleges = data.arrUniversities
+      //resettting states array after filtered once
+      un.filterObject.states = []
     })
   }
+  
+  
   
 }
