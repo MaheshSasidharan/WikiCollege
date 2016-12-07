@@ -23667,3 +23667,4 @@ Processing by UniversitiesController#GetGroupsByUniversityId as HTML
   Parameters: {"nId"=>"3"}
   [1m[35mGroup Load (0.3ms)[0m  SELECT `groups`.* FROM `groups`  WHERE `groups`.`university_id` = 3
 Completed 200 OK in 13ms (Views: 5.0ms | ActiveRecord: 1.7ms)
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT `comments`.* FROM `comments`  WHERE `comments`.`post_id` = 2[0m
