@@ -62,7 +62,9 @@ gem 'spring',        group: :development
 gem 'awesome_print', :require => 'ap'
 
 #Installing gem Jasmine for UI test cases
-gem 'jasmine'
+group :development, :test do
+  gem 'jasmine'
+end
 
 group :production do
   gem "pg"
