@@ -61,6 +61,9 @@ gem 'spring',        group: :development
 
 gem 'awesome_print', :require => 'ap'
 
+#Installing gem Jasmine for UI test cases
+gem 'jasmine'
+
 group :production do
   gem "pg"
   gem 'rails_12factor'
