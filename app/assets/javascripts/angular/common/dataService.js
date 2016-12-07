@@ -92,6 +92,12 @@ function DataService($http, Constants, CommonFactory) {
         },
         User:{
             controller: "users/",
+            GetUserInfo: function (nId) {
+                return $http.get(Helper.app + Helper.User.controller + 'GetUserInfo')
+                .then(
+                Helper.Miscellaneous.ReturnDataDotData,
+                Helper.Miscellaneous.FailedInService)
+            },
             AddUser: function (oSaveItem) {
                 return $http.post(Helper.app + Helper.User.controller + 'AddUser', { oSaveItem: oSaveItem })
                   .then(
@@ -140,6 +146,7 @@ function DataService($http, Constants, CommonFactory) {
         AddEditCommentToPost: Helper.University.AddEditCommentToPost,
         
         // User
+        GetUserInfo: Helper.User.GetUserInfo,
         AddUser: Helper.User.AddUser,
         Logout: Helper.User.Logout,
         LoginUser: Helper.User.LoginUser,

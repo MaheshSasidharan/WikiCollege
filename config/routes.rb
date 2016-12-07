@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  resources :users
+  #resources :users
 
   root 'users#index'
   #abcd 'users#testme'
@@ -32,6 +32,8 @@ Rails.application.routes.draw do
   post 'university/AddEditPost' => 'universities#AddEditPost'
   post 'university/AddEditCommentToPost' => 'universities#AddEditCommentToPost'
   
+  
+  get 'users/GetUserInfo' => 'users#GetUserInfo'
   get 'users/Logout' => 'users#Logout'
   post 'users/AddUser' => 'users#AddUser'
   post 'users/LoginUser' => 'users#LoginUser'

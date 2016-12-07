@@ -57,7 +57,6 @@ class PostsController < ApplicationController
    
    def like
     #binding.pry
-   
     like = Like.create(like: params[:like], user: current_user, post: @post) #will set like = true
         if like.valid?
             flash[:success] = "Your selection was successful"
