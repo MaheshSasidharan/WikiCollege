@@ -1,9 +1,9 @@
 /* override bootstrap*/
 
-*:focus {
-    border: none;
-    outline: 5px auto indianred !important;
-}
+/**:focus {*/
+/*    border: none;*/
+/*    outline: 5px auto indianred !important;*/
+/*}*/
 
 .table-hover>tbody>tr:hover>td,
 .table-hover>tbody>tr:hover>th {
@@ -268,6 +268,11 @@
 
 .WC_UnivContainer:hover .WC_U_AcceptR {
     margin-top: -29px;
+}
+
+.WC_List {
+    margin-top: 15px;
+    margin-right: -93px;
 }
 
 .WC_U_Rank {

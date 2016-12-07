@@ -25,7 +25,8 @@ function SignupCtrl(DataService, CommonFactory, SharedProperties) {
             su.oService.AddUser(su.oUser).then(function(data) {
                 console.log(data);
                 if (data.status) {
-                    su.oLoginItem.bLoggedIn = true;
+                    su.oLoginItem.Login(data.oLoginItem);
+                    CommonFactory.oWindow.location.href = "/#/";
                 }
             });
         }

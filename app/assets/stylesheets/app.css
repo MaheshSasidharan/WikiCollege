@@ -1,4 +1,8 @@
 /* Common */
+*:focus {
+    outline: none !important;
+}
+
 *:not(.ng-hide){
     transition: all 200ms linear;
 }
