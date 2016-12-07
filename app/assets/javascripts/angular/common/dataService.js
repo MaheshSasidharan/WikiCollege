@@ -92,7 +92,7 @@ function DataService($http, Constants, CommonFactory) {
         },
         User:{
             controller: "users/",
-            GetUserInfo: function (nId) {
+            GetUserInfo: function () {
                 return $http.get(Helper.app + Helper.User.controller + 'GetUserInfo')
                 .then(
                 Helper.Miscellaneous.ReturnDataDotData,

@@ -69,7 +69,11 @@ class UsersController < ApplicationController
   
   def GetUserInfo
     @user = current_user
-    render :json => { status: true, currentUser: {name: @user.name, email: @user.email} }
+    if @user
+      render :json => { status: true, currentUser: {name: @user.name, email: @user.email} }
+    else
+      render :json => { status: true }
+    end
   end   
   
   def Logout 
