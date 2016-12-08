@@ -219,6 +219,7 @@
     margin-bottom: 4px;
     border-radius: 2px;
     box-shadow: inset 0px 2px 20px indianred;
+    /*transition: transform 500ms ease-in;*/
 }
 
 .WC_U_Name {
@@ -246,7 +247,7 @@
 }
 
 .WC_U_AcceptR {
-    margin-top: 20px;
+    margin-top: 21px;
     text-align: center;
     background: rgba(70, 51, 51, 0.9);
     color: #f5f5f5;
@@ -260,6 +261,8 @@
 
 .WC_UnivContainer:hover {
     background: rgba(0,0,0,0.09);
+    transform: rotateY(360deg);
+    transition: transform 0ms ease-in;
 }
 
 .WC_UnivContainer:hover .row{
@@ -267,7 +270,7 @@
 }
 
 .WC_UnivContainer:hover .WC_U_AcceptR {
-    margin-top: -29px;
+    margin-top: -27px;
 }
 
 .WC_List {
