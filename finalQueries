@@ -31,6 +31,7 @@ Example for a posts in a group with university id 2
  User.select("name").joins(:comments).where(comments: {id: '3'})
  
  
+ 
  Comment.select("comments.id, comments.commentData, users.name").joins("LEFT OUTER JOIN users ON users.id = comments.user_id")
  
  
@@ -49,3 +50,77 @@ SELECT DISTINCT authors.*, COUNT(posts.*) AS posts_count FROM "authors"
 LEFT OUTER JOIN posts ON posts.author_id = authors.id GROUP BY authors.id
 
 Select user_id,comment_id from users", left outer join comment on comment.user_id = user_id
+
+User.left_outer_joins(:user_id,comment_id).select('users.user_id,comment.comment_id)
+
+SELECT clients.* FROM clients INNER JOIN posts ON posts.author_id = author.id AND posts.published = 't'
+
+Author.joins("INNER JOIN posts ON posts.author_id = author.id AND posts.published = 't'")
+
+--------------------------------------------
+
+ Client.joins('LEFT OUTER JOIN addresses ON addresses.client_id = clients.id')
+=> SELECT clients.* FROM clients LEFT OUTER JOIN addresses ON addresses.client_id = clients.id
+  select User.id from User LEFT OUTER JOIN  comments ON comments.user_id = User id
+  
+  User.joins('LEFT OUTER JOIN comments on comments.user_id = User.id')
+  
+  
+  
+  
+  ------------------------------------------------
+ SELECT people.id, people.name, comments.text
+FROM people
+INNER JOIN comments
+  ON comments.person_id = people.id
+WHERE comments.created_at = '2015-01-01'
+
+Person
+  .select('people.id, people.name, comments.text', comment.id)
+  .joins(:comments)
+  .where('comments.created_at > ?', 1.week.ago)
+  
+  -----------------------------------------------------------------
+  
+SELECT User.*, Comment.user_id
+FROM User
+INNER JOIN Comment ON Comment.user_id = User.id
+
+Comment.select('users.name, comments.commentData').joins(:users).where('users.id= comments.user_id')
+
+
+------------------------------------------------------------------
+
+Person
+  .select('people.id, people.name, comments.text')
+  .joins(:comments)
+  .where('comments.created_at > ?', 1.week.ago)
+  
+  
+  -------------------------------------------------------
+  
+  Company.joins(:price_movements,:goods_movements).where("goods_movement.date = price_movement.date")
+  
+  User.select('comments.id').joins(:comments).comments.select('users.name, comments.id').joins(:users).where("comments.user_id = '1'")
+  
+ select * from users c
+
+inner join comments p
+on c.id = p.user_id
+
+inner join goods_movements g
+on c.id = g.company_id
+and g.date = p.date
+
+-------------------
+
+User.select([Comment.arel_table[:id], Comment.arel_table[:commentData]] ).joins(User.arel_table.join(Comment.arel_table, Arel::Nodes::OuterJoin).on(
+    User.arel_table[:id].eq(Comment.arel_table[:user_id])
+  ).join_sources
+)
+
+-----------------
+
+User.find_each do |user|
+  Comment.user_id(user).commentData
+end
