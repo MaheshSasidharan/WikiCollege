@@ -3,7 +3,7 @@ class Post < ActiveRecord::Base
     belongs_to :user
     has_many :comments
     
-    #has_many :likes
+    has_many :likeposts
     
     #validates :id, presence: true 
     validates :postData, presence: true, length: {minimum: 5, maximum: 100}
