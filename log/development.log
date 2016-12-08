@@ -38273,3 +38273,15 @@ Migrating to Likecomments (20161208051617)
   [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `comments` (`commentData`, `created_at`, `post_id`, `updated_at`, `user_id`) VALUES ('What is the average cost of living arround this university', '2016-12-08 05:39:57', 1, '2016-12-08 05:39:57', 4)[0m
   [1m[35m (4.8ms)[0m  COMMIT
   [1m[36mLikepost Load (0.3ms)[0m  [1mSELECT `likeposts`.* FROM `likeposts`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to Likeposts (20161208051435)
+  [1m[35m (9.2ms)[0m  CREATE TABLE `likeposts` (`id` int(11) auto_increment PRIMARY KEY, `like` tinyint(1), `user_id` int(11), `post_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20161208051435')
+  [1m[36m (3.2ms)[0m  [1mCOMMIT[0m
+Migrating to Likecomments (20161208051617)
+  [1m[35m (7.2ms)[0m  CREATE TABLE `likecomments` (`id` int(11) auto_increment PRIMARY KEY, `like` tinyint(1), `user_id` int(11), `comment_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20161208051617')
+  [1m[36m (3.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`

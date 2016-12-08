@@ -41,7 +41,7 @@
                         <i>{{comments.CreatedWhen | date: 'MMM d, y h:mm a'}}</i>
                     </div>
                     <div class="col-md-1">
-                        <div class="row pull-right" ng-show="ud.oLoginItem.bLoggedIn">
+                        <div class="row pull-right" ng-show="ud.oLoginItem.bLoggedIn && ud.oLoginItem.id === comments.UserId">
                             <button type="button" class="btn btn-xs btn-default">
                                 <span ng-show="!edit" class="glyphicon glyphicon-edit" ng-click="edit = true; $event.stopPropagation()"></span>
                                 <span ng-show="edit"  class="glyphicon glyphicon-save" ng-click="edit = false; ud.Helper.AddEditCommentToPost('edit', comments)"></span>

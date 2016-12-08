@@ -3,19 +3,22 @@ myApp.service('SharedProperties', [SharedProp]);
 function SharedProp() {
     var oSharedObj = {
         oLoginItem: {
+            id: null,
             name: null,
             email: null,
             password: null,
             bShow: false,
             bLoggedIn: false,
             Logout: function(){
+                this.id = null,
                 this.bLoggedIn = false;
                 this.email = null;
                 this.name = null,
                 this.password = null;
                 this.bShow = false;
             },
-            Login: function(oItem){
+            Login: function(oItem){console.log(oItem);
+                this.id = oItem.id,
                 this.bLoggedIn = true;
                 this.email = oItem.email;
                 this.name = oItem.name;
@@ -46,8 +49,9 @@ function SharedProp() {
             Comments: function(oItem) {
                 this.Id = oItem.id;
                 this.Comment = oItem.commentData;
-                this.CreatedBy = oItem.user;
-                this.CreatedWhen = oItem.timestamps;
+                this.UserId = oItem.user_id;
+                this.CreatedBy = oItem.name;
+                this.CreatedWhen = oItem.updated_at;
                 this.UpVotes = oItem.like;
                 this.DownVotes = oItem.dislike;
                 return this;

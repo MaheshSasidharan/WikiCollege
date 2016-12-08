@@ -21,7 +21,6 @@ function HomeCtrl(CommonFactory, DataService, SharedProperties) {
      ho.oService = {
         GetUserInfo: function() {
             return DataService.GetUserInfo().then(function(data) {
-                console.log(data);
                 if(data.currentUser && data.currentUser.email){
                     ho.oLoginItem.Login(data.currentUser);
                 }

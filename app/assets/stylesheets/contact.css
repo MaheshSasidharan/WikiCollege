@@ -17,7 +17,7 @@
 	width: 26%;
 }
 
-	.info h4, form h4 {
+	.info h4, .contactForm h4 {
 		color: #29746A;
 		font-family: "Futura W01 Bold";
 		letter-spacing: 2px;
@@ -34,33 +34,33 @@
 			margin: 0;
 		}
 		
-form {
+.contactForm {
 	background: #F2F3F4;
 	float: right;
 	font-family: "Courier";
 	padding: 10px 20px 30px;
 	width: 60%;
 }
-	form h4 {
+	.contactForm h4 {
 		background: #E7B44C;
 		color: #FFF;
 		padding: 20px;
 		margin: -10px -20px;
 	}
 
-	form p {
+	.contactForm p {
 		clear: both;
 		margin-top: 20px;
 	}
 
-		form p label {
+		.contactForm p label {
 			float: left;
 			font-size: 0.9em;
 			margin-top: 10px;
 			width: 22%; height: 30px;
 		}
 		
-		form p input {
+		.contactForm p input {
 			background: none;
 			border: none;
 			border-bottom: 1px #616363 solid;
@@ -69,7 +69,7 @@ form {
 			width: 77%; height: 30px;
 		}
 		
-		form p textarea {
+		.contactForm p textarea {
 			background: #DDD;
 			border: none;
 			outline: none;
@@ -78,15 +78,15 @@ form {
 			width: 73%; height: 60px;
 		}
 		
-		form .dots {
-			background: url(../../images/index/form-dots.png) repeat-x left center;
+		.contactForm .dots {
+			background: url(../../images/index/.contactForm-dots.png) repeat-x left center;
 			margin: 30px 0 0 0;
 			padding-bottom: 0;
 			text-align: right;
 			width: 99%;
 		}
 		
-			form input.submit {
+			.contactForm input.submit {
 				background: #E7B44C;
 				border: none;
 				border-left: 15px #F2F3F4 solid;
@@ -95,7 +95,7 @@ form {
 				letter-spacing: 2px;
 				padding: 4px 60px 6px;
 			}
-				form input.submit:hover {
+				.contactForm input.submit:hover {
 					background: #F5CD82;
 				}
 
@@ -113,28 +113,28 @@ form {
 		width: 100%;
 	}
 	
-	form {
+	.contactForm {
 		float: none;
 		width: 100%;
 	}
 	
-		form h4 {
+		.contactForm h4 {
 			font-size: 0.7em;
 			margin-bottom: 30px;
 		}
 	
-		form p label {
+		.contactForm p label {
 			display: block;
 			float: none;
 			font-size: 0.7em;
 			width: 100%;
 		}
 		
-		form p input, form p textarea {
+		.contactForm p input, .contactForm p textarea {
 			width: 85%;
 		}
 		
-		form .dots {
+		.contactForm .dots {
 			padding: 0 0 0 15px;
 			width: 85%;
 		}
@@ -148,7 +148,7 @@ form {
 		letter-spacing: 1px;
 	}
 	
-	form p label {
+	.contactForm p label {
 		font-size: 0.6em;
 	}
 }

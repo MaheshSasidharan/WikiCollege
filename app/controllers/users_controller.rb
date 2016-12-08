@@ -44,7 +44,7 @@ class UsersController < ApplicationController
     user = User.find_by(email: userlogin_params[:email])
     if user && user.authenticate(userlogin_params[:password])
       session[:user_id] = user.id
-      render :json => { status: true, currentUser: {name: user.name, email: user.email} }
+      render :json => { status: true, currentUser: {name: user.name, email: user.email, id: user.id} }
     else
       render :json => { status: false, msg: "Invalid user" }
     end
@@ -59,7 +59,7 @@ class UsersController < ApplicationController
       @user = User.new(user_params)
       if @user.save 
         session[:user_id] = @user.id
-        render :json => { status: true, msg: "Your account is successfully created", userId: @user.id }
+        render :json => { status: true, msg: "Your account is successfully created", currentUser: {name: @user.name, email: @user.email, id: @user.id} }
         #session[:user_id] = @user.id #once they sign up, they are automatically logged in
       else
         render :json => { status: false, msg: "Sorry, we were unable to create your account. Please try again later."}
@@ -70,7 +70,7 @@ class UsersController < ApplicationController
   def GetUserInfo
     @user = current_user
     if @user
-      render :json => { status: true, currentUser: {name: @user.name, email: @user.email} }
+      render :json => { status: true, currentUser: {name: @user.name, email: @user.email, id: @user.id} }
     else
       render :json => { status: true }
     end

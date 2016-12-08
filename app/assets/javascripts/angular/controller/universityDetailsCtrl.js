@@ -223,7 +223,8 @@ function UniversityDetailsCtrl(DataService, CommonFactory, Constants, SharedProp
       ud.oService.AddEditCommentToPost(oItem).then(function(data) {
         if (data.status) {
           if (sType === 'add') {
-            oItem.id = data.commentId;
+            oItem = data.comment;
+            oItem.name = ud.oLoginItem.name;
             if (!ud.oPost.arrComments) {
               ud.oPost.arrComments = [];
             }
@@ -256,27 +257,3 @@ function UniversityDetailsCtrl(DataService, CommonFactory, Constants, SharedProp
   };
   ud.Helper.Init();
 }
-
-
-var arrComments = [{
-  id: 1,
-  commentData: "Hi this is test comments",
-  user: "User 1",
-  timestamps: new Date(),
-  like: 4,
-  dislike: 2
-}, {
-  id: 2,
-  commentData: "How is it going?",
-  user: "User 2",
-  timestamps: new Date(),
-  like: 7,
-  dislike: 0
-}, {
-  id: 3,
-  commentData: "This comment does not make any sense.",
-  user: "User 3",
-  timestamps: new Date(),
-  like: 2,
-  dislike: 5
-}]

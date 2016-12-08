@@ -5,16 +5,16 @@
                 <div>
                     <div class="WC_IndiGroupRow row" ng-repeat="group in ud.arrGroups | orderBy:'-NumOfPosts'" ng-click="ud.Helper.GetPostsByGroupId(group)">
                         <div class="col-md-10">
-                            <div ng-cloak ng-show="!edit"class="WC_ObjectTitle">{{group.Title}}</div>
-                            <div ng-cloak ng-show="!edit" class="WC_ObjectDescription">{{group.Description}}</div>
-                            <input ng-cloak ng-show="edit" class="form-control" ng-model="group.Title" ng-click="$event.stopPropagation()" required/>
-                            <input ng-cloak ng-show="edit" class="form-control" ng-model="group.Description" ng-click="$event.stopPropagation()" required/>
+                            <div ng-show="!edit"class="WC_ObjectTitle">{{group.Title}}</div>
+                            <div ng-show="!edit" class="WC_ObjectDescription">{{group.Description}}</div>
+                            <input ng-show="edit" class="form-control" ng-model="group.Title" ng-click="$event.stopPropagation()" required/>
+                            <input ng-show="edit" class="form-control" ng-model="group.Description" ng-click="$event.stopPropagation()" required/>
                         </div>
                         <div class="col-md-2">
                             <div class="row pull-right" ng-show="ud.oLoginItem.bLoggedIn">
                                 <button type="button" class="btn btn-xs btn-default">
-                                    <span ng-cloak ng-show="!edit" class="glyphicon glyphicon-edit" ng-click="edit = true; $event.stopPropagation()"></span>
-                                    <span ng-cloak ng-show="edit"  class="glyphicon glyphicon-save" ng-click="edit = false; ud.Helper.AddEditGroup($event, 'edit', group)"></span>
+                                    <span ng-show="!edit" class="glyphicon glyphicon-edit" ng-click="edit = true; $event.stopPropagation()"></span>
+                                    <span ng-show="edit"  class="glyphicon glyphicon-save" ng-click="edit = false; ud.Helper.AddEditGroup($event, 'edit', group)"></span>
                                 </button>
                             </div>
                         </div>

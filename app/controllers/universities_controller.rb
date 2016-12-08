@@ -63,7 +63,16 @@ class UniversitiesController < ApplicationController
   end
   
   def GetCommentsByPostId
-    @arrComments = Comment.where(post_id: params[:nId] )
+    #@arrComments = Comment.where(post_id: params[:nId] )
+    @arrComments = Comment.joins(:user)
+    .where(comments:{post_id:params[:nId]})
+    .select('users.name, comments.commentData, comments.id, comments.post_id, 
+    comments.user_id, comments.like, comments.dislike, 
+    comments.isActive, comments.created_at, comments.updated_at')
+    
+    #id":1,"post_id":1,"user_id":1,"commentData"
+    #"like":0,"dislike":0,"isActive":false,"created_at":"2016-12-04T09:49:52.000Z","updated_at"
+    
     if (!@arrComments.nil?) 
        render :json => { status: true, arrComments: @arrComments }
     else
@@ -138,7 +147,7 @@ class UniversitiesController < ApplicationController
       
       @comment = Comment.new(newComment_params)
       if @comment.save
-        render :json => { status: true, commentId: @comment.id, sType: 'CommentAdded' }
+        render :json => { status: true, comment: @comment, sType: 'CommentAdded' }
       else
         render :json => { status: false, sType: 'CommentAddFailed'}
       end
