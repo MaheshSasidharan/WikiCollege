@@ -1,4 +1,4 @@
-describe('PasswordController', function() {
+describe('Wiki college', function() {
   beforeEach(module('myapplication'));
 
   var $controller;
@@ -8,11 +8,24 @@ describe('PasswordController', function() {
     $controller = _$controller_;
   }));
 
-  describe('$scope.grade', function() {
-    it('sets the strength to "strong" if the password length is >8 chars', function() {
+  describe('University Controller', function() {
+    it('shoudl check if array is returned for universities', function() {
       var $scope = {};
-      //var controller = $controller('UniversityCtrl', { $scope: $scope });
-      $scope.password = 'longerthaneightchars';
+      var controller = $controller('UniversityCtrl', { $scope: $scope });
+      controller.Helper.GetAllUniversities();
+      //expect('strong').toEqual('strong');
+    });
+    
+    it('should check if filters are set properly', function() {
+      var $scope = {};
+      var controller = $controller('UniversityCtrl', { $scope: $scope });
+      controller.ApplyFilters();
+      controller.Search();
+      controller.TestPost();
+      controller.test2();
+      
+      controller.deleteUser();
+
       //expect('strong').toEqual('strong');
     });
   });
