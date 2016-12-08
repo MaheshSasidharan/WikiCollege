@@ -38273,3 +38273,463 @@ Migrating to Likecomments (20161208051617)
   [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `comments` (`commentData`, `created_at`, `post_id`, `updated_at`, `user_id`) VALUES ('What is the average cost of living arround this university', '2016-12-08 05:39:57', 1, '2016-12-08 05:39:57', 4)[0m
   [1m[35m (4.8ms)[0m  COMMIT
   [1m[36mLikepost Load (0.3ms)[0m  [1mSELECT `likeposts`.* FROM `likeposts`[0m
+WEBrick 1.3.1
+ruby 2.3.0 (2015-12-25) [x86_64-linux]
+Rack::Handler::WEBrick is mounted on /.
+WEBrick::HTTPServer#start: pid=32225 port=41060
+accept: 127.0.0.1:53338
+close: 127.0.0.1:53338
+accept: 127.0.0.1:53344
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/teaspoon/default?reporter=Console" for 127.0.0.1 at 2016-12-08 09:06:09 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+close: 127.0.0.1:53344
+close TCPSocket(127.0.0.1, 41060)
+going to shutdown ...
+WEBrick::HTTPServer#start done.
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to Likeposts (20161208051435)
+  [1m[35m (70.3ms)[0m  CREATE TABLE `likeposts` (`id` int(11) auto_increment PRIMARY KEY, `like` tinyint(1), `user_id` int(11), `post_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (6.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20161208051435')
+  [1m[36m (4.4ms)[0m  [1mCOMMIT[0m
+Migrating to Likecomments (20161208051617)
+  [1m[35m (11.1ms)[0m  CREATE TABLE `likecomments` (`id` int(11) auto_increment PRIMARY KEY, `like` tinyint(1), `user_id` int(11), `comment_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20161208051617')
+  [1m[36m (3.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (2.0ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+WEBrick 1.3.1
+ruby 2.3.0 (2015-12-25) [x86_64-linux]
+Rack::Handler::WEBrick is mounted on /.
+WEBrick::HTTPServer#start: pid=32268 port=34309
+accept: 127.0.0.1:60808
+close: 127.0.0.1:60808
+accept: 127.0.0.1:60810
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/teaspoon/default?reporter=Console" for 127.0.0.1 at 2016-12-08 09:06:59 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Teaspoon::SuiteController#show as HTML
+  Parameters: {"reporter"=>"Console", "suite"=>"default"}
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_boot.html.erb (374.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_body.html.erb (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb (390.5ms)
+Completed 200 OK in 405ms (Views: 396.9ms | ActiveRecord: 0.0ms)
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/teaspoon.css?body=1" for 127.0.0.1 at 2016-12-08 09:06:59 +0000
+accept: 127.0.0.1:60818
+Rack::Handler::WEBrick is invoked.
+accept: 127.0.0.1:60824
+accept: 127.0.0.1:60820
+
+
+accept: 127.0.0.1:60826
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+accept: 127.0.0.1:60822
+Started GET "/assets/jasmine/2.3.4.js?body=1" for 127.0.0.1 at 2016-12-08 09:06:59 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/teaspoon-jasmine2.js?body=1" for 127.0.0.1 at 2016-12-08 09:06:59 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/angular.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:06:59 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:07:00 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/support/phantomjs-shims.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:07:01 +0000
+
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+
+Started GET "/assets/angular-route.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:07:01 +0000
+
+
+Started GET "/assets/angular-resource.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:07:01 +0000
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:07:01 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:07:01 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/app.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:07:01 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/app/home.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:07:01 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/app/login.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:07:02 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/app/signupCtrl.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:07:02 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:07:02 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/common/constants.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:07:02 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/common/dataService.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:07:03 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:07:03 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:07:03 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:07:04 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/library/angular-animate.min.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:07:04 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/library/angularjs-dropdown-multiselect.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:07:04 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/library/ng-lodash.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:07:05 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/routes.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:07:05 +0000
+
+
+Started GET "/assets/application.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:07:06 +0000
+
+
+Started GET "/assets/angular-mocks.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:07:06 +0000
+
+
+Started GET "/assets/spec_helper.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:07:06 +0000
+
+
+Started GET "/assets/universityCtrl_spec.js?body=1" for 127.0.0.1 at 2016-12-08 09:07:06 +0000
+close: 127.0.0.1:60810
+close: 127.0.0.1:60824
+close: 127.0.0.1:60822
+close: 127.0.0.1:60818
+close: 127.0.0.1:60826
+close: 127.0.0.1:60820
+close TCPSocket(127.0.0.1, 34309)
+going to shutdown ...
+WEBrick::HTTPServer#start done.
+WEBrick 1.3.1
+ruby 2.3.0 (2015-12-25) [x86_64-linux]
+Rack::Handler::WEBrick is mounted on /.
+WEBrick::HTTPServer#start: pid=32432 port=33487
+accept: 127.0.0.1:41724
+close: 127.0.0.1:41724
+accept: 127.0.0.1:41730
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/teaspoon/default?reporter=Console" for 127.0.0.1 at 2016-12-08 09:08:07 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Teaspoon::SuiteController#show as HTML
+  Parameters: {"reporter"=>"Console", "suite"=>"default"}
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_boot.html.erb (456.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_body.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb (481.3ms)
+Completed 200 OK in 498ms (Views: 488.2ms | ActiveRecord: 0.0ms)
+Rack::Handler::WEBrick is invoked.
+accept: 127.0.0.1:41734
+
+accept: 127.0.0.1:41736
+accept: 127.0.0.1:41738
+accept: 127.0.0.1:41740
+
+Rack::Handler::WEBrick is invoked.
+accept: 127.0.0.1:41742
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/teaspoon.css?body=1" for 127.0.0.1 at 2016-12-08 09:08:08 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/jasmine/2.3.4.js?body=1" for 127.0.0.1 at 2016-12-08 09:08:08 +0000
+
+
+Started GET "/assets/teaspoon-jasmine2.js?body=1" for 127.0.0.1 at 2016-12-08 09:08:08 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/support/phantomjs-shims.js?body=1" for 127.0.0.1 at 2016-12-08 09:08:08 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2016-12-08 09:08:08 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular.js?body=1" for 127.0.0.1 at 2016-12-08 09:08:08 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular-route.js?body=1" for 127.0.0.1 at 2016-12-08 09:08:08 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular-resource.js?body=1" for 127.0.0.1 at 2016-12-08 09:08:08 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 127.0.0.1 at 2016-12-08 09:08:08 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-12-08 09:08:08 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/app.js?body=1" for 127.0.0.1 at 2016-12-08 09:08:08 +0000
+
+
+Started GET "/assets/angular/app/home.js?body=1" for 127.0.0.1 at 2016-12-08 09:08:08 +0000
+
+
+Started GET "/assets/angular/app/login.js?body=1" for 127.0.0.1 at 2016-12-08 09:08:08 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/app/signupCtrl.js?body=1" for 127.0.0.1 at 2016-12-08 09:08:08 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1" for 127.0.0.1 at 2016-12-08 09:08:08 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/common/constants.js?body=1" for 127.0.0.1 at 2016-12-08 09:08:08 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+
+
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/dataService.js?body=1" for 127.0.0.1 at 2016-12-08 09:08:08 +0000
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1" for 127.0.0.1 at 2016-12-08 09:08:08 +0000
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1" for 127.0.0.1 at 2016-12-08 09:08:08 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1" for 127.0.0.1 at 2016-12-08 09:08:08 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/library/angular-animate.min.js?body=1" for 127.0.0.1 at 2016-12-08 09:08:08 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/library/angularjs-dropdown-multiselect.js?body=1" for 127.0.0.1 at 2016-12-08 09:08:08 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/library/ng-lodash.js?body=1" for 127.0.0.1 at 2016-12-08 09:08:08 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/routes.js?body=1" for 127.0.0.1 at 2016-12-08 09:08:08 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-12-08 09:08:08 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular-mocks.js?body=1" for 127.0.0.1 at 2016-12-08 09:08:08 +0000
+
+
+Started GET "/assets/spec_helper.js?body=1" for 127.0.0.1 at 2016-12-08 09:08:08 +0000
+
+
+Started GET "/assets/universityCtrl_spec.js?body=1" for 127.0.0.1 at 2016-12-08 09:08:08 +0000
+close: 127.0.0.1:41730
+close: 127.0.0.1:41736
+close: 127.0.0.1:41740
+close: 127.0.0.1:41734
+close: 127.0.0.1:41738
+close: 127.0.0.1:41742
+close TCPSocket(127.0.0.1, 33487)
+going to shutdown ...
+WEBrick::HTTPServer#start done.
+WEBrick 1.3.1
+ruby 2.3.0 (2015-12-25) [x86_64-linux]
+Rack::Handler::WEBrick is mounted on /.
+WEBrick::HTTPServer#start: pid=32470 port=45918
+accept: 127.0.0.1:58434
+close: 127.0.0.1:58434
+accept: 127.0.0.1:58436
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/teaspoon/default?reporter=Console" for 127.0.0.1 at 2016-12-08 09:09:46 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Teaspoon::SuiteController#show as HTML
+  Parameters: {"reporter"=>"Console", "suite"=>"default"}
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_boot.html.erb (357.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_body.html.erb (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb (373.0ms)
+Completed 200 OK in 387ms (Views: 378.8ms | ActiveRecord: 0.0ms)
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/teaspoon.css?body=1" for 127.0.0.1 at 2016-12-08 09:09:47 +0000
+accept: 127.0.0.1:58444
+accept: 127.0.0.1:58446
+accept: 127.0.0.1:58442
+accept: 127.0.0.1:58448
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+accept: 127.0.0.1:58450
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+
+Rack::Handler::WEBrick is invoked.
+
+Started GET "/assets/teaspoon-jasmine2.js?body=1" for 127.0.0.1 at 2016-12-08 09:09:47 +0000
+
+
+Started GET "/assets/support/phantomjs-shims.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:09:47 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/jasmine/2.3.4.js?body=1" for 127.0.0.1 at 2016-12-08 09:09:47 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/angular.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:09:47 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:09:48 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular-route.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:09:48 +0000
+
+Rack::Handler::WEBrick is invoked.
+
+Started GET "/assets/angular-resource.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:09:48 +0000
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:09:48 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/turbolinks.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:09:48 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/app.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:09:49 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/app/home.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:09:49 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/app/login.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:09:49 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/app/signupCtrl.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:09:49 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:09:50 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/common/constants.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:09:50 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/common/dataService.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:09:50 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:09:51 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:09:51 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:09:51 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/library/angular-animate.min.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:09:51 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/library/angularjs-dropdown-multiselect.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:09:52 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/library/ng-lodash.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:09:52 +0000
+Rack::Handler::WEBrick is invoked.
+
+
+Started GET "/assets/angular/routes.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:09:53 +0000
+
+
+Started GET "/assets/application.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:09:53 +0000
+
+
+Started GET "/assets/angular-mocks.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:09:53 +0000
+
+
+Started GET "/assets/spec_helper.js?body=1&instrument=1" for 127.0.0.1 at 2016-12-08 09:09:53 +0000
+
+
+Started GET "/assets/universityCtrl_spec.js?body=1" for 127.0.0.1 at 2016-12-08 09:09:53 +0000
+close: 127.0.0.1:58450
+close: 127.0.0.1:58446
+close: 127.0.0.1:58442
+close: 127.0.0.1:58436
+close: 127.0.0.1:58444
+close: 127.0.0.1:58448
+close TCPSocket(127.0.0.1, 45918)
+going to shutdown ...
+WEBrick::HTTPServer#start done.

@@ -61,9 +61,16 @@ gem 'spring',        group: :development
 
 gem 'awesome_print', :require => 'ap'
 
+# Including jasmine
+gem "jasmine", github: "pivotal/jasmine-gem"
+
+#Including jamsine coverage
+gem 'jasmine-coverage'
+
 #Installing gem Jasmine for UI test cases
 group :development, :test do
-  gem 'jasmine'
+  #gem 'jasmine'
+  gem "teaspoon-jasmine"
 end
 
 group :production do
