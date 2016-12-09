@@ -235,7 +235,7 @@ class UniversitiesController < ApplicationController
     end  
     
     states = params[:filter][:states]
-    if states == nil
+    if states == nil || states == []
       states = ["NJ", "MA", "IL", "CT", "NY", "CA", "NC", "PA", "MD", "NH", "RI", "TX", "IN", "TN", "MO", "GA", " :dC"]
     end  
     rank_range = params[:filter][:rank][:low]..params[:filter][:rank][:high]
