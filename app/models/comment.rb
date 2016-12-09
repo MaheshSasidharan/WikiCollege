@@ -1,7 +1,7 @@
 class Comment < ActiveRecord::Base
     belongs_to :user
     belongs_to :post
-    has_many :likecomments
+    #has_many :likecomments
     
     
     validates :commentData, presence: true, length: {minimum: 3, maximum: 200}

@@ -169,52 +169,52 @@ class UniversitiesController < ApplicationController
     end
   end
   
-  def show
-    #respond_with(@university.as_json)
-    #redirect_to university_path
-  end
+  # def show
+  #   #respond_with(@university.as_json)
+  #   #redirect_to university_path
+  # end
   def index
     @university = University.all
     render json: @university
   end  
   
-  def testme2
-    puts params[:nUnivId]
-    #respond_to do |format|
-      msg = { :status => "ok", :message => params[:nUnivId], :html22 => "<b>...</b>" }
-      render :json => msg  # don't do msg.to_json
-    #end
-  end
+  # def testme2
+  #   puts params[:nUnivId]
+  #   #respond_to do |format|
+  #     msg = { :status => "ok", :message => params[:nUnivId], :html22 => "<b>...</b>" }
+  #     render :json => msg  # don't do msg.to_json
+  #   #end
+  # end
   
-  def TestPost
-    puts params[:oSaveItem]
-    #respond_to do |format|
-      msg = { :status => "ok", :message => params["oSaveItem"].as_json, :html => "<h1>...</h1>" }
-      render :json => msg  # don't do msg.to_json
-    #end
-  end
+  # def TestPost
+  #   puts params[:oSaveItem]
+  #   #respond_to do |format|
+  #     msg = { :status => "ok", :message => params["oSaveItem"].as_json, :html => "<h1>...</h1>" }
+  #     render :json => msg  # don't do msg.to_json
+  #   #end
+  # end
   
-  def SearchCity
-    puts params[:sCity]
-    if params[:sCity]
-      @arrUniversities = University.search(params[:sCity])
-      render :json => { status: true, arrUniversities: @arrUniversities }
-    else
-      render :json => { status: false, msg: "No City name provided" }
-    end
-  end
+  # def SearchCity
+  #   puts params[:sCity]
+  #   if params[:sCity]
+  #     @arrUniversities = University.search(params[:sCity])
+  #     render :json => { status: true, arrUniversities: @arrUniversities }
+  #   else
+  #     render :json => { status: false, msg: "No City name provided" }
+  #   end
+  # end
   
-  def univ_params
-    params.fetch(:oSaveItem).permit(:a, :b)
-  end
+  # def univ_params
+  #   params.fetch(:oSaveItem).permit(:a, :b)
+  # end
   
-  def Params_GetAllUniversities
-    params.fetch(:oFilter).permit(:a, :b)
-  end
+  # def Params_GetAllUniversities
+  #   params.fetch(:oFilter).permit(:a, :b)
+  # end
   
-  def comment_params
-    params.fetch(:oSaveComment).permit(:commentData, :postId, :id, :like, :dislike)
-  end
+  # def comment_params
+  #   params.fetch(:oSaveComment).permit(:commentData, :postId, :id, :like, :dislike)
+  # end
   
   def Filter
     print "Print params.....................",  params
