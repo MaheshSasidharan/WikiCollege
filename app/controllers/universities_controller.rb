@@ -27,7 +27,7 @@ class UniversitiesController < ApplicationController
     params.fetch(:oSaveComment).permit(:id, :postId, :commentData, :like, :dislike)
   end
   
-  respond_to :json
+  #respond_to :json
   
   def GetAllUniversities
     @arrUniversities = University.all

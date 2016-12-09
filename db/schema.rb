@@ -1,4 +1,3 @@
-# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -13,39 +12,37 @@
 
 ActiveRecord::Schema.define(version: 20161208051617) do
 
-  create_table "comments", force: true do |t|
+  create_table "comments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "post_id"
     t.integer  "user_id"
-    t.text     "commentData"
-    t.decimal  "like",        precision: 10, scale: 0, default: 0
-    t.decimal  "dislike",     precision: 10, scale: 0, default: 0
-    t.boolean  "isActive",                             default: false
+    t.text     "commentData", limit: 65535
+    t.decimal  "like",                      precision: 10, default: 0
+    t.decimal  "dislike",                   precision: 10, default: 0
+    t.boolean  "isActive",                                 default: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.index ["post_id"], name: "index_comments_on_post_id", using: :btree
+    t.index ["user_id"], name: "index_comments_on_user_id", using: :btree
   end
 
-  add_index "comments", ["post_id"], name: "index_comments_on_post_id", using: :btree
-  add_index "comments", ["user_id"], name: "index_comments_on_user_id", using: :btree
-
-  create_table "departments", force: true do |t|
+  create_table "departments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "deptName"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "groups", force: true do |t|
+  create_table "groups", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "university_id"
     t.integer  "user_id"
-    t.text     "desc"
+    t.text     "desc",          limit: 65535
     t.string   "groupName"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.index ["university_id"], name: "index_groups_on_university_id", using: :btree
+    t.index ["user_id"], name: "index_groups_on_user_id", using: :btree
   end
 
-  add_index "groups", ["university_id"], name: "index_groups_on_university_id", using: :btree
-  add_index "groups", ["user_id"], name: "index_groups_on_user_id", using: :btree
-
-  create_table "likecomments", force: true do |t|
+  create_table "likecomments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.boolean  "like"
     t.integer  "user_id"
     t.integer  "comment_id"
@@ -53,7 +50,7 @@ ActiveRecord::Schema.define(version: 20161208051617) do
     t.datetime "updated_at"
   end
 
-  create_table "likeposts", force: true do |t|
+  create_table "likeposts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.boolean  "like"
     t.integer  "user_id"
     t.integer  "post_id"
@@ -61,72 +58,53 @@ ActiveRecord::Schema.define(version: 20161208051617) do
     t.datetime "updated_at"
   end
 
-  create_table "likes_Post", force: true do |t|
-    t.boolean  "like"
-    t.integer  "user_id"
-    t.integer  "post_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "likes_comment", force: true do |t|
-    t.boolean  "like"
-    t.integer  "user_id"
-    t.integer  "comment_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "posts", force: true do |t|
+  create_table "posts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "group_id"
     t.integer  "user_id"
-    t.text     "postData"
-    t.decimal  "like",       precision: 10, scale: 0, default: 0
-    t.decimal  "dislike",    precision: 10, scale: 0, default: 0
+    t.text     "postData",   limit: 65535
+    t.decimal  "like",                     precision: 10, default: 0
+    t.decimal  "dislike",                  precision: 10, default: 0
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.index ["group_id"], name: "index_posts_on_group_id", using: :btree
+    t.index ["user_id"], name: "index_posts_on_user_id", using: :btree
   end
 
-  add_index "posts", ["group_id"], name: "index_posts_on_group_id", using: :btree
-  add_index "posts", ["user_id"], name: "index_posts_on_user_id", using: :btree
-
-  create_table "submajors", force: true do |t|
+  create_table "submajors", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "univdept_id"
-    t.text     "desc"
+    t.text     "desc",        limit: 65535
     t.string   "majorName"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.index ["univdept_id"], name: "index_submajors_on_univdept_id", using: :btree
   end
 
-  add_index "submajors", ["univdept_id"], name: "index_submajors_on_univdept_id", using: :btree
-
-  create_table "univdepts", force: true do |t|
+  create_table "univdepts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "university_id"
     t.integer  "department_id"
-    t.text     "desc"
+    t.text     "desc",          limit: 65535
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.index ["department_id"], name: "index_univdepts_on_department_id", using: :btree
+    t.index ["university_id"], name: "index_univdepts_on_university_id", using: :btree
   end
 
-  add_index "univdepts", ["department_id"], name: "index_univdepts_on_department_id", using: :btree
-  add_index "univdepts", ["university_id"], name: "index_univdepts_on_university_id", using: :btree
-
-  create_table "universities", force: true do |t|
-    t.text     "desc"
+  create_table "universities", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.text     "desc",           limit: 65535
     t.string   "city"
     t.string   "state"
-    t.decimal  "zip",            precision: 10, scale: 0
+    t.decimal  "zip",                          precision: 10
     t.string   "name"
     t.string   "collegeType"
-    t.decimal  "rank",           precision: 10, scale: 0
-    t.decimal  "acceptanceRate", precision: 10, scale: 0
-    t.decimal  "enrollment",     precision: 10, scale: 0
-    t.decimal  "arrTuition",     precision: 10, scale: 0
+    t.decimal  "rank",                         precision: 10
+    t.decimal  "acceptanceRate",               precision: 10
+    t.decimal  "enrollment",                   precision: 10
+    t.decimal  "arrTuition",                   precision: 10
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "users", force: true do |t|
+  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name"
     t.string   "email"
     t.string   "password_digest"
