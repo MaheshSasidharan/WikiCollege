@@ -1,4 +1,10 @@
 require 'test_helper'
+require 'spec_helper'
+require 'rails_helper'
+
+describe UniversitySpec do
+
+end
 
 class UniversityTest < ActiveSupport::TestCase
     

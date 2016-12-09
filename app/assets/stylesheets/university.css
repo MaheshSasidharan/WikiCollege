@@ -121,7 +121,7 @@
 }
 
 .filter-inputs {
-    width: 89px;
+    /*width: 89px;*/
     /*margin-left: 4px;*/
     /*margin-right: 4px;*/
 }
@@ -272,6 +272,10 @@
 .WC_List {
     margin-top: 15px;
     margin-right: -93px;
+}
+
+.WC_List .btn-group{
+    float: right;
 }
 
 .WC_U_Rank {

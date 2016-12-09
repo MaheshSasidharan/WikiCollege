@@ -7,9 +7,13 @@
                         <label class="float-container filter-label">Rank</label>
                     </div>
                     <div class="col-md-8">
-                        <input ng-model="un.filterObject.rank.low" class="col-md-5 float-container fee-low-input filter-inputs form-control" type="text" name="low-range" />
+                        <div class="col-md-5">
+                            <input ng-model="un.filterObject.rank.low" class="float-container fee-low-input filter-inputs form-control" type="text" name="low-range" />
+                        </div>
                         <label class="float-container col-md-2">to</label>
-                        <input ng-model="un.filterObject.rank.high" class="col-md-5 float-container fee-high-input filter-inputs form-control" type="text" name="high-range" />
+                        <div class="col-md-5">
+                            <input ng-model="un.filterObject.rank.high" class="float-container fee-high-input filter-inputs form-control" type="text" name="high-range" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -20,9 +24,13 @@
                     </div>
                     <div class="col-md-8">
                         <div class="row">
-                            <input ng-model="un.filterObject.fees.low" class="col-md-5 float-container fee-low-input filter-inputs form-control" type="text" name="low-range" />
+                            <div class="col-md-5">
+                                <input ng-model="un.filterObject.fees.low" class="float-container fee-low-input filter-inputs form-control" type="text" name="low-range" />
+                            </div>
                             <label class="float-container col-md-2">to</label>
-                            <input ng-model="un.filterObject.fees.high" class="col-md-5 float-container fee-high-input filter-inputs form-control" type="text" name="high-range" />
+                            <div class="col-md-5">
+                                <input ng-model="un.filterObject.fees.high" class="float-container fee-high-input filter-inputs form-control" type="text" name="high-range" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -48,7 +56,7 @@
                     <input type="text" class="search-input form-control" ng-model="filterCity" placeholder="Search by City" />
                 </div>
                 <div class="col-md-2 pull-right">
-                    <button class="form-control btn btn-default" ng-click="filterUnivName = null; filterCity = null;">CLEAR</button>
+                    <button class="form-control btn btn-default" ng-click="filterUnivName = ''; filterCity = '';">CLEAR</button>
                 </div>
             </div>
             <div class="row removeBSColMargin">
@@ -72,7 +80,7 @@
             <div class="row">
                 <div ng-if="!bShowListMode">
                     <div class="university-list table table-striped">
-                        <div class="WC_UnivContainer" ng-show="un.arrColleges.length" ng-repeat="college in un.arrColleges | filter: {name: filterUnivName, city: filterCity}  track by $index">
+                        <div class="WC_UnivContainer" ng-show="un.arrColleges.length" ng-repeat="college in un.arrColleges | filter: {name: filterUnivName, city: filterCity} track by $index">
                             <div class="col-md-12 WC_UnivContent">
                                 <a href="#/university?nId={{college.id}}">
                                     <div class="row">
@@ -97,7 +105,7 @@
                 </div>
                 <div ng-if="bShowListMode">
                     <table class="university-list table table-striped">
-                        <tr ng-show="un.arrColleges.length" ng-repeat="college in un.arrColleges | filter:searchFilter  track by $index">
+                        <tr ng-show="un.arrColleges.length" ng-repeat="college in un.arrColleges | filter: {name: filterUnivName, city: filterCity} track by $index">
                             <td>#{{college.rank}}</td>
                             <td>{{college.name}}</td>
                             <td>{{college.city}}</td>
