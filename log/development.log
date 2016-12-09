@@ -44345,3 +44345,1754 @@ Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.2ms)
 Started GET "/assets/glyphicons-halflings-regular.woff" for 173.28.201.159 at 2016-12-09 04:21:25 +0000
 >>>>>>> mahesh
 >>>>>>> master
+WEBrick 1.3.1
+ruby 2.3.0 (2015-12-25) [x86_64-linux]
+Rack::Handler::WEBrick is mounted on /.
+WEBrick::HTTPServer#start: pid=35796 port=37148
+accept: 127.0.0.1:40434
+close: 127.0.0.1:40434
+accept: 127.0.0.1:40436
+Rack::Handler::WEBrick is invoked.
+Started GET "/teaspoon/default?reporter=Console" for 127.0.0.1 at 2016-12-09 06:17:28 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Teaspoon::SuiteController#show as HTML
+  Parameters: {"reporter"=>"Console", "defaults"=>{"suite"=>"default"}, "suite"=>"default"}
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_boot.html.erb (183.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_body.html.erb (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb (557.2ms)
+Completed 200 OK in 575ms (Views: 563.6ms | ActiveRecord: 0.0ms)
+
+
+Rack::Handler::WEBrick is invoked.
+accept: 127.0.0.1:40450
+Started GET "/assets/teaspoon.self-6e7be868738f20e0ca2ab731d5f577e0dd6bed588b1660eb2b2dc6b0328341dd.css?body=1" for 127.0.0.1 at 2016-12-09 06:17:29 +0000
+Rack::Handler::WEBrick is invoked.
+accept: 127.0.0.1:40456
+accept: 127.0.0.1:40452
+accept: 127.0.0.1:40458
+accept: 127.0.0.1:40454
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/jasmine/2.3.4.self-aa35a2d6ef4c597846860937831b786d7a7b61cf7b7d860a06b484aa1b637276.js?body=1" for 127.0.0.1 at 2016-12-09 06:17:29 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/support/phantomjs-shims.self-f6867d3adaf9c1a659d0ca8e170f147e97bbde37736890cf05d84e7b5020fed4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:17:29 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/angular.self-55459d3bd6c820b82a84405c655eb594e8f13110f3bfb3c25711a3cc3510e952.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:17:29 +0000
+Started GET "/assets/teaspoon-jasmine2.self-193432e902b3943f7e511bf7ba322e1ce098119d180978aaff50918567da9361.js?body=1" for 127.0.0.1 at 2016-12-09 06:17:29 +0000
+Started GET "/assets/angular-route.self-00fec46593bf47438f42c1c8129a7667feb3ec9083550f6acbfb2f720882afbe.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:17:29 +0000
+Started GET "/assets/angular.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:17:29 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-ui-bootstrap.self-f0590a4e71291d7ac90b4413bfe418dd00aa804471a7aa36c4489e52a4322659.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:17:29 +0000
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:17:29 +0000
+Started GET "/assets/angular/app/home.self-6e6c3ed2e46341d762e86fd07cc1b700e8e667b3256975505f27759fde1a20ff.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:17:29 +0000
+Started GET "/assets/angular-resource.self-8aaea2bb9a19368634f9a7280b41e7b6200d3afdca6644b6855f09993a092618.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:17:29 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app.self-4bef8073e850664d405adab0fbde900b295c5d8ed32159babf3bf438cedeb97b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:17:29 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app/login.self-0c654bd4f355ad269726a6adb01d7468f5e50e1f5f71b99c1584b9107c66f9fa.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:17:29 +0000
+Started GET "/assets/angular/app/signupCtrl.self-4b6a21fa2aeec43523172f469dd27004ffefd17ad9c0eb52bbf57906fcae0c5b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:17:29 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/commonRoutines.self-100874d041a7c8e24b68e9f2c13f425db4d14df176a140c2acf089702b4e485c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:17:29 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/constants.self-08f367b09783d31ae63de23796cc8b5121cbc65939553839e742a4732cadce4a.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:17:30 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/dataService.self-6559b9374efcd2ec7b099b4e2c2aa643ec1a8b6894cf8b06c8ad0daa0afc6fb4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:17:30 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/controller/universitiesCtrl.self-0c0e6b790b86dc515b7cb4eb11964f58a3885f31f09538fcfd7a71e3b62c3aa0.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:17:30 +0000
+Started GET "/assets/angular/common/sharedProperties.self-991020b922ec2cd0ebcc37fa5cd504af3060921a09598da8fb215f108190a748.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:17:30 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/controller/universityDetailsCtrl.self-2996b3efac624da69735105bac370bff8512d97b26b5beb0dd86d15e767bdb6c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:17:31 +0000
+Started GET "/assets/angular/library/angular-animate.min.self-8fb577c1970a6c228407b81846e93f6d699bb2270e14ee09f5b46319a72d4409.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:17:32 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angular-ui-notification.min.self-df2fdc1f8a489529caa4104e0b18150e2a45b101672d2c676f20f1a0007a6d47.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:17:32 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angularjs-dropdown-multiselect.self-67a5b616a5ece03e4e4bcfe1d7c286733faafea5cdf8d5b51df9da19a57453fd.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:17:32 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/routes.self-f9d8017c8738b8f527caba6b535c9bc77794780f53600430e506a34b810882de.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:17:32 +0000
+Started GET "/assets/angular/library/ng-lodash.self-4da4b787294bb3ec1a3c816af5031e9f5ca34ab96bba85d0d2291a0382ec5dac.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:17:32 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/application.self-abf55f804796de5da127bcfc5fb78b0494e1e0968b014300c8b6ae359f4a19ad.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:17:32 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-mocks.self-45fe0f5c2a144b881b1ff63fe41e4f6c03b06d35714662e4632af5c7c81400f5.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:17:32 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/home_spec.self-f9f351c9d642d22786f8650ea27828138c23203e686492d9cdf0cd48fcdebd1d.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:17:32 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/commonRoutines_spec.self-0bfd3688e5c846dee8f525b57cd1fd1635a91abf50c4a4fa979bd01434213593.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:17:32 +0000
+Started GET "/assets/spec_helper.self-7ebbb24e31d0cae89fc5b127943939f8d700298fa074f6787ccc357b1e236cba.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:17:32 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/login_spec.self-613e5734c68256261a6a72e00c62e66ee4ce7dd9b583d9e74d8439f92e949043.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:17:32 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/sharedProperties_spec.self-17a45f8115197c2a95564b39fb480b05734225f78e83fbdd0ebaeb4330c09621.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:17:32 +0000
+Started GET "/assets/universityCtrl_spec.self-2d724bded65944db6e513fdc82b8b6a79efaffcb019c17b31223f9ba5979df86.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:17:32 +0000
+Started GET "/assets/signupCtrl_spec.self-e3a8943a7668186508efaceed823ddd2c0fe2d7184a323b738e6ede60a15020a.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:17:32 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/universityDetailsCtrl_spec.self-3639de1b4d38f5f689ed7f64bfe7b7c6e5cdcd4902176577979ac005d2cc1fd3.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:17:32 +0000
+close: 127.0.0.1:40436
+close: 127.0.0.1:40452
+close: 127.0.0.1:40450
+close: 127.0.0.1:40458
+close: 127.0.0.1:40454
+close: 127.0.0.1:40456
+close TCPSocket(127.0.0.1, 37148)
+going to shutdown ...
+WEBrick::HTTPServer#start done.
+WEBrick 1.3.1
+ruby 2.3.0 (2015-12-25) [x86_64-linux]
+Rack::Handler::WEBrick is mounted on /.
+WEBrick::HTTPServer#start: pid=35933 port=34230
+accept: 127.0.0.1:50292
+close: 127.0.0.1:50292
+accept: 127.0.0.1:50294
+Rack::Handler::WEBrick is invoked.
+Started GET "/teaspoon/default?reporter=Console" for 127.0.0.1 at 2016-12-09 06:19:02 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Teaspoon::SuiteController#show as HTML
+  Parameters: {"reporter"=>"Console", "defaults"=>{"suite"=>"default"}, "suite"=>"default"}
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_boot.html.erb (272.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_body.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb (666.5ms)
+Completed 200 OK in 684ms (Views: 672.9ms | ActiveRecord: 0.0ms)
+
+
+accept: 127.0.0.1:50312
+Rack::Handler::WEBrick is invoked.
+accept: 127.0.0.1:50316
+Started GET "/assets/teaspoon.self-6e7be868738f20e0ca2ab731d5f577e0dd6bed588b1660eb2b2dc6b0328341dd.css?body=1" for 127.0.0.1 at 2016-12-09 06:19:03 +0000
+accept: 127.0.0.1:50314
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+accept: 127.0.0.1:50320
+accept: 127.0.0.1:50318
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/jasmine/2.3.4.self-aa35a2d6ef4c597846860937831b786d7a7b61cf7b7d860a06b484aa1b637276.js?body=1" for 127.0.0.1 at 2016-12-09 06:19:03 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/support/phantomjs-shims.self-f6867d3adaf9c1a659d0ca8e170f147e97bbde37736890cf05d84e7b5020fed4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:03 +0000
+Started GET "/assets/angular/angular.self-55459d3bd6c820b82a84405c655eb594e8f13110f3bfb3c25711a3cc3510e952.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:03 +0000
+Started GET "/assets/teaspoon-jasmine2.self-193432e902b3943f7e511bf7ba322e1ce098119d180978aaff50918567da9361.js?body=1" for 127.0.0.1 at 2016-12-09 06:19:03 +0000
+Started GET "/assets/angular.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:03 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-resource.self-8aaea2bb9a19368634f9a7280b41e7b6200d3afdca6644b6855f09993a092618.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:03 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-route.self-00fec46593bf47438f42c1c8129a7667feb3ec9083550f6acbfb2f720882afbe.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:03 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:03 +0000
+Started GET "/assets/angular-ui-bootstrap.self-f0590a4e71291d7ac90b4413bfe418dd00aa804471a7aa36c4489e52a4322659.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:03 +0000
+Started GET "/assets/angular/app.self-4bef8073e850664d405adab0fbde900b295c5d8ed32159babf3bf438cedeb97b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:03 +0000
+Started GET "/assets/angular/app/home.self-6e6c3ed2e46341d762e86fd07cc1b700e8e667b3256975505f27759fde1a20ff.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:03 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app/signupCtrl.self-4b6a21fa2aeec43523172f469dd27004ffefd17ad9c0eb52bbf57906fcae0c5b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:03 +0000
+Started GET "/assets/angular/app/login.self-0c654bd4f355ad269726a6adb01d7468f5e50e1f5f71b99c1584b9107c66f9fa.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:03 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/commonRoutines.self-100874d041a7c8e24b68e9f2c13f425db4d14df176a140c2acf089702b4e485c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:03 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/constants.self-08f367b09783d31ae63de23796cc8b5121cbc65939553839e742a4732cadce4a.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:04 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/dataService.self-6559b9374efcd2ec7b099b4e2c2aa643ec1a8b6894cf8b06c8ad0daa0afc6fb4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:04 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/sharedProperties.self-991020b922ec2cd0ebcc37fa5cd504af3060921a09598da8fb215f108190a748.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:04 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/controller/universitiesCtrl.self-0c0e6b790b86dc515b7cb4eb11964f58a3885f31f09538fcfd7a71e3b62c3aa0.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:04 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/controller/universityDetailsCtrl.self-2996b3efac624da69735105bac370bff8512d97b26b5beb0dd86d15e767bdb6c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:04 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angular-animate.min.self-8fb577c1970a6c228407b81846e93f6d699bb2270e14ee09f5b46319a72d4409.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:05 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angular-ui-notification.min.self-df2fdc1f8a489529caa4104e0b18150e2a45b101672d2c676f20f1a0007a6d47.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:05 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angularjs-dropdown-multiselect.self-67a5b616a5ece03e4e4bcfe1d7c286733faafea5cdf8d5b51df9da19a57453fd.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:05 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/ng-lodash.self-4da4b787294bb3ec1a3c816af5031e9f5ca34ab96bba85d0d2291a0382ec5dac.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:05 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/routes.self-f9d8017c8738b8f527caba6b535c9bc77794780f53600430e506a34b810882de.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:05 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/application.self-abf55f804796de5da127bcfc5fb78b0494e1e0968b014300c8b6ae359f4a19ad.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:05 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-mocks.self-45fe0f5c2a144b881b1ff63fe41e4f6c03b06d35714662e4632af5c7c81400f5.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:05 +0000
+Started GET "/assets/spec_helper.self-7ebbb24e31d0cae89fc5b127943939f8d700298fa074f6787ccc357b1e236cba.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:05 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/commonRoutines_spec.self-0bfd3688e5c846dee8f525b57cd1fd1635a91abf50c4a4fa979bd01434213593.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:19:05 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/home_spec.self-f9f351c9d642d22786f8650ea27828138c23203e686492d9cdf0cd48fcdebd1d.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:19:05 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/login_spec.self-613e5734c68256261a6a72e00c62e66ee4ce7dd9b583d9e74d8439f92e949043.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:19:05 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/sharedProperties_spec.self-17a45f8115197c2a95564b39fb480b05734225f78e83fbdd0ebaeb4330c09621.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:19:05 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/universityDetailsCtrl_spec.self-903ce3ae66670ab6ec566f2d712fa39456b2da2f7af7bcf2e89c42fd20b9c678.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:19:05 +0000
+Started GET "/assets/signupCtrl_spec.self-e3a8943a7668186508efaceed823ddd2c0fe2d7184a323b738e6ede60a15020a.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:19:05 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/universityCtrl_spec.self-2d724bded65944db6e513fdc82b8b6a79efaffcb019c17b31223f9ba5979df86.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:19:05 +0000
+close: 127.0.0.1:50318
+close: 127.0.0.1:50316
+close: 127.0.0.1:50312
+close: 127.0.0.1:50294
+close: 127.0.0.1:50320
+close: 127.0.0.1:50314
+close TCPSocket(127.0.0.1, 34230)
+going to shutdown ...
+WEBrick::HTTPServer#start done.
+WEBrick 1.3.1
+ruby 2.3.0 (2015-12-25) [x86_64-linux]
+Rack::Handler::WEBrick is mounted on /.
+WEBrick::HTTPServer#start: pid=36065 port=40762
+accept: 127.0.0.1:39130
+close: 127.0.0.1:39130
+accept: 127.0.0.1:39132
+Rack::Handler::WEBrick is invoked.
+Started GET "/teaspoon/default?reporter=Console" for 127.0.0.1 at 2016-12-09 06:19:35 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Teaspoon::SuiteController#show as HTML
+  Parameters: {"reporter"=>"Console", "defaults"=>{"suite"=>"default"}, "suite"=>"default"}
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_boot.html.erb (173.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_body.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb (570.7ms)
+Completed 200 OK in 588ms (Views: 576.9ms | ActiveRecord: 0.0ms)
+
+
+accept: 127.0.0.1:39146
+accept: 127.0.0.1:39148
+accept: 127.0.0.1:39150
+accept: 127.0.0.1:39154
+accept: 127.0.0.1:39152
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:36 +0000
+Started GET "/assets/teaspoon.self-6e7be868738f20e0ca2ab731d5f577e0dd6bed588b1660eb2b2dc6b0328341dd.css?body=1" for 127.0.0.1 at 2016-12-09 06:19:36 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/support/phantomjs-shims.self-f6867d3adaf9c1a659d0ca8e170f147e97bbde37736890cf05d84e7b5020fed4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:36 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/angular.self-55459d3bd6c820b82a84405c655eb594e8f13110f3bfb3c25711a3cc3510e952.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:36 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/jasmine/2.3.4.self-aa35a2d6ef4c597846860937831b786d7a7b61cf7b7d860a06b484aa1b637276.js?body=1" for 127.0.0.1 at 2016-12-09 06:19:36 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/teaspoon-jasmine2.self-193432e902b3943f7e511bf7ba322e1ce098119d180978aaff50918567da9361.js?body=1" for 127.0.0.1 at 2016-12-09 06:19:36 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-route.self-00fec46593bf47438f42c1c8129a7667feb3ec9083550f6acbfb2f720882afbe.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:36 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-resource.self-8aaea2bb9a19368634f9a7280b41e7b6200d3afdca6644b6855f09993a092618.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:36 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-ui-bootstrap.self-f0590a4e71291d7ac90b4413bfe418dd00aa804471a7aa36c4489e52a4322659.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:36 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app.self-4bef8073e850664d405adab0fbde900b295c5d8ed32159babf3bf438cedeb97b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:36 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:36 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app/home.self-6e6c3ed2e46341d762e86fd07cc1b700e8e667b3256975505f27759fde1a20ff.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:36 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app/signupCtrl.self-4b6a21fa2aeec43523172f469dd27004ffefd17ad9c0eb52bbf57906fcae0c5b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:36 +0000
+Started GET "/assets/angular/common/commonRoutines.self-100874d041a7c8e24b68e9f2c13f425db4d14df176a140c2acf089702b4e485c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:36 +0000
+Started GET "/assets/angular/app/login.self-0c654bd4f355ad269726a6adb01d7468f5e50e1f5f71b99c1584b9107c66f9fa.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:36 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/constants.self-08f367b09783d31ae63de23796cc8b5121cbc65939553839e742a4732cadce4a.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:37 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/dataService.self-6559b9374efcd2ec7b099b4e2c2aa643ec1a8b6894cf8b06c8ad0daa0afc6fb4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:37 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/sharedProperties.self-991020b922ec2cd0ebcc37fa5cd504af3060921a09598da8fb215f108190a748.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:37 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/controller/universitiesCtrl.self-0c0e6b790b86dc515b7cb4eb11964f58a3885f31f09538fcfd7a71e3b62c3aa0.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:37 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/controller/universityDetailsCtrl.self-2996b3efac624da69735105bac370bff8512d97b26b5beb0dd86d15e767bdb6c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:38 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angular-animate.min.self-8fb577c1970a6c228407b81846e93f6d699bb2270e14ee09f5b46319a72d4409.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:38 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angular-ui-notification.min.self-df2fdc1f8a489529caa4104e0b18150e2a45b101672d2c676f20f1a0007a6d47.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:38 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angularjs-dropdown-multiselect.self-67a5b616a5ece03e4e4bcfe1d7c286733faafea5cdf8d5b51df9da19a57453fd.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:38 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/ng-lodash.self-4da4b787294bb3ec1a3c816af5031e9f5ca34ab96bba85d0d2291a0382ec5dac.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:38 +0000
+Started GET "/assets/angular/routes.self-f9d8017c8738b8f527caba6b535c9bc77794780f53600430e506a34b810882de.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:38 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/application.self-abf55f804796de5da127bcfc5fb78b0494e1e0968b014300c8b6ae359f4a19ad.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:38 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-mocks.self-45fe0f5c2a144b881b1ff63fe41e4f6c03b06d35714662e4632af5c7c81400f5.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:38 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/spec_helper.self-7ebbb24e31d0cae89fc5b127943939f8d700298fa074f6787ccc357b1e236cba.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:19:38 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/home_spec.self-f9f351c9d642d22786f8650ea27828138c23203e686492d9cdf0cd48fcdebd1d.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:19:39 +0000
+Started GET "/assets/commonRoutines_spec.self-0bfd3688e5c846dee8f525b57cd1fd1635a91abf50c4a4fa979bd01434213593.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:19:39 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/sharedProperties_spec.self-17a45f8115197c2a95564b39fb480b05734225f78e83fbdd0ebaeb4330c09621.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:19:39 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/login_spec.self-613e5734c68256261a6a72e00c62e66ee4ce7dd9b583d9e74d8439f92e949043.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:19:39 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/signupCtrl_spec.self-e3a8943a7668186508efaceed823ddd2c0fe2d7184a323b738e6ede60a15020a.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:19:39 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/universityCtrl_spec.self-2d724bded65944db6e513fdc82b8b6a79efaffcb019c17b31223f9ba5979df86.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:19:39 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/universityDetailsCtrl_spec.self-5c840bdac92a5de885deede67beb9b075ae292a20924320a56f04e9a71930d84.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:19:39 +0000
+close: 127.0.0.1:39148
+close: 127.0.0.1:39146
+close: 127.0.0.1:39152
+close: 127.0.0.1:39154
+close: 127.0.0.1:39150
+close: 127.0.0.1:39132
+close TCPSocket(127.0.0.1, 40762)
+going to shutdown ...
+WEBrick::HTTPServer#start done.
+WEBrick 1.3.1
+ruby 2.3.0 (2015-12-25) [x86_64-linux]
+Rack::Handler::WEBrick is mounted on /.
+WEBrick::HTTPServer#start: pid=36283 port=43216
+accept: 127.0.0.1:34586
+close: 127.0.0.1:34586
+accept: 127.0.0.1:34588
+Rack::Handler::WEBrick is invoked.
+Started GET "/teaspoon/default?reporter=Console" for 127.0.0.1 at 2016-12-09 06:22:14 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Teaspoon::SuiteController#show as HTML
+  Parameters: {"reporter"=>"Console", "defaults"=>{"suite"=>"default"}, "suite"=>"default"}
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_boot.html.erb (253.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_body.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb (713.2ms)
+Completed 200 OK in 731ms (Views: 719.6ms | ActiveRecord: 0.0ms)
+
+
+accept: 127.0.0.1:34602
+Rack::Handler::WEBrick is invoked.
+accept: 127.0.0.1:34604
+accept: 127.0.0.1:34606
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/teaspoon.self-6e7be868738f20e0ca2ab731d5f577e0dd6bed588b1660eb2b2dc6b0328341dd.css?body=1" for 127.0.0.1 at 2016-12-09 06:22:15 +0000
+accept: 127.0.0.1:34608
+accept: 127.0.0.1:34610
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/jasmine/2.3.4.self-aa35a2d6ef4c597846860937831b786d7a7b61cf7b7d860a06b484aa1b637276.js?body=1" for 127.0.0.1 at 2016-12-09 06:22:15 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/teaspoon-jasmine2.self-193432e902b3943f7e511bf7ba322e1ce098119d180978aaff50918567da9361.js?body=1" for 127.0.0.1 at 2016-12-09 06:22:15 +0000
+Started GET "/assets/support/phantomjs-shims.self-f6867d3adaf9c1a659d0ca8e170f147e97bbde37736890cf05d84e7b5020fed4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:22:15 +0000
+Started GET "/assets/angular/angular.self-55459d3bd6c820b82a84405c655eb594e8f13110f3bfb3c25711a3cc3510e952.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:22:15 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:22:15 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-route.self-00fec46593bf47438f42c1c8129a7667feb3ec9083550f6acbfb2f720882afbe.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:22:15 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-resource.self-8aaea2bb9a19368634f9a7280b41e7b6200d3afdca6644b6855f09993a092618.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:22:15 +0000
+Started GET "/assets/angular-ui-bootstrap.self-f0590a4e71291d7ac90b4413bfe418dd00aa804471a7aa36c4489e52a4322659.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:22:15 +0000
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:22:15 +0000
+Started GET "/assets/angular/app.self-4bef8073e850664d405adab0fbde900b295c5d8ed32159babf3bf438cedeb97b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:22:15 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app/home.self-6e6c3ed2e46341d762e86fd07cc1b700e8e667b3256975505f27759fde1a20ff.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:22:15 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app/login.self-0c654bd4f355ad269726a6adb01d7468f5e50e1f5f71b99c1584b9107c66f9fa.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:22:15 +0000
+Started GET "/assets/angular/app/signupCtrl.self-4b6a21fa2aeec43523172f469dd27004ffefd17ad9c0eb52bbf57906fcae0c5b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:22:15 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/commonRoutines.self-100874d041a7c8e24b68e9f2c13f425db4d14df176a140c2acf089702b4e485c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:22:15 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/constants.self-08f367b09783d31ae63de23796cc8b5121cbc65939553839e742a4732cadce4a.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:22:17 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/dataService.self-6559b9374efcd2ec7b099b4e2c2aa643ec1a8b6894cf8b06c8ad0daa0afc6fb4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:22:17 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/sharedProperties.self-991020b922ec2cd0ebcc37fa5cd504af3060921a09598da8fb215f108190a748.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:22:17 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/controller/universitiesCtrl.self-0c0e6b790b86dc515b7cb4eb11964f58a3885f31f09538fcfd7a71e3b62c3aa0.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:22:17 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/controller/universityDetailsCtrl.self-2996b3efac624da69735105bac370bff8512d97b26b5beb0dd86d15e767bdb6c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:22:17 +0000
+Started GET "/assets/angular/library/angular-animate.min.self-8fb577c1970a6c228407b81846e93f6d699bb2270e14ee09f5b46319a72d4409.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:22:18 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angular-ui-notification.min.self-df2fdc1f8a489529caa4104e0b18150e2a45b101672d2c676f20f1a0007a6d47.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:22:18 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/ng-lodash.self-4da4b787294bb3ec1a3c816af5031e9f5ca34ab96bba85d0d2291a0382ec5dac.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:22:18 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angularjs-dropdown-multiselect.self-67a5b616a5ece03e4e4bcfe1d7c286733faafea5cdf8d5b51df9da19a57453fd.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:22:18 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/routes.self-f9d8017c8738b8f527caba6b535c9bc77794780f53600430e506a34b810882de.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:22:18 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/application.self-abf55f804796de5da127bcfc5fb78b0494e1e0968b014300c8b6ae359f4a19ad.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:22:18 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-mocks.self-45fe0f5c2a144b881b1ff63fe41e4f6c03b06d35714662e4632af5c7c81400f5.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:22:18 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/spec_helper.self-7ebbb24e31d0cae89fc5b127943939f8d700298fa074f6787ccc357b1e236cba.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:22:18 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/home_spec.self-f9f351c9d642d22786f8650ea27828138c23203e686492d9cdf0cd48fcdebd1d.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:22:18 +0000
+Started GET "/assets/commonRoutines_spec.self-0bfd3688e5c846dee8f525b57cd1fd1635a91abf50c4a4fa979bd01434213593.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:22:18 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/login_spec.self-613e5734c68256261a6a72e00c62e66ee4ce7dd9b583d9e74d8439f92e949043.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:22:18 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/signupCtrl_spec.self-e3a8943a7668186508efaceed823ddd2c0fe2d7184a323b738e6ede60a15020a.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:22:18 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/sharedProperties_spec.self-17a45f8115197c2a95564b39fb480b05734225f78e83fbdd0ebaeb4330c09621.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:22:18 +0000
+Started GET "/assets/universityCtrl_spec.self-2d724bded65944db6e513fdc82b8b6a79efaffcb019c17b31223f9ba5979df86.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:22:18 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/universityDetailsCtrl_spec.self-0d17237c18ebe31d4c559f1b2f6986ad21b1a96adb1d8647abcd8bb61027b78f.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:22:18 +0000
+close: 127.0.0.1:34610
+close: 127.0.0.1:34588
+close: 127.0.0.1:34606
+close: 127.0.0.1:34602
+close: 127.0.0.1:34604
+close: 127.0.0.1:34608
+close TCPSocket(127.0.0.1, 43216)
+going to shutdown ...
+WEBrick::HTTPServer#start done.
+WEBrick 1.3.1
+ruby 2.3.0 (2015-12-25) [x86_64-linux]
+Rack::Handler::WEBrick is mounted on /.
+WEBrick::HTTPServer#start: pid=36432 port=43276
+accept: 127.0.0.1:34152
+close: 127.0.0.1:34152
+accept: 127.0.0.1:34154
+Rack::Handler::WEBrick is invoked.
+Started GET "/teaspoon/default?reporter=Console" for 127.0.0.1 at 2016-12-09 06:23:46 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Teaspoon::SuiteController#show as HTML
+  Parameters: {"reporter"=>"Console", "defaults"=>{"suite"=>"default"}, "suite"=>"default"}
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_boot.html.erb (243.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_body.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb (686.4ms)
+Completed 200 OK in 706ms (Views: 694.1ms | ActiveRecord: 0.0ms)
+
+
+Rack::Handler::WEBrick is invoked.
+accept: 127.0.0.1:34170
+accept: 127.0.0.1:34168
+accept: 127.0.0.1:34176
+accept: 127.0.0.1:34172
+accept: 127.0.0.1:34174
+Started GET "/assets/teaspoon.self-6e7be868738f20e0ca2ab731d5f577e0dd6bed588b1660eb2b2dc6b0328341dd.css?body=1" for 127.0.0.1 at 2016-12-09 06:23:47 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:23:47 +0000
+Started GET "/assets/jasmine/2.3.4.self-aa35a2d6ef4c597846860937831b786d7a7b61cf7b7d860a06b484aa1b637276.js?body=1" for 127.0.0.1 at 2016-12-09 06:23:47 +0000
+Started GET "/assets/teaspoon-jasmine2.self-193432e902b3943f7e511bf7ba322e1ce098119d180978aaff50918567da9361.js?body=1" for 127.0.0.1 at 2016-12-09 06:23:47 +0000
+Started GET "/assets/support/phantomjs-shims.self-f6867d3adaf9c1a659d0ca8e170f147e97bbde37736890cf05d84e7b5020fed4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:23:47 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/angular.self-55459d3bd6c820b82a84405c655eb594e8f13110f3bfb3c25711a3cc3510e952.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:23:47 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-route.self-00fec46593bf47438f42c1c8129a7667feb3ec9083550f6acbfb2f720882afbe.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:23:47 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-resource.self-8aaea2bb9a19368634f9a7280b41e7b6200d3afdca6644b6855f09993a092618.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:23:47 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:23:47 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-ui-bootstrap.self-f0590a4e71291d7ac90b4413bfe418dd00aa804471a7aa36c4489e52a4322659.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:23:47 +0000
+Started GET "/assets/angular/app.self-4bef8073e850664d405adab0fbde900b295c5d8ed32159babf3bf438cedeb97b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:23:47 +0000
+Started GET "/assets/angular/app/home.self-6e6c3ed2e46341d762e86fd07cc1b700e8e667b3256975505f27759fde1a20ff.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:23:47 +0000
+Started GET "/assets/angular/app/login.self-0c654bd4f355ad269726a6adb01d7468f5e50e1f5f71b99c1584b9107c66f9fa.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:23:47 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app/signupCtrl.self-4b6a21fa2aeec43523172f469dd27004ffefd17ad9c0eb52bbf57906fcae0c5b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:23:47 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/commonRoutines.self-100874d041a7c8e24b68e9f2c13f425db4d14df176a140c2acf089702b4e485c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:23:47 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/constants.self-08f367b09783d31ae63de23796cc8b5121cbc65939553839e742a4732cadce4a.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:23:49 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/dataService.self-6559b9374efcd2ec7b099b4e2c2aa643ec1a8b6894cf8b06c8ad0daa0afc6fb4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:23:49 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/sharedProperties.self-991020b922ec2cd0ebcc37fa5cd504af3060921a09598da8fb215f108190a748.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:23:49 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/controller/universitiesCtrl.self-0c0e6b790b86dc515b7cb4eb11964f58a3885f31f09538fcfd7a71e3b62c3aa0.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:23:49 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angular-animate.min.self-8fb577c1970a6c228407b81846e93f6d699bb2270e14ee09f5b46319a72d4409.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:23:49 +0000
+Started GET "/assets/angular/controller/universityDetailsCtrl.self-2996b3efac624da69735105bac370bff8512d97b26b5beb0dd86d15e767bdb6c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:23:49 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angular-ui-notification.min.self-df2fdc1f8a489529caa4104e0b18150e2a45b101672d2c676f20f1a0007a6d47.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:23:50 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angularjs-dropdown-multiselect.self-67a5b616a5ece03e4e4bcfe1d7c286733faafea5cdf8d5b51df9da19a57453fd.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:23:50 +0000
+Started GET "/assets/angular/library/ng-lodash.self-4da4b787294bb3ec1a3c816af5031e9f5ca34ab96bba85d0d2291a0382ec5dac.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:23:50 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/routes.self-f9d8017c8738b8f527caba6b535c9bc77794780f53600430e506a34b810882de.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:23:50 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/application.self-abf55f804796de5da127bcfc5fb78b0494e1e0968b014300c8b6ae359f4a19ad.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:23:50 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-mocks.self-45fe0f5c2a144b881b1ff63fe41e4f6c03b06d35714662e4632af5c7c81400f5.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:23:50 +0000
+Started GET "/assets/spec_helper.self-7ebbb24e31d0cae89fc5b127943939f8d700298fa074f6787ccc357b1e236cba.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:23:50 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/commonRoutines_spec.self-0bfd3688e5c846dee8f525b57cd1fd1635a91abf50c4a4fa979bd01434213593.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:23:50 +0000
+Started GET "/assets/home_spec.self-f9f351c9d642d22786f8650ea27828138c23203e686492d9cdf0cd48fcdebd1d.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:23:50 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/login_spec.self-613e5734c68256261a6a72e00c62e66ee4ce7dd9b583d9e74d8439f92e949043.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:23:50 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/sharedProperties_spec.self-17a45f8115197c2a95564b39fb480b05734225f78e83fbdd0ebaeb4330c09621.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:23:50 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/signupCtrl_spec.self-e3a8943a7668186508efaceed823ddd2c0fe2d7184a323b738e6ede60a15020a.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:23:50 +0000
+Started GET "/assets/universityCtrl_spec.self-2d724bded65944db6e513fdc82b8b6a79efaffcb019c17b31223f9ba5979df86.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:23:50 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/universityDetailsCtrl_spec.self-d20add50026226fe8cf76b409ed1a8fdd5aa61c46035d22f89852aac32a5b452.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:23:50 +0000
+close: 127.0.0.1:34174
+close: 127.0.0.1:34176
+close: 127.0.0.1:34168
+close: 127.0.0.1:34172
+close: 127.0.0.1:34154
+close: 127.0.0.1:34170
+close TCPSocket(127.0.0.1, 43276)
+going to shutdown ...
+WEBrick::HTTPServer#start done.
+WEBrick 1.3.1
+ruby 2.3.0 (2015-12-25) [x86_64-linux]
+Rack::Handler::WEBrick is mounted on /.
+WEBrick::HTTPServer#start: pid=36656 port=39265
+accept: 127.0.0.1:55804
+close: 127.0.0.1:55804
+accept: 127.0.0.1:55806
+Rack::Handler::WEBrick is invoked.
+Started GET "/teaspoon/default?reporter=Console" for 127.0.0.1 at 2016-12-09 06:30:23 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Teaspoon::SuiteController#show as HTML
+  Parameters: {"reporter"=>"Console", "defaults"=>{"suite"=>"default"}, "suite"=>"default"}
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_boot.html.erb (332.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_body.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb (855.8ms)
+Completed 200 OK in 874ms (Views: 862.8ms | ActiveRecord: 0.0ms)
+
+
+Rack::Handler::WEBrick is invoked.
+accept: 127.0.0.1:55820
+accept: 127.0.0.1:55818
+accept: 127.0.0.1:55824
+accept: 127.0.0.1:55822
+Started GET "/assets/teaspoon.self-6e7be868738f20e0ca2ab731d5f577e0dd6bed588b1660eb2b2dc6b0328341dd.css?body=1" for 127.0.0.1 at 2016-12-09 06:30:24 +0000
+accept: 127.0.0.1:55826
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/teaspoon-jasmine2.self-193432e902b3943f7e511bf7ba322e1ce098119d180978aaff50918567da9361.js?body=1" for 127.0.0.1 at 2016-12-09 06:30:24 +0000
+Started GET "/assets/jasmine/2.3.4.self-aa35a2d6ef4c597846860937831b786d7a7b61cf7b7d860a06b484aa1b637276.js?body=1" for 127.0.0.1 at 2016-12-09 06:30:24 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/support/phantomjs-shims.self-f6867d3adaf9c1a659d0ca8e170f147e97bbde37736890cf05d84e7b5020fed4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:30:24 +0000
+Started GET "/assets/angular.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:30:24 +0000
+Started GET "/assets/angular/angular.self-55459d3bd6c820b82a84405c655eb594e8f13110f3bfb3c25711a3cc3510e952.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:30:24 +0000
+Started GET "/assets/angular-route.self-00fec46593bf47438f42c1c8129a7667feb3ec9083550f6acbfb2f720882afbe.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:30:24 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-resource.self-8aaea2bb9a19368634f9a7280b41e7b6200d3afdca6644b6855f09993a092618.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:30:24 +0000
+Started GET "/assets/angular-ui-bootstrap.self-f0590a4e71291d7ac90b4413bfe418dd00aa804471a7aa36c4489e52a4322659.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:30:24 +0000
+Started GET "/assets/angular/app.self-4bef8073e850664d405adab0fbde900b295c5d8ed32159babf3bf438cedeb97b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:30:24 +0000
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:30:24 +0000
+Started GET "/assets/angular/app/home.self-6e6c3ed2e46341d762e86fd07cc1b700e8e667b3256975505f27759fde1a20ff.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:30:24 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app/login.self-0c654bd4f355ad269726a6adb01d7468f5e50e1f5f71b99c1584b9107c66f9fa.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:30:24 +0000
+Started GET "/assets/angular/app/signupCtrl.self-4b6a21fa2aeec43523172f469dd27004ffefd17ad9c0eb52bbf57906fcae0c5b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:30:24 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/commonRoutines.self-100874d041a7c8e24b68e9f2c13f425db4d14df176a140c2acf089702b4e485c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:30:24 +0000
+Started GET "/assets/angular/common/constants.self-08f367b09783d31ae63de23796cc8b5121cbc65939553839e742a4732cadce4a.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:30:25 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/dataService.self-6559b9374efcd2ec7b099b4e2c2aa643ec1a8b6894cf8b06c8ad0daa0afc6fb4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:30:25 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/controller/universityDetailsCtrl.self-2996b3efac624da69735105bac370bff8512d97b26b5beb0dd86d15e767bdb6c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:30:26 +0000
+Started GET "/assets/angular/controller/universitiesCtrl.self-0c0e6b790b86dc515b7cb4eb11964f58a3885f31f09538fcfd7a71e3b62c3aa0.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:30:26 +0000
+Started GET "/assets/angular/common/sharedProperties.self-991020b922ec2cd0ebcc37fa5cd504af3060921a09598da8fb215f108190a748.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:30:26 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angular-animate.min.self-8fb577c1970a6c228407b81846e93f6d699bb2270e14ee09f5b46319a72d4409.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:30:27 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angular-ui-notification.min.self-df2fdc1f8a489529caa4104e0b18150e2a45b101672d2c676f20f1a0007a6d47.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:30:27 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angularjs-dropdown-multiselect.self-67a5b616a5ece03e4e4bcfe1d7c286733faafea5cdf8d5b51df9da19a57453fd.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:30:27 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/ng-lodash.self-4da4b787294bb3ec1a3c816af5031e9f5ca34ab96bba85d0d2291a0382ec5dac.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:30:27 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/routes.self-f9d8017c8738b8f527caba6b535c9bc77794780f53600430e506a34b810882de.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:30:27 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/application.self-abf55f804796de5da127bcfc5fb78b0494e1e0968b014300c8b6ae359f4a19ad.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:30:27 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-mocks.self-45fe0f5c2a144b881b1ff63fe41e4f6c03b06d35714662e4632af5c7c81400f5.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:30:27 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/spec_helper.self-7ebbb24e31d0cae89fc5b127943939f8d700298fa074f6787ccc357b1e236cba.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:30:27 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/commonRoutines_spec.self-0bfd3688e5c846dee8f525b57cd1fd1635a91abf50c4a4fa979bd01434213593.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:30:27 +0000
+Started GET "/assets/home_spec.self-f9f351c9d642d22786f8650ea27828138c23203e686492d9cdf0cd48fcdebd1d.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:30:27 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/login_spec.self-613e5734c68256261a6a72e00c62e66ee4ce7dd9b583d9e74d8439f92e949043.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:30:27 +0000
+Started GET "/assets/sharedProperties_spec.self-17a45f8115197c2a95564b39fb480b05734225f78e83fbdd0ebaeb4330c09621.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:30:27 +0000
+Started GET "/assets/universityCtrl_spec.self-2d724bded65944db6e513fdc82b8b6a79efaffcb019c17b31223f9ba5979df86.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:30:27 +0000
+Started GET "/assets/signupCtrl_spec.self-e3a8943a7668186508efaceed823ddd2c0fe2d7184a323b738e6ede60a15020a.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:30:27 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/universityDetailsCtrl_spec.self-10629f9811ae6e578041f5112e20924ceeee82081bad3fd4fc2ebeaf37d0e40a.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:30:27 +0000
+close: 127.0.0.1:55826
+close: 127.0.0.1:55818
+close: 127.0.0.1:55822
+close: 127.0.0.1:55806
+close: 127.0.0.1:55820
+close: 127.0.0.1:55824
+close TCPSocket(127.0.0.1, 39265)
+going to shutdown ...
+WEBrick::HTTPServer#start done.
+WEBrick 1.3.1
+ruby 2.3.0 (2015-12-25) [x86_64-linux]
+Rack::Handler::WEBrick is mounted on /.
+WEBrick::HTTPServer#start: pid=36819 port=43338
+accept: 127.0.0.1:38686
+close: 127.0.0.1:38686
+accept: 127.0.0.1:38692
+Rack::Handler::WEBrick is invoked.
+Started GET "/teaspoon/default?reporter=Console" for 127.0.0.1 at 2016-12-09 06:46:16 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Teaspoon::SuiteController#show as HTML
+  Parameters: {"reporter"=>"Console", "defaults"=>{"suite"=>"default"}, "suite"=>"default"}
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_boot.html.erb (254.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_body.html.erb (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb (688.4ms)
+Completed 200 OK in 705ms (Views: 694.3ms | ActiveRecord: 0.0ms)
+
+
+Rack::Handler::WEBrick is invoked.
+accept: 127.0.0.1:38704
+accept: 127.0.0.1:38702
+accept: 127.0.0.1:38706
+Started GET "/assets/teaspoon.self-6e7be868738f20e0ca2ab731d5f577e0dd6bed588b1660eb2b2dc6b0328341dd.css?body=1" for 127.0.0.1 at 2016-12-09 06:46:17 +0000
+accept: 127.0.0.1:38710
+Rack::Handler::WEBrick is invoked.
+accept: 127.0.0.1:38708
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/teaspoon-jasmine2.self-193432e902b3943f7e511bf7ba322e1ce098119d180978aaff50918567da9361.js?body=1" for 127.0.0.1 at 2016-12-09 06:46:17 +0000
+Started GET "/assets/support/phantomjs-shims.self-f6867d3adaf9c1a659d0ca8e170f147e97bbde37736890cf05d84e7b5020fed4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:46:17 +0000
+Started GET "/assets/jasmine/2.3.4.self-aa35a2d6ef4c597846860937831b786d7a7b61cf7b7d860a06b484aa1b637276.js?body=1" for 127.0.0.1 at 2016-12-09 06:46:17 +0000
+Started GET "/assets/angular.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:46:17 +0000
+Started GET "/assets/angular/angular.self-55459d3bd6c820b82a84405c655eb594e8f13110f3bfb3c25711a3cc3510e952.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:46:17 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-route.self-00fec46593bf47438f42c1c8129a7667feb3ec9083550f6acbfb2f720882afbe.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:46:17 +0000
+Started GET "/assets/angular-ui-bootstrap.self-f0590a4e71291d7ac90b4413bfe418dd00aa804471a7aa36c4489e52a4322659.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:46:17 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-resource.self-8aaea2bb9a19368634f9a7280b41e7b6200d3afdca6644b6855f09993a092618.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:46:17 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:46:17 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app/home.self-6e6c3ed2e46341d762e86fd07cc1b700e8e667b3256975505f27759fde1a20ff.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:46:17 +0000
+Started GET "/assets/angular/app.self-4bef8073e850664d405adab0fbde900b295c5d8ed32159babf3bf438cedeb97b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:46:17 +0000
+Started GET "/assets/angular/app/login.self-0c654bd4f355ad269726a6adb01d7468f5e50e1f5f71b99c1584b9107c66f9fa.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:46:17 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app/signupCtrl.self-4b6a21fa2aeec43523172f469dd27004ffefd17ad9c0eb52bbf57906fcae0c5b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:46:17 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/commonRoutines.self-100874d041a7c8e24b68e9f2c13f425db4d14df176a140c2acf089702b4e485c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:46:17 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/constants.self-08f367b09783d31ae63de23796cc8b5121cbc65939553839e742a4732cadce4a.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:46:18 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/dataService.self-6559b9374efcd2ec7b099b4e2c2aa643ec1a8b6894cf8b06c8ad0daa0afc6fb4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:46:19 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/sharedProperties.self-991020b922ec2cd0ebcc37fa5cd504af3060921a09598da8fb215f108190a748.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:46:19 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/controller/universityDetailsCtrl.self-2996b3efac624da69735105bac370bff8512d97b26b5beb0dd86d15e767bdb6c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:46:19 +0000
+Started GET "/assets/angular/controller/universitiesCtrl.self-0c0e6b790b86dc515b7cb4eb11964f58a3885f31f09538fcfd7a71e3b62c3aa0.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:46:19 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angular-animate.min.self-8fb577c1970a6c228407b81846e93f6d699bb2270e14ee09f5b46319a72d4409.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:46:19 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angular-ui-notification.min.self-df2fdc1f8a489529caa4104e0b18150e2a45b101672d2c676f20f1a0007a6d47.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:46:20 +0000
+Started GET "/assets/angular/library/angularjs-dropdown-multiselect.self-67a5b616a5ece03e4e4bcfe1d7c286733faafea5cdf8d5b51df9da19a57453fd.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:46:20 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/ng-lodash.self-4da4b787294bb3ec1a3c816af5031e9f5ca34ab96bba85d0d2291a0382ec5dac.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:46:20 +0000
+Started GET "/assets/angular/routes.self-f9d8017c8738b8f527caba6b535c9bc77794780f53600430e506a34b810882de.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:46:20 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/application.self-abf55f804796de5da127bcfc5fb78b0494e1e0968b014300c8b6ae359f4a19ad.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:46:20 +0000
+Started GET "/assets/spec_helper.self-7ebbb24e31d0cae89fc5b127943939f8d700298fa074f6787ccc357b1e236cba.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:46:20 +0000
+Started GET "/assets/angular-mocks.self-45fe0f5c2a144b881b1ff63fe41e4f6c03b06d35714662e4632af5c7c81400f5.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:46:20 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/commonRoutines_spec.self-0bfd3688e5c846dee8f525b57cd1fd1635a91abf50c4a4fa979bd01434213593.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:46:20 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/home_spec.self-f9f351c9d642d22786f8650ea27828138c23203e686492d9cdf0cd48fcdebd1d.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:46:20 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/sharedProperties_spec.self-17a45f8115197c2a95564b39fb480b05734225f78e83fbdd0ebaeb4330c09621.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:46:20 +0000
+Started GET "/assets/login_spec.self-613e5734c68256261a6a72e00c62e66ee4ce7dd9b583d9e74d8439f92e949043.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:46:20 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/signupCtrl_spec.self-e3a8943a7668186508efaceed823ddd2c0fe2d7184a323b738e6ede60a15020a.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:46:20 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/universityCtrl_spec.self-2d724bded65944db6e513fdc82b8b6a79efaffcb019c17b31223f9ba5979df86.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:46:20 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/universityDetailsCtrl_spec.self-a27ab9d8cab6512683b3860f5ac56f0510f24ce12cd63ce971777cd9011bc742.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:46:20 +0000
+close: 127.0.0.1:38706
+close: 127.0.0.1:38710
+close: 127.0.0.1:38708
+close: 127.0.0.1:38704
+close: 127.0.0.1:38692
+close: 127.0.0.1:38702
+close TCPSocket(127.0.0.1, 43338)
+going to shutdown ...
+WEBrick::HTTPServer#start done.
+WEBrick 1.3.1
+ruby 2.3.0 (2015-12-25) [x86_64-linux]
+Rack::Handler::WEBrick is mounted on /.
+WEBrick::HTTPServer#start: pid=36999 port=38176
+accept: 127.0.0.1:51316
+close: 127.0.0.1:51316
+accept: 127.0.0.1:51320
+Rack::Handler::WEBrick is invoked.
+Started GET "/teaspoon/default?reporter=Console" for 127.0.0.1 at 2016-12-09 06:51:26 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Teaspoon::SuiteController#show as HTML
+  Parameters: {"reporter"=>"Console", "defaults"=>{"suite"=>"default"}, "suite"=>"default"}
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_boot.html.erb (223.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_body.html.erb (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb (637.8ms)
+Completed 200 OK in 655ms (Views: 643.8ms | ActiveRecord: 0.0ms)
+
+
+Rack::Handler::WEBrick is invoked.
+accept: 127.0.0.1:51340
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/teaspoon.self-6e7be868738f20e0ca2ab731d5f577e0dd6bed588b1660eb2b2dc6b0328341dd.css?body=1" for 127.0.0.1 at 2016-12-09 06:51:26 +0000
+accept: 127.0.0.1:51338
+accept: 127.0.0.1:51344
+accept: 127.0.0.1:51342
+accept: 127.0.0.1:51346
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/teaspoon-jasmine2.self-193432e902b3943f7e511bf7ba322e1ce098119d180978aaff50918567da9361.js?body=1" for 127.0.0.1 at 2016-12-09 06:51:26 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/jasmine/2.3.4.self-aa35a2d6ef4c597846860937831b786d7a7b61cf7b7d860a06b484aa1b637276.js?body=1" for 127.0.0.1 at 2016-12-09 06:51:26 +0000
+Started GET "/assets/support/phantomjs-shims.self-f6867d3adaf9c1a659d0ca8e170f147e97bbde37736890cf05d84e7b5020fed4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:51:26 +0000
+Started GET "/assets/angular/angular.self-55459d3bd6c820b82a84405c655eb594e8f13110f3bfb3c25711a3cc3510e952.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:51:26 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:51:26 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-route.self-00fec46593bf47438f42c1c8129a7667feb3ec9083550f6acbfb2f720882afbe.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:51:27 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-resource.self-8aaea2bb9a19368634f9a7280b41e7b6200d3afdca6644b6855f09993a092618.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:51:27 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-ui-bootstrap.self-f0590a4e71291d7ac90b4413bfe418dd00aa804471a7aa36c4489e52a4322659.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:51:27 +0000
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:51:27 +0000
+Started GET "/assets/angular/app.self-4bef8073e850664d405adab0fbde900b295c5d8ed32159babf3bf438cedeb97b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:51:27 +0000
+Started GET "/assets/angular/app/home.self-6e6c3ed2e46341d762e86fd07cc1b700e8e667b3256975505f27759fde1a20ff.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:51:27 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app/login.self-0c654bd4f355ad269726a6adb01d7468f5e50e1f5f71b99c1584b9107c66f9fa.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:51:27 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app/signupCtrl.self-4b6a21fa2aeec43523172f469dd27004ffefd17ad9c0eb52bbf57906fcae0c5b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:51:27 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/commonRoutines.self-100874d041a7c8e24b68e9f2c13f425db4d14df176a140c2acf089702b4e485c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:51:27 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/constants.self-08f367b09783d31ae63de23796cc8b5121cbc65939553839e742a4732cadce4a.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:51:28 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/dataService.self-6559b9374efcd2ec7b099b4e2c2aa643ec1a8b6894cf8b06c8ad0daa0afc6fb4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:51:28 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/controller/universitiesCtrl.self-0c0e6b790b86dc515b7cb4eb11964f58a3885f31f09538fcfd7a71e3b62c3aa0.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:51:28 +0000
+Started GET "/assets/angular/common/sharedProperties.self-991020b922ec2cd0ebcc37fa5cd504af3060921a09598da8fb215f108190a748.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:51:28 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/controller/universityDetailsCtrl.self-2996b3efac624da69735105bac370bff8512d97b26b5beb0dd86d15e767bdb6c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:51:28 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angular-animate.min.self-8fb577c1970a6c228407b81846e93f6d699bb2270e14ee09f5b46319a72d4409.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:51:29 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angular-ui-notification.min.self-df2fdc1f8a489529caa4104e0b18150e2a45b101672d2c676f20f1a0007a6d47.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:51:29 +0000
+Started GET "/assets/angular/library/angularjs-dropdown-multiselect.self-67a5b616a5ece03e4e4bcfe1d7c286733faafea5cdf8d5b51df9da19a57453fd.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:51:29 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/ng-lodash.self-4da4b787294bb3ec1a3c816af5031e9f5ca34ab96bba85d0d2291a0382ec5dac.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:51:29 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/routes.self-f9d8017c8738b8f527caba6b535c9bc77794780f53600430e506a34b810882de.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:51:29 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/application.self-abf55f804796de5da127bcfc5fb78b0494e1e0968b014300c8b6ae359f4a19ad.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:51:29 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-mocks.self-45fe0f5c2a144b881b1ff63fe41e4f6c03b06d35714662e4632af5c7c81400f5.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:51:29 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/spec_helper.self-7ebbb24e31d0cae89fc5b127943939f8d700298fa074f6787ccc357b1e236cba.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:51:29 +0000
+Started GET "/assets/commonRoutines_spec.self-0bfd3688e5c846dee8f525b57cd1fd1635a91abf50c4a4fa979bd01434213593.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:51:29 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/home_spec.self-f9f351c9d642d22786f8650ea27828138c23203e686492d9cdf0cd48fcdebd1d.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:51:29 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/sharedProperties_spec.self-17a45f8115197c2a95564b39fb480b05734225f78e83fbdd0ebaeb4330c09621.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:51:29 +0000
+Started GET "/assets/login_spec.self-613e5734c68256261a6a72e00c62e66ee4ce7dd9b583d9e74d8439f92e949043.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:51:29 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/signupCtrl_spec.self-e3a8943a7668186508efaceed823ddd2c0fe2d7184a323b738e6ede60a15020a.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:51:29 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/universityCtrl_spec.self-2d724bded65944db6e513fdc82b8b6a79efaffcb019c17b31223f9ba5979df86.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:51:29 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/universityDetailsCtrl_spec.self-23eeaccf73810d7a356780e00b633102ea1a4e119c036cbac0d6e163630b8b44.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:51:29 +0000
+close: 127.0.0.1:51338
+close: 127.0.0.1:51346
+close: 127.0.0.1:51344
+close: 127.0.0.1:51320
+close: 127.0.0.1:51340
+close: 127.0.0.1:51342
+close TCPSocket(127.0.0.1, 38176)
+going to shutdown ...
+WEBrick::HTTPServer#start done.
+WEBrick 1.3.1
+ruby 2.3.0 (2015-12-25) [x86_64-linux]
+Rack::Handler::WEBrick is mounted on /.
+WEBrick::HTTPServer#start: pid=37142 port=35852
+accept: 127.0.0.1:33976
+close: 127.0.0.1:33976
+accept: 127.0.0.1:33980
+Rack::Handler::WEBrick is invoked.
+Started GET "/teaspoon/default?reporter=Console" for 127.0.0.1 at 2016-12-09 06:53:43 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Teaspoon::SuiteController#show as HTML
+  Parameters: {"reporter"=>"Console", "defaults"=>{"suite"=>"default"}, "suite"=>"default"}
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_boot.html.erb (218.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_body.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb (644.3ms)
+Completed 200 OK in 662ms (Views: 650.5ms | ActiveRecord: 0.0ms)
+
+
+Rack::Handler::WEBrick is invoked.
+accept: 127.0.0.1:33990
+accept: 127.0.0.1:33992
+accept: 127.0.0.1:33996
+Started GET "/assets/teaspoon.self-6e7be868738f20e0ca2ab731d5f577e0dd6bed588b1660eb2b2dc6b0328341dd.css?body=1" for 127.0.0.1 at 2016-12-09 06:53:44 +0000
+accept: 127.0.0.1:33998
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+accept: 127.0.0.1:33994
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/jasmine/2.3.4.self-aa35a2d6ef4c597846860937831b786d7a7b61cf7b7d860a06b484aa1b637276.js?body=1" for 127.0.0.1 at 2016-12-09 06:53:44 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/teaspoon-jasmine2.self-193432e902b3943f7e511bf7ba322e1ce098119d180978aaff50918567da9361.js?body=1" for 127.0.0.1 at 2016-12-09 06:53:44 +0000
+Started GET "/assets/angular/angular.self-55459d3bd6c820b82a84405c655eb594e8f13110f3bfb3c25711a3cc3510e952.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:53:44 +0000
+Started GET "/assets/support/phantomjs-shims.self-f6867d3adaf9c1a659d0ca8e170f147e97bbde37736890cf05d84e7b5020fed4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:53:44 +0000
+Started GET "/assets/angular.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:53:44 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-resource.self-8aaea2bb9a19368634f9a7280b41e7b6200d3afdca6644b6855f09993a092618.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:53:44 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-route.self-00fec46593bf47438f42c1c8129a7667feb3ec9083550f6acbfb2f720882afbe.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:53:44 +0000
+Started GET "/assets/angular-ui-bootstrap.self-f0590a4e71291d7ac90b4413bfe418dd00aa804471a7aa36c4489e52a4322659.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:53:44 +0000
+Started GET "/assets/angular/app.self-4bef8073e850664d405adab0fbde900b295c5d8ed32159babf3bf438cedeb97b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:53:44 +0000
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:53:44 +0000
+Started GET "/assets/angular/app/home.self-6e6c3ed2e46341d762e86fd07cc1b700e8e667b3256975505f27759fde1a20ff.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:53:44 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app/login.self-0c654bd4f355ad269726a6adb01d7468f5e50e1f5f71b99c1584b9107c66f9fa.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:53:44 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app/signupCtrl.self-4b6a21fa2aeec43523172f469dd27004ffefd17ad9c0eb52bbf57906fcae0c5b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:53:44 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/commonRoutines.self-100874d041a7c8e24b68e9f2c13f425db4d14df176a140c2acf089702b4e485c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:53:44 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/constants.self-08f367b09783d31ae63de23796cc8b5121cbc65939553839e742a4732cadce4a.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:53:46 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/sharedProperties.self-991020b922ec2cd0ebcc37fa5cd504af3060921a09598da8fb215f108190a748.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:53:46 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/dataService.self-6559b9374efcd2ec7b099b4e2c2aa643ec1a8b6894cf8b06c8ad0daa0afc6fb4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:53:46 +0000
+Started GET "/assets/angular/controller/universitiesCtrl.self-0c0e6b790b86dc515b7cb4eb11964f58a3885f31f09538fcfd7a71e3b62c3aa0.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:53:46 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/controller/universityDetailsCtrl.self-2996b3efac624da69735105bac370bff8512d97b26b5beb0dd86d15e767bdb6c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:53:46 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angular-animate.min.self-8fb577c1970a6c228407b81846e93f6d699bb2270e14ee09f5b46319a72d4409.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:53:47 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angular-ui-notification.min.self-df2fdc1f8a489529caa4104e0b18150e2a45b101672d2c676f20f1a0007a6d47.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:53:47 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angularjs-dropdown-multiselect.self-67a5b616a5ece03e4e4bcfe1d7c286733faafea5cdf8d5b51df9da19a57453fd.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:53:47 +0000
+Started GET "/assets/angular/library/ng-lodash.self-4da4b787294bb3ec1a3c816af5031e9f5ca34ab96bba85d0d2291a0382ec5dac.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:53:47 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/application.self-abf55f804796de5da127bcfc5fb78b0494e1e0968b014300c8b6ae359f4a19ad.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:53:47 +0000
+Started GET "/assets/angular/routes.self-f9d8017c8738b8f527caba6b535c9bc77794780f53600430e506a34b810882de.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:53:47 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-mocks.self-45fe0f5c2a144b881b1ff63fe41e4f6c03b06d35714662e4632af5c7c81400f5.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:53:47 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/spec_helper.self-7ebbb24e31d0cae89fc5b127943939f8d700298fa074f6787ccc357b1e236cba.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 06:53:47 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/commonRoutines_spec.self-0bfd3688e5c846dee8f525b57cd1fd1635a91abf50c4a4fa979bd01434213593.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:53:47 +0000
+Started GET "/assets/login_spec.self-613e5734c68256261a6a72e00c62e66ee4ce7dd9b583d9e74d8439f92e949043.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:53:47 +0000
+Started GET "/assets/home_spec.self-f9f351c9d642d22786f8650ea27828138c23203e686492d9cdf0cd48fcdebd1d.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:53:47 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/sharedProperties_spec.self-17a45f8115197c2a95564b39fb480b05734225f78e83fbdd0ebaeb4330c09621.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:53:47 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/signupCtrl_spec.self-e3a8943a7668186508efaceed823ddd2c0fe2d7184a323b738e6ede60a15020a.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:53:47 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/universityDetailsCtrl_spec.self-23eeaccf73810d7a356780e00b633102ea1a4e119c036cbac0d6e163630b8b44.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:53:47 +0000
+Started GET "/assets/universityCtrl_spec.self-2d724bded65944db6e513fdc82b8b6a79efaffcb019c17b31223f9ba5979df86.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 06:53:47 +0000
+close: 127.0.0.1:33994
+close: 127.0.0.1:33996
+close: 127.0.0.1:33980
+close: 127.0.0.1:33990
+close: 127.0.0.1:33992
+close: 127.0.0.1:33998
+close TCPSocket(127.0.0.1, 35852)
+going to shutdown ...
+WEBrick::HTTPServer#start done.
+WEBrick 1.3.1
+ruby 2.3.0 (2015-12-25) [x86_64-linux]
+Rack::Handler::WEBrick is mounted on /.
+WEBrick::HTTPServer#start: pid=37345 port=35341
+accept: 127.0.0.1:60618
+close: 127.0.0.1:60618
+accept: 127.0.0.1:60620
+Rack::Handler::WEBrick is invoked.
+Started GET "/teaspoon/default?reporter=Console" for 127.0.0.1 at 2016-12-09 07:00:16 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Teaspoon::SuiteController#show as HTML
+  Parameters: {"reporter"=>"Console", "defaults"=>{"suite"=>"default"}, "suite"=>"default"}
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_boot.html.erb (259.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_body.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb (674.3ms)
+Completed 200 OK in 692ms (Views: 680.3ms | ActiveRecord: 0.0ms)
+
+
+accept: 127.0.0.1:60734
+accept: 127.0.0.1:60732
+accept: 127.0.0.1:60736
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+accept: 127.0.0.1:60740
+Rack::Handler::WEBrick is invoked.
+accept: 127.0.0.1:60738
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/teaspoon.self-6e7be868738f20e0ca2ab731d5f577e0dd6bed588b1660eb2b2dc6b0328341dd.css?body=1" for 127.0.0.1 at 2016-12-09 07:00:17 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/jasmine/2.3.4.self-aa35a2d6ef4c597846860937831b786d7a7b61cf7b7d860a06b484aa1b637276.js?body=1" for 127.0.0.1 at 2016-12-09 07:00:17 +0000
+Started GET "/assets/support/phantomjs-shims.self-f6867d3adaf9c1a659d0ca8e170f147e97bbde37736890cf05d84e7b5020fed4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:17 +0000
+Started GET "/assets/angular.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:17 +0000
+Started GET "/assets/teaspoon-jasmine2.self-193432e902b3943f7e511bf7ba322e1ce098119d180978aaff50918567da9361.js?body=1" for 127.0.0.1 at 2016-12-09 07:00:17 +0000
+Started GET "/assets/angular/angular.self-55459d3bd6c820b82a84405c655eb594e8f13110f3bfb3c25711a3cc3510e952.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:17 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-route.self-00fec46593bf47438f42c1c8129a7667feb3ec9083550f6acbfb2f720882afbe.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:17 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-ui-bootstrap.self-f0590a4e71291d7ac90b4413bfe418dd00aa804471a7aa36c4489e52a4322659.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:17 +0000
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:17 +0000
+Started GET "/assets/angular-resource.self-8aaea2bb9a19368634f9a7280b41e7b6200d3afdca6644b6855f09993a092618.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:17 +0000
+Started GET "/assets/angular/app.self-4bef8073e850664d405adab0fbde900b295c5d8ed32159babf3bf438cedeb97b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:17 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app/login.self-0c654bd4f355ad269726a6adb01d7468f5e50e1f5f71b99c1584b9107c66f9fa.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:17 +0000
+Started GET "/assets/angular/app/home.self-6e6c3ed2e46341d762e86fd07cc1b700e8e667b3256975505f27759fde1a20ff.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:17 +0000
+Started GET "/assets/angular/app/signupCtrl.self-4b6a21fa2aeec43523172f469dd27004ffefd17ad9c0eb52bbf57906fcae0c5b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:17 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/commonRoutines.self-100874d041a7c8e24b68e9f2c13f425db4d14df176a140c2acf089702b4e485c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:17 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/constants.self-08f367b09783d31ae63de23796cc8b5121cbc65939553839e742a4732cadce4a.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:18 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/dataService.self-6559b9374efcd2ec7b099b4e2c2aa643ec1a8b6894cf8b06c8ad0daa0afc6fb4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:19 +0000
+Started GET "/assets/angular/common/sharedProperties.self-991020b922ec2cd0ebcc37fa5cd504af3060921a09598da8fb215f108190a748.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:19 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/controller/universitiesCtrl.self-0c0e6b790b86dc515b7cb4eb11964f58a3885f31f09538fcfd7a71e3b62c3aa0.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:19 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/controller/universityDetailsCtrl.self-2996b3efac624da69735105bac370bff8512d97b26b5beb0dd86d15e767bdb6c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:19 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angular-animate.min.self-8fb577c1970a6c228407b81846e93f6d699bb2270e14ee09f5b46319a72d4409.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:20 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angular-ui-notification.min.self-df2fdc1f8a489529caa4104e0b18150e2a45b101672d2c676f20f1a0007a6d47.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:20 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angularjs-dropdown-multiselect.self-67a5b616a5ece03e4e4bcfe1d7c286733faafea5cdf8d5b51df9da19a57453fd.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:20 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/ng-lodash.self-4da4b787294bb3ec1a3c816af5031e9f5ca34ab96bba85d0d2291a0382ec5dac.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:20 +0000
+Started GET "/assets/angular/routes.self-f9d8017c8738b8f527caba6b535c9bc77794780f53600430e506a34b810882de.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:20 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/application.self-abf55f804796de5da127bcfc5fb78b0494e1e0968b014300c8b6ae359f4a19ad.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:20 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-mocks.self-45fe0f5c2a144b881b1ff63fe41e4f6c03b06d35714662e4632af5c7c81400f5.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:20 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/commonRoutines_spec.self-0bfd3688e5c846dee8f525b57cd1fd1635a91abf50c4a4fa979bd01434213593.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:00:20 +0000
+Started GET "/assets/spec_helper.self-7ebbb24e31d0cae89fc5b127943939f8d700298fa074f6787ccc357b1e236cba.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:20 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/home_spec.self-f9f351c9d642d22786f8650ea27828138c23203e686492d9cdf0cd48fcdebd1d.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:00:20 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/login_spec.self-613e5734c68256261a6a72e00c62e66ee4ce7dd9b583d9e74d8439f92e949043.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:00:20 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/sharedProperties_spec.self-17a45f8115197c2a95564b39fb480b05734225f78e83fbdd0ebaeb4330c09621.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:00:20 +0000
+Started GET "/assets/signupCtrl_spec.self-e3a8943a7668186508efaceed823ddd2c0fe2d7184a323b738e6ede60a15020a.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:00:20 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/universityDetailsCtrl_spec.self-9c1ad7a0a52f2523d5c71d85cf21cd0dafee59d8295027aaf0e06884ffa9f038.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:00:20 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/universityCtrl_spec.self-2d724bded65944db6e513fdc82b8b6a79efaffcb019c17b31223f9ba5979df86.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:00:20 +0000
+close: 127.0.0.1:60732
+close: 127.0.0.1:60620
+close: 127.0.0.1:60738
+close: 127.0.0.1:60734
+close: 127.0.0.1:60740
+close: 127.0.0.1:60736
+close TCPSocket(127.0.0.1, 35341)
+going to shutdown ...
+WEBrick::HTTPServer#start done.
+WEBrick 1.3.1
+ruby 2.3.0 (2015-12-25) [x86_64-linux]
+Rack::Handler::WEBrick is mounted on /.
+WEBrick::HTTPServer#start: pid=37476 port=33040
+accept: 127.0.0.1:45254
+close: 127.0.0.1:45254
+accept: 127.0.0.1:45256
+Rack::Handler::WEBrick is invoked.
+Started GET "/teaspoon/default?reporter=Console" for 127.0.0.1 at 2016-12-09 07:00:48 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Teaspoon::SuiteController#show as HTML
+  Parameters: {"reporter"=>"Console", "defaults"=>{"suite"=>"default"}, "suite"=>"default"}
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_boot.html.erb (276.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_body.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb (703.5ms)
+Completed 200 OK in 722ms (Views: 710.3ms | ActiveRecord: 0.0ms)
+
+
+accept: 127.0.0.1:45268
+accept: 127.0.0.1:45272
+accept: 127.0.0.1:45276
+accept: 127.0.0.1:45270
+accept: 127.0.0.1:45274
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/teaspoon.self-6e7be868738f20e0ca2ab731d5f577e0dd6bed588b1660eb2b2dc6b0328341dd.css?body=1" for 127.0.0.1 at 2016-12-09 07:00:49 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/jasmine/2.3.4.self-aa35a2d6ef4c597846860937831b786d7a7b61cf7b7d860a06b484aa1b637276.js?body=1" for 127.0.0.1 at 2016-12-09 07:00:49 +0000
+Started GET "/assets/support/phantomjs-shims.self-f6867d3adaf9c1a659d0ca8e170f147e97bbde37736890cf05d84e7b5020fed4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:49 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/angular.self-55459d3bd6c820b82a84405c655eb594e8f13110f3bfb3c25711a3cc3510e952.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:49 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/teaspoon-jasmine2.self-193432e902b3943f7e511bf7ba322e1ce098119d180978aaff50918567da9361.js?body=1" for 127.0.0.1 at 2016-12-09 07:00:49 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:49 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-ui-bootstrap.self-f0590a4e71291d7ac90b4413bfe418dd00aa804471a7aa36c4489e52a4322659.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:49 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-route.self-00fec46593bf47438f42c1c8129a7667feb3ec9083550f6acbfb2f720882afbe.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:49 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app.self-4bef8073e850664d405adab0fbde900b295c5d8ed32159babf3bf438cedeb97b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:49 +0000
+Started GET "/assets/angular-resource.self-8aaea2bb9a19368634f9a7280b41e7b6200d3afdca6644b6855f09993a092618.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:49 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:49 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app/home.self-6e6c3ed2e46341d762e86fd07cc1b700e8e667b3256975505f27759fde1a20ff.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:49 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app/signupCtrl.self-4b6a21fa2aeec43523172f469dd27004ffefd17ad9c0eb52bbf57906fcae0c5b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:49 +0000
+Started GET "/assets/angular/app/login.self-0c654bd4f355ad269726a6adb01d7468f5e50e1f5f71b99c1584b9107c66f9fa.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:49 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/commonRoutines.self-100874d041a7c8e24b68e9f2c13f425db4d14df176a140c2acf089702b4e485c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:50 +0000
+Started GET "/assets/angular/common/constants.self-08f367b09783d31ae63de23796cc8b5121cbc65939553839e742a4732cadce4a.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:51 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/controller/universitiesCtrl.self-0c0e6b790b86dc515b7cb4eb11964f58a3885f31f09538fcfd7a71e3b62c3aa0.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:51 +0000
+Started GET "/assets/angular/common/sharedProperties.self-991020b922ec2cd0ebcc37fa5cd504af3060921a09598da8fb215f108190a748.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:51 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/controller/universityDetailsCtrl.self-2996b3efac624da69735105bac370bff8512d97b26b5beb0dd86d15e767bdb6c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:51 +0000
+Started GET "/assets/angular/common/dataService.self-6559b9374efcd2ec7b099b4e2c2aa643ec1a8b6894cf8b06c8ad0daa0afc6fb4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:51 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angular-animate.min.self-8fb577c1970a6c228407b81846e93f6d699bb2270e14ee09f5b46319a72d4409.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:52 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angular-ui-notification.min.self-df2fdc1f8a489529caa4104e0b18150e2a45b101672d2c676f20f1a0007a6d47.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:52 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angularjs-dropdown-multiselect.self-67a5b616a5ece03e4e4bcfe1d7c286733faafea5cdf8d5b51df9da19a57453fd.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:52 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/ng-lodash.self-4da4b787294bb3ec1a3c816af5031e9f5ca34ab96bba85d0d2291a0382ec5dac.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:52 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/routes.self-f9d8017c8738b8f527caba6b535c9bc77794780f53600430e506a34b810882de.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:52 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/application.self-abf55f804796de5da127bcfc5fb78b0494e1e0968b014300c8b6ae359f4a19ad.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:52 +0000
+Started GET "/assets/angular-mocks.self-45fe0f5c2a144b881b1ff63fe41e4f6c03b06d35714662e4632af5c7c81400f5.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:52 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/spec_helper.self-7ebbb24e31d0cae89fc5b127943939f8d700298fa074f6787ccc357b1e236cba.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:00:52 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/commonRoutines_spec.self-0bfd3688e5c846dee8f525b57cd1fd1635a91abf50c4a4fa979bd01434213593.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:00:52 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/sharedProperties_spec.self-17a45f8115197c2a95564b39fb480b05734225f78e83fbdd0ebaeb4330c09621.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:00:52 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/home_spec.self-f9f351c9d642d22786f8650ea27828138c23203e686492d9cdf0cd48fcdebd1d.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:00:52 +0000
+Started GET "/assets/login_spec.self-613e5734c68256261a6a72e00c62e66ee4ce7dd9b583d9e74d8439f92e949043.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:00:52 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/signupCtrl_spec.self-e3a8943a7668186508efaceed823ddd2c0fe2d7184a323b738e6ede60a15020a.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:00:52 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/universityCtrl_spec.self-2d724bded65944db6e513fdc82b8b6a79efaffcb019c17b31223f9ba5979df86.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:00:52 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/universityDetailsCtrl_spec.self-498280afaa207b0d25d6d31801aa73c2d8c87bfc4cc994579e39ae43c8bc34bf.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:00:52 +0000
+close: 127.0.0.1:45268
+close: 127.0.0.1:45274
+close: 127.0.0.1:45272
+close: 127.0.0.1:45256
+close: 127.0.0.1:45270
+close: 127.0.0.1:45276
+close TCPSocket(127.0.0.1, 33040)
+going to shutdown ...
+WEBrick::HTTPServer#start done.
+WEBrick 1.3.1
+ruby 2.3.0 (2015-12-25) [x86_64-linux]
+Rack::Handler::WEBrick is mounted on /.
+WEBrick::HTTPServer#start: pid=37636 port=33775
+accept: 127.0.0.1:40118
+close: 127.0.0.1:40118
+accept: 127.0.0.1:40120
+Rack::Handler::WEBrick is invoked.
+Started GET "/teaspoon/default?reporter=Console" for 127.0.0.1 at 2016-12-09 07:01:32 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Teaspoon::SuiteController#show as HTML
+  Parameters: {"reporter"=>"Console", "defaults"=>{"suite"=>"default"}, "suite"=>"default"}
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_boot.html.erb (250.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_body.html.erb (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb (649.1ms)
+Completed 200 OK in 666ms (Views: 655.4ms | ActiveRecord: 0.0ms)
+
+
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/teaspoon.self-6e7be868738f20e0ca2ab731d5f577e0dd6bed588b1660eb2b2dc6b0328341dd.css?body=1" for 127.0.0.1 at 2016-12-09 07:01:33 +0000
+accept: 127.0.0.1:40140
+accept: 127.0.0.1:40132
+accept: 127.0.0.1:40138
+accept: 127.0.0.1:40136
+accept: 127.0.0.1:40134
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:01:33 +0000
+Started GET "/assets/support/phantomjs-shims.self-f6867d3adaf9c1a659d0ca8e170f147e97bbde37736890cf05d84e7b5020fed4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:01:33 +0000
+Started GET "/assets/angular/angular.self-55459d3bd6c820b82a84405c655eb594e8f13110f3bfb3c25711a3cc3510e952.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:01:33 +0000
+Started GET "/assets/teaspoon-jasmine2.self-193432e902b3943f7e511bf7ba322e1ce098119d180978aaff50918567da9361.js?body=1" for 127.0.0.1 at 2016-12-09 07:01:33 +0000
+Started GET "/assets/jasmine/2.3.4.self-aa35a2d6ef4c597846860937831b786d7a7b61cf7b7d860a06b484aa1b637276.js?body=1" for 127.0.0.1 at 2016-12-09 07:01:33 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-resource.self-8aaea2bb9a19368634f9a7280b41e7b6200d3afdca6644b6855f09993a092618.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:01:33 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-route.self-00fec46593bf47438f42c1c8129a7667feb3ec9083550f6acbfb2f720882afbe.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:01:33 +0000
+Started GET "/assets/angular-ui-bootstrap.self-f0590a4e71291d7ac90b4413bfe418dd00aa804471a7aa36c4489e52a4322659.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:01:33 +0000
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:01:33 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app/home.self-6e6c3ed2e46341d762e86fd07cc1b700e8e667b3256975505f27759fde1a20ff.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:01:33 +0000
+Started GET "/assets/angular/app.self-4bef8073e850664d405adab0fbde900b295c5d8ed32159babf3bf438cedeb97b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:01:33 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app/login.self-0c654bd4f355ad269726a6adb01d7468f5e50e1f5f71b99c1584b9107c66f9fa.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:01:33 +0000
+Started GET "/assets/angular/common/commonRoutines.self-100874d041a7c8e24b68e9f2c13f425db4d14df176a140c2acf089702b4e485c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:01:33 +0000
+Started GET "/assets/angular/app/signupCtrl.self-4b6a21fa2aeec43523172f469dd27004ffefd17ad9c0eb52bbf57906fcae0c5b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:01:33 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/constants.self-08f367b09783d31ae63de23796cc8b5121cbc65939553839e742a4732cadce4a.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:01:35 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/dataService.self-6559b9374efcd2ec7b099b4e2c2aa643ec1a8b6894cf8b06c8ad0daa0afc6fb4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:01:35 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/controller/universitiesCtrl.self-0c0e6b790b86dc515b7cb4eb11964f58a3885f31f09538fcfd7a71e3b62c3aa0.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:01:35 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/sharedProperties.self-991020b922ec2cd0ebcc37fa5cd504af3060921a09598da8fb215f108190a748.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:01:35 +0000
+Started GET "/assets/angular/controller/universityDetailsCtrl.self-2996b3efac624da69735105bac370bff8512d97b26b5beb0dd86d15e767bdb6c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:01:35 +0000
+Started GET "/assets/angular/library/angular-animate.min.self-8fb577c1970a6c228407b81846e93f6d699bb2270e14ee09f5b46319a72d4409.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:01:36 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angular-ui-notification.min.self-df2fdc1f8a489529caa4104e0b18150e2a45b101672d2c676f20f1a0007a6d47.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:01:36 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/ng-lodash.self-4da4b787294bb3ec1a3c816af5031e9f5ca34ab96bba85d0d2291a0382ec5dac.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:01:36 +0000
+Started GET "/assets/angular/library/angularjs-dropdown-multiselect.self-67a5b616a5ece03e4e4bcfe1d7c286733faafea5cdf8d5b51df9da19a57453fd.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:01:36 +0000
+Started GET "/assets/angular/routes.self-f9d8017c8738b8f527caba6b535c9bc77794780f53600430e506a34b810882de.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:01:36 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/application.self-abf55f804796de5da127bcfc5fb78b0494e1e0968b014300c8b6ae359f4a19ad.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:01:36 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-mocks.self-45fe0f5c2a144b881b1ff63fe41e4f6c03b06d35714662e4632af5c7c81400f5.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:01:36 +0000
+Started GET "/assets/spec_helper.self-7ebbb24e31d0cae89fc5b127943939f8d700298fa074f6787ccc357b1e236cba.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:01:36 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/commonRoutines_spec.self-0bfd3688e5c846dee8f525b57cd1fd1635a91abf50c4a4fa979bd01434213593.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:01:36 +0000
+Started GET "/assets/home_spec.self-f9f351c9d642d22786f8650ea27828138c23203e686492d9cdf0cd48fcdebd1d.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:01:36 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/login_spec.self-613e5734c68256261a6a72e00c62e66ee4ce7dd9b583d9e74d8439f92e949043.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:01:36 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/sharedProperties_spec.self-17a45f8115197c2a95564b39fb480b05734225f78e83fbdd0ebaeb4330c09621.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:01:36 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/signupCtrl_spec.self-e3a8943a7668186508efaceed823ddd2c0fe2d7184a323b738e6ede60a15020a.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:01:36 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/universityCtrl_spec.self-2d724bded65944db6e513fdc82b8b6a79efaffcb019c17b31223f9ba5979df86.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:01:36 +0000
+Started GET "/assets/universityDetailsCtrl_spec.self-dcd2421d35ac45a2abc38e1dff6d37b84236400bcbb80dca9f0e2174f8201291.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:01:36 +0000
+close: 127.0.0.1:40138
+close: 127.0.0.1:40136
+close: 127.0.0.1:40140
+close: 127.0.0.1:40132
+close: 127.0.0.1:40134
+close: 127.0.0.1:40120
+close TCPSocket(127.0.0.1, 33775)
+going to shutdown ...
+WEBrick::HTTPServer#start done.
+WEBrick 1.3.1
+ruby 2.3.0 (2015-12-25) [x86_64-linux]
+Rack::Handler::WEBrick is mounted on /.
+WEBrick::HTTPServer#start: pid=37808 port=43734
+accept: 127.0.0.1:42928
+close: 127.0.0.1:42928
+accept: 127.0.0.1:42930
+Rack::Handler::WEBrick is invoked.
+Started GET "/teaspoon/default?reporter=Console" for 127.0.0.1 at 2016-12-09 07:06:02 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Teaspoon::SuiteController#show as HTML
+  Parameters: {"reporter"=>"Console", "defaults"=>{"suite"=>"default"}, "suite"=>"default"}
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_boot.html.erb (206.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_body.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb (735.9ms)
+Completed 200 OK in 754ms (Views: 742.4ms | ActiveRecord: 0.0ms)
+
+
+Rack::Handler::WEBrick is invoked.
+accept: 127.0.0.1:42952
+Rack::Handler::WEBrick is invoked.
+accept: 127.0.0.1:42946
+accept: 127.0.0.1:42944
+accept: 127.0.0.1:42950
+Started GET "/assets/teaspoon.self-6e7be868738f20e0ca2ab731d5f577e0dd6bed588b1660eb2b2dc6b0328341dd.css?body=1" for 127.0.0.1 at 2016-12-09 07:06:03 +0000
+accept: 127.0.0.1:42948
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:03 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/teaspoon-jasmine2.self-193432e902b3943f7e511bf7ba322e1ce098119d180978aaff50918567da9361.js?body=1" for 127.0.0.1 at 2016-12-09 07:06:03 +0000
+Started GET "/assets/jasmine/2.3.4.self-aa35a2d6ef4c597846860937831b786d7a7b61cf7b7d860a06b484aa1b637276.js?body=1" for 127.0.0.1 at 2016-12-09 07:06:03 +0000
+Started GET "/assets/angular/angular.self-55459d3bd6c820b82a84405c655eb594e8f13110f3bfb3c25711a3cc3510e952.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:03 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/support/phantomjs-shims.self-f6867d3adaf9c1a659d0ca8e170f147e97bbde37736890cf05d84e7b5020fed4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:04 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-route.self-00fec46593bf47438f42c1c8129a7667feb3ec9083550f6acbfb2f720882afbe.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:04 +0000
+Started GET "/assets/angular-resource.self-8aaea2bb9a19368634f9a7280b41e7b6200d3afdca6644b6855f09993a092618.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:04 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app/home.self-6e6c3ed2e46341d762e86fd07cc1b700e8e667b3256975505f27759fde1a20ff.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:04 +0000
+Started GET "/assets/angular-ui-bootstrap.self-f0590a4e71291d7ac90b4413bfe418dd00aa804471a7aa36c4489e52a4322659.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:04 +0000
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:04 +0000
+Started GET "/assets/angular/app.self-4bef8073e850664d405adab0fbde900b295c5d8ed32159babf3bf438cedeb97b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:04 +0000
+Started GET "/assets/angular/app/login.self-0c654bd4f355ad269726a6adb01d7468f5e50e1f5f71b99c1584b9107c66f9fa.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:04 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app/signupCtrl.self-4b6a21fa2aeec43523172f469dd27004ffefd17ad9c0eb52bbf57906fcae0c5b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:04 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/commonRoutines.self-100874d041a7c8e24b68e9f2c13f425db4d14df176a140c2acf089702b4e485c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:04 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/constants.self-08f367b09783d31ae63de23796cc8b5121cbc65939553839e742a4732cadce4a.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:05 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/dataService.self-6559b9374efcd2ec7b099b4e2c2aa643ec1a8b6894cf8b06c8ad0daa0afc6fb4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:05 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/controller/universitiesCtrl.self-0c0e6b790b86dc515b7cb4eb11964f58a3885f31f09538fcfd7a71e3b62c3aa0.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:05 +0000
+Started GET "/assets/angular/controller/universityDetailsCtrl.self-2996b3efac624da69735105bac370bff8512d97b26b5beb0dd86d15e767bdb6c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:05 +0000
+Started GET "/assets/angular/common/sharedProperties.self-991020b922ec2cd0ebcc37fa5cd504af3060921a09598da8fb215f108190a748.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:05 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angular-animate.min.self-8fb577c1970a6c228407b81846e93f6d699bb2270e14ee09f5b46319a72d4409.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:06 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angular-ui-notification.min.self-df2fdc1f8a489529caa4104e0b18150e2a45b101672d2c676f20f1a0007a6d47.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:06 +0000
+Started GET "/assets/angular/library/angularjs-dropdown-multiselect.self-67a5b616a5ece03e4e4bcfe1d7c286733faafea5cdf8d5b51df9da19a57453fd.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:06 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/routes.self-f9d8017c8738b8f527caba6b535c9bc77794780f53600430e506a34b810882de.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:06 +0000
+Started GET "/assets/angular/library/ng-lodash.self-4da4b787294bb3ec1a3c816af5031e9f5ca34ab96bba85d0d2291a0382ec5dac.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:06 +0000
+Started GET "/assets/application.self-abf55f804796de5da127bcfc5fb78b0494e1e0968b014300c8b6ae359f4a19ad.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:06 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/commonRoutines_spec.self-0bfd3688e5c846dee8f525b57cd1fd1635a91abf50c4a4fa979bd01434213593.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:06:06 +0000
+Started GET "/assets/home_spec.self-f9f351c9d642d22786f8650ea27828138c23203e686492d9cdf0cd48fcdebd1d.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:06:06 +0000
+Started GET "/assets/angular-mocks.self-45fe0f5c2a144b881b1ff63fe41e4f6c03b06d35714662e4632af5c7c81400f5.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:06 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/spec_helper.self-7ebbb24e31d0cae89fc5b127943939f8d700298fa074f6787ccc357b1e236cba.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:06 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/login_spec.self-613e5734c68256261a6a72e00c62e66ee4ce7dd9b583d9e74d8439f92e949043.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:06:06 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/signupCtrl_spec.self-e3a8943a7668186508efaceed823ddd2c0fe2d7184a323b738e6ede60a15020a.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:06:06 +0000
+Started GET "/assets/sharedProperties_spec.self-17a45f8115197c2a95564b39fb480b05734225f78e83fbdd0ebaeb4330c09621.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:06:06 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/universityCtrl_spec.self-2d724bded65944db6e513fdc82b8b6a79efaffcb019c17b31223f9ba5979df86.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:06:06 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/universityDetailsCtrl_spec.self-5bbd65e1b798a3b7fe6202f60873b47ab2956777fefd798bddd60d031c489e11.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:06:06 +0000
+close: 127.0.0.1:42944
+close: 127.0.0.1:42930
+close: 127.0.0.1:42950
+close: 127.0.0.1:42952
+close: 127.0.0.1:42946
+close: 127.0.0.1:42948
+close TCPSocket(127.0.0.1, 43734)
+going to shutdown ...
+WEBrick::HTTPServer#start done.
+WEBrick 1.3.1
+ruby 2.3.0 (2015-12-25) [x86_64-linux]
+Rack::Handler::WEBrick is mounted on /.
+WEBrick::HTTPServer#start: pid=37938 port=34218
+accept: 127.0.0.1:58294
+close: 127.0.0.1:58294
+accept: 127.0.0.1:58300
+Rack::Handler::WEBrick is invoked.
+Started GET "/teaspoon/default?reporter=Console" for 127.0.0.1 at 2016-12-09 07:06:35 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Teaspoon::SuiteController#show as HTML
+  Parameters: {"reporter"=>"Console", "defaults"=>{"suite"=>"default"}, "suite"=>"default"}
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_boot.html.erb (237.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_body.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb (640.8ms)
+Completed 200 OK in 658ms (Views: 647.1ms | ActiveRecord: 0.0ms)
+
+
+Rack::Handler::WEBrick is invoked.
+accept: 127.0.0.1:58314
+accept: 127.0.0.1:58316
+accept: 127.0.0.1:58318
+accept: 127.0.0.1:58320
+accept: 127.0.0.1:58322
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/teaspoon.self-6e7be868738f20e0ca2ab731d5f577e0dd6bed588b1660eb2b2dc6b0328341dd.css?body=1" for 127.0.0.1 at 2016-12-09 07:06:36 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:36 +0000
+Started GET "/assets/jasmine/2.3.4.self-aa35a2d6ef4c597846860937831b786d7a7b61cf7b7d860a06b484aa1b637276.js?body=1" for 127.0.0.1 at 2016-12-09 07:06:36 +0000
+Started GET "/assets/support/phantomjs-shims.self-f6867d3adaf9c1a659d0ca8e170f147e97bbde37736890cf05d84e7b5020fed4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:36 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/teaspoon-jasmine2.self-193432e902b3943f7e511bf7ba322e1ce098119d180978aaff50918567da9361.js?body=1" for 127.0.0.1 at 2016-12-09 07:06:36 +0000
+Started GET "/assets/angular/angular.self-55459d3bd6c820b82a84405c655eb594e8f13110f3bfb3c25711a3cc3510e952.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:36 +0000
+Started GET "/assets/angular-route.self-00fec46593bf47438f42c1c8129a7667feb3ec9083550f6acbfb2f720882afbe.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:36 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-ui-bootstrap.self-f0590a4e71291d7ac90b4413bfe418dd00aa804471a7aa36c4489e52a4322659.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:36 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-resource.self-8aaea2bb9a19368634f9a7280b41e7b6200d3afdca6644b6855f09993a092618.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:36 +0000
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:36 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app.self-4bef8073e850664d405adab0fbde900b295c5d8ed32159babf3bf438cedeb97b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:36 +0000
+Started GET "/assets/angular/app/home.self-6e6c3ed2e46341d762e86fd07cc1b700e8e667b3256975505f27759fde1a20ff.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:36 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app/login.self-0c654bd4f355ad269726a6adb01d7468f5e50e1f5f71b99c1584b9107c66f9fa.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:36 +0000
+Started GET "/assets/angular/app/signupCtrl.self-4b6a21fa2aeec43523172f469dd27004ffefd17ad9c0eb52bbf57906fcae0c5b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:36 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/commonRoutines.self-100874d041a7c8e24b68e9f2c13f425db4d14df176a140c2acf089702b4e485c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:36 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/constants.self-08f367b09783d31ae63de23796cc8b5121cbc65939553839e742a4732cadce4a.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:37 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/dataService.self-6559b9374efcd2ec7b099b4e2c2aa643ec1a8b6894cf8b06c8ad0daa0afc6fb4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:37 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/sharedProperties.self-991020b922ec2cd0ebcc37fa5cd504af3060921a09598da8fb215f108190a748.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:37 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/controller/universitiesCtrl.self-0c0e6b790b86dc515b7cb4eb11964f58a3885f31f09538fcfd7a71e3b62c3aa0.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:37 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/controller/universityDetailsCtrl.self-2996b3efac624da69735105bac370bff8512d97b26b5beb0dd86d15e767bdb6c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:37 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angular-animate.min.self-8fb577c1970a6c228407b81846e93f6d699bb2270e14ee09f5b46319a72d4409.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:38 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angular-ui-notification.min.self-df2fdc1f8a489529caa4104e0b18150e2a45b101672d2c676f20f1a0007a6d47.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:38 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angularjs-dropdown-multiselect.self-67a5b616a5ece03e4e4bcfe1d7c286733faafea5cdf8d5b51df9da19a57453fd.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:38 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/ng-lodash.self-4da4b787294bb3ec1a3c816af5031e9f5ca34ab96bba85d0d2291a0382ec5dac.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:38 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-mocks.self-45fe0f5c2a144b881b1ff63fe41e4f6c03b06d35714662e4632af5c7c81400f5.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:38 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/application.self-abf55f804796de5da127bcfc5fb78b0494e1e0968b014300c8b6ae359f4a19ad.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:38 +0000
+Started GET "/assets/spec_helper.self-7ebbb24e31d0cae89fc5b127943939f8d700298fa074f6787ccc357b1e236cba.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:38 +0000
+Started GET "/assets/angular/routes.self-f9d8017c8738b8f527caba6b535c9bc77794780f53600430e506a34b810882de.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:06:38 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/commonRoutines_spec.self-0bfd3688e5c846dee8f525b57cd1fd1635a91abf50c4a4fa979bd01434213593.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:06:38 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/home_spec.self-f9f351c9d642d22786f8650ea27828138c23203e686492d9cdf0cd48fcdebd1d.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:06:38 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/login_spec.self-613e5734c68256261a6a72e00c62e66ee4ce7dd9b583d9e74d8439f92e949043.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:06:38 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/sharedProperties_spec.self-17a45f8115197c2a95564b39fb480b05734225f78e83fbdd0ebaeb4330c09621.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:06:38 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/signupCtrl_spec.self-e3a8943a7668186508efaceed823ddd2c0fe2d7184a323b738e6ede60a15020a.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:06:39 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/universityCtrl_spec.self-2d724bded65944db6e513fdc82b8b6a79efaffcb019c17b31223f9ba5979df86.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:06:39 +0000
+Started GET "/assets/universityDetailsCtrl_spec.self-5fc974a3818a46a8d32e02e65898bc67b1d28608f658909a1bf741a7bdc64c2c.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:06:39 +0000
+close: 127.0.0.1:58318
+close: 127.0.0.1:58316
+close: 127.0.0.1:58322
+close: 127.0.0.1:58314
+close: 127.0.0.1:58320
+close: 127.0.0.1:58300
+close TCPSocket(127.0.0.1, 34218)
+going to shutdown ...
+WEBrick::HTTPServer#start done.
+WEBrick 1.3.1
+ruby 2.3.0 (2015-12-25) [x86_64-linux]
+Rack::Handler::WEBrick is mounted on /.
+WEBrick::HTTPServer#start: pid=38089 port=33602
+accept: 127.0.0.1:50912
+close: 127.0.0.1:50912
+accept: 127.0.0.1:50916
+Rack::Handler::WEBrick is invoked.
+Started GET "/teaspoon/default?reporter=Console" for 127.0.0.1 at 2016-12-09 07:09:13 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Teaspoon::SuiteController#show as HTML
+  Parameters: {"reporter"=>"Console", "defaults"=>{"suite"=>"default"}, "suite"=>"default"}
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_boot.html.erb (373.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_body.html.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb (824.4ms)
+Completed 200 OK in 843ms (Views: 831.1ms | ActiveRecord: 0.0ms)
+
+
+Rack::Handler::WEBrick is invoked.
+accept: 127.0.0.1:50938
+accept: 127.0.0.1:50936
+accept: 127.0.0.1:50934
+accept: 127.0.0.1:50942
+Rack::Handler::WEBrick is invoked.
+accept: 127.0.0.1:50940
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/teaspoon.self-6e7be868738f20e0ca2ab731d5f577e0dd6bed588b1660eb2b2dc6b0328341dd.css?body=1" for 127.0.0.1 at 2016-12-09 07:09:14 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/support/phantomjs-shims.self-f6867d3adaf9c1a659d0ca8e170f147e97bbde37736890cf05d84e7b5020fed4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:09:14 +0000
+Started GET "/assets/jasmine/2.3.4.self-aa35a2d6ef4c597846860937831b786d7a7b61cf7b7d860a06b484aa1b637276.js?body=1" for 127.0.0.1 at 2016-12-09 07:09:14 +0000
+Started GET "/assets/teaspoon-jasmine2.self-193432e902b3943f7e511bf7ba322e1ce098119d180978aaff50918567da9361.js?body=1" for 127.0.0.1 at 2016-12-09 07:09:14 +0000
+Started GET "/assets/angular.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:09:14 +0000
+Started GET "/assets/angular/angular.self-55459d3bd6c820b82a84405c655eb594e8f13110f3bfb3c25711a3cc3510e952.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:09:14 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-resource.self-8aaea2bb9a19368634f9a7280b41e7b6200d3afdca6644b6855f09993a092618.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:09:14 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-route.self-00fec46593bf47438f42c1c8129a7667feb3ec9083550f6acbfb2f720882afbe.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:09:14 +0000
+Started GET "/assets/angular-ui-bootstrap.self-f0590a4e71291d7ac90b4413bfe418dd00aa804471a7aa36c4489e52a4322659.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:09:14 +0000
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:09:14 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app.self-4bef8073e850664d405adab0fbde900b295c5d8ed32159babf3bf438cedeb97b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:09:14 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app/home.self-6e6c3ed2e46341d762e86fd07cc1b700e8e667b3256975505f27759fde1a20ff.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:09:14 +0000
+Started GET "/assets/angular/app/login.self-0c654bd4f355ad269726a6adb01d7468f5e50e1f5f71b99c1584b9107c66f9fa.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:09:14 +0000
+Started GET "/assets/angular/app/signupCtrl.self-4b6a21fa2aeec43523172f469dd27004ffefd17ad9c0eb52bbf57906fcae0c5b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:09:14 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/commonRoutines.self-100874d041a7c8e24b68e9f2c13f425db4d14df176a140c2acf089702b4e485c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:09:14 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/constants.self-08f367b09783d31ae63de23796cc8b5121cbc65939553839e742a4732cadce4a.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:09:15 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/dataService.self-6559b9374efcd2ec7b099b4e2c2aa643ec1a8b6894cf8b06c8ad0daa0afc6fb4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:09:15 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/sharedProperties.self-991020b922ec2cd0ebcc37fa5cd504af3060921a09598da8fb215f108190a748.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:09:15 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/controller/universitiesCtrl.self-0c0e6b790b86dc515b7cb4eb11964f58a3885f31f09538fcfd7a71e3b62c3aa0.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:09:15 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angular-animate.min.self-8fb577c1970a6c228407b81846e93f6d699bb2270e14ee09f5b46319a72d4409.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:09:15 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/controller/universityDetailsCtrl.self-2996b3efac624da69735105bac370bff8512d97b26b5beb0dd86d15e767bdb6c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:09:15 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angular-ui-notification.min.self-df2fdc1f8a489529caa4104e0b18150e2a45b101672d2c676f20f1a0007a6d47.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:09:16 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angularjs-dropdown-multiselect.self-67a5b616a5ece03e4e4bcfe1d7c286733faafea5cdf8d5b51df9da19a57453fd.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:09:16 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/ng-lodash.self-4da4b787294bb3ec1a3c816af5031e9f5ca34ab96bba85d0d2291a0382ec5dac.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:09:16 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/routes.self-f9d8017c8738b8f527caba6b535c9bc77794780f53600430e506a34b810882de.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:09:16 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/application.self-abf55f804796de5da127bcfc5fb78b0494e1e0968b014300c8b6ae359f4a19ad.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:09:16 +0000
+Started GET "/assets/angular-mocks.self-45fe0f5c2a144b881b1ff63fe41e4f6c03b06d35714662e4632af5c7c81400f5.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:09:16 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/spec_helper.self-7ebbb24e31d0cae89fc5b127943939f8d700298fa074f6787ccc357b1e236cba.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:09:16 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/commonRoutines_spec.self-0bfd3688e5c846dee8f525b57cd1fd1635a91abf50c4a4fa979bd01434213593.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:09:16 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/home_spec.self-f9f351c9d642d22786f8650ea27828138c23203e686492d9cdf0cd48fcdebd1d.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:09:16 +0000
+Started GET "/assets/login_spec.self-613e5734c68256261a6a72e00c62e66ee4ce7dd9b583d9e74d8439f92e949043.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:09:16 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/sharedProperties_spec.self-17a45f8115197c2a95564b39fb480b05734225f78e83fbdd0ebaeb4330c09621.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:09:16 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/signupCtrl_spec.self-e3a8943a7668186508efaceed823ddd2c0fe2d7184a323b738e6ede60a15020a.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:09:16 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/universityCtrl_spec.self-2d724bded65944db6e513fdc82b8b6a79efaffcb019c17b31223f9ba5979df86.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:09:16 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/universityDetailsCtrl_spec.self-6d7ad5446d18d0eafaf140121d4282405f489b45625319bb200b5e67dc5a5a1d.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:09:16 +0000
+close: 127.0.0.1:50934
+close: 127.0.0.1:50916
+close: 127.0.0.1:50936
+close: 127.0.0.1:50938
+close: 127.0.0.1:50940
+close: 127.0.0.1:50942
+close TCPSocket(127.0.0.1, 33602)
+going to shutdown ...
+WEBrick::HTTPServer#start done.
+WEBrick 1.3.1
+ruby 2.3.0 (2015-12-25) [x86_64-linux]
+Rack::Handler::WEBrick is mounted on /.
+WEBrick::HTTPServer#start: pid=38223 port=39763
+accept: 127.0.0.1:43872
+close: 127.0.0.1:43872
+accept: 127.0.0.1:43874
+Rack::Handler::WEBrick is invoked.
+Started GET "/teaspoon/default?reporter=Console" for 127.0.0.1 at 2016-12-09 07:10:34 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Teaspoon::SuiteController#show as HTML
+  Parameters: {"reporter"=>"Console", "defaults"=>{"suite"=>"default"}, "suite"=>"default"}
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_boot.html.erb (251.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_body.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb (686.5ms)
+Completed 200 OK in 705ms (Views: 693.1ms | ActiveRecord: 0.0ms)
+
+
+Rack::Handler::WEBrick is invoked.
+accept: 127.0.0.1:43886
+accept: 127.0.0.1:43884
+Started GET "/assets/teaspoon.self-6e7be868738f20e0ca2ab731d5f577e0dd6bed588b1660eb2b2dc6b0328341dd.css?body=1" for 127.0.0.1 at 2016-12-09 07:10:35 +0000
+accept: 127.0.0.1:43892
+accept: 127.0.0.1:43890
+Rack::Handler::WEBrick is invoked.
+accept: 127.0.0.1:43888
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/teaspoon-jasmine2.self-193432e902b3943f7e511bf7ba322e1ce098119d180978aaff50918567da9361.js?body=1" for 127.0.0.1 at 2016-12-09 07:10:35 +0000
+Started GET "/assets/angular.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:10:35 +0000
+Started GET "/assets/jasmine/2.3.4.self-aa35a2d6ef4c597846860937831b786d7a7b61cf7b7d860a06b484aa1b637276.js?body=1" for 127.0.0.1 at 2016-12-09 07:10:35 +0000
+Started GET "/assets/angular/angular.self-55459d3bd6c820b82a84405c655eb594e8f13110f3bfb3c25711a3cc3510e952.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:10:35 +0000
+Started GET "/assets/support/phantomjs-shims.self-f6867d3adaf9c1a659d0ca8e170f147e97bbde37736890cf05d84e7b5020fed4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:10:35 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-route.self-00fec46593bf47438f42c1c8129a7667feb3ec9083550f6acbfb2f720882afbe.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:10:35 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-resource.self-8aaea2bb9a19368634f9a7280b41e7b6200d3afdca6644b6855f09993a092618.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:10:35 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-ui-bootstrap.self-f0590a4e71291d7ac90b4413bfe418dd00aa804471a7aa36c4489e52a4322659.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:10:35 +0000
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:10:35 +0000
+Started GET "/assets/angular/app.self-4bef8073e850664d405adab0fbde900b295c5d8ed32159babf3bf438cedeb97b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:10:35 +0000
+Started GET "/assets/angular/app/home.self-6e6c3ed2e46341d762e86fd07cc1b700e8e667b3256975505f27759fde1a20ff.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:10:35 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app/login.self-0c654bd4f355ad269726a6adb01d7468f5e50e1f5f71b99c1584b9107c66f9fa.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:10:35 +0000
+Started GET "/assets/angular/app/signupCtrl.self-4b6a21fa2aeec43523172f469dd27004ffefd17ad9c0eb52bbf57906fcae0c5b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:10:35 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/commonRoutines.self-100874d041a7c8e24b68e9f2c13f425db4d14df176a140c2acf089702b4e485c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:10:35 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/constants.self-08f367b09783d31ae63de23796cc8b5121cbc65939553839e742a4732cadce4a.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:10:37 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/dataService.self-6559b9374efcd2ec7b099b4e2c2aa643ec1a8b6894cf8b06c8ad0daa0afc6fb4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:10:37 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/sharedProperties.self-991020b922ec2cd0ebcc37fa5cd504af3060921a09598da8fb215f108190a748.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:10:37 +0000
+Started GET "/assets/angular/controller/universityDetailsCtrl.self-2996b3efac624da69735105bac370bff8512d97b26b5beb0dd86d15e767bdb6c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:10:37 +0000
+Started GET "/assets/angular/controller/universitiesCtrl.self-0c0e6b790b86dc515b7cb4eb11964f58a3885f31f09538fcfd7a71e3b62c3aa0.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:10:37 +0000
+Started GET "/assets/angular/library/angular-animate.min.self-8fb577c1970a6c228407b81846e93f6d699bb2270e14ee09f5b46319a72d4409.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:10:38 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angular-ui-notification.min.self-df2fdc1f8a489529caa4104e0b18150e2a45b101672d2c676f20f1a0007a6d47.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:10:38 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angularjs-dropdown-multiselect.self-67a5b616a5ece03e4e4bcfe1d7c286733faafea5cdf8d5b51df9da19a57453fd.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:10:38 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/ng-lodash.self-4da4b787294bb3ec1a3c816af5031e9f5ca34ab96bba85d0d2291a0382ec5dac.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:10:38 +0000
+Started GET "/assets/angular/routes.self-f9d8017c8738b8f527caba6b535c9bc77794780f53600430e506a34b810882de.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:10:38 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/application.self-abf55f804796de5da127bcfc5fb78b0494e1e0968b014300c8b6ae359f4a19ad.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:10:38 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-mocks.self-45fe0f5c2a144b881b1ff63fe41e4f6c03b06d35714662e4632af5c7c81400f5.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:10:38 +0000
+Started GET "/assets/spec_helper.self-7ebbb24e31d0cae89fc5b127943939f8d700298fa074f6787ccc357b1e236cba.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:10:38 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/commonRoutines_spec.self-0bfd3688e5c846dee8f525b57cd1fd1635a91abf50c4a4fa979bd01434213593.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:10:38 +0000
+Started GET "/assets/login_spec.self-613e5734c68256261a6a72e00c62e66ee4ce7dd9b583d9e74d8439f92e949043.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:10:38 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/home_spec.self-f9f351c9d642d22786f8650ea27828138c23203e686492d9cdf0cd48fcdebd1d.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:10:38 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/sharedProperties_spec.self-17a45f8115197c2a95564b39fb480b05734225f78e83fbdd0ebaeb4330c09621.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:10:38 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/signupCtrl_spec.self-e3a8943a7668186508efaceed823ddd2c0fe2d7184a323b738e6ede60a15020a.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:10:38 +0000
+Started GET "/assets/universityCtrl_spec.self-2d724bded65944db6e513fdc82b8b6a79efaffcb019c17b31223f9ba5979df86.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:10:38 +0000
+Started GET "/assets/universityDetailsCtrl_spec.self-aa5fb0d7b7acbe4acdf45b56cd26b0b182eac52eec672e32e46c77610f70dbff.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:10:38 +0000
+close: 127.0.0.1:43874
+close: 127.0.0.1:43890
+close: 127.0.0.1:43892
+close: 127.0.0.1:43888
+close: 127.0.0.1:43884
+close: 127.0.0.1:43886
+close TCPSocket(127.0.0.1, 39763)
+going to shutdown ...
+WEBrick::HTTPServer#start done.
+WEBrick 1.3.1
+ruby 2.3.0 (2015-12-25) [x86_64-linux]
+Rack::Handler::WEBrick is mounted on /.
+WEBrick::HTTPServer#start: pid=38354 port=41114
+accept: 127.0.0.1:54300
+close: 127.0.0.1:54300
+accept: 127.0.0.1:54304
+Rack::Handler::WEBrick is invoked.
+Started GET "/teaspoon/default?reporter=Console" for 127.0.0.1 at 2016-12-09 07:11:28 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Teaspoon::SuiteController#show as HTML
+  Parameters: {"reporter"=>"Console", "defaults"=>{"suite"=>"default"}, "suite"=>"default"}
+  Rendering /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_boot.html.erb (350.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/_body.html.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/teaspoon-1.1.5/app/views/teaspoon/suite/show.html.erb (784.6ms)
+Completed 200 OK in 804ms (Views: 791.5ms | ActiveRecord: 0.0ms)
+
+
+Rack::Handler::WEBrick is invoked.
+accept: 127.0.0.1:54322
+accept: 127.0.0.1:54320
+Started GET "/assets/teaspoon.self-6e7be868738f20e0ca2ab731d5f577e0dd6bed588b1660eb2b2dc6b0328341dd.css?body=1" for 127.0.0.1 at 2016-12-09 07:11:30 +0000
+accept: 127.0.0.1:54324
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+accept: 127.0.0.1:54326
+accept: 127.0.0.1:54328
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/teaspoon-jasmine2.self-193432e902b3943f7e511bf7ba322e1ce098119d180978aaff50918567da9361.js?body=1" for 127.0.0.1 at 2016-12-09 07:11:30 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/jasmine/2.3.4.self-aa35a2d6ef4c597846860937831b786d7a7b61cf7b7d860a06b484aa1b637276.js?body=1" for 127.0.0.1 at 2016-12-09 07:11:30 +0000
+Started GET "/assets/angular/angular.self-55459d3bd6c820b82a84405c655eb594e8f13110f3bfb3c25711a3cc3510e952.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:11:30 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/support/phantomjs-shims.self-f6867d3adaf9c1a659d0ca8e170f147e97bbde37736890cf05d84e7b5020fed4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:11:30 +0000
+Started GET "/assets/angular-route.self-00fec46593bf47438f42c1c8129a7667feb3ec9083550f6acbfb2f720882afbe.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:11:30 +0000
+Started GET "/assets/angular.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:11:30 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app.self-4bef8073e850664d405adab0fbde900b295c5d8ed32159babf3bf438cedeb97b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:11:30 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:11:30 +0000
+Started GET "/assets/angular-ui-bootstrap.self-f0590a4e71291d7ac90b4413bfe418dd00aa804471a7aa36c4489e52a4322659.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:11:30 +0000
+Started GET "/assets/angular-resource.self-8aaea2bb9a19368634f9a7280b41e7b6200d3afdca6644b6855f09993a092618.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:11:30 +0000
+Started GET "/assets/angular/app/home.self-6e6c3ed2e46341d762e86fd07cc1b700e8e667b3256975505f27759fde1a20ff.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:11:30 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app/login.self-0c654bd4f355ad269726a6adb01d7468f5e50e1f5f71b99c1584b9107c66f9fa.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:11:30 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/app/signupCtrl.self-4b6a21fa2aeec43523172f469dd27004ffefd17ad9c0eb52bbf57906fcae0c5b.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:11:30 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/commonRoutines.self-100874d041a7c8e24b68e9f2c13f425db4d14df176a140c2acf089702b4e485c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:11:30 +0000
+Started GET "/assets/angular/common/constants.self-08f367b09783d31ae63de23796cc8b5121cbc65939553839e742a4732cadce4a.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:11:31 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/dataService.self-6559b9374efcd2ec7b099b4e2c2aa643ec1a8b6894cf8b06c8ad0daa0afc6fb4.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:11:31 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/common/sharedProperties.self-991020b922ec2cd0ebcc37fa5cd504af3060921a09598da8fb215f108190a748.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:11:31 +0000
+Started GET "/assets/angular/controller/universitiesCtrl.self-0c0e6b790b86dc515b7cb4eb11964f58a3885f31f09538fcfd7a71e3b62c3aa0.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:11:31 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/controller/universityDetailsCtrl.self-2996b3efac624da69735105bac370bff8512d97b26b5beb0dd86d15e767bdb6c.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:11:31 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angular-animate.min.self-8fb577c1970a6c228407b81846e93f6d699bb2270e14ee09f5b46319a72d4409.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:11:32 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angular-ui-notification.min.self-df2fdc1f8a489529caa4104e0b18150e2a45b101672d2c676f20f1a0007a6d47.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:11:32 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/angularjs-dropdown-multiselect.self-67a5b616a5ece03e4e4bcfe1d7c286733faafea5cdf8d5b51df9da19a57453fd.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:11:32 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/library/ng-lodash.self-4da4b787294bb3ec1a3c816af5031e9f5ca34ab96bba85d0d2291a0382ec5dac.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:11:32 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular/routes.self-f9d8017c8738b8f527caba6b535c9bc77794780f53600430e506a34b810882de.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:11:32 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/application.self-abf55f804796de5da127bcfc5fb78b0494e1e0968b014300c8b6ae359f4a19ad.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:11:32 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/angular-mocks.self-45fe0f5c2a144b881b1ff63fe41e4f6c03b06d35714662e4632af5c7c81400f5.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:11:32 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/spec_helper.self-7ebbb24e31d0cae89fc5b127943939f8d700298fa074f6787ccc357b1e236cba.js?body=1?body=1&instrument=1" for 127.0.0.1 at 2016-12-09 07:11:32 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/commonRoutines_spec.self-0bfd3688e5c846dee8f525b57cd1fd1635a91abf50c4a4fa979bd01434213593.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:11:32 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/home_spec.self-f9f351c9d642d22786f8650ea27828138c23203e686492d9cdf0cd48fcdebd1d.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:11:32 +0000
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/login_spec.self-613e5734c68256261a6a72e00c62e66ee4ce7dd9b583d9e74d8439f92e949043.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:11:32 +0000
+Started GET "/assets/signupCtrl_spec.self-e3a8943a7668186508efaceed823ddd2c0fe2d7184a323b738e6ede60a15020a.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:11:32 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/universityCtrl_spec.self-2d724bded65944db6e513fdc82b8b6a79efaffcb019c17b31223f9ba5979df86.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:11:32 +0000
+Started GET "/assets/sharedProperties_spec.self-17a45f8115197c2a95564b39fb480b05734225f78e83fbdd0ebaeb4330c09621.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:11:32 +0000
+Rack::Handler::WEBrick is invoked.
+Started GET "/assets/universityDetailsCtrl_spec.self-8232d07c3bc92b7e725ef331d6d610ef13aa4205ddb721f1164936961a0e4836.js?body=1?body=1" for 127.0.0.1 at 2016-12-09 07:11:32 +0000
+close: 127.0.0.1:54320
+close: 127.0.0.1:54322
+close: 127.0.0.1:54304
+close: 127.0.0.1:54324
+close: 127.0.0.1:54328
+close: 127.0.0.1:54326
+close TCPSocket(127.0.0.1, 41114)
+going to shutdown ...
+WEBrick::HTTPServer#start done.
