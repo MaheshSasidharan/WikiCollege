@@ -16,7 +16,7 @@ describe('Wiki college', function() {
           Logout: function(){}
       }
       controller.ShowHideLogin();
-      //expect('strong').toEqual('strong');
+      expect('strong').toEqual('strong');
     });
     
     it('should show login item if already logged', function() {
@@ -30,7 +30,7 @@ describe('Wiki college', function() {
       controller.ShowHideLogin();
       //controller.oService.GetUserInfo();
 
-      //expect('strong').toEqual('strong');
+      expect('strong').toEqual('strong');
     });
     
     it('should logout if user is logged in', function() {
@@ -45,7 +45,7 @@ describe('Wiki college', function() {
       controller.ShowHideLogin();
       //controller.oService.GetUserInfo();
 
-      //expect('strong').toEqual('strong');
+      expect('strong').toEqual('strong');
     });
   });
 });
