@@ -506,7 +506,7 @@ end
 #   User.create!(user)
 # end      
 
-users = [{   :name => "abcd",
+users =    [{:name => "abcd",
              :email => "abcd@wikicollege.com",
              :password_digest => "wikiadmin123"},
              {:name => "efgh",
