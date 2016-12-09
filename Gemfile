@@ -35,6 +35,10 @@ gem 'bcrypt', '~> 3.1.7'
 
 #adding devise
 #gem 'devise'
+#rspec
+gem 'rspec-rails'
+gem 'guard-rspec'
+
 
 #adding bower
 gem 'bower'
@@ -71,6 +75,8 @@ gem 'jasmine-coverage'
 group :development, :test do
   #gem 'jasmine'
   gem "teaspoon-jasmine"
+  gem 'simplecov', :require=>false
+  gem 'rspec-expectations'
 end
 
 group :production do
