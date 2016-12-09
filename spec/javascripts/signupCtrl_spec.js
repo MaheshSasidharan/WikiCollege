@@ -12,12 +12,14 @@ describe('Wiki college', function() {
     it('Should add user with user details', function() {
       var $scope = {};
       var controller = $controller('SignupCtrl', { $scope: $scope });
-      controller.su.oUser = {
-        name: 'kaustubh',
-        email: 'kaustubh-mungale@uiowa.edu',
-        password: 'welcome1'
-      }
+      console.log(controller.oUser)
+      controller.oUser.name = "kaustubh";
+      controller.oUser.email = "kmungale@gmail.com";
+      controller.oUser.password = "welcome1";
+      
+      
       controller.Helper.AddUser();
+      controller.oService.AddUser(controller.oUser);
       
       //expect('strong').toEqual('strong');
     });
