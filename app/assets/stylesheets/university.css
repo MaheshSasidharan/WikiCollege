@@ -193,7 +193,7 @@
 
 .WC_D_DetailLeft, .WC_D_DetailRight {
     font-size: 20px;
-    box-shadow: inset 2px 0px 33px indianred;
+    box-shadow: inset 0px 0px 3px 0px #754040;
     margin-top: 15px;
     border-radius: 4px;
     height: 100%;
@@ -329,7 +329,7 @@
   height: 100%;
   position: absolute;
   transform-style: preserve-3d;
-  transition: transform 1s;
+  transition: transform 600ms;
 }
 
 #card figure {
