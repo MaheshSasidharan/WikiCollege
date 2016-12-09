@@ -25609,3 +25609,243 @@ Processing by UniversitiesController#GetAllUniversities as HTML
 Unpermitted parameters: sCityName, nEndowmentst
   [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT `universities`.* FROM `universities`[0m
 Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT `comments`.* FROM `comments` INNER JOIN `users` ON `users`.`id` = `comments`.`user_id` WHERE `comments`.`post_id` = 1[0m
+  [1m[35mComment Load (0.3ms)[0m  SELECT `comments`.* FROM `comments` INNER JOIN `users` ON `users`.`id` = `comments`.`user_id` WHERE `comments`.`post_id` = 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mComment Load (0.4ms)[0m  SELECT `comments`.* FROM `comments` INNER JOIN `users` ON `users`.`id` = `comments`.`user_id` WHERE `comments`.`post_id` = 1
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT `comments`.* FROM `comments`  WHERE `comments`.`post_id` = 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users`  WHERE `users`.`id` IN (1, 4)
+  [1m[36m (0.5ms)[0m  [1mSELECT users.name,comments.* FROM `comments` LEFT OUTER JOIN `users` ON `users`.`id` = `comments`.`user_id` WHERE `comments`.`post_id` = 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users`
+  [1m[36m (0.2ms)[0m  [1mSELECT users.name,comments.* FROM `comments` LEFT OUTER JOIN `users` ON `users`.`id` = `comments`.`user_id` WHERE `comments`.`post_id` = 1[0m
+  [1m[35m (0.7ms)[0m  SELECT users.name,comments.* FROM `comments` INNER JOIN `users` ON `users`.`id` = `comments`.`user_id` WHERE `comments`.`post_id` = 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+
+
+Started GET "/" for 129.255.226.213 at 2016-12-08 23:14:14 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 266ms (Views: 257.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/about-us.css?body=1" for 129.255.226.213 at 2016-12-08 23:14:15 +0000
+
+
+Started GET "/assets/contact.css?body=1" for 129.255.226.213 at 2016-12-08 23:14:15 +0000
+
+
+Started GET "/assets/app.css?body=1" for 129.255.226.213 at 2016-12-08 23:14:15 +0000
+
+
+Started GET "/assets/framework.css?body=1" for 129.255.226.213 at 2016-12-08 23:14:15 +0000
+
+
+Started GET "/assets/application.css?body=1" for 129.255.226.213 at 2016-12-08 23:14:15 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 129.255.226.213 at 2016-12-08 23:14:15 +0000
+
+
+Started GET "/assets/university.css?body=1" for 129.255.226.213 at 2016-12-08 23:14:15 +0000
+
+
+Started GET "/assets/angular/angular.js?body=1" for 129.255.226.213 at 2016-12-08 23:14:15 +0000
+
+
+Started GET "/assets/angular.js?body=1" for 129.255.226.213 at 2016-12-08 23:14:15 +0000
+
+
+Started GET "/assets/angular-resource.js?body=1" for 129.255.226.213 at 2016-12-08 23:14:15 +0000
+
+
+Started GET "/assets/angular-route.js?body=1" for 129.255.226.213 at 2016-12-08 23:14:15 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 129.255.226.213 at 2016-12-08 23:14:15 +0000
+
+
+Started GET "/assets/angular-ui-bootstrap.js?body=1" for 129.255.226.213 at 2016-12-08 23:14:15 +0000
+
+
+Started GET "/assets/angular/app/home.js?body=1" for 129.255.226.213 at 2016-12-08 23:14:15 +0000
+
+
+Started GET "/assets/angular/app.js?body=1" for 129.255.226.213 at 2016-12-08 23:14:15 +0000
+
+
+Started GET "/assets/angular/app/login.js?body=1" for 129.255.226.213 at 2016-12-08 23:14:15 +0000
+
+
+Started GET "/assets/angular/app/signupCtrl.js?body=1" for 129.255.226.213 at 2016-12-08 23:14:15 +0000
+
+
+Started GET "/assets/angular/common/commonRoutines.js?body=1" for 129.255.226.213 at 2016-12-08 23:14:15 +0000
+
+
+Started GET "/assets/angular/common/dataService.js?body=1" for 129.255.226.213 at 2016-12-08 23:14:15 +0000
+
+
+Started GET "/assets/angular/common/constants.js?body=1" for 129.255.226.213 at 2016-12-08 23:14:15 +0000
+
+
+Started GET "/assets/angular/controller/universitiesCtrl.js?body=1" for 129.255.226.213 at 2016-12-08 23:14:15 +0000
+
+
+Started GET "/assets/angular/common/sharedProperties.js?body=1" for 129.255.226.213 at 2016-12-08 23:14:15 +0000
+
+
+Started GET "/assets/angular/controller/universityDetailsCtrl.js?body=1" for 129.255.226.213 at 2016-12-08 23:14:15 +0000
+
+
+Started GET "/assets/angular/library/angular-animate.min.js?body=1" for 129.255.226.213 at 2016-12-08 23:14:15 +0000
+
+
+Started GET "/assets/angular/library/angularjs-dropdown-multiselect.js?body=1" for 129.255.226.213 at 2016-12-08 23:14:15 +0000
+
+
+Started GET "/assets/angular/library/ng-lodash.js?body=1" for 129.255.226.213 at 2016-12-08 23:14:15 +0000
+
+
+Started GET "/assets/angular/routes.js?body=1" for 129.255.226.213 at 2016-12-08 23:14:15 +0000
+
+
+Started GET "/assets/application.js?body=1" for 129.255.226.213 at 2016-12-08 23:14:15 +0000
+
+
+Started GET "/users/GetUserInfo" for 129.255.226.213 at 2016-12-08 23:14:15 +0000
+Processing by UsersController#GetUserInfo as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/university/GetAllUniversities" for 129.255.226.213 at 2016-12-08 23:14:15 +0000
+Processing by UniversitiesController#GetAllUniversities as HTML
+  Parameters: {"oFilter"=>{"sCityName"=>nil, "nEndowmentst"=>nil}, "university"=>{}}
+Unpermitted parameters: sCityName, nEndowmentst
+  [1m[35mUniversity Load (0.4ms)[0m  SELECT `universities`.* FROM `universities`
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for 129.255.226.213 at 2016-12-08 23:14:15 +0000
+
+
+Started POST "/university/Filter" for 129.255.226.213 at 2016-12-08 23:14:29 +0000
+Value for params[:filter][:states] was set to nil, because it was one of [], [null] or [null, null, ...]. Go to http://guides.rubyonrails.org/security.html#unsafe-query-generation for more information.
+Processing by UniversitiesController#Filter as HTML
+  Parameters: {"filter"=>{"rank"=>{"low"=>"2", "high"=>"10"}, "fees"=>{"low"=>nil, "high"=>nil}, "states"=>nil}, "university"=>{}}
+  [1m[36mUniversity Load (1.6ms)[0m  [1mSELECT `universities`.* FROM `universities`  WHERE (`universities`.`rank` BETWEEN 2 AND 10) AND (`universities`.`arrTuition` BETWEEN 0 AND 9999999) AND `universities`.`state` IN ('NJ', 'MA', 'IL', 'CT', 'NY', 'CA', 'NC', 'PA', 'MD', 'NH', 'RI', 'TX', 'IN', 'TN', 'MO', 'GA', ' :dC')[0m
+Completed 200 OK in 11ms (Views: 3.9ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/university/Filter" for 129.255.226.213 at 2016-12-08 23:14:39 +0000
+Processing by UniversitiesController#Filter as HTML
+  Parameters: {"filter"=>{"rank"=>{"low"=>"", "high"=>""}, "fees"=>{"low"=>nil, "high"=>nil}, "states"=>["NJ"]}, "university"=>{}}
+  [1m[35mUniversity Load (1.7ms)[0m  SELECT `universities`.* FROM `universities`  WHERE (`universities`.`rank` BETWEEN 1 AND 10000) AND (`universities`.`arrTuition` BETWEEN 0 AND 9999999) AND `universities`.`state` IN ('NJ')
+Completed 200 OK in 11ms (Views: 7.0ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/university/GetAllUniversities" for 129.255.226.213 at 2016-12-08 23:14:59 +0000
+Processing by UniversitiesController#GetAllUniversities as HTML
+  Parameters: {"oFilter"=>{"sCityName"=>nil, "nEndowmentst"=>nil}, "university"=>{}}
+Unpermitted parameters: sCityName, nEndowmentst
+  [1m[36mUniversity Load (0.2ms)[0m  [1mSELECT `universities`.* FROM `universities`[0m
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/university/GetUniversityById?nId=1" for 129.255.226.213 at 2016-12-08 23:15:01 +0000
+Processing by UniversitiesController#GetUniversityById as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mUniversity Load (0.4ms)[0m  SELECT  `universities`.* FROM `universities`  WHERE `universities`.`id` = 1 LIMIT 1
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/university/GetGroupsByUniversityId?nId=1" for 129.255.226.213 at 2016-12-08 23:15:01 +0000
+Processing by UniversitiesController#GetGroupsByUniversityId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mGroup Load (0.3ms)[0m  [1mSELECT `groups`.* FROM `groups`  WHERE `groups`.`university_id` = 1[0m
+Completed 200 OK in 20ms (Views: 7.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/university/GetPostsByGroupId?nId=1" for 129.255.226.213 at 2016-12-08 23:15:05 +0000
+Processing by UniversitiesController#GetPostsByGroupId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT `posts`.* FROM `posts`  WHERE `posts`.`group_id` = 1
+Completed 200 OK in 14ms (Views: 7.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/university/GetCommentsByPostId?nId=1" for 129.255.226.213 at 2016-12-08 23:15:06 +0000
+Processing by UniversitiesController#GetCommentsByPostId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT `comments`.* FROM `comments`  WHERE `comments`.`post_id` = 1[0m
+Completed 200 OK in 14ms (Views: 8.0ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/users/AddUser" for 129.255.226.213 at 2016-12-08 23:15:26 +0000
+Processing by UsersController#AddUser as HTML
+  Parameters: {"oSaveItem"=>{"name"=>"raghav", "email"=>"raghav.think@gmail.com", "password"=>"[FILTERED]"}, "user"=>{}}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'raghav.think@gmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM `users`  WHERE `users`.`email` = 'raghav.think@gmail.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `name`, `password_digest`, `updated_at`) VALUES ('2016-12-08 23:15:27', 'raghav.think@gmail.com', 'raghav', '$2a$10$7XSbt7ASzrnOaXq36swKQOj3PnBGVqOCQdGUjrotzgY9Btp17hNOW', '2016-12-08 23:15:27')[0m
+  [1m[35m (4.4ms)[0m  COMMIT
+Completed 200 OK in 154ms (Views: 0.3ms | ActiveRecord: 6.9ms)
+
+
+Started POST "/university/GetAllUniversities" for 129.255.226.213 at 2016-12-08 23:15:40 +0000
+Processing by UniversitiesController#GetAllUniversities as HTML
+  Parameters: {"oFilter"=>{"sCityName"=>nil, "nEndowmentst"=>nil}, "university"=>{}}
+Unpermitted parameters: sCityName, nEndowmentst
+  [1m[36mUniversity Load (179.8ms)[0m  [1mSELECT `universities`.* FROM `universities`[0m
+Completed 200 OK in 187ms (Views: 5.9ms | ActiveRecord: 179.8ms)
+
+
+Started GET "/university/GetUniversityById?nId=1" for 129.255.226.213 at 2016-12-08 23:15:41 +0000
+Processing by UniversitiesController#GetUniversityById as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mUniversity Load (0.2ms)[0m  SELECT  `universities`.* FROM `universities`  WHERE `universities`.`id` = 1 LIMIT 1
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/university/GetGroupsByUniversityId?nId=1" for 129.255.226.213 at 2016-12-08 23:15:41 +0000
+Processing by UniversitiesController#GetGroupsByUniversityId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mGroup Load (0.2ms)[0m  [1mSELECT `groups`.* FROM `groups`  WHERE `groups`.`university_id` = 1[0m
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/university/GetPostsByGroupId?nId=1" for 129.255.226.213 at 2016-12-08 23:15:47 +0000
+Processing by UniversitiesController#GetPostsByGroupId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT `posts`.* FROM `posts`  WHERE `posts`.`group_id` = 1
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/university/GetCommentsByPostId?nId=1" for 129.255.226.213 at 2016-12-08 23:15:48 +0000
+Processing by UniversitiesController#GetCommentsByPostId as HTML
+  Parameters: {"nId"=>"1"}
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT `comments`.* FROM `comments`  WHERE `comments`.`post_id` = 1[0m
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/university/AddEditCommentToPost" for 129.255.226.213 at 2016-12-08 23:15:57 +0000
+Processing by UniversitiesController#AddEditCommentToPost as HTML
+  Parameters: {"oSaveComment"=>{"id"=>-1, "commentData"=>"It's good.", "postId"=>1, "like"=>0, "dislike"=>0}, "university"=>{}}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `comments` (`commentData`, `created_at`, `post_id`, `updated_at`, `user_id`) VALUES ('It\'s good.', '2016-12-08 23:15:57', 1, '2016-12-08 23:15:57', 4)[0m
+  [1m[35m (5.3ms)[0m  COMMIT
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 5.8ms)
+
+
+Started POST "/university/GetAllUniversities" for 129.255.226.213 at 2016-12-08 23:16:12 +0000
+Processing by UniversitiesController#GetAllUniversities as HTML
+  Parameters: {"oFilter"=>{"sCityName"=>nil, "nEndowmentst"=>nil}, "university"=>{}}
+Unpermitted parameters: sCityName, nEndowmentst
+  [1m[36mUniversity Load (0.3ms)[0m  [1mSELECT `universities`.* FROM `universities`[0m
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/Logout" for 129.255.226.213 at 2016-12-08 23:16:15 +0000
+Processing by UsersController#Logout as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)

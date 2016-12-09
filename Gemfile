@@ -35,6 +35,10 @@ gem 'bcrypt', '~> 3.1.7'
 
 #adding devise
 #gem 'devise'
+#rspec
+gem 'rspec-rails'
+gem 'guard-rspec'
+
 
 #adding bower
 gem 'bower'
@@ -63,6 +67,8 @@ gem 'awesome_print', :require => 'ap'
 
 #Installing gem Jasmine for UI test cases
 group :development, :test do
+  gem 'simplecov', :require=>false
+  gem 'rspec-expectations'
   gem 'jasmine'
 end
 

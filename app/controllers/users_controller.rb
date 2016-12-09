@@ -40,7 +40,7 @@ class UsersController < ApplicationController
   end
 
   def LoginUser
-    puts userlogin_params[:email]
+    #puts userlogin_params[:email]
     user = User.find_by(email: userlogin_params[:email])
     if user && user.authenticate(userlogin_params[:password])
       session[:user_id] = user.id
@@ -51,7 +51,7 @@ class UsersController < ApplicationController
   end
     
   def AddUser
-    print user_params
+    #print user_params
     user = User.find_by(email: user_params[:email])
     if user
       render :json => { status: false, msg: "Username is already in user"}
@@ -72,7 +72,7 @@ class UsersController < ApplicationController
     if @user
       render :json => { status: true, currentUser: {name: @user.name, email: @user.email} }
     else
-      render :json => { status: true }
+      render :json => { status: false }
     end
   end   
   

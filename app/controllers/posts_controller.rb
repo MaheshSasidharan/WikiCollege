@@ -16,7 +16,6 @@ class PostsController < ApplicationController
    def show
     #binding.pry #making use of gem pry which was added
     respond_with(@post.as_json)
-    redirect_to post_path
    end
    
    
