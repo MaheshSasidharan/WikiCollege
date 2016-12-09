@@ -1,10 +1,4 @@
 /* override bootstrap*/
-
-/**:focus {*/
-/*    border: none;*/
-/*    outline: 5px auto indianred !important;*/
-/*}*/
-
 .table-hover>tbody>tr:hover>td,
 .table-hover>tbody>tr:hover>th {
     background-color: rgba(230, 16, 16, 0.66);
@@ -82,12 +76,14 @@
 }
 
 .filter-container {
-    width: 210px;
-    height: 400px;
-    float: left;
+    /*width: 210px;*/
+    /*height: 400px;*/
+    /*float: left;*/
+    /*margin-right: 25px;*/
+    /*border-radius: 10px*/
     background-color: #ddd;
-    margin-right: 25px;
-    border-radius: 10px
+    padding: 8px;
+    border-radius: 2px;
 }
 
 .WC_ObjectTitle {
@@ -101,56 +97,56 @@
 
 /*Overriding bootstrap CSS*/
 .col-md-12 {
-    float: left;
+    /*float: left;*/
 }
 
 .search-input {
-    float: left;
-    width: 80%
+    /*float: left;*/
+    /*width: 80%*/
 }
 
 .search-label {
-    float: left;
-    width: 80%
+    /*float: left;*/
+    /*width: 80%*/
 }
 
 .university-list {
-    float: left;
-    width: 80%;
+    /*float: left;*/
+    /*width: 80%;*/
 }
 
 .container {
-    margin-right: 0;
-    width: 1270px
+    /*margin-right: 0;*/
+    /*width: 1270px*/
 }
 
 .filter-inputs {
-    width: 85px;
-    margin-left: 4px;
-    margin-right: 4px;
+    width: 89px;
+    /*margin-left: 4px;*/
+    /*margin-right: 4px;*/
 }
 
 .rank-filter-container, .fees-filter-container {
-    float: left;
-    margin-top: 10px
+    /*float: left;*/
+    /*margin-top: 10px*/
 }
 
 .float-container {
-    float: left;
+    /*float: left;*/
 }
 
 .filter-label{
-    width: 200px
+    /*width: 200px*/
 }
 
 .filter-by-fees, .fitler-by-rank {
-    margin-left: 10px;
-    margin-top: 10px;
+    /*margin-left: 10px;*/
+    /*margin-top: 10px;*/
 }
 
 .filter-container-foooter {
-    margin-left: 60px;
-    margin-top: 25px
+    /*margin-left: 60px;*/
+    /*margin-top: 25px*/
 }
 
 .WC_IndiGroupRow {
@@ -293,6 +289,15 @@
 }
 
 .filter-by-states {
-    margin-left: 15px;
-    margin-top: 20px;
+    /*margin-left: 15px;*/
+    /*margin-top: 20px;*/
+}
+
+.removeBSColMargin [class^="col-md"] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.multiselect-parent, .multiselect-parent button {
+    width: 100%;
 }

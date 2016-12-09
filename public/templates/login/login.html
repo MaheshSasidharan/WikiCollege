@@ -1,5 +1,5 @@
 <div ng-controller="LoginCtrl as lo" ng-show="lo.oLoginItem.bShow">
-    <form name="loginForm" class="navbar-form navbar-right" role="search" 
+    <form name="loginForm" class="loginForm navbar-form navbar-right" role="search" 
     novalidate ng-submit="loginForm.$valid && lo.Helper.LoginUser()">
         <div class="form-group">
             <input type="text" class="form-control" 
@@ -13,6 +13,6 @@
         </div>
         <button type="submit" class="btn btn-default"
         ng-enabled="loginForm.$valid">Sign In</button>
-        <a class="btn btn-primary" href="#/signup" ng-click="ho.oLoginItem.bLoggedIn">Sign Up</a>
+        <a class="btn btn-primary" href="#/signup" ng-click="lo.oLoginItem.bShow = false">Sign Up</a>
     </form>
 </div>

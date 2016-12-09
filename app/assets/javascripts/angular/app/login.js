@@ -25,6 +25,7 @@ function LoginCtrl(DataService, SharedProperties) {
                     
                 }else{
                     // Show login failed message
+                    SharedProperties.CommonFactory.Notification.error("Incorrect login.");
                 }
             });
         }
