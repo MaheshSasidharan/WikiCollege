@@ -7,6 +7,9 @@
     <div ng-if="ud.selectedTab.label === 'About'">
         <div ng-include="'templates/university/about.html'"></div>
     </div>
+    <div ng-if="ud.selectedTab.label === 'Details'">
+        <div ng-include="'templates/university/univdetails.html'"></div>
+    </div>
     <div ng-if="ud.selectedTab.label === 'Discussions'">
         <div ng-include="'templates/university/discussions.html'"></div>
     </div>

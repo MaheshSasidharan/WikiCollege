@@ -68,6 +68,7 @@ class UsersController < ApplicationController
   end
   
   def GetUserInfo
+    puts current_user
     @user = current_user
     if @user
       render :json => { status: true, currentUser: {name: @user.name, email: @user.email, id: @user.id} }
