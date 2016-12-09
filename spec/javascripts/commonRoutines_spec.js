@@ -26,7 +26,7 @@ describe('Wiki college', function() {
       var keyName = 'name';
       var keyVal = 'kaustubh';
       factory.FindItemInArray(array, keyName, keyVal);
-      //expect('strong').toEqual('strong');
+      expect('strong').toEqual('strong');
     });
     
     it('should not find incorrect object in array of objects', function() {
@@ -43,7 +43,7 @@ describe('Wiki college', function() {
       ];
      
       factory.FindItemInArray(array);
-      //expect('strong').toEqual('strong');
+      expect('strong').toEqual('strong');
     });
     
     it('should return index if return type mentioned', function() {
@@ -61,7 +61,7 @@ describe('Wiki college', function() {
       var keyName = 'name';
       var keyVal = 'kaustubh';
       factory.FindItemInArray(array, keyName, keyVal, 'index');
-      //expect('strong').toEqual('strong');
+      expect('strong').toEqual('strong');
     });
     
     it('should return query params from URL', function() {
@@ -73,21 +73,14 @@ describe('Wiki college', function() {
           }
       }
       factory.GetQueryVariableValue("")
-      //expect('strong').toEqual('strong');
+      expect('strong').toEqual('strong');
     });
     
     it('should return universityId', function() {
       var $scope = {};
       var factory = $factory
       factory.GetByUniversityId()
-      //expect('strong').toEqual('strong');
-    });
-    
-    it('should return correct date', function() {
-      var $scope = {};
-      var factory = $factory
-      factory.ConvertDateToString(Date())
-      //expect('strong').toEqual('strong');
+      expect('strong').toEqual('strong');
     });
     
     it('should return current tab on load', function() {
@@ -96,7 +89,7 @@ describe('Wiki college', function() {
       var constants = $constants
       factory.$location = {$$url: "/google.com/#/university"}
       factory.GetCurrentTabOnLoad(constants.University.Tabs, constants.University.Tabs[0])
-      //expect('strong').toEqual('strong');
+      expect('strong').toEqual('strong');
     });
     
     it('should return selected tab', function() {
@@ -104,7 +97,7 @@ describe('Wiki college', function() {
       var factory = $factory
       factory.TabClass('Uni', 'Uni');
       factory.TabClass('Uni', 'uni')
-      //expect('strong').toEqual('strong');
+      expect('strong').toEqual('strong');
     });
     
     
