@@ -1,27 +1,54 @@
 require 'spec_helper'
 require 'rails_helper'
-
 describe PostsController do
   render_views
-  let(:json) { JSON.parse(response.body) }
-  describe "GET /posts.json" do
-      before do
-        get :index, format: :json
-      end
+  before do
+    @post = Post.create!({:id => '1', :group_id => '1', :user_id => '1', :postData => "How is the CS department in this university"})
+  end
+  
+  context 'index' do
+     before do
+       get :index, format: :json
+     end
+     it 'should display all posts' do
+      expect(response).to be_success
+     end   
+  end
+  
+  context 'GetAllPosts' do
+    before do
+      
+    end
+    it 'should get all posts' do
+      
+    end  
     
-      context 'all posts' do
-        it 'returns the posts' do
-          expect(json.collect{|l| l["postData"]}).to_not be_nil
-        end
-      end
-      context 'post details with given id' do
-          before do
-            get :show, format: :json, id: 1
-          end
-        
-          it 'returns the posts' do
-            expect(json.collect{|l| l["like"]}).to_not be_nil
-          end
-      end
-  end      
+  end  
+  context 'GetAllComments' do
+    before do
+      
+    end
+    it 'should get all comments' do
+      
+    end  
+  end 
+  context 'GetPostsById' do
+    before do
+      
+    end
+    it 'should get post by ID' do
+      
+    end 
+    
+  end   
+  context 'GetCommentsByPostId' do
+    before do
+      
+    end
+    it 'should get comments by postId' do
+      
+    end 
+  end    
+  
+
 end  

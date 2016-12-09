@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161208051617) do
+ActiveRecord::Schema.define(version: 20161121002716) do
 
   create_table "comments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "post_id"
@@ -42,22 +42,6 @@ ActiveRecord::Schema.define(version: 20161208051617) do
     t.index ["user_id"], name: "index_groups_on_user_id", using: :btree
   end
 
-  create_table "likecomments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.boolean  "like"
-    t.integer  "user_id"
-    t.integer  "comment_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "likeposts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.boolean  "like"
-    t.integer  "user_id"
-    t.integer  "post_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "posts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "group_id"
     t.integer  "user_id"
@@ -68,15 +52,6 @@ ActiveRecord::Schema.define(version: 20161208051617) do
     t.datetime "updated_at"
     t.index ["group_id"], name: "index_posts_on_group_id", using: :btree
     t.index ["user_id"], name: "index_posts_on_user_id", using: :btree
-  end
-
-  create_table "submajors", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "univdept_id"
-    t.text     "desc",        limit: 65535
-    t.string   "majorName"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.index ["univdept_id"], name: "index_submajors_on_univdept_id", using: :btree
   end
 
   create_table "univdepts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

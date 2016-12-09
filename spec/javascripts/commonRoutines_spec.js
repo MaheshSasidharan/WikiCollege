@@ -2,10 +2,12 @@ describe('Wiki college', function() {
   beforeEach(module('myapplication'));
 
   var $factory;
+  var $constants
 
-  beforeEach(inject(function(_Factory_CommonRoutines_){
+  beforeEach(inject(function(_Factory_CommonRoutines_, _Factory_Constants_){
     // The injector unwraps the underscores (_) from around the parameter names when matching
     $factory = _Factory_CommonRoutines_;
+    $constants = _Factory_Constants_;
   }));
 
   describe('CommonRoutines Controller', function() {
@@ -24,7 +26,7 @@ describe('Wiki college', function() {
       var keyName = 'name';
       var keyVal = 'kaustubh';
       factory.FindItemInArray(array, keyName, keyVal);
-      //expect('strong').toEqual('strong');
+      expect('strong').toEqual('strong');
     });
     
     it('should not find incorrect object in array of objects', function() {
@@ -41,7 +43,7 @@ describe('Wiki college', function() {
       ];
      
       factory.FindItemInArray(array);
-      //expect('strong').toEqual('strong');
+      expect('strong').toEqual('strong');
     });
     
     it('should return index if return type mentioned', function() {
@@ -59,7 +61,7 @@ describe('Wiki college', function() {
       var keyName = 'name';
       var keyVal = 'kaustubh';
       factory.FindItemInArray(array, keyName, keyVal, 'index');
-      //expect('strong').toEqual('strong');
+      expect('strong').toEqual('strong');
     });
     
     it('should return query params from URL', function() {
@@ -71,15 +73,33 @@ describe('Wiki college', function() {
           }
       }
       factory.GetQueryVariableValue("")
-      //expect('strong').toEqual('strong');
+      expect('strong').toEqual('strong');
     });
     
     it('should return universityId', function() {
       var $scope = {};
       var factory = $factory
       factory.GetByUniversityId()
-      //expect('strong').toEqual('strong');
+      expect('strong').toEqual('strong');
     });
+    
+    it('should return current tab on load', function() {
+      var $scope = {};
+      var factory = $factory
+      var constants = $constants
+      factory.$location = {$$url: "/google.com/#/university"}
+      factory.GetCurrentTabOnLoad(constants.University.Tabs, constants.University.Tabs[0])
+      expect('strong').toEqual('strong');
+    });
+    
+    it('should return selected tab', function() {
+      var $scope = {};
+      var factory = $factory
+      factory.TabClass('Uni', 'Uni');
+      factory.TabClass('Uni', 'uni')
+      expect('strong').toEqual('strong');
+    });
+    
     
   });
 });

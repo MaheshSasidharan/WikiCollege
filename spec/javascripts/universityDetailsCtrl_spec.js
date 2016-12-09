@@ -12,25 +12,7 @@ describe('Wiki college', function() {
     it('shoudl check if array is returned for universities', function() {
       var $scope = {};
       var controller = $controller('UniversityDetails', { $scope: $scope });
-      controller.Helper.Init();
-      controller.Helper.SetSelectedTab();
-      controller.Helper.GetUniversityById(1);
-      controller.Helper.GetGroupsByUniversityId(1);
-      controller.Helper.GetPostsByGroupId(1);
-      controller.Helper.GetCommentsByPostId(1);
-      controller.Helper.AddEditGroup({}, 'add', {
-          id: 1,
-          groupName: "New Group Name",
-          universityId: 1,
-          desc: "group description"
-        });
-      controller.Helper.AddEditGroup({stopPropagation: function(){}}, 'edit', {
-          id: 1,
-          groupName: "New Group Name",
-          universityId: 1,
-          desc: "group description"
-        });
-      //expect('strong').toEqual('strong');
+      
     });
     
     it('should check if filters are set properly', function() {

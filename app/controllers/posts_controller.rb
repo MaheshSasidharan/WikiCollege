@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
    
-   before_action :set_post, only: [:edit, :update, :show, :like]
+   #before_action :set_post, only: [:edit, :update, :show, :like]
    before_action :require_user, except: [:show, :index] #only logged in user can create new post, this method is defined in application controller, so it is available to entire app
    before_action :require_same_user, only: [:edit, :update]
    
@@ -13,78 +13,48 @@ class PostsController < ApplicationController
      render json: @post
    end
      
-   def show
-    #binding.pry #making use of gem pry which was added
-    respond_with(@post.as_json)
-   end
+#   def show
+#     #binding.pry #making use of gem pry which was added
+#     #respond_with(@post.as_json)
+#   end
    
    
-   def new 
-    @post = Post.new
-   end
+#   def new 
+#     @post = Post.new
+#   end
    
-   def create
+#   def create
     
-    #binding.pry .. In console ...params ... this will tell what all we are getting
-    @post = Post.new(post_params) #match the signature and will take data to new create new post
-    @post.chef = current_user
+#     #binding.pry .. In console ...params ... this will tell what all we are getting
+#     @post = Post.new(post_params) #match the signature and will take data to new create new post
+#     @post.chef = current_user
     
-      if @post.save
-        flash[:success] = "Your Post was create successfully"
-        #redirect_to posts_path
-      else
-        render :new 
-      end
+#       if @post.save
+#         flash[:success] = "Your Post was create successfully"
+#         #redirect_to posts_path
+#       else
+#         render :new 
+#       end
     
-   end
+#   end
    
    
    def edit
        
    end
+  
    
-   
-   def update
-      if @post.update(post_params)
-        flash[:success] = "Your post was updated successfully"
-        redirect_to posts_path(@post)
-      else
-        render :edit
-      end
-   end
-   
-   
-   def like
-    #binding.pry
-    like = Like.create(like: params[:like], user: current_user, post: @post) #will set like = true
-        if like.valid?
-            flash[:success] = "Your selection was successful"
-            redirect_to :back #will redirect back to same page 
-        else
-            flash[:danger] = "You can only like/dislike a post once"
-            redirect_to :back
-        end
-   end
-   
-   
-   private 
+#   private 
     
-    def  post_params 
-      params.require(:post).permit(:postData)
-    end
+#     def  post_params 
+#       params.require(:post).permit(:postData)
+#     end
     
-    def set_post
-      @post = Post.find(params[:id])
-    end
+    # def set_post
+    #   @post = Post.find(params[:id])
+    # end
     
-    def require_same_user
-        if current_user != @post.user
-          flash[:danger] = "You can only edit your own post"
-          redirect_to posts_path
-        end
-    end
-    
-    
+
 #   protect_from_forgery with: :null_session, if: Proc.new { |c| c.request.format == 'application/json' }
   
 #   before_filter :univ_params, only: [:TestPost]
