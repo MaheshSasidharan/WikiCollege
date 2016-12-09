@@ -22,6 +22,7 @@ function Constants() {
         University: {
             Tabs: [
                   { link: '#/university', label: 'About' },
+                  { link: '#/univdetails', label: 'Details' },
                   { link: '#/discussions', label: 'Discussions' }
             ],
             Popup: {

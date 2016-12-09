@@ -173,8 +173,13 @@
 
 .WC_D_Name {
     font-size: 60px;
-    color: #31708f;
+    color: #5bc0de;
     text-align: right;
+}
+
+.WC_D_Desc{
+    color: white;
+    font-size: 23px;
 }
 
 .WC_D_Rank {
@@ -198,10 +203,15 @@
     vertical-align: middle;
 }
 
+.WC_UnivDetails{
+    height: 600px;
+}
+
 .WC_UnivDetails, .WC_UnivDiscussions {
-    padding: 25px;
-    background: linear-gradient(rgba(91, 192, 222, 0.39),rgba(255, 0, 0, 0.18));
-    box-shadow: inset 0px 10px 500px rgba(169, 66, 66, 0.71);
+    /*padding: 25px;*/
+    position: relative;
+    /*background: linear-gradient(rgba(91, 192, 222, 0.39),rgba(255, 0, 0, 0.18));*/
+    /*box-shadow: inset 0px 10px 500px rgba(169, 66, 66, 0.71);*/
 }
 
 /* Universities*/
@@ -243,7 +253,7 @@
 }
 
 .WC_U_AcceptR {
-    margin-top: 21px;
+    margin-top: 173px;
     text-align: center;
     background: rgba(70, 51, 51, 0.9);
     color: #f5f5f5;
@@ -253,12 +263,13 @@
     left: 0px;
     height: 48px;
     padding-top: 16px;
+    width: 173px;
 }
 
 .WC_UnivContainer:hover {
     background: rgba(0,0,0,0.09);
-    transform: rotateY(360deg);
-    transition: transform 0ms ease-in;
+    /*transform: rotateY(360deg);*/
+    /*transition: transform 0ms ease-in;*/
 }
 
 .WC_UnivContainer:hover .row{
@@ -266,7 +277,7 @@
 }
 
 .WC_UnivContainer:hover .WC_U_AcceptR {
-    margin-top: -27px;
+    margin-top: 125px;
 }
 
 .WC_List {
@@ -304,4 +315,71 @@
 
 .multiselect-parent, .multiselect-parent button {
     width: 100%;
+}
+
+.flipContainer { 
+  /*width: 175px;*/
+  /*height: 175px;*/
+  position: relative;
+  perspective: 800px;
+}
+
+#card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+#card figure {
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+#card .flipFront {
+  /*background: red;*/
+}
+#card .flipBack {
+  /*background: blue;*/
+  transform: rotateY( 180deg );
+}
+
+.WC_UnivContainer:hover #card {
+  transform: rotateY( 180deg );
+}
+
+.WC_UnivBackSide{
+    width: 175px;
+    height: 175px;
+    position: absolute;
+    left: -15px;
+}
+
+.WC_UnivAbs{
+    position: absolute;
+}
+
+.dimmed {
+  position: absolute;
+  filter: blur(6px);
+  width: 100%;
+  height: 100%;
+}
+
+.dimmed:after {
+  content: " ";
+  z-index: 0;
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  filter: blur(4px);
 }
