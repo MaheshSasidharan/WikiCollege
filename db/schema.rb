@@ -75,6 +75,7 @@ ActiveRecord::Schema.define(version: 20161121002716) do
     t.decimal  "acceptanceRate",               precision: 10
     t.decimal  "enrollment",                   precision: 10
     t.decimal  "arrTuition",                   precision: 10
+    t.string   "link"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

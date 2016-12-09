@@ -83,11 +83,11 @@ class UsersController < ApplicationController
   end
 
   def user_params
-    params.fetch(:oSaveItem).permit(:name, :email, :password)
+    params.fetch(:oSaveItem,{}).permit(:name, :email, :password)
   end
   
   def userlogin_params
-    params.fetch(:oLoginItem).permit(:email, :password)
+    params.fetch(:oLoginItem,{}).permit(:email, :password)
   end
   
 end  

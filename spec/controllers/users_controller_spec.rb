@@ -24,6 +24,15 @@ describe UsersController do
     it 'returns a successful 200 response' do
       expect(response).to be_success
     end
+    before do
+      post :LoginUser, format: :json , oLoginItem: 
+              {email: '', password: '' }
+    end      
+    it 'returns a successful 200 response' do
+          post :LoginUser, {:email => ""}
+          expect(response).to be_success
+    end
+    
   end
   context 'AddUser' do
     before do
@@ -36,6 +45,16 @@ describe UsersController do
     end
     it 'should say create user' do
       allow(User).to receive(:find_by).with('test2@gmail.com').and_return(@current_user.email)
+      expect(response).to be_success
+    end
+    
+    
+     before do
+      post :AddUser, format: :json , oSaveItem: 
+              {name: '', email: '', password: '' }
+     end
+    it 'should say create user' do
+      allow(User).to receive(:find_by).with('').and_return('')
       expect(response).to be_success
     end
     # it 'should say user already exists' do
