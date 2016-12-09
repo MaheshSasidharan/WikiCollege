@@ -3,10 +3,12 @@ describe('Wiki college', function() {
 
   var $controller;
   var $scope
+  var $q
 
-  beforeEach(inject(function(_$controller_){
+  beforeEach(inject(function(_$controller_, $q){
     // The injector unwraps the underscores (_) from around the parameter names when matching
     $controller = _$controller_;
+    $q = $q;
   }));
 
   describe('University Details Controller', function() {
