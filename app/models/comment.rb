@@ -1,4 +1,4 @@
-class Comment < ActiveRecord::Base
+class Comment < ActiveRecord::Base.connection.adapter_name == 'Mysql2'
     belongs_to :user
     belongs_to :post
     #has_many :likecomments
