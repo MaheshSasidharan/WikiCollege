@@ -1,7 +1,8 @@
-myApp.service('SharedProperties', [SharedProp]);
+myApp.service('SharedProperties', ['Factory_CommonRoutines', SharedProp]);
 
-function SharedProp() {
+function SharedProp(CommonFactory) {
     var oSharedObj = {
+        CommonFactory: CommonFactory,
         oLoginItem: {
             id: null,
             name: null,
@@ -9,20 +10,22 @@ function SharedProp() {
             password: null,
             bShow: false,
             bLoggedIn: false,
-            Logout: function(){
-                this.id = null,
+            Logout: function() {
+                oSharedObj.CommonFactory.Notification.warning("Bye " + this.name);
+                this.id = null;
                 this.bLoggedIn = false;
                 this.email = null;
-                this.name = null,
+                this.name = null;
                 this.password = null;
                 this.bShow = false;
             },
-            Login: function(oItem){console.log(oItem);
-                this.id = oItem.id,
+            Login: function(oItem) {
+                this.id = oItem.id;
                 this.bLoggedIn = true;
                 this.email = oItem.email;
                 this.name = oItem.name;
                 this.bShow = false;
+                oSharedObj.CommonFactory.Notification.info("Welcome to WikiCollege, " + oItem.name);
             }
         },
         Constructor: {
@@ -30,6 +33,7 @@ function SharedProp() {
                 this.Id = oItem.id;
                 this.UnivId = oItem.university_id;
                 this.Title = oItem.groupName;
+                this.UserId = oItem.user_id;
                 this.Description = oItem.desc;
                 this.CreatedBy = "UserName";
                 this.CreatedWhen = oItem.created_at;
@@ -38,7 +42,8 @@ function SharedProp() {
             Post: function(oItem) {
                 this.Id = oItem.id;
                 this.Title = oItem.postData;
-                this.CreatedBy = "UserName";
+                this.UserId = oItem.user_id;
+                this.CreatedBy = oItem.name;
                 this.CreatedWhen = oItem.updated_at;
                 this.UpVotes = oItem.like;
                 this.DownVotes = oItem.dislike;

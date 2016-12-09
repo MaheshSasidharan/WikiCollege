@@ -18,7 +18,7 @@ describe('Wiki college', function() {
       controller.Helper.GetGroupsByUniversityId(1);
       controller.Helper.GetPostsByGroupId(1);
       controller.Helper.GetCommentsByPostId(1);
-      controller.Helper.AddEditGroup('event', 'add', {
+      controller.Helper.AddEditGroup({}, 'add', {
           id: 1,
           groupName: "New Group Name",
           universityId: 1,
