@@ -5,7 +5,7 @@ class Comment < ActiveRecord::Base.connection.adapter_name == 'Mysql2'
     
     
     validates :commentData, presence: true, length: {minimum: 3, maximum: 200}
-    
+     
     # def self.updateCommentCommentId(commentId, text)
     #     where("user = ? AND post = ?", "%#{userId}%", "%#{postId}%")
     # end
