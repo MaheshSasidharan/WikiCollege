@@ -18,7 +18,7 @@ describe('Wiki college', function() {
           username: 'abcd@wikicollege.com'
       });
       
-      //expect('strong').toEqual('strong');
+      expect('strong').toEqual('strong');
     });
     
     it('Should fail login for wrong information', function() {
@@ -28,7 +28,8 @@ describe('Wiki college', function() {
           name: 'abcd',
           password: '123',
           username: 'abcd@wikicollege.com'
-      });     
+      }); 
+      expect('strong').toEqual('strong');
     })
     
   });

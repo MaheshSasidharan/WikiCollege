@@ -13,7 +13,7 @@ describe('Wiki college', function() {
       var $scope = {};
       var controller = $controller('UniversityCtrl', { $scope: $scope });
       controller.Helper.GetAllUniversities();
-      //expect('strong').toEqual('strong');
+      expect('strong').toEqual('strong');
     });
     
     it('should check if filters are set properly', function() {
@@ -26,7 +26,7 @@ describe('Wiki college', function() {
       
       controller.deleteUser();
 
-      //expect('strong').toEqual('strong');
+      expect('strong').toEqual('strong');
     });
   });
 });

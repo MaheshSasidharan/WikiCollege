@@ -21,7 +21,7 @@ describe('Wiki college', function() {
       controller.Helper.AddUser();
       controller.oService.AddUser(controller.oUser);
       
-      //expect('strong').toEqual('strong');
+      expect('strong').toEqual('strong');
     });
     
   });
