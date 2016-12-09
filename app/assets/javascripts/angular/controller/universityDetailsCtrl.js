@@ -3,7 +3,7 @@ myApp.controller("UniversityDetails", ['Factory_DataService', 'Factory_CommonRou
 function UniversityDetailsCtrl(DataService, CommonFactory, Constants, SharedProperties) {
   var ud = this;
   ud.oLoginItem = SharedProperties.oLoginItem;
-  
+
   ud.nUnivId = null;
   ud.oUniv = null;
   ud.arrGroups = [];
@@ -101,19 +101,19 @@ function UniversityDetailsCtrl(DataService, CommonFactory, Constants, SharedProp
       });
     },
     GetCommentsByPostId: function(oPost) {
-        ud.oPost = oPost;
-        ud.oService.GetCommentsByPostId(oPost.Id).then(function(data) {
-          if (data.status) {
-            ud.Popup.ShowPopup(true, "comments", Constants.University.Popup.CommentTitle);
-            //ud.arrPosts = data.arrPosts;
-            if (data.arrComments.length) {
-              ud.oPost.arrComments = [];
-              data.arrComments.forEach(function(oItem) {
-                ud.oPost.arrComments.push(new SharedProperties.Constructor.Comments(oItem));
-              });
-            }
+      ud.oPost = oPost;
+      ud.oService.GetCommentsByPostId(oPost.Id).then(function(data) {
+        if (data.status) {
+          ud.Popup.ShowPopup(true, "comments", Constants.University.Popup.CommentTitle);
+          //ud.arrPosts = data.arrPosts;
+          if (data.arrComments.length) {
+            ud.oPost.arrComments = [];
+            data.arrComments.forEach(function(oItem) {
+              ud.oPost.arrComments.push(new SharedProperties.Constructor.Comments(oItem));
+            });
           }
-        });
+        }
+      });
     },
     AddEditGroup: function($event, sType, oSaveItem) {
       $event.stopPropagation();
@@ -142,8 +142,8 @@ function UniversityDetailsCtrl(DataService, CommonFactory, Constants, SharedProp
       ud.oService.AddEditGroup(oItem).then(function(data) {
         if (data.status) {
           if (sType === 'add') {
-            oItem.id = data.groupId;
-            oItem.university_id = ud.nUnivId;
+            oItem = data.group;
+            oItem.name = ud.oLoginItem.name;
             if (!ud.arrGroups) {
               ud.arrGroups = [];
             }
@@ -185,8 +185,8 @@ function UniversityDetailsCtrl(DataService, CommonFactory, Constants, SharedProp
       ud.oService.AddEditPost(oItem).then(function(data) {
         if (data.status) {
           if (sType === 'add') {
-            oItem.id = data.postId;
-            oItem.group_id = ud.oGroup.Id;
+            oItem = data.post;
+            oItem.name = ud.oLoginItem.name;
             if (!ud.arrPosts) {
               ud.arrPosts = [];
             }

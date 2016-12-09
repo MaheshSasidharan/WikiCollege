@@ -54,7 +54,10 @@ class UniversitiesController < ApplicationController
   end
   
   def GetPostsByGroupId
-    @arrPosts = Post.where(group_id: params[:nId])
+    #@arrPosts = Post.where(group_id: params[:nId])
+    @arrPosts = Post.joins(:user)
+    .where(posts:{group_id: params[:nId]})
+    .select('users.name, posts.*')
     if (!@arrPosts.nil?) 
        render :json => { status: true, arrPosts: @arrPosts }
     else
@@ -65,7 +68,7 @@ class UniversitiesController < ApplicationController
   def GetCommentsByPostId
     #@arrComments = Comment.where(post_id: params[:nId] )
     @arrComments = Comment.joins(:user)
-    .where(comments:{post_id:params[:nId]})
+    .where(comments:{post_id: params[:nId]})
     .select('users.name, comments.commentData, comments.id, comments.post_id, 
     comments.user_id, comments.like, comments.dislike, 
     comments.isActive, comments.created_at, comments.updated_at')
@@ -89,9 +92,12 @@ class UniversitiesController < ApplicationController
       newGroup_params['desc'] = group_params[:desc]
       newGroup_params['university_id'] = group_params[:universityId]
       
+      puts newGroup_params;
+      
+      puts "HIiiiii"
       @group = Group.new(newGroup_params)
       if @group.save
-        render :json => { status: true, groupId: @group.id, sType: 'GroupAdded' }
+        render :json => { status: true, group: @group, sType: 'GroupAdded' }
       else
         render :json => { status: false, sType: 'GroupAddFailed'}
       end
@@ -119,7 +125,7 @@ class UniversitiesController < ApplicationController
       puts newPost_params
       @post = Post.new(newPost_params)
       if @post.save
-        render :json => { status: true, postId: @post.id, sType: 'PostAdded' }
+        render :json => { status: true, post: @post, sType: 'PostAdded' }
       else
         render :json => { status: false, sType: 'PostAddFailed'}
       end

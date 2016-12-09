@@ -1,99 +1,115 @@
-<!--<div ng-controller="UniversityCtrl as un">-->
 <div class="row">
     <div class="col-md-12">
-        <div ng-show="false">
-            <div class="btn btn-success" ng-click="un.test()">test</div>
-            <div class="btn btn-warning" ng-click="un.test2()">Get with </div>
-            <div class="btn btn-primary" ng-click="un.TestPost()">Test Post</div>
-            <div class="row">
-                <input type="text" ng-model="un.oFilter.sCityName" placeholder="City name" />
-                <div class="btn btn-primary" ng-click="un.Search()">Search By CITY</div>
-            </div>
-        </div>
-        <div class="filter-container">
-            <div class="fitler-by-rank">
+        <div class="filter-container col-md-3">
+            <div class="fitler-by-rank row removeBSColMargin">
                 <div class="rank-filter-container">
-                    <label class="float-container filter-label">Rank</label>
-                    <input ng-model="un.filterObject.rank.low" class="float-container fee-low-input filter-inputs form-control" type="text" name="low-range" />
-                    <label class="float-container">  to  </label>
-                    <input ng-model="un.filterObject.rank.high" class="float-container fee-high-input filter-inputs form-control" type="text" name="high-range" />
-                </div>
-            </div>
-            <div class="filter-by-fees">
-                <div class="fees-filter-container">
-                    <label class="float-container filter-label">Fees</label>
-                    <input ng-model="un.filterObject.fees.low" class="float-container fee-low-input filter-inputs form-control" type="text" name="low-range" />
-                    <label class="float-container">  to  </label>
-                    <input ng-model="un.filterObject.fees.high" class="float-container fee-high-input filter-inputs form-control" type="text" name="high-range" />
-                </div>
-            </div>
-            <div class="filter-by-states">
-                <label style = "margin-top: 10px" class="float-container filter-label">States</label>
-                <div ng-dropdown-multiselect="" options="un.universitiesByStateData" selected-model="un.universitiesByStateModel" extra-settings="un.multiselectSettings" checkboxes="true"></div>
-            </div>
-            <div class="filter-container-foooter">
-                <button ng-click=un.ApplyFilters() style="margin-top: 20px" type="button" class="btn btn-primary">Apply filter</button>
-            </div>
-        </div>
-        <div>
-            <input type="text" class="search-input form-control" ng-model="searchFilter" placeholder="Seach by Name here" />
-        </div>
-        <div class="rows">
-            <div class="col-md-4">
-                <h3 class="search-label block">Search for Universities</h3>
-            </div>
-            <div class="col-md-2 pull-right WC_List">
-                <div class="btn-group">
-                    <button  ng-class="{'active1': bShowListMode}" class="btn btn-default" ng-click="bShowListMode = true">
-                        <span class="glyphicon glyphicon-th-list"></span>
-                    </button>
-                    <button  ng-class="{'active1': !bShowListMode}" class="btn btn-default" ng-click="bShowListMode = false">
-                        <span class="glyphicon glyphicon-th"></span>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div ng-hide="un.arrColleges.length">
-            <div colspan="5">No colleges found</div>
-        </div>
-        <div ng-if="!bShowListMode">
-            <div class="university-list table table-striped">
-                <div class="WC_UnivContainer" ng-show="un.arrColleges.length" ng-repeat="college in un.arrColleges | filter:searchFilter  track by $index">
-                    <div class="col-md-12 WC_UnivContent">
-                        <a href="#/university?nId={{college.id}}">
-                            <div class="row">
-                                <div class="WC_U_Name">{{college.name}}</div>
-                            </div>
-                            <div class="row pull-right">
-                                <div class="WC_U_City">{{college.city}}</div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 marginZero">
-                                    <div class="WC_U_RankState WC_U_Rank">#{{college.rank}}</div>
-                                </div>
-                                <div class="col-md-6 marginZero">
-                                    <div class="WC_U_RankState WC_U_State">{{college.state}}</div>
-                                </div>
-                            </div>
-                            <div class="WC_U_AcceptR">Acceptance Rate: {{college.acceptanceRate}}%</div>
-                        </a>
+                    <div class="col-md-4">
+                        <label class="float-container filter-label">Rank</label>
+                    </div>
+                    <div class="col-md-8">
+                        <input ng-model="un.filterObject.rank.low" class="col-md-5 float-container fee-low-input filter-inputs form-control" type="text" name="low-range" />
+                        <label class="float-container col-md-2">to</label>
+                        <input ng-model="un.filterObject.rank.high" class="col-md-5 float-container fee-high-input filter-inputs form-control" type="text" name="high-range" />
                     </div>
                 </div>
             </div>
+            <div class="filter-by-fees row removeBSColMargin">
+                <div class="fees-filter-container">
+                    <div class="col-md-4">
+                        <label class="float-container filter-label">Fees</label>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <input ng-model="un.filterObject.fees.low" class="col-md-5 float-container fee-low-input filter-inputs form-control" type="text" name="low-range" />
+                            <label class="float-container col-md-2">to</label>
+                            <input ng-model="un.filterObject.fees.high" class="col-md-5 float-container fee-high-input filter-inputs form-control" type="text" name="high-range" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-by-states row removeBSColMargin">
+                <div class="col-md-4">
+                    <label class="float-container filter-label">States</label>
+                </div>
+                <div class="col-md-8">
+                    <div ng-dropdown-multiselect options="un.universitiesByStateData" selected-model="un.universitiesByStateModel" extra-settings="un.multiselectSettings" checkboxes="true"></div>
+                </div>
+            </div>
+            <div class="filter-container-foooter row removeBSColMargin">
+                <button ng-click=un.ApplyFilters() type="button" class="btn btn-primary">Apply filter</button>
+            </div>
         </div>
-        <div ng-if="bShowListMode">
-            <table class="university-list table table-striped">
-                <tr ng-show="un.arrColleges.length" ng-repeat="college in un.arrColleges | filter:searchFilter  track by $index">
-                    <td>#{{college.rank}}</td>
-                    <td>{{college.name}}</td>
-                    <td>{{college.city}}</td>
-                    <td>{{college.state}}</td>
-                    <td>{{college.acceptanceRate}}</td>
-                    <td>
-                        <a href="#/university?nId={{college.id}}">View</a>
-                    </td>
-                </tr>
-            </table>
+        <div class="col-md-9">
+            <div class="row removeBSColMargin">
+                <div class="col-md-4">
+                    <input type="text" class="search-input form-control" ng-model="filterUnivName" placeholder="Search by University" />
+                </div>
+                <div class="col-md-offset-1 col-md-4">
+                    <input type="text" class="search-input form-control" ng-model="filterCity" placeholder="Search by City" />
+                </div>
+                <div class="col-md-2 pull-right">
+                    <button class="form-control btn btn-default" ng-click="filterUnivName = null; filterCity = null;">CLEAR</button>
+                </div>
+            </div>
+            <div class="row removeBSColMargin">
+                <div class="col-md-8">
+                    <h3 class="search-label block">Search for Universities</h3>
+                </div>
+                <div class="col-md-4 WC_List">
+                    <div class="btn-group">
+                        <button ng-class="{'active1': bShowListMode}" class="btn btn-default" ng-click="bShowListMode = true">
+                        <span class="glyphicon glyphicon-th-list"></span>
+                    </button>
+                        <button ng-class="{'active1': !bShowListMode}" class="btn btn-default" ng-click="bShowListMode = false">
+                        <span class="glyphicon glyphicon-th"></span>
+                    </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row" ng-hide="un.arrColleges.length">
+                <div colspan="5">No colleges found</div>
+            </div>
+            <div class="row">
+                <div ng-if="!bShowListMode">
+                    <div class="university-list table table-striped">
+                        <div class="WC_UnivContainer" ng-show="un.arrColleges.length" ng-repeat="college in un.arrColleges | filter: {name: filterUnivName, city: filterCity}  track by $index">
+                            <div class="col-md-12 WC_UnivContent">
+                                <a href="#/university?nId={{college.id}}">
+                                    <div class="row">
+                                        <div class="WC_U_Name">{{college.name}}</div>
+                                    </div>
+                                    <div class="row pull-right">
+                                        <div class="WC_U_City">{{college.city}}</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 marginZero">
+                                            <div class="WC_U_RankState WC_U_Rank">#{{college.rank}}</div>
+                                        </div>
+                                        <div class="col-md-6 marginZero">
+                                            <div class="WC_U_RankState WC_U_State">{{college.state}}</div>
+                                        </div>
+                                    </div>
+                                    <div class="WC_U_AcceptR">Acceptance Rate: {{college.acceptanceRate}}%</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div ng-if="bShowListMode">
+                    <table class="university-list table table-striped">
+                        <tr ng-show="un.arrColleges.length" ng-repeat="college in un.arrColleges | filter:searchFilter  track by $index">
+                            <td>#{{college.rank}}</td>
+                            <td>{{college.name}}</td>
+                            <td>{{college.city}}</td>
+                            <td>{{college.state}}</td>
+                            <td>{{college.acceptanceRate}}</td>
+                            <td>
+                                <a href="#/university?nId={{college.id}}">View</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
 </div>

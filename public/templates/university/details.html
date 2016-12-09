@@ -21,7 +21,7 @@
             <div class="PopupTitle">{{ud.Popup.sTitle}}</div>
             <div class="WC_Comments">
                 <div class="row WC_CommentsWrapper" ng-repeat="comments in ud.oPost.arrComments">
-                    <div class="col-md-1">
+                    <div class="col-md-1" ng-show="false">
                         <div class="row">
                             <div class="col-md-6">
                                 <span class="glyphicon glyphicon-thumbs-up" ng-click="post.IncrementUpvotes(post)"></span> {{comments.UpVotes}}
@@ -40,7 +40,7 @@
                         </br>
                         <i>{{comments.CreatedWhen | date: 'MMM d, y h:mm a'}}</i>
                     </div>
-                    <div class="col-md-1">
+                    <div class="col-md-2">
                         <div class="row pull-right" ng-show="ud.oLoginItem.bLoggedIn && ud.oLoginItem.id === comments.UserId">
                             <button type="button" class="btn btn-xs btn-default">
                                 <span ng-show="!edit" class="glyphicon glyphicon-edit" ng-click="edit = true; $event.stopPropagation()"></span>

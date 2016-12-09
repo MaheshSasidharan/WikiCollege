@@ -6,12 +6,12 @@
                     <div class="WC_IndiGroupRow row" ng-repeat="group in ud.arrGroups | orderBy:'-NumOfPosts'" ng-click="ud.Helper.GetPostsByGroupId(group)">
                         <div class="col-md-10">
                             <div ng-show="!edit"class="WC_ObjectTitle">{{group.Title}}</div>
-                            <div ng-show="!edit" class="WC_ObjectDescription">{{group.Description}}</div>
+                            <div ng-show="false && !edit" class="WC_ObjectDescription">{{group.Description}}</div>
                             <input ng-show="edit" class="form-control" ng-model="group.Title" ng-click="$event.stopPropagation()" required/>
                             <input ng-show="edit" class="form-control" ng-model="group.Description" ng-click="$event.stopPropagation()" required/>
                         </div>
                         <div class="col-md-2">
-                            <div class="row pull-right" ng-show="ud.oLoginItem.bLoggedIn">
+                            <div class="row pull-right" ng-show="ud.oLoginItem.bLoggedIn && ud.oLoginItem.id === group.UserId">
                                 <button type="button" class="btn btn-xs btn-default">
                                     <span ng-show="!edit" class="glyphicon glyphicon-edit" ng-click="edit = true; $event.stopPropagation()"></span>
                                     <span ng-show="edit"  class="glyphicon glyphicon-save" ng-click="edit = false; ud.Helper.AddEditGroup($event, 'edit', group)"></span>
@@ -23,7 +23,7 @@
             </div>
             <div class="WC_AddOne WC_Gradient" ng-show="!addGroup && ud.oLoginItem.bLoggedIn" ng-click="addGroup = true">
                 <span class="glyphicon glyphicon-plus-sign"></span>
-                <span>Add new post</span>
+                <span>Add new Group</span>
             </div>
             <form ng-show="addGroup" name="FormAddGroup" novalidate  ng-submit="addGroup = false; ud.Helper.AddEditGroup($event, 'add')">
                 <div>
@@ -36,11 +36,15 @@
                 </div>
             </form>
         </div>
-        <div class="col-md-offset-1 col-md-8">
+        <div class="col-md-offset-1 col-md-8" ng-show="ud.oGroup">
+            <div class="row">
+                <h3>{{ud.oGroup.Title}}</h3>
+                <h4><i>{{ud.oGroup.Description}}</i></h4>
+            </div>
             <table class="table table-hover WC_Post">
                 <tbody>
                     <tr class="WC_IndiGroupRow" ng-repeat="post in ud.arrPosts | orderBy:'-Upvotes'" ng-click="showComments = !showComments;  ud.Helper.GetCommentsByPostId(post)">
-                        <td class="col-md-1">
+                        <td class="col-md-1" ng-show="false">
                             <span class="glyphicon glyphicon-thumbs-up" ng-click="post.IncrementUpvotes(post)"></span> {{post.UpVotes}}
                         </td>
                         <td class="col-md-7">
@@ -51,7 +55,7 @@
                             {{post.CreatedBy}} - {{post.CreatedWhen | date: 'medium'}}
                         </td>
                         <td class="col-md-1">
-                            <div class="row pull-right" ng-show="ud.oLoginItem.bLoggedIn">
+                            <div class="row pull-right" ng-show="ud.oLoginItem.bLoggedIn && ud.oLoginItem.id === post.UserId">
                                 <button type="button" class="btn btn-xs btn-default">
                                     <span ng-show="!edit" class="glyphicon glyphicon-edit" ng-click="edit = true; $event.stopPropagation()"></span>
                                     <span ng-show="edit"  class="glyphicon glyphicon-save" ng-click="edit = false; ud.Helper.AddEditPost($event, 'edit', post)"></span>

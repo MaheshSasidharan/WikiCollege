@@ -1,7 +1,7 @@
 myApp
-    .factory('Factory_CommonRoutines', ['$window','$timeout', '$location', 'Factory_Constants', CommonRoutines])
+    .factory('Factory_CommonRoutines', ['$window','$timeout', '$location', 'Factory_Constants', 'Notification', CommonRoutines])
 
-function CommonRoutines($window, $timeout, $location, Constants) {
+function CommonRoutines($window, $timeout, $location, Constants, Notification) {
     var oCommonRoutine = {
         FindItemInArray: function(array, keyName, keyVal, returnType) {
             var found = false;
@@ -192,7 +192,8 @@ function CommonRoutines($window, $timeout, $location, Constants) {
                 this.sTitle = sTitle;
             }
         },
-        oWindow: $window
+        oWindow: $window,
+        Notification: Notification
     }
 
     return oCommonRoutine;
