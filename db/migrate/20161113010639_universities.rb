@@ -11,6 +11,7 @@ class Universities < ActiveRecord::Migration
       t.decimal :acceptanceRate
       t.decimal :enrollment
       t.decimal :arrTuition
+      t.string :link
       t.timestamps
     end  
 

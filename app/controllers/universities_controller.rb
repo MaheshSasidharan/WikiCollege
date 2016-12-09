@@ -1,30 +1,30 @@
 class UniversitiesController < ApplicationController
   protect_from_forgery with: :null_session, if: Proc.new { |c| c.request.format == 'application/json' }
   
-  before_filter :univ_params, only: [:TestPost]
+  #before_filter :univ_params, only: [:TestPost]
   before_filter :Params_GetAllUniversities, only: [:GetAllUniversities]
   before_filter :group_params, only: [:AddEditGroup]
   before_filter :post_params, only: [:AddEditPost]
   before_filter :comment_params, only: [:AddEditCommentToPost]
     
-  def univ_params
-    params.fetch(:oSaveItem).permit(:a, :b)
-  end
+  # def univ_params
+  #   params.fetch(:oSaveItem).permit(:a, :b)
+  # end
   
   def Params_GetAllUniversities
     params.fetch(:oFilter).permit(:a, :b)
   end
   
   def group_params
-    params.fetch(:oSaveGroup).permit(:id, :universityId, :groupName, :desc)
+    params.fetch(:oSaveGroup, {}).permit(:id, :universityId, :groupName, :desc)
   end
   
   def post_params
-    params.fetch(:oSavePost).permit(:id, :groupId, :postData, :like, :dislike)
+    params.fetch(:oSavePost,{}).permit(:id, :groupId, :postData, :like, :dislike)
   end
   
   def comment_params
-    params.fetch(:oSaveComment).permit(:id, :postId, :commentData, :like, :dislike)
+    params.fetch(:oSaveComment,{}).permit(:id, :postId, :commentData, :like, :dislike)
   end
   
   #respond_to :json
@@ -44,7 +44,7 @@ class UniversitiesController < ApplicationController
   end
   
   def GetGroupsByUniversityId
-    puts session[:user_id]
+    #puts session[:user_id]
     @arrGroups = Group.where(university_id: params[:nId])
     if (!@arrGroups.nil?) 
        render :json => { status: true, arrGroups: @arrGroups }
@@ -92,9 +92,9 @@ class UniversitiesController < ApplicationController
       newGroup_params['desc'] = group_params[:desc]
       newGroup_params['university_id'] = group_params[:universityId]
       
-      puts newGroup_params;
+      #puts newGroup_params;
       
-      puts "HIiiiii"
+      #puts "HIiiiii"
       @group = Group.new(newGroup_params)
       if @group.save
         render :json => { status: true, group: @group, sType: 'GroupAdded' }
@@ -245,3 +245,7 @@ class UniversitiesController < ApplicationController
     render :json => { status: true, arrUniversities: @arrUniversities }
   end
 end    
+
+
+
+
