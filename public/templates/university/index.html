@@ -83,21 +83,16 @@
                         <div class="WC_UnivContainer" ng-show="un.arrColleges.length" ng-repeat="college in un.arrColleges | filter: {name: filterUnivName, city: filterCity} track by $index">
                             <div class="col-md-12 WC_UnivContent">
                                 <a href="#/university?nId={{college.id}}">
-                                    <div class="row">
-                                        <div class="WC_U_Name">{{college.name}}</div>
-                                    </div>
-                                    <div class="row pull-right">
-                                        <div class="WC_U_City">{{college.city}}</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6 marginZero">
-                                            <div class="WC_U_RankState WC_U_Rank">#{{college.rank}}</div>
+                                    <section class="flipContainer">
+                                        <div id="card">
+                                            <figure class="flipFront">
+                                                <div ng-include="'templates/university/flipcard/front.html'"></div>
+                                            </figure>
+                                            <figure class="flipBack">
+                                                <div ng-include="'templates/university/flipcard/back.html'"></div>
+                                            </figure>
                                         </div>
-                                        <div class="col-md-6 marginZero">
-                                            <div class="WC_U_RankState WC_U_State">{{college.state}}</div>
-                                        </div>
-                                    </div>
-                                    <div class="WC_U_AcceptR">Acceptance Rate: {{college.acceptanceRate}}%</div>
+                                    </section>
                                 </a>
                             </div>
                         </div>
